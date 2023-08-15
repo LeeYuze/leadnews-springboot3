@@ -150,6 +150,12 @@ public class ApArticle implements Serializable {
     @TableField(value = "origin")
     private Integer origin;
 
+    /**
+     * 静态HTML文件地址
+     */
+    @TableField(value = "static_url")
+    private String staticUrl;
+
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;
 }

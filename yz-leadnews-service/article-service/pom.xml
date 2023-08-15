@@ -19,6 +19,11 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-freemarker</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>com.leadnews</groupId>
             <artifactId>file-spring-boot-starter</artifactId>
             <version>0.0.1-SNAPSHOT</version>
