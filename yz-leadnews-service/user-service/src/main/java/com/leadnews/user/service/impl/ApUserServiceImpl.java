@@ -54,6 +54,7 @@ public class ApUserServiceImpl extends ServiceImpl<ApUserMapper, ApUser> impleme
         Map<String, Object> map = new HashMap<>();
         map.put("token", AppJwtUtil.getToken(apUser.getId()));
         map.put("user", apUser);
+
         return ResponseResult.okResult(map);
     }
 }

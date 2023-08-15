@@ -15,6 +15,7 @@
         <module>yz-leadnews-basic</module>
         <module>yz-leadnews-basic/knife4j-spring-boot-starter</module>
         <module>yz-leadnews-gateways</module>
+        <module>yz-leadnews-common</module>
     </modules>
     <properties>
         <java.version>17</java.version>
@@ -43,6 +44,12 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.leadnews</groupId>
+                <artifactId>yz-leadnews-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>com.leadnews</groupId>
                 <artifactId>yz-leadnews-model</artifactId>

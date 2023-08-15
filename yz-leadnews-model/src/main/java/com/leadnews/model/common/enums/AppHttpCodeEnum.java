@@ -3,7 +3,7 @@ package com.leadnews.model.common.enums;
 public enum AppHttpCodeEnum {
 
     // 成功段0
-    SUCCESS(0,"操作成功"),
+    SUCCESS(200,"操作成功"),
 
     // 登录段1~50
     NEED_LOGIN(1,"需要登录后操作"),

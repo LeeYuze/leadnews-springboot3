@@ -14,6 +14,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>user-service</module>
+        <module>article-service</module>
     </modules>
 
     <properties>
@@ -23,6 +24,11 @@
     </properties>
 
     <dependencies>
+
+        <dependency>
+            <groupId>com.leadnews</groupId>
+            <artifactId>yz-leadnews-common</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>com.leadnews</groupId>
