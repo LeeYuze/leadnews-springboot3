@@ -1,0 +1,14 @@
+server:
+  port: 52001
+spring:
+  application:
+    name: leadnews-wemedia
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 10.211.55.8:8848
+        namespace: 4e85b1a4-8d96-4c12-8631-7c0473ed1614
+      config:
+        server-addr: 10.211.55.8:8848
+        file-extension: yml
+        namespace: 4e85b1a4-8d96-4c12-8631-7c0473ed1614

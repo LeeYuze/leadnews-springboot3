@@ -15,6 +15,7 @@
     <modules>
         <module>user-service</module>
         <module>article-service</module>
+        <module>wemedia-service</module>
     </modules>
 
     <properties>
@@ -38,6 +39,12 @@
         <dependency>
             <groupId>com.leadnews</groupId>
             <artifactId>yz-leadnews-utils</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.heima</groupId>
+            <artifactId>execption-spring-boot-starter</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
         <dependency>

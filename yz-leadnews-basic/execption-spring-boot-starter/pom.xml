@@ -5,22 +5,32 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.leadnews</groupId>
-        <artifactId>yz-leadnews</artifactId>
+        <artifactId>yz-leadnews-basic</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>yz-leadnews-basic</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>knife4j-spring-boot-starter</module>
-        <module>file-spring-boot-starter</module>
-        <module>execption-spring-boot-starter</module>
-    </modules>
+    <groupId>com.heima</groupId>
+    <artifactId>execption-spring-boot-starter</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.leadnews</groupId>
+            <artifactId>yz-leadnews-model</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+    </dependencies>
 
 </project>
