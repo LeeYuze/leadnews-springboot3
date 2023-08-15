@@ -13,7 +13,6 @@
         <module>yz-leadnews-model</module>
         <module>yz-leadnews-utils</module>
         <module>yz-leadnews-basic</module>
-        <module>yz-leadnews-basic/knife4j-spring-boot-starter</module>
         <module>yz-leadnews-gateways</module>
         <module>yz-leadnews-common</module>
         <module>yz-leadnews-test</module>

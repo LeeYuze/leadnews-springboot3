@@ -11,6 +11,10 @@
 
     <artifactId>yz-leadnews-basic</artifactId>
     <packaging>pom</packaging>
+    <modules>
+        <module>knife4j-spring-boot-starter</module>
+        <module>file-spring-boot-starter</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

@@ -5,9 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.leadnews</groupId>
-        <artifactId>yz-leadnews</artifactId>
+        <artifactId>yz-leadnews-basic</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../../pom.xml</relativePath>
     </parent>
 
     <artifactId>knife4j-spring-boot-starter</artifactId>
