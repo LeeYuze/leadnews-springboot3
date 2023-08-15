@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>app-gateway</module>
+        <module>wemedia-gateway</module>
     </modules>
 
     <properties>
