@@ -20,7 +20,7 @@ public class WmMaterial implements Serializable {
      * 主键
      */
     @TableId(value = "id", type = IdType.AUTO)
-    private Object id;
+    private Integer id;
 
     /**
      * 自媒体用户ID

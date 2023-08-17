@@ -1,6 +1,7 @@
 package com.leadnews.wemedia.controller.v1;
 
 import com.leadnews.model.common.dtos.ResponseResult;
+import com.leadnews.model.wemedia.dtos.WmNewsDTO;
 import com.leadnews.model.wemedia.dtos.WmNewsPageReqDTO;
 import com.leadnews.wemedia.service.WmNewsService;
 import lombok.RequiredArgsConstructor;
@@ -24,6 +25,11 @@ public class WmNewsController {
     public ResponseResult findAll(@RequestBody WmNewsPageReqDTO dto) {
 
         return wmNewsService.findAll(dto);
+    }
+
+    @PostMapping("/submit")
+    public ResponseResult submitNews(@RequestBody WmNewsDTO dto){
+        return wmNewsService.submitNews(dto);
     }
 
 }

@@ -25,11 +25,11 @@ public class ApArticleServiceImpl extends ServiceImpl<ApArticleMapper, ApArticle
     private final ApArticleMapper apArticleMapper;
 
     // 单页最大加载的数字
-    private final static short MAX_PAGE_SIZE = 50;
+    private final static Integer MAX_PAGE_SIZE = 50;
 
 
     @Override
-    public ResponseResult load(Short loadtype, ArticleHomeDTO dto) {
+    public ResponseResult load(Integer loadtype, ArticleHomeDTO dto) {
         //1.校验参数
         Integer size = dto.getSize();
         if (size == null || size == 0) {
