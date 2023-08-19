@@ -11,7 +11,6 @@ import jakarta.annotation.Resource;
 import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Import;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
@@ -117,7 +116,9 @@ public class MinioFileStorageService implements FileStorageService {
         } catch (Exception e) {
             logger.error("minio remove file error.  pathUrl:{}", pathUrl);
             e.printStackTrace();
+            throw new RuntimeException("文件删除失败");
         }
+
     }
 
     @Override

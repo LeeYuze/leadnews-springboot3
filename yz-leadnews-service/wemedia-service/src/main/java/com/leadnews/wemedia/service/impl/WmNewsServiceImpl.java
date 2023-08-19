@@ -229,7 +229,7 @@ public class WmNewsServiceImpl extends ServiceImpl<WmNewsMapper, WmNews>
                 throw new CustomException(AppHttpCodeEnum.MATERIASL_REFERENCE_FAIL);
             }
 
-            List<Integer> idList = dbMaterials.stream().map(WmMaterial::getId).collect(Collectors.toList());
+            List<Long> idList = dbMaterials.stream().map(WmMaterial::getId).collect(Collectors.toList());
 
             //批量保存
             wmNewsMaterialMapper.saveRelations(idList, newsId, type);

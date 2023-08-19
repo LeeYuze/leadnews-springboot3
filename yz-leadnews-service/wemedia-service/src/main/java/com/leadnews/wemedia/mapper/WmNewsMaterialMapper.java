@@ -22,7 +22,7 @@ public interface WmNewsMaterialMapper extends BaseMapper<WmNewsMaterial> {
      * @param newsId 文章id
      * @param type 0-内容 1-封面
      */
-    void saveRelations(@Param("materialIds") List<Integer> materialIds, @Param("newsId") Integer newsId, @Param("type") Integer type);
+    void saveRelations(@Param("materialIds") List<Long> materialIds, @Param("newsId") Integer newsId, @Param("type") Integer type);
 
 }
 

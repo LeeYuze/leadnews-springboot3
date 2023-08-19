@@ -4,6 +4,9 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.leadnews.common.execption.CustException;
+import com.leadnews.common.execption.CustomException;
+import com.leadnews.common.wemedia.WemediaConstants;
 import com.leadnews.minio.service.FileStorageService;
 import com.leadnews.model.common.dtos.PageResponseResult;
 import com.leadnews.model.common.dtos.ResponseResult;
@@ -98,6 +101,44 @@ public class WmMaterialServiceImpl extends ServiceImpl<WmMaterialMapper, WmMater
         result.setData(page.getRecords());
 
         return result;
+    }
+
+    @Override
+    public void collect(Long id) {
+        WmMaterial wmMaterial = new WmMaterial();
+        wmMaterial.setId(id);
+        wmMaterial.setIsCollection(WemediaConstants.COLLECT_MATERIAL);
+        this.updateById(wmMaterial);
+    }
+
+    @Override
+    public void cancel_collect(Long id) {
+        WmMaterial wmMaterial = new WmMaterial();
+        wmMaterial.setId(id);
+        wmMaterial.setIsCollection(WemediaConstants.CANCEL_COLLECT_MATERIAL);
+        this.updateById(wmMaterial);
+    }
+
+    @Override
+    public void deleteById(Long id) {
+        // 参数校验
+        if(id == null) {
+            throw new CustomException(AppHttpCodeEnum.PARAM_INVALID);
+        }
+
+        // 查找素材
+        WmMaterial wmMaterial = this.getById(id);
+
+        if (wmMaterial == null) {
+            throw new CustomException(AppHttpCodeEnum.DATA_NOT_EXIST);
+        }
+
+        // 删除oss文件
+        fileStorageService.delete(wmMaterial.getUrl());
+
+        // 删除数据库
+
+        this.removeById(id);
     }
 
     private WmMaterial processUploadSuccessSave(String upFilePath) {
