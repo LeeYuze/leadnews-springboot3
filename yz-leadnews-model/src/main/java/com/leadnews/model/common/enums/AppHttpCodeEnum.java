@@ -40,7 +40,11 @@ public enum AppHttpCodeEnum {
     ADMING_CHANNEL_NOT_EXIST(4000, "频道不存在"),
     ADMING_CHANNEL_STATUS_TRUE(4001, "频道有效，无法删除"),
 
-    MATERIASL_REFERENCE_FAIL(4002, "素材不存在");
+    MATERIASL_REFERENCE_FAIL(4002, "素材不存在"),
+
+    NEWS_PUBLISH_UN_DELETE(501, "文章已发布，不你呢个删除");
+
+
 
     int code;
     String errorMessage;

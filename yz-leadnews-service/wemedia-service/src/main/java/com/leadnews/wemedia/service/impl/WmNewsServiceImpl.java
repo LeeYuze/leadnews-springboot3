@@ -151,6 +151,35 @@ public class WmNewsServiceImpl extends ServiceImpl<WmNewsMapper, WmNews>
         return ResponseResult.okResult();
     }
 
+    @Override
+    public WmNews getOne(Long id) {
+        WmNews wmNews = getById(id);
+
+        if (wmNews == null) {
+            throw new CustomException(AppHttpCodeEnum.DATA_NOT_EXIST);
+        }
+
+        return wmNews;
+    }
+
+    @Override
+    public void deleteById(Long id) {
+        if(id == null) {
+            throw new CustomException(AppHttpCodeEnum.PARAM_INVALID);
+        }
+
+        WmNews wmNews = getById(id);
+        if (wmNews == null) {
+            throw new CustomException(AppHttpCodeEnum.DATA_NOT_EXIST);
+        }
+
+        if (WmNewsStatus.PUBLISH.equals(wmNews.getStatus())) {
+            throw new CustomException(AppHttpCodeEnum.NEWS_PUBLISH_UN_DELETE);
+        }
+
+        this.removeById(id);
+    }
+
     /**
      * 第一个功能：如果当前封面类型为自动，则设置封面类型的数据
      * 匹配规则：

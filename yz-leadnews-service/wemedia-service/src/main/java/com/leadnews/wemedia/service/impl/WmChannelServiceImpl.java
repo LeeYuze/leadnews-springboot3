@@ -18,4 +18,6 @@ public class WmChannelServiceImpl extends ServiceImpl<WmChannelMapper, WmChannel
     public List<WmChannel> findAll() {
         return list();
     }
+
+
 }
