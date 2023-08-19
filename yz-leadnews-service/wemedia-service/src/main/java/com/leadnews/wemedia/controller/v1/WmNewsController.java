@@ -45,4 +45,12 @@ public class WmNewsController {
         return ResponseResult.okResult();
     }
 
+
+    @PostMapping("/down_or_up")
+    public ResponseResult downOrUp(@RequestBody WmNewsDTO wmNewsDTO) {
+
+        wmNewsService.downOrUp(wmNewsDTO);
+
+        return ResponseResult.okResult();
+    }
 }

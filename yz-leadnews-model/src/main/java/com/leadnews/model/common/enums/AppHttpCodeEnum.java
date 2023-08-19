@@ -42,7 +42,8 @@ public enum AppHttpCodeEnum {
 
     MATERIASL_REFERENCE_FAIL(4002, "素材不存在"),
 
-    NEWS_PUBLISH_UN_DELETE(501, "文章已发布，不你呢个删除");
+    NEWS_PUBLISH_UN_DELETE(501, "文章已发布，不你呢个删除"),
+    NEWS_NOT_PUBLISH_DOWN_OR_UP_FAIL(501, "当前文章不是发布状态，不能上下架");
 
 
 

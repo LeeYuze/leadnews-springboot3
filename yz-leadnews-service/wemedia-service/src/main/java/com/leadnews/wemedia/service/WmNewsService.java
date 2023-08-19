@@ -41,4 +41,11 @@ public interface WmNewsService extends IService<WmNews> {
      * @param id
      */
     void deleteById(Long id);
+
+
+    /**
+     * 文章上下架
+     * @param dto
+     */
+    void downOrUp(WmNewsDTO dto);
 }
