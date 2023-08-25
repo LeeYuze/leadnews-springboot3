@@ -1,0 +1,545 @@
+2023-08-20 00:00:03.365 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2023-08-20 00:00:03.365 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2023-08-20 00:00:03.368 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2023-08-20 00:00:03.369 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2023-08-20 00:00:04.406 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+2023-08-20 00:00:04.406 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - [DEREGISTER-SERVICE] 4e85b1a4-8d96-4c12-8631-7c0473ed1614 deregistering service leadnews-wemedia with instance: Instance{instanceId='null', ip='192.168.10.4', port=52001, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+2023-08-20 00:00:04.426 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registration finished.
+2023-08-20 00:00:04.427 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown begin
+2023-08-20 00:00:04.428 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+2023-08-20 00:00:04.428 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+2023-08-20 00:00:04.429 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown stop
+2023-08-20 00:00:04.429 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown begin
+2023-08-20 00:00:04.429 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown begin
+2023-08-20 00:00:04.429 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown stop
+2023-08-20 00:00:04.429 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServerListManager do shutdown begin
+2023-08-20 00:00:04.429 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-08-20 00:00:04.430 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+2023-08-20 00:00:04.430 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServerListManager do shutdown stop
+2023-08-20 00:00:04.431 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown begin
+2023-08-20 00:00:04.431 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-08-20 00:00:04.431 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+2023-08-20 00:00:04.431 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown stop
+2023-08-20 00:00:04.431 [SpringApplicationShutdownHook] INFO  c.alibaba.nacos.common.remote.client - Shutdown rpc client, set status to shutdown
+2023-08-20 00:00:04.432 [SpringApplicationShutdownHook] INFO  c.alibaba.nacos.common.remote.client - Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@3a6e1a92[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+2023-08-20 00:00:04.432 [SpringApplicationShutdownHook] INFO  c.alibaba.nacos.common.remote.client - Close current connection 1692460451102_10.211.55.2_60661
+2023-08-20 00:00:04.443 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.client.grpc.GrpcClient - Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@939e43[Running, pool size = 4, active threads = 0, queued tasks = 0, completed tasks = 138]
+2023-08-20 00:00:04.444 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - Shutdown grpc redo service executor java.util.concurrent.ScheduledThreadPoolExecutor@7680785[Running, pool size = 1, active threads = 0, queued tasks = 1, completed tasks = 117]
+2023-08-20 00:00:04.445 [SpringApplicationShutdownHook] INFO  c.a.n.c.a.r.i.CredentialWatcher - [null] CredentialWatcher is stopped
+2023-08-20 00:00:04.445 [SpringApplicationShutdownHook] INFO  c.a.n.c.a.r.i.CredentialService - [null] CredentialService is freed
+2023-08-20 00:00:04.445 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown stop
+2023-08-20 00:00:04.451 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-08-20 00:00:04.467 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-08-20 00:00:07.956 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-20 00:00:07.961 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-08-20 00:00:07.990 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-20 00:00:08.117 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-20 00:00:08.118 [main] INFO  c.a.nacos.client.utils.ParamUtil - [settings] [req-serv] nacos-server port:8848
+2023-08-20 00:00:08.118 [main] INFO  c.a.nacos.client.utils.ParamUtil - [settings] [http-client] connect timeout:1000
+2023-08-20 00:00:08.118 [main] INFO  c.a.nacos.client.utils.ParamUtil - PER_TASK_CONFIG_SIZE: 3000.0
+2023-08-20 00:00:08.136 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-08-20 00:00:08.136 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-08-20 00:00:08.153 [main] INFO  c.a.n.c.a.r.i.CredentialWatcher - null No credential found
+2023-08-20 00:00:08.207 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-20 00:00:08.216 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:/Users/lihaohui/nacos/config
+2023-08-20 00:00:08.218 [main] INFO  c.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of 1897fdf9-c59f-4b0c-89b6-60155be82515_config-0
+2023-08-20 00:00:08.227 [main] INFO  c.alibaba.nacos.common.remote.client - [1897fdf9-c59f-4b0c-89b6-60155be82515_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$563/0x0000000800f67d88
+2023-08-20 00:00:08.227 [main] INFO  c.alibaba.nacos.common.remote.client - [1897fdf9-c59f-4b0c-89b6-60155be82515_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$564/0x0000000800f68208
+2023-08-20 00:00:08.227 [main] INFO  c.alibaba.nacos.common.remote.client - [1897fdf9-c59f-4b0c-89b6-60155be82515_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2023-08-20 00:00:08.228 [main] INFO  c.alibaba.nacos.common.remote.client - [1897fdf9-c59f-4b0c-89b6-60155be82515_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2023-08-20 00:00:08.231 [main] INFO  c.alibaba.nacos.common.remote.client - [1897fdf9-c59f-4b0c-89b6-60155be82515_config-0] Try to connect to server on start up, server: {serverIp = '10.211.55.8', server main port = 8848}
+2023-08-20 00:00:08.250 [main] INFO  c.a.n.c.r.client.grpc.GrpcClient - grpc client connection server:10.211.55.8 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2023-08-20 00:00:08.678 [main] INFO  c.alibaba.nacos.common.remote.client - [1897fdf9-c59f-4b0c-89b6-60155be82515_config-0] Success to connect to server [10.211.55.8:8848] on start up, connectionId = 1692460808650_10.211.55.2_60970
+2023-08-20 00:00:08.679 [com.alibaba.nacos.client.remote.worker] INFO  c.alibaba.nacos.common.remote.client - [1897fdf9-c59f-4b0c-89b6-60155be82515_config-0] Notify connected event to listeners.
+2023-08-20 00:00:08.679 [main] INFO  c.alibaba.nacos.common.remote.client - [1897fdf9-c59f-4b0c-89b6-60155be82515_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2023-08-20 00:00:08.679 [com.alibaba.nacos.client.remote.worker] INFO  c.a.n.c.config.impl.ClientWorker - [1897fdf9-c59f-4b0c-89b6-60155be82515_config-0] Connected,notify listen context...
+2023-08-20 00:00:08.679 [main] INFO  c.alibaba.nacos.common.remote.client - [1897fdf9-c59f-4b0c-89b6-60155be82515_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$596/0x0000000801104450
+2023-08-20 00:00:08.716 [main] INFO  c.a.nacos.client.config.impl.Limiter - limitTime:5.0
+2023-08-20 00:00:08.773 [main] INFO  c.a.n.client.config.utils.JvmUtil - isMultiInstance:false
+2023-08-20 00:00:08.793 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[leadnews-wemedia.yml] & group[DEFAULT_GROUP]
+2023-08-20 00:00:08.794 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-leadnews-wemedia.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-leadnews-wemedia,DEFAULT_GROUP'}]
+2023-08-20 00:00:08.804 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-20 00:00:08.805 [main] INFO  c.l.wemedia.WeMediaApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-20 00:00:09.332 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=79f5c417-6fcf-36cc-aa3e-06d5a409cc56
+2023-08-20 00:00:09.502 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 52001 (http)
+2023-08-20 00:00:09.508 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-52001"]
+2023-08-20 00:00:09.508 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-20 00:00:09.508 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-08-20 00:00:09.558 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-20 00:00:09.558 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 744 ms
+2023-08-20 00:00:14.353 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-20 00:00:14.387 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-52001"]
+2023-08-20 00:00:14.393 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 52001 (http) with context path ''
+2023-08-20 00:00:14.396 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from ans.namespace attribute : null
+2023-08-20 00:00:14.396 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from ALIBABA_ALIWARE_NAMESPACE attribute :null
+2023-08-20 00:00:14.396 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from namespace attribute :null
+2023-08-20 00:00:14.400 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-08-20 00:00:14.400 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-08-20 00:00:14.402 [main] INFO  c.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of 7cf4b609-6308-40ce-a541-d99416439b51
+2023-08-20 00:00:14.403 [main] INFO  c.alibaba.nacos.common.remote.client - [7cf4b609-6308-40ce-a541-d99416439b51] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2023-08-20 00:00:14.403 [main] INFO  c.alibaba.nacos.common.remote.client - [7cf4b609-6308-40ce-a541-d99416439b51] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2023-08-20 00:00:14.403 [main] INFO  c.alibaba.nacos.common.remote.client - [7cf4b609-6308-40ce-a541-d99416439b51] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2023-08-20 00:00:14.403 [main] INFO  c.alibaba.nacos.common.remote.client - [7cf4b609-6308-40ce-a541-d99416439b51] Try to connect to server on start up, server: {serverIp = '10.211.55.8', server main port = 8848}
+2023-08-20 00:00:14.403 [main] INFO  c.a.n.c.r.client.grpc.GrpcClient - grpc client connection server:10.211.55.8 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2023-08-20 00:00:14.516 [main] INFO  c.alibaba.nacos.common.remote.client - [7cf4b609-6308-40ce-a541-d99416439b51] Success to connect to server [10.211.55.8:8848] on start up, connectionId = 1692460814525_10.211.55.2_60974
+2023-08-20 00:00:14.517 [main] INFO  c.alibaba.nacos.common.remote.client - [7cf4b609-6308-40ce-a541-d99416439b51] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2023-08-20 00:00:14.517 [com.alibaba.nacos.client.remote.worker] INFO  c.alibaba.nacos.common.remote.client - [7cf4b609-6308-40ce-a541-d99416439b51] Notify connected event to listeners.
+2023-08-20 00:00:14.517 [main] INFO  c.alibaba.nacos.common.remote.client - [7cf4b609-6308-40ce-a541-d99416439b51] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$596/0x0000000801104450
+2023-08-20 00:00:14.517 [com.alibaba.nacos.client.remote.worker] INFO  com.alibaba.nacos.client.naming - Grpc connection connect
+2023-08-20 00:00:14.518 [main] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] 4e85b1a4-8d96-4c12-8631-7c0473ed1614 registering service leadnews-wemedia with instance Instance{instanceId='null', ip='192.168.10.4', port=52001, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=[2409:8a55:d91c:4f04:8f7:fd1f:c36e:20cc], preserved.register.source=SPRING_CLOUD}}
+2023-08-20 00:00:14.529 [main] INFO  c.a.c.n.r.NacosServiceRegistry - nacos registry, DEFAULT_GROUP leadnews-wemedia 192.168.10.4:52001 register finished
+2023-08-20 00:00:14.549 [main] INFO  c.l.wemedia.WeMediaApplication - Started WeMediaApplication in 6.771 seconds (process running for 7.243)
+2023-08-20 00:00:14.554 [main] INFO  c.a.n.client.config.impl.CacheData - nacos.cache.data.init.snapshot = true 
+2023-08-20 00:00:14.555 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [subscribe] leadnews-wemedia+DEFAULT_GROUP+4e85b1a4-8d96-4c12-8631-7c0473ed1614
+2023-08-20 00:00:14.560 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [add-listener] ok, tenant=4e85b1a4-8d96-4c12-8631-7c0473ed1614, dataId=leadnews-wemedia, group=DEFAULT_GROUP, cnt=1
+2023-08-20 00:00:14.560 [main] INFO  c.a.c.n.r.NacosContextRefresher - [Nacos Config] Listening config: dataId=leadnews-wemedia, group=DEFAULT_GROUP
+2023-08-20 00:00:14.560 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [subscribe] leadnews-wemedia.yml+DEFAULT_GROUP+4e85b1a4-8d96-4c12-8631-7c0473ed1614
+2023-08-20 00:00:14.560 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [add-listener] ok, tenant=4e85b1a4-8d96-4c12-8631-7c0473ed1614, dataId=leadnews-wemedia.yml, group=DEFAULT_GROUP, cnt=1
+2023-08-20 00:00:14.560 [main] INFO  c.a.c.n.r.NacosContextRefresher - [Nacos Config] Listening config: dataId=leadnews-wemedia.yml, group=DEFAULT_GROUP
+2023-08-20 00:00:14.562 [main] INFO  c.l.wemedia.WeMediaApplication - 
+----------------------------------------------------------
+	Application 'leadnews-wemedia' is running! Access URLs:
+	Local: 		http://localhost:52001
+	External: 	http://127.0.0.1:52001
+	Doc: 	http://127.0.0.1:52001/doc.html
+----------------------------------------------------------
+2023-08-20 00:00:15.139 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-20 00:00:15.140 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-20 00:00:15.140 [RMI TCP Connection(3)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-08-20 00:00:15.141 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-08-20 00:00:15.253 [RMI TCP Connection(3)-127.0.0.1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e2c0189
+2023-08-20 00:00:15.258 [RMI TCP Connection(3)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-08-20 00:00:22.137 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-20 00:00:22.143 [http-nio-52001-exec-1] WARN  o.s.c.LocalVariableTableParameterNameDiscoverer - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.leadnews.wemedia.controller.v1.WmNewsController
+2023-08-20 00:00:22.176 [http-nio-52001-exec-1] ERROR c.l.c.config.GlobalExceptionConfig - 捕获到全局异常 ex:{}
+java.lang.NullPointerException: Cannot invoke "java.lang.Integer.equals(Object)" because the return value of "com.leadnews.model.wemedia.pojos.WmNews.getStatus()" is null
+	at com.leadnews.wemedia.service.impl.WmNewsServiceImpl.deleteById(WmNewsServiceImpl.java:176)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:699)
+	at com.leadnews.wemedia.service.impl.WmNewsServiceImpl$$SpringCGLIB$$0.deleteById(<generated>)
+	at com.leadnews.wemedia.controller.v1.WmNewsController.delete(WmNewsController.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:705)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-08-20 00:00:27.806 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-20 00:00:27.814 [http-nio-52001-exec-2] ERROR c.l.c.config.GlobalExceptionConfig - 捕获到全局异常 ex:{}
+java.lang.NullPointerException: Cannot invoke "java.lang.Integer.equals(Object)" because the return value of "com.leadnews.model.wemedia.pojos.WmNews.getStatus()" is null
+	at com.leadnews.wemedia.service.impl.WmNewsServiceImpl.deleteById(WmNewsServiceImpl.java:176)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:699)
+	at com.leadnews.wemedia.service.impl.WmNewsServiceImpl$$SpringCGLIB$$0.deleteById(<generated>)
+	at com.leadnews.wemedia.controller.v1.WmNewsController.delete(WmNewsController.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:705)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-08-20 00:01:38.182 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2023-08-20 00:01:38.183 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2023-08-20 00:01:38.183 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2023-08-20 00:01:38.183 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2023-08-20 00:01:39.208 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+2023-08-20 00:01:39.209 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - [DEREGISTER-SERVICE] 4e85b1a4-8d96-4c12-8631-7c0473ed1614 deregistering service leadnews-wemedia with instance: Instance{instanceId='null', ip='192.168.10.4', port=52001, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+2023-08-20 00:01:39.215 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registration finished.
+2023-08-20 00:01:39.216 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown begin
+2023-08-20 00:01:39.216 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+2023-08-20 00:01:39.216 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+2023-08-20 00:01:39.216 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown stop
+2023-08-20 00:01:39.216 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown begin
+2023-08-20 00:01:39.216 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown begin
+2023-08-20 00:01:39.216 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown stop
+2023-08-20 00:01:39.217 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServerListManager do shutdown begin
+2023-08-20 00:01:39.217 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-08-20 00:01:39.217 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+2023-08-20 00:01:39.217 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServerListManager do shutdown stop
+2023-08-20 00:01:39.217 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown begin
+2023-08-20 00:01:39.217 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-08-20 00:01:39.217 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+2023-08-20 00:01:39.217 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown stop
+2023-08-20 00:01:39.217 [SpringApplicationShutdownHook] INFO  c.alibaba.nacos.common.remote.client - Shutdown rpc client, set status to shutdown
+2023-08-20 00:01:39.217 [SpringApplicationShutdownHook] INFO  c.alibaba.nacos.common.remote.client - Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@26d3d1c9[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+2023-08-20 00:01:39.217 [SpringApplicationShutdownHook] INFO  c.alibaba.nacos.common.remote.client - Close current connection 1692460814525_10.211.55.2_60974
+2023-08-20 00:01:39.221 [nacos-grpc-client-executor-10.211.55.8-45] INFO  c.a.n.c.r.client.grpc.GrpcClient - [1692460814525_10.211.55.2_60974]Ignore complete event,isRunning:false,isAbandon=false
+2023-08-20 00:01:39.222 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.client.grpc.GrpcClient - Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@7f17db73[Running, pool size = 8, active threads = 0, queued tasks = 0, completed tasks = 46]
+2023-08-20 00:01:39.222 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - Shutdown grpc redo service executor java.util.concurrent.ScheduledThreadPoolExecutor@39fae562[Running, pool size = 1, active threads = 0, queued tasks = 1, completed tasks = 28]
+2023-08-20 00:01:39.223 [SpringApplicationShutdownHook] INFO  c.a.n.c.a.r.i.CredentialWatcher - [null] CredentialWatcher is stopped
+2023-08-20 00:01:39.223 [SpringApplicationShutdownHook] INFO  c.a.n.c.a.r.i.CredentialService - [null] CredentialService is freed
+2023-08-20 00:01:39.223 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown stop
+2023-08-20 00:01:39.226 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-08-20 00:01:39.232 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-08-20 00:01:42.189 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-20 00:01:42.193 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-08-20 00:01:42.223 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-20 00:01:42.333 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-20 00:01:42.333 [main] INFO  c.a.nacos.client.utils.ParamUtil - [settings] [req-serv] nacos-server port:8848
+2023-08-20 00:01:42.333 [main] INFO  c.a.nacos.client.utils.ParamUtil - [settings] [http-client] connect timeout:1000
+2023-08-20 00:01:42.334 [main] INFO  c.a.nacos.client.utils.ParamUtil - PER_TASK_CONFIG_SIZE: 3000.0
+2023-08-20 00:01:42.350 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-08-20 00:01:42.350 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-08-20 00:01:42.371 [main] INFO  c.a.n.c.a.r.i.CredentialWatcher - null No credential found
+2023-08-20 00:01:42.418 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-20 00:01:42.427 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:/Users/lihaohui/nacos/config
+2023-08-20 00:01:42.429 [main] INFO  c.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of b348088e-ea8c-458c-a30b-366808d590b3_config-0
+2023-08-20 00:01:42.440 [main] INFO  c.alibaba.nacos.common.remote.client - [b348088e-ea8c-458c-a30b-366808d590b3_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$563/0x0000000800f67980
+2023-08-20 00:01:42.440 [main] INFO  c.alibaba.nacos.common.remote.client - [b348088e-ea8c-458c-a30b-366808d590b3_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$564/0x0000000800f67db0
+2023-08-20 00:01:42.440 [main] INFO  c.alibaba.nacos.common.remote.client - [b348088e-ea8c-458c-a30b-366808d590b3_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2023-08-20 00:01:42.440 [main] INFO  c.alibaba.nacos.common.remote.client - [b348088e-ea8c-458c-a30b-366808d590b3_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2023-08-20 00:01:42.445 [main] INFO  c.alibaba.nacos.common.remote.client - [b348088e-ea8c-458c-a30b-366808d590b3_config-0] Try to connect to server on start up, server: {serverIp = '10.211.55.8', server main port = 8848}
+2023-08-20 00:01:42.461 [main] INFO  c.a.n.c.r.client.grpc.GrpcClient - grpc client connection server:10.211.55.8 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2023-08-20 00:01:42.892 [main] INFO  c.alibaba.nacos.common.remote.client - [b348088e-ea8c-458c-a30b-366808d590b3_config-0] Success to connect to server [10.211.55.8:8848] on start up, connectionId = 1692460902860_10.211.55.2_61051
+2023-08-20 00:01:42.893 [com.alibaba.nacos.client.remote.worker] INFO  c.alibaba.nacos.common.remote.client - [b348088e-ea8c-458c-a30b-366808d590b3_config-0] Notify connected event to listeners.
+2023-08-20 00:01:42.893 [com.alibaba.nacos.client.remote.worker] INFO  c.a.n.c.config.impl.ClientWorker - [b348088e-ea8c-458c-a30b-366808d590b3_config-0] Connected,notify listen context...
+2023-08-20 00:01:42.893 [main] INFO  c.alibaba.nacos.common.remote.client - [b348088e-ea8c-458c-a30b-366808d590b3_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2023-08-20 00:01:42.893 [main] INFO  c.alibaba.nacos.common.remote.client - [b348088e-ea8c-458c-a30b-366808d590b3_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$596/0x0000000801105fe8
+2023-08-20 00:01:42.924 [main] INFO  c.a.nacos.client.config.impl.Limiter - limitTime:5.0
+2023-08-20 00:01:42.942 [main] INFO  c.a.n.client.config.utils.JvmUtil - isMultiInstance:false
+2023-08-20 00:01:42.951 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[leadnews-wemedia.yml] & group[DEFAULT_GROUP]
+2023-08-20 00:01:42.952 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-leadnews-wemedia.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-leadnews-wemedia,DEFAULT_GROUP'}]
+2023-08-20 00:01:42.961 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-20 00:01:42.961 [main] INFO  c.l.wemedia.WeMediaApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-20 00:01:43.428 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=79f5c417-6fcf-36cc-aa3e-06d5a409cc56
+2023-08-20 00:01:43.592 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 52001 (http)
+2023-08-20 00:01:43.597 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-52001"]
+2023-08-20 00:01:43.597 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-20 00:01:43.598 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-08-20 00:01:43.645 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-20 00:01:43.645 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 675 ms
+2023-08-20 00:01:50.928 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-20 00:01:50.976 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-52001"]
+2023-08-20 00:01:50.985 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 52001 (http) with context path ''
+2023-08-20 00:01:50.988 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from ans.namespace attribute : null
+2023-08-20 00:01:50.989 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from ALIBABA_ALIWARE_NAMESPACE attribute :null
+2023-08-20 00:01:50.989 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from namespace attribute :null
+2023-08-20 00:01:50.993 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-08-20 00:01:50.994 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-08-20 00:01:50.996 [main] INFO  c.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of 049885a5-fa7d-4520-937b-b6b8d5e31c25
+2023-08-20 00:01:50.997 [main] INFO  c.alibaba.nacos.common.remote.client - [049885a5-fa7d-4520-937b-b6b8d5e31c25] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2023-08-20 00:01:50.997 [main] INFO  c.alibaba.nacos.common.remote.client - [049885a5-fa7d-4520-937b-b6b8d5e31c25] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2023-08-20 00:01:50.997 [main] INFO  c.alibaba.nacos.common.remote.client - [049885a5-fa7d-4520-937b-b6b8d5e31c25] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2023-08-20 00:01:50.997 [main] INFO  c.alibaba.nacos.common.remote.client - [049885a5-fa7d-4520-937b-b6b8d5e31c25] Try to connect to server on start up, server: {serverIp = '10.211.55.8', server main port = 8848}
+2023-08-20 00:01:50.997 [main] INFO  c.a.n.c.r.client.grpc.GrpcClient - grpc client connection server:10.211.55.8 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2023-08-20 00:01:51.116 [main] INFO  c.alibaba.nacos.common.remote.client - [049885a5-fa7d-4520-937b-b6b8d5e31c25] Success to connect to server [10.211.55.8:8848] on start up, connectionId = 1692460911124_10.211.55.2_61060
+2023-08-20 00:01:51.116 [main] INFO  c.alibaba.nacos.common.remote.client - [049885a5-fa7d-4520-937b-b6b8d5e31c25] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2023-08-20 00:01:51.117 [main] INFO  c.alibaba.nacos.common.remote.client - [049885a5-fa7d-4520-937b-b6b8d5e31c25] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$596/0x0000000801105fe8
+2023-08-20 00:01:51.117 [com.alibaba.nacos.client.remote.worker] INFO  c.alibaba.nacos.common.remote.client - [049885a5-fa7d-4520-937b-b6b8d5e31c25] Notify connected event to listeners.
+2023-08-20 00:01:51.117 [com.alibaba.nacos.client.remote.worker] INFO  com.alibaba.nacos.client.naming - Grpc connection connect
+2023-08-20 00:01:51.117 [main] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] 4e85b1a4-8d96-4c12-8631-7c0473ed1614 registering service leadnews-wemedia with instance Instance{instanceId='null', ip='192.168.10.4', port=52001, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=[2409:8a55:d91c:4f04:8f7:fd1f:c36e:20cc], preserved.register.source=SPRING_CLOUD}}
+2023-08-20 00:01:51.125 [main] INFO  c.a.c.n.r.NacosServiceRegistry - nacos registry, DEFAULT_GROUP leadnews-wemedia 192.168.10.4:52001 register finished
+2023-08-20 00:01:51.139 [main] INFO  c.l.wemedia.WeMediaApplication - Started WeMediaApplication in 9.249 seconds (process running for 9.549)
+2023-08-20 00:01:51.144 [main] INFO  c.a.n.client.config.impl.CacheData - nacos.cache.data.init.snapshot = true 
+2023-08-20 00:01:51.144 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [subscribe] leadnews-wemedia+DEFAULT_GROUP+4e85b1a4-8d96-4c12-8631-7c0473ed1614
+2023-08-20 00:01:51.148 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [add-listener] ok, tenant=4e85b1a4-8d96-4c12-8631-7c0473ed1614, dataId=leadnews-wemedia, group=DEFAULT_GROUP, cnt=1
+2023-08-20 00:01:51.148 [main] INFO  c.a.c.n.r.NacosContextRefresher - [Nacos Config] Listening config: dataId=leadnews-wemedia, group=DEFAULT_GROUP
+2023-08-20 00:01:51.149 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [subscribe] leadnews-wemedia.yml+DEFAULT_GROUP+4e85b1a4-8d96-4c12-8631-7c0473ed1614
+2023-08-20 00:01:51.149 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [add-listener] ok, tenant=4e85b1a4-8d96-4c12-8631-7c0473ed1614, dataId=leadnews-wemedia.yml, group=DEFAULT_GROUP, cnt=1
+2023-08-20 00:01:51.149 [main] INFO  c.a.c.n.r.NacosContextRefresher - [Nacos Config] Listening config: dataId=leadnews-wemedia.yml, group=DEFAULT_GROUP
+2023-08-20 00:01:51.152 [main] INFO  c.l.wemedia.WeMediaApplication - 
+----------------------------------------------------------
+	Application 'leadnews-wemedia' is running! Access URLs:
+	Local: 		http://localhost:52001
+	External: 	http://127.0.0.1:52001
+	Doc: 	http://127.0.0.1:52001/doc.html
+----------------------------------------------------------
+2023-08-20 00:01:51.432 [RMI TCP Connection(5)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-20 00:01:51.432 [RMI TCP Connection(5)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-20 00:01:51.433 [RMI TCP Connection(4)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-08-20 00:01:51.433 [RMI TCP Connection(5)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-08-20 00:01:51.569 [RMI TCP Connection(4)-127.0.0.1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4a7b7c04
+2023-08-20 00:01:51.574 [RMI TCP Connection(4)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-08-20 00:01:51.941 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-20 00:01:51.947 [http-nio-52001-exec-1] WARN  o.s.c.LocalVariableTableParameterNameDiscoverer - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.leadnews.wemedia.controller.v1.WmNewsController
+2023-08-20 00:01:52.002 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-20 00:01:52.020 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-20 00:01:52.055 [http-nio-52001-exec-2] WARN  c.b.m.c.t.support.ReflectLambdaMeta - Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @61df66b6
+2023-08-20 00:01:52.084 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-20 00:01:54.573 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-20 00:01:54.587 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-20 00:01:54.611 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-20 00:01:54.640 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-20 00:02:02.273 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-20 00:02:02.273 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-20 00:02:02.281 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-20 00:02:02.284 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-20 00:02:06.160 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-20 00:02:06.165 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-20 00:02:10.186 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-20 00:02:10.186 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-20 00:02:10.197 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-20 00:02:10.210 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-20 00:02:12.833 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-20 00:02:12.838 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-20 00:02:12.844 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-20 00:02:12.851 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-20 00:02:14.019 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-20 00:02:14.021 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-20 00:02:14.023 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-20 00:02:14.025 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-20 00:09:57.087 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2023-08-20 00:09:57.087 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2023-08-20 00:09:57.088 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2023-08-20 00:09:57.089 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2023-08-20 00:09:58.122 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+2023-08-20 00:09:58.122 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - [DEREGISTER-SERVICE] 4e85b1a4-8d96-4c12-8631-7c0473ed1614 deregistering service leadnews-wemedia with instance: Instance{instanceId='null', ip='192.168.10.4', port=52001, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+2023-08-20 00:09:58.131 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registration finished.
+2023-08-20 00:09:58.133 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown begin
+2023-08-20 00:09:58.133 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+2023-08-20 00:09:58.133 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+2023-08-20 00:09:58.133 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown stop
+2023-08-20 00:09:58.133 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown begin
+2023-08-20 00:09:58.133 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown begin
+2023-08-20 00:09:58.133 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown stop
+2023-08-20 00:09:58.133 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServerListManager do shutdown begin
+2023-08-20 00:09:58.133 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-08-20 00:09:58.133 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+2023-08-20 00:09:58.134 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServerListManager do shutdown stop
+2023-08-20 00:09:58.134 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown begin
+2023-08-20 00:09:58.134 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-08-20 00:09:58.134 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+2023-08-20 00:09:58.134 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown stop
+2023-08-20 00:09:58.134 [SpringApplicationShutdownHook] INFO  c.alibaba.nacos.common.remote.client - Shutdown rpc client, set status to shutdown
+2023-08-20 00:09:58.134 [SpringApplicationShutdownHook] INFO  c.alibaba.nacos.common.remote.client - Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@6b85c173[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+2023-08-20 00:09:58.134 [SpringApplicationShutdownHook] INFO  c.alibaba.nacos.common.remote.client - Close current connection 1692460911124_10.211.55.2_61060
+2023-08-20 00:09:58.138 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.client.grpc.GrpcClient - Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@5a1a845b[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 186]
+2023-08-20 00:09:58.138 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - Shutdown grpc redo service executor java.util.concurrent.ScheduledThreadPoolExecutor@45b188f[Running, pool size = 1, active threads = 0, queued tasks = 1, completed tasks = 162]
+2023-08-20 00:09:58.138 [SpringApplicationShutdownHook] INFO  c.a.n.c.a.r.i.CredentialWatcher - [null] CredentialWatcher is stopped
+2023-08-20 00:09:58.138 [SpringApplicationShutdownHook] INFO  c.a.n.c.a.r.i.CredentialService - [null] CredentialService is freed
+2023-08-20 00:09:58.138 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown stop
+2023-08-20 00:09:58.142 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-08-20 00:09:58.148 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-08-20 00:10:00.964 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-20 00:10:00.970 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-08-20 00:10:01.010 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-20 00:10:01.130 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-20 00:10:01.131 [main] INFO  c.a.nacos.client.utils.ParamUtil - [settings] [req-serv] nacos-server port:8848
+2023-08-20 00:10:01.131 [main] INFO  c.a.nacos.client.utils.ParamUtil - [settings] [http-client] connect timeout:1000
+2023-08-20 00:10:01.132 [main] INFO  c.a.nacos.client.utils.ParamUtil - PER_TASK_CONFIG_SIZE: 3000.0
+2023-08-20 00:10:01.148 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-08-20 00:10:01.148 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-08-20 00:10:01.165 [main] INFO  c.a.n.c.a.r.i.CredentialWatcher - null No credential found
+2023-08-20 00:10:01.214 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-20 00:10:01.222 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:/Users/lihaohui/nacos/config
+2023-08-20 00:10:01.225 [main] INFO  c.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of c5f737d4-e113-4d4d-938b-ffbcc30a5eba_config-0
+2023-08-20 00:10:01.234 [main] INFO  c.alibaba.nacos.common.remote.client - [c5f737d4-e113-4d4d-938b-ffbcc30a5eba_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$563/0x0000000800f67318
+2023-08-20 00:10:01.234 [main] INFO  c.alibaba.nacos.common.remote.client - [c5f737d4-e113-4d4d-938b-ffbcc30a5eba_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$564/0x0000000800f67748
+2023-08-20 00:10:01.235 [main] INFO  c.alibaba.nacos.common.remote.client - [c5f737d4-e113-4d4d-938b-ffbcc30a5eba_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2023-08-20 00:10:01.235 [main] INFO  c.alibaba.nacos.common.remote.client - [c5f737d4-e113-4d4d-938b-ffbcc30a5eba_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2023-08-20 00:10:01.238 [main] INFO  c.alibaba.nacos.common.remote.client - [c5f737d4-e113-4d4d-938b-ffbcc30a5eba_config-0] Try to connect to server on start up, server: {serverIp = '10.211.55.8', server main port = 8848}
+2023-08-20 00:10:01.255 [main] INFO  c.a.n.c.r.client.grpc.GrpcClient - grpc client connection server:10.211.55.8 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2023-08-20 00:10:01.685 [main] INFO  c.alibaba.nacos.common.remote.client - [c5f737d4-e113-4d4d-938b-ffbcc30a5eba_config-0] Success to connect to server [10.211.55.8:8848] on start up, connectionId = 1692461401656_10.211.55.2_61385
+2023-08-20 00:10:01.686 [com.alibaba.nacos.client.remote.worker] INFO  c.alibaba.nacos.common.remote.client - [c5f737d4-e113-4d4d-938b-ffbcc30a5eba_config-0] Notify connected event to listeners.
+2023-08-20 00:10:01.686 [main] INFO  c.alibaba.nacos.common.remote.client - [c5f737d4-e113-4d4d-938b-ffbcc30a5eba_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2023-08-20 00:10:01.686 [com.alibaba.nacos.client.remote.worker] INFO  c.a.n.c.config.impl.ClientWorker - [c5f737d4-e113-4d4d-938b-ffbcc30a5eba_config-0] Connected,notify listen context...
+2023-08-20 00:10:01.687 [main] INFO  c.alibaba.nacos.common.remote.client - [c5f737d4-e113-4d4d-938b-ffbcc30a5eba_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$596/0x00000008010e3618
+2023-08-20 00:10:01.719 [main] INFO  c.a.nacos.client.config.impl.Limiter - limitTime:5.0
+2023-08-20 00:10:01.733 [main] INFO  c.a.n.client.config.utils.JvmUtil - isMultiInstance:false
+2023-08-20 00:10:01.742 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[leadnews-wemedia.yml] & group[DEFAULT_GROUP]
+2023-08-20 00:10:01.743 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-leadnews-wemedia.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-leadnews-wemedia,DEFAULT_GROUP'}]
+2023-08-20 00:10:01.751 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-20 00:10:01.752 [main] INFO  c.l.wemedia.WeMediaApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-20 00:10:02.220 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=79f5c417-6fcf-36cc-aa3e-06d5a409cc56
+2023-08-20 00:10:02.383 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 52001 (http)
+2023-08-20 00:10:02.388 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-52001"]
+2023-08-20 00:10:02.389 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-20 00:10:02.389 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-08-20 00:10:02.439 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-20 00:10:02.439 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 679 ms
+2023-08-20 00:10:05.729 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-20 00:10:05.765 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-52001"]
+2023-08-20 00:10:05.771 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 52001 (http) with context path ''
+2023-08-20 00:10:05.773 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from ans.namespace attribute : null
+2023-08-20 00:10:05.773 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from ALIBABA_ALIWARE_NAMESPACE attribute :null
+2023-08-20 00:10:05.774 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from namespace attribute :null
+2023-08-20 00:10:05.777 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-08-20 00:10:05.777 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-08-20 00:10:05.779 [main] INFO  c.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of f5869fed-b4c9-401b-b5b5-478ab2eac0bb
+2023-08-20 00:10:05.779 [main] INFO  c.alibaba.nacos.common.remote.client - [f5869fed-b4c9-401b-b5b5-478ab2eac0bb] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2023-08-20 00:10:05.779 [main] INFO  c.alibaba.nacos.common.remote.client - [f5869fed-b4c9-401b-b5b5-478ab2eac0bb] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2023-08-20 00:10:05.780 [main] INFO  c.alibaba.nacos.common.remote.client - [f5869fed-b4c9-401b-b5b5-478ab2eac0bb] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2023-08-20 00:10:05.780 [main] INFO  c.alibaba.nacos.common.remote.client - [f5869fed-b4c9-401b-b5b5-478ab2eac0bb] Try to connect to server on start up, server: {serverIp = '10.211.55.8', server main port = 8848}
+2023-08-20 00:10:05.780 [main] INFO  c.a.n.c.r.client.grpc.GrpcClient - grpc client connection server:10.211.55.8 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2023-08-20 00:10:05.898 [main] INFO  c.alibaba.nacos.common.remote.client - [f5869fed-b4c9-401b-b5b5-478ab2eac0bb] Success to connect to server [10.211.55.8:8848] on start up, connectionId = 1692461405902_10.211.55.2_61389
+2023-08-20 00:10:05.898 [main] INFO  c.alibaba.nacos.common.remote.client - [f5869fed-b4c9-401b-b5b5-478ab2eac0bb] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2023-08-20 00:10:05.898 [com.alibaba.nacos.client.remote.worker] INFO  c.alibaba.nacos.common.remote.client - [f5869fed-b4c9-401b-b5b5-478ab2eac0bb] Notify connected event to listeners.
+2023-08-20 00:10:05.898 [main] INFO  c.alibaba.nacos.common.remote.client - [f5869fed-b4c9-401b-b5b5-478ab2eac0bb] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$596/0x00000008010e3618
+2023-08-20 00:10:05.899 [com.alibaba.nacos.client.remote.worker] INFO  com.alibaba.nacos.client.naming - Grpc connection connect
+2023-08-20 00:10:05.900 [main] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] 4e85b1a4-8d96-4c12-8631-7c0473ed1614 registering service leadnews-wemedia with instance Instance{instanceId='null', ip='192.168.10.4', port=52001, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=[2409:8a55:d91c:4f04:8f7:fd1f:c36e:20cc], preserved.register.source=SPRING_CLOUD}}
+2023-08-20 00:10:05.911 [main] INFO  c.a.c.n.r.NacosServiceRegistry - nacos registry, DEFAULT_GROUP leadnews-wemedia 192.168.10.4:52001 register finished
+2023-08-20 00:10:05.932 [main] INFO  c.l.wemedia.WeMediaApplication - Started WeMediaApplication in 5.205 seconds (process running for 5.6)
+2023-08-20 00:10:05.938 [main] INFO  c.a.n.client.config.impl.CacheData - nacos.cache.data.init.snapshot = true 
+2023-08-20 00:10:05.939 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [subscribe] leadnews-wemedia+DEFAULT_GROUP+4e85b1a4-8d96-4c12-8631-7c0473ed1614
+2023-08-20 00:10:05.944 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [add-listener] ok, tenant=4e85b1a4-8d96-4c12-8631-7c0473ed1614, dataId=leadnews-wemedia, group=DEFAULT_GROUP, cnt=1
+2023-08-20 00:10:05.944 [main] INFO  c.a.c.n.r.NacosContextRefresher - [Nacos Config] Listening config: dataId=leadnews-wemedia, group=DEFAULT_GROUP
+2023-08-20 00:10:05.944 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [subscribe] leadnews-wemedia.yml+DEFAULT_GROUP+4e85b1a4-8d96-4c12-8631-7c0473ed1614
+2023-08-20 00:10:05.944 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [add-listener] ok, tenant=4e85b1a4-8d96-4c12-8631-7c0473ed1614, dataId=leadnews-wemedia.yml, group=DEFAULT_GROUP, cnt=1
+2023-08-20 00:10:05.944 [main] INFO  c.a.c.n.r.NacosContextRefresher - [Nacos Config] Listening config: dataId=leadnews-wemedia.yml, group=DEFAULT_GROUP
+2023-08-20 00:10:05.946 [main] INFO  c.l.wemedia.WeMediaApplication - 
+----------------------------------------------------------
+	Application 'leadnews-wemedia' is running! Access URLs:
+	Local: 		http://localhost:52001
+	External: 	http://192.168.10.4:52001
+	Doc: 	http://192.168.10.4:52001/doc.html
+----------------------------------------------------------
+2023-08-20 00:10:06.109 [RMI TCP Connection(1)-192.168.10.4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-20 00:10:06.109 [RMI TCP Connection(1)-192.168.10.4] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-20 00:10:06.109 [RMI TCP Connection(2)-192.168.10.4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-08-20 00:10:06.111 [RMI TCP Connection(1)-192.168.10.4] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2023-08-20 00:10:06.248 [RMI TCP Connection(2)-192.168.10.4] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@73b36d13
+2023-08-20 00:10:06.252 [RMI TCP Connection(2)-192.168.10.4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-08-20 00:10:09.653 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-20 00:10:09.720 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-20 00:10:09.745 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-20 00:10:09.755 [http-nio-52001-exec-2] WARN  c.b.m.c.t.support.ReflectLambdaMeta - Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @61df66b6
+2023-08-20 00:10:09.783 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-20 00:10:12.502 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-20 00:10:12.527 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-20 00:10:12.545 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-20 00:10:12.570 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-20 00:10:13.630 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-20 00:10:13.651 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-20 00:10:13.670 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-20 00:10:13.695 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-20 00:10:15.322 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-20 00:10:15.341 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-20 00:10:15.356 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-20 00:10:15.381 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-20 00:11:07.227 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2023-08-20 00:11:07.227 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2023-08-20 00:11:07.228 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2023-08-20 00:11:07.229 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2023-08-20 00:11:08.251 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+2023-08-20 00:11:08.251 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - [DEREGISTER-SERVICE] 4e85b1a4-8d96-4c12-8631-7c0473ed1614 deregistering service leadnews-wemedia with instance: Instance{instanceId='null', ip='192.168.10.4', port=52001, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+2023-08-20 00:11:08.256 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registration finished.
+2023-08-20 00:11:08.257 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown begin
+2023-08-20 00:11:08.257 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+2023-08-20 00:11:08.258 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+2023-08-20 00:11:08.258 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown stop
+2023-08-20 00:11:08.258 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown begin
+2023-08-20 00:11:08.258 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown begin
+2023-08-20 00:11:08.258 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown stop
+2023-08-20 00:11:08.258 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServerListManager do shutdown begin
+2023-08-20 00:11:08.258 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-08-20 00:11:08.258 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+2023-08-20 00:11:08.258 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServerListManager do shutdown stop
+2023-08-20 00:11:08.258 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown begin
+2023-08-20 00:11:08.258 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-08-20 00:11:08.258 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+2023-08-20 00:11:08.258 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown stop
+2023-08-20 00:11:08.258 [SpringApplicationShutdownHook] INFO  c.alibaba.nacos.common.remote.client - Shutdown rpc client, set status to shutdown
+2023-08-20 00:11:08.259 [SpringApplicationShutdownHook] INFO  c.alibaba.nacos.common.remote.client - Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@5e2090f5[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+2023-08-20 00:11:08.259 [SpringApplicationShutdownHook] INFO  c.alibaba.nacos.common.remote.client - Close current connection 1692461405902_10.211.55.2_61389
+2023-08-20 00:11:08.261 [nacos-grpc-client-executor-10.211.55.8-37] WARN  c.a.n.c.r.client.grpc.GrpcClient - [1692461405902_10.211.55.2_61389]Ignore error event,isRunning:false,isAbandon=false
+2023-08-20 00:11:08.263 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.client.grpc.GrpcClient - Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@2debc1b2[Running, pool size = 8, active threads = 0, queued tasks = 0, completed tasks = 38]
+2023-08-20 00:11:08.263 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - Shutdown grpc redo service executor java.util.concurrent.ScheduledThreadPoolExecutor@2a46b30a[Running, pool size = 1, active threads = 0, queued tasks = 1, completed tasks = 20]
+2023-08-20 00:11:08.263 [SpringApplicationShutdownHook] INFO  c.a.n.c.a.r.i.CredentialWatcher - [null] CredentialWatcher is stopped
+2023-08-20 00:11:08.264 [SpringApplicationShutdownHook] INFO  c.a.n.c.a.r.i.CredentialService - [null] CredentialService is freed
+2023-08-20 00:11:08.264 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown stop
+2023-08-20 00:11:08.267 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-08-20 00:11:08.274 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

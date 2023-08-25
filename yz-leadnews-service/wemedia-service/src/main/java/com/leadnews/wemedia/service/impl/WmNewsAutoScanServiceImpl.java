@@ -23,10 +23,6 @@ import com.leadnews.wemedia.service.WmNewsAutoScanService;
 import jakarta.annotation.Resource;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.BeanUtils;
-<<<<<<< HEAD
-import org.springframework.beans.factory.annotation.Autowired;
-=======
->>>>>>> origin/main
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -48,12 +44,8 @@ public class WmNewsAutoScanServiceImpl implements WmNewsAutoScanService {
 
     private final WmUserMapper wmUserMapper;
 
-<<<<<<< HEAD
     @Resource
     private IArticleClient articleClient;
-=======
-    private final IArticleClient articleClient;
->>>>>>> origin/main
 
     @Override
     @Transactional(rollbackFor = Exception.class)
@@ -67,11 +59,7 @@ public class WmNewsAutoScanServiceImpl implements WmNewsAutoScanService {
         // 如果订单状态是提交
         if (wmNews.getStatus().equals(WmNewsStatus.SUMMIT)) {
             // 从内容中提取纯文本内容和图片
-<<<<<<< HEAD
             // Map<String, Object> textAndImages = handleTextAndImages(wmNews);
-=======
-            Map<String, Object> textAndImages = handleTextAndImages(wmNews);
->>>>>>> origin/main
 
             //2.审核文本内容  阿里云接口
             // 由于阿里云需要企业认证 所以直接通过
