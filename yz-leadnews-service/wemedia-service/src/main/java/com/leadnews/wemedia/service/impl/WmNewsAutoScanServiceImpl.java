@@ -7,6 +7,7 @@ import com.alibaba.nacos.api.naming.pojo.healthcheck.impl.Http;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.leadnews.apis.article.IArticleClient;
 import com.leadnews.common.wemedia.WmNewsStatus;
+import com.leadnews.minio.service.FileStorageService;
 import com.leadnews.model.article.dtos.ArticleDTO;
 import com.leadnews.model.common.dtos.ResponseResult;
 import com.leadnews.model.common.enums.AppHttpCodeEnum;
@@ -14,6 +15,7 @@ import com.leadnews.model.wemedia.pojos.WmChannel;
 import com.leadnews.model.wemedia.pojos.WmNews;
 import com.leadnews.model.wemedia.pojos.WmSensitive;
 import com.leadnews.model.wemedia.pojos.WmUser;
+import com.leadnews.tess4j.config.Tess4jClient;
 import com.leadnews.utils.common.SensitiveWordUtil;
 import com.leadnews.wemedia.mapper.WmChannelMapper;
 import com.leadnews.wemedia.mapper.WmNewsMapper;
@@ -23,11 +25,16 @@ import com.leadnews.wemedia.service.WmChannelService;
 import com.leadnews.wemedia.service.WmNewsAutoScanService;
 import jakarta.annotation.Resource;
 import lombok.RequiredArgsConstructor;
+import net.sourceforge.tess4j.TesseractException;
 import org.springframework.beans.BeanUtils;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -46,6 +53,10 @@ public class WmNewsAutoScanServiceImpl implements WmNewsAutoScanService {
     private final WmUserMapper wmUserMapper;
 
     private final WmSensitiveMapper wmSensitiveMapper;
+
+    private final Tess4jClient tess4jClient;
+
+    private final FileStorageService fileStorageService;
 
     @Resource
     private IArticleClient articleClient;
@@ -78,6 +89,12 @@ public class WmNewsAutoScanServiceImpl implements WmNewsAutoScanService {
                 return;
             }
 
+            // 本地orc实现图片敏感词校验
+            boolean isImageScan = processTess4jScan((List<String>) textAndImages.get("images"), wmNews);
+            if (!isImageScan) {
+                return;
+            }
+
             //4.审核成功，保存app端的相关的文章数据
             ResponseResult responseResult = saveAppArticle(wmNews);
             if (!responseResult.getCode().equals(AppHttpCodeEnum.SUCCESS.getCode())) {
@@ -89,6 +106,35 @@ public class WmNewsAutoScanServiceImpl implements WmNewsAutoScanService {
             updateWmNews(wmNews, WmNewsStatus.PUBLISH, "审核成功");
         }
     }
+
+    private boolean processTess4jScan(List<String> images, WmNews wmNews) {
+        //图片去重
+        images = images.stream().distinct().collect(Collectors.toList());
+
+        for (String image : images) {
+            try {
+                // 下载图片
+                byte[] bytes = fileStorageService.downLoadFile(image);
+
+                //从byte[]转换为butteredImage
+                ByteArrayInputStream in = new ByteArrayInputStream(bytes);
+                BufferedImage imageFile = ImageIO.read(in);
+                //识别图片的文字
+                String result = tess4jClient.doOCR(imageFile);
+
+                //审核是否包含自管理的敏感词
+                return handleSensitiveScan(result, wmNews);
+
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        }
+
+
+        return false;
+    }
+
+
 
     private void updateWmNews(WmNews wmNews, Integer status, String reason) {
         wmNews.setStatus(status);
