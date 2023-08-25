@@ -9,7 +9,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.ruirui</groupId>
+    <groupId>com.leadnews</groupId>
     <artifactId>tess4j-spring-boot-starter</artifactId>
 
     <properties>
