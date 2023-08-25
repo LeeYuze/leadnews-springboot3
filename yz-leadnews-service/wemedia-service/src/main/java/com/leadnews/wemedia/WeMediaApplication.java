@@ -6,7 +6,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.core.env.ConfigurableEnvironment;
+import org.springframework.scheduling.annotation.EnableAsync;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
@@ -18,6 +20,8 @@ import java.net.UnknownHostException;
 @MapperScan("com.leadnews.wemedia.mapper")
 @SpringBootApplication
 @RefreshScope
+@EnableAsync
+@EnableFeignClients("com.leadnews.apis")
 public class WeMediaApplication {
     private static final Logger logger = LoggerFactory.getLogger(WeMediaApplication.class);
 

@@ -25,7 +25,7 @@ public class WmNews implements Serializable {
      * 自媒体用户ID
      */
     @TableField(value = "user_id")
-    private Object userId;
+    private Long userId;
 
     /**
      * 标题
@@ -52,7 +52,7 @@ public class WmNews implements Serializable {
      * 图文频道ID
      */
     @TableField(value = "channel_id")
-    private Object channelId;
+    private Long channelId;
 
     /**
      * 

@@ -14,10 +14,19 @@ import lombok.Data;
 @TableName(value ="ap_article_config")
 @Data
 public class ApArticleConfig implements Serializable {
+
+    public ApArticleConfig(Long articleId){
+        this.articleId = articleId;
+        this.isComment = true;
+        this.isForward = true;
+        this.isDelete = false;
+        this.isDown = false;
+    }
+
     /**
      * 主键
      */
-    @TableId(value = "id", type = IdType.AUTO)
+    @TableId(value = "id", type = IdType.ASSIGN_ID)
     private Long id;
 
     /**
@@ -30,25 +39,25 @@ public class ApArticleConfig implements Serializable {
      * 是否可评论
      */
     @TableField(value = "is_comment")
-    private Integer isComment;
+    private Boolean isComment;
 
     /**
      * 是否转发
      */
     @TableField(value = "is_forward")
-    private Integer isForward;
+    private Boolean isForward;
 
     /**
      * 是否下架
      */
     @TableField(value = "is_down")
-    private Integer isDown;
+    private Boolean isDown;
 
     /**
      * 是否已删除
      */
     @TableField(value = "is_delete")
-    private Integer isDelete;
+    private Boolean isDelete;
 
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;

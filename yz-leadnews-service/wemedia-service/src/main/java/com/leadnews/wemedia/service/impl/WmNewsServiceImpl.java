@@ -23,6 +23,7 @@ import com.leadnews.model.wemedia.pojos.WmUser;
 import com.leadnews.wemedia.mapper.WmMaterialMapper;
 import com.leadnews.wemedia.mapper.WmNewsMapper;
 import com.leadnews.wemedia.mapper.WmNewsMaterialMapper;
+import com.leadnews.wemedia.service.WmNewsAutoScanService;
 import com.leadnews.wemedia.service.WmNewsService;
 import com.leadnews.wemedia.utils.thread.WmUserLocalUtil;
 import lombok.RequiredArgsConstructor;
@@ -49,6 +50,8 @@ public class WmNewsServiceImpl extends ServiceImpl<WmNewsMapper, WmNews>
     private final WmNewsMaterialMapper wmNewsMaterialMapper;
 
     private final WmMaterialMapper wmMaterialMapper;
+
+    private final WmNewsAutoScanService wmNewsAutoScanService;
 
     @Override
     public ResponseResult findAll(WmNewsPageReqDTO dto) {
@@ -147,6 +150,10 @@ public class WmNewsServiceImpl extends ServiceImpl<WmNewsMapper, WmNews>
 
         //4.不是草稿，保存文章封面图片与素材的关系，如果当前布局是自动，需要匹配封面图片
         saveRelativeInfoForCover(dto, wmNews, materials);
+
+
+        //审核文章
+        wmNewsAutoScanService.autoScanWmNews(wmNews.getId());
 
         return ResponseResult.okResult();
     }

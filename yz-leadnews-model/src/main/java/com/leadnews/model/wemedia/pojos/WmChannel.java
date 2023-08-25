@@ -19,7 +19,7 @@ public class WmChannel implements Serializable {
      * 
      */
     @TableId(value = "id", type = IdType.AUTO)
-    private Object id;
+    private Long id;
 
     /**
      * 频道名称
