@@ -16,6 +16,7 @@
         <module>yz-leadnews-gateways</module>
         <module>yz-leadnews-common</module>
         <module>yz-leadnews-test</module>
+        <module>yz-leadnews-feign-api</module>
     </modules>
     <properties>
         <java.version>17</java.version>
@@ -44,6 +45,12 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.fsjust.boot</groupId>
+                <artifactId>yz-leadnews-feign-api</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+
             <dependency>
                 <groupId>com.leadnews</groupId>
                 <artifactId>yz-leadnews-common</artifactId>

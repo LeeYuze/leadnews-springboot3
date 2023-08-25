@@ -4,12 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.heima</groupId>
-        <artifactId>yz-leadnews-service</artifactId>
+        <groupId>com.leadnews</groupId>
+        <artifactId>yz-leadnews</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>wemedia-service</artifactId>
+    <groupId>com.fsjust.boot</groupId>
+    <artifactId>yz-leadnews-feign-api</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -18,10 +19,24 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>com.leadnews</groupId>
+            <artifactId>yz-leadnews-model</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>com.leadnews</groupId>
-            <artifactId>file-spring-boot-starter</artifactId>
+            <artifactId>yz-leadnews-common</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-loadbalancer</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
     </dependencies>
 

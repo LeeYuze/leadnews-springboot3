@@ -1,6 +1,7 @@
 package com.leadnews.article.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.leadnews.model.article.dtos.ArticleDTO;
 import com.leadnews.model.article.dtos.ArticleHomeDTO;
 import com.leadnews.model.article.pojos.ApArticle;
 import com.leadnews.model.common.dtos.ResponseResult;
@@ -18,5 +19,10 @@ public interface ApArticleService extends IService<ApArticle> {
      */
     ResponseResult load(Integer loadtype, ArticleHomeDTO dto);
 
-
+    /**
+     * 保存app端相关文章
+     * @param dto
+     * @return
+     */
+    ResponseResult saveArticle(ArticleDTO dto) ;
 }
