@@ -16,6 +16,11 @@ public class WmNewsStatus {
     public static final Integer SUMMIT = 1;
 
     /**
+     * 审核失败
+     */
+    public static final Integer AUTH_FAIL = 2;
+
+    /**
      * 审核通过
      */
     public static final Integer AUTHED = 8;

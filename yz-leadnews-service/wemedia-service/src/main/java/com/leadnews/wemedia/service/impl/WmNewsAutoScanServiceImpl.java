@@ -14,6 +14,7 @@ import com.leadnews.model.wemedia.pojos.WmChannel;
 import com.leadnews.model.wemedia.pojos.WmNews;
 import com.leadnews.model.wemedia.pojos.WmSensitive;
 import com.leadnews.model.wemedia.pojos.WmUser;
+import com.leadnews.utils.common.SensitiveWordUtil;
 import com.leadnews.wemedia.mapper.WmChannelMapper;
 import com.leadnews.wemedia.mapper.WmNewsMapper;
 import com.leadnews.wemedia.mapper.WmSensitiveMapper;
@@ -44,6 +45,8 @@ public class WmNewsAutoScanServiceImpl implements WmNewsAutoScanService {
 
     private final WmUserMapper wmUserMapper;
 
+    private final WmSensitiveMapper wmSensitiveMapper;
+
     @Resource
     private IArticleClient articleClient;
 
@@ -58,14 +61,22 @@ public class WmNewsAutoScanServiceImpl implements WmNewsAutoScanService {
 
         // 如果订单状态是提交
         if (wmNews.getStatus().equals(WmNewsStatus.SUMMIT)) {
+
             // 从内容中提取纯文本内容和图片
-            // Map<String, Object> textAndImages = handleTextAndImages(wmNews);
+            Map<String, Object> textAndImages = handleTextAndImages(wmNews);
 
             //2.审核文本内容  阿里云接口
             // 由于阿里云需要企业认证 所以直接通过
 
             //3.审核图片  阿里云接口
             // 由于阿里云需要企业认证 所以直接通过
+
+
+            //自管理的敏感词过滤
+            boolean isSensitive = handleSensitiveScan((String) textAndImages.get("content"), wmNews);
+            if (!isSensitive) {
+                return;
+            }
 
             //4.审核成功，保存app端的相关的文章数据
             ResponseResult responseResult = saveAppArticle(wmNews);
@@ -119,6 +130,34 @@ public class WmNewsAutoScanServiceImpl implements WmNewsAutoScanService {
         ResponseResult responseResult = articleClient.saveArticle(dto);
         return responseResult;
 
+    }
+
+    /**
+     * 自管理的敏感词审核
+     *
+     * @param content
+     * @param wmNews
+     * @return
+     */
+    private boolean handleSensitiveScan(String content, WmNews wmNews) {
+
+        boolean flag = true;
+
+        //获取所有的敏感词
+        List<WmSensitive> wmSensitives = wmSensitiveMapper.selectList(Wrappers.<WmSensitive>lambdaQuery().select(WmSensitive::getSensitives));
+        List<String> sensitiveList = wmSensitives.stream().map(WmSensitive::getSensitives).collect(Collectors.toList());
+
+        //初始化敏感词库
+        SensitiveWordUtil.initMap(sensitiveList);
+
+        //查看文章中是否包含敏感词
+        Map<String, Integer> map = SensitiveWordUtil.matchWords(content);
+        if (!map.isEmpty()) {
+            updateWmNews(wmNews, WmNewsStatus.AUTH_FAIL, "当前文章中存在违规内容" + map);
+            flag = false;
+        }
+
+        return flag;
     }
 
     /**
