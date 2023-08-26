@@ -9,6 +9,7 @@ import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.core.env.ConfigurableEnvironment;
 import org.springframework.scheduling.annotation.EnableAsync;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
@@ -22,6 +23,7 @@ import java.net.UnknownHostException;
 @RefreshScope
 @EnableAsync
 @EnableFeignClients("com.leadnews.apis")
+@EnableScheduling
 public class WeMediaApplication {
     private static final Logger logger = LoggerFactory.getLogger(WeMediaApplication.class);
 

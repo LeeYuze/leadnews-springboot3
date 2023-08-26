@@ -25,6 +25,7 @@ import com.leadnews.wemedia.mapper.WmNewsMapper;
 import com.leadnews.wemedia.mapper.WmNewsMaterialMapper;
 import com.leadnews.wemedia.service.WmNewsAutoScanService;
 import com.leadnews.wemedia.service.WmNewsService;
+import com.leadnews.wemedia.service.WmNewsTaskService;
 import com.leadnews.wemedia.utils.thread.WmUserLocalUtil;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.BeanUtils;
@@ -51,7 +52,7 @@ public class WmNewsServiceImpl extends ServiceImpl<WmNewsMapper, WmNews>
 
     private final WmMaterialMapper wmMaterialMapper;
 
-    private final WmNewsAutoScanService wmNewsAutoScanService;
+    private final WmNewsTaskService wmNewsTaskService;
 
     @Override
     public ResponseResult findAll(WmNewsPageReqDTO dto) {
@@ -153,7 +154,8 @@ public class WmNewsServiceImpl extends ServiceImpl<WmNewsMapper, WmNews>
 
 
         //审核文章
-        wmNewsAutoScanService.autoScanWmNews(wmNews.getId());
+//        wmNewsAutoScanService.autoScanWmNews(wmNews.getId());
+        wmNewsTaskService.addNewsToTask(wmNews.getId(), wmNews.getPublishTime());
 
         return ResponseResult.okResult();
     }
@@ -171,7 +173,7 @@ public class WmNewsServiceImpl extends ServiceImpl<WmNewsMapper, WmNews>
 
     @Override
     public void deleteById(Long id) {
-        if(id == null) {
+        if (id == null) {
             throw new CustomException(AppHttpCodeEnum.PARAM_INVALID);
         }
 

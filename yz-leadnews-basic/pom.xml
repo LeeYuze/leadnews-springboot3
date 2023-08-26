@@ -12,10 +12,10 @@
     <artifactId>yz-leadnews-basic</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>knife4j-spring-boot-starter</module>
-        <module>file-spring-boot-starter</module>
-        <module>execption-spring-boot-starter</module>
-        <module>tess4j-spring-boot-starter</module>
+        <module>spring-boot-starter-knife4j</module>
+        <module>spring-boot-starter-file</module>
+        <module>spring-boot-starter-execption</module>
+        <module>spring-boot-starter-tess4j</module>
     </modules>
 
     <properties>

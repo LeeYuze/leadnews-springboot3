@@ -20,13 +20,13 @@
     <dependencies>
 
         <dependency>
-            <groupId>com.ruirui</groupId>
-            <artifactId>tess4j-spring-boot-starter</artifactId>
+            <groupId>com.leadnews</groupId>
+            <artifactId>spring-boot-starter-tess4j</artifactId>
         </dependency>
 
         <dependency>
             <groupId>com.leadnews</groupId>
-            <artifactId>file-spring-boot-starter</artifactId>
+            <artifactId>spring-boot-starter-file</artifactId>
         </dependency>
     </dependencies>
 

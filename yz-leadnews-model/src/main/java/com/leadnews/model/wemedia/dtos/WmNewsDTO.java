@@ -19,7 +19,7 @@ public class WmNewsDTO {
     /**
      * 频道id
      */
-    private Integer channelId;
+    private Long channelId;
     /**
      * 标签
      */

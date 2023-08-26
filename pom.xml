@@ -17,6 +17,7 @@
         <module>yz-leadnews-common</module>
         <module>yz-leadnews-test</module>
         <module>yz-leadnews-feign-api</module>
+        <module>yz-leadnews-schedule</module>
     </modules>
     <properties>
         <java.version>17</java.version>
@@ -47,8 +48,20 @@
         <dependencies>
 
             <dependency>
-                <groupId>com.ruirui</groupId>
-                <artifactId>tess4j-spring-boot-starter</artifactId>
+                <groupId>io.protostuff</groupId>
+                <artifactId>protostuff-core</artifactId>
+                <version>1.6.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.protostuff</groupId>
+                <artifactId>protostuff-runtime</artifactId>
+                <version>1.6.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.leadnews</groupId>
+                <artifactId>spring-boot-starter-tess4j</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
 
@@ -84,7 +97,7 @@
 
             <dependency>
                 <groupId>com.leadnews</groupId>
-                <artifactId>file-spring-boot-starter</artifactId>
+                <artifactId>spring-boot-starter-file</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
 

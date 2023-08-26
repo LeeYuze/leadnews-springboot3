@@ -131,7 +131,7 @@ public class WmNewsAutoScanServiceImpl implements WmNewsAutoScanService {
         }
 
 
-        return false;
+        return true;
     }
 
 
