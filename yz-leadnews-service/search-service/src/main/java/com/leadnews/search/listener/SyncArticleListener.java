@@ -3,6 +3,7 @@ package com.leadnews.search.listener;
 import co.elastic.clients.elasticsearch.ElasticsearchClient;
 import co.elastic.clients.elasticsearch.core.IndexRequest;
 import com.alibaba.fastjson2.JSON;
+import com.leadnews.common.elasticsearch.EsConstants;
 import com.leadnews.common.message.MqConstants;
 import com.leadnews.model.search.vos.SearchArticleVO;
 import lombok.RequiredArgsConstructor;
@@ -33,7 +34,7 @@ public class SyncArticleListener {
         IndexRequest.Builder<Object> indexRequestBuilder = new IndexRequest.Builder<>();
 
         IndexRequest<Object> indexRequest = indexRequestBuilder
-                .index("app_info_article")
+                .index(EsConstants.APP_ARTICLE_INFO_INDEX)
                 .id(searchArticleVO.getId().toString())
                 .document(searchArticleVO)
                 .build();

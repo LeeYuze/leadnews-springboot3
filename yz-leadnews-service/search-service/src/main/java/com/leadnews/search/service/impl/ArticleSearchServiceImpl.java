@@ -9,6 +9,7 @@ import co.elastic.clients.elasticsearch.core.SearchRequest;
 import co.elastic.clients.elasticsearch.core.SearchResponse;
 import co.elastic.clients.elasticsearch.core.search.Hit;
 import co.elastic.clients.json.JsonData;
+import com.leadnews.common.elasticsearch.EsConstants;
 import com.leadnews.model.common.dtos.ResponseResult;
 import com.leadnews.model.common.enums.AppHttpCodeEnum;
 import com.leadnews.model.search.dtos.UserSearchDTO;
@@ -77,7 +78,9 @@ public class ArticleSearchServiceImpl implements ArticleSearchService {
                 .fields("title", f -> f)
         );
 
-        SearchRequest searchRequest = searchBuilder.build();
+        SearchRequest searchRequest = searchBuilder
+                .index(EsConstants.APP_ARTICLE_INFO_INDEX)
+                .build();
 
         List<Map> list = new ArrayList<>();
 
