@@ -16,6 +16,7 @@
         <module>spring-boot-starter-file</module>
         <module>spring-boot-starter-execption</module>
         <module>spring-boot-starter-tess4j</module>
+        <module>spring-boot-starter-elasticsearch</module>
     </modules>
 
     <properties>
