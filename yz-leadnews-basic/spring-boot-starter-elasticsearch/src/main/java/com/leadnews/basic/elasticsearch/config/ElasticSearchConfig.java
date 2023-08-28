@@ -4,6 +4,7 @@ import co.elastic.clients.elasticsearch.ElasticsearchClient;
 import co.elastic.clients.json.jackson.JacksonJsonpMapper;
 import co.elastic.clients.transport.ElasticsearchTransport;
 import co.elastic.clients.transport.rest_client.RestClientTransport;
+import lombok.Data;
 import org.apache.http.HttpHost;
 import org.apache.http.auth.AuthScope;
 import org.apache.http.auth.UsernamePasswordCredentials;
@@ -24,7 +25,8 @@ import org.springframework.context.annotation.Configuration;
  * @date 2023/5/27
  */
 @Configuration(proxyBeanMethods = false)
-@ConfigurationProperties("spring.es")
+@ConfigurationProperties(prefix = "spring.es")
+@Data
 public class ElasticSearchConfig {
     private static final Logger logger = LoggerFactory.getLogger(ElasticSearchConfig.class);
 
@@ -32,7 +34,7 @@ public class ElasticSearchConfig {
 
     private String password;
 
-    private String hostname;
+    private String host;
 
     private Integer port;
 
@@ -46,9 +48,9 @@ public class ElasticSearchConfig {
         // 通过builder创建rest client，配置http client的HttpClientConfigCallback。
         // 单击所创建的Elasticsearch实例ID，在基本信息页面获取公网地址，即为ES集群地址。
 
-        logger.info("connect hostname:{}, port:{}", hostname, port);
+        logger.info("connect hostname:{}, port:{}", host, port);
 
-        RestClient restClient = RestClient.builder(new HttpHost(hostname, port, "http"))
+        RestClient restClient = RestClient.builder(new HttpHost(host, port, "http"))
                 .setHttpClientConfigCallback(new RestClientBuilder.HttpClientConfigCallback() {
                     @Override
                     public HttpAsyncClientBuilder customizeHttpClient(HttpAsyncClientBuilder httpClientBuilder) {

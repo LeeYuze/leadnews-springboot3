@@ -1,0 +1,1140 @@
+2023-08-29 03:36:49.666 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.leadnews.article.test.SearchTest]: SearchTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-08-29 03:36:49.717 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.leadnews.article.ArticleApplication for test class com.leadnews.article.test.SearchTest
+2023-08-29 03:36:49.974 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 03:36:49.979 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-08-29 03:36:50.000 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 03:36:50.104 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 03:36:50.105 [main] INFO  c.a.nacos.client.utils.ParamUtil - [settings] [req-serv] nacos-server port:8848
+2023-08-29 03:36:50.106 [main] INFO  c.a.nacos.client.utils.ParamUtil - [settings] [http-client] connect timeout:1000
+2023-08-29 03:36:50.106 [main] INFO  c.a.nacos.client.utils.ParamUtil - PER_TASK_CONFIG_SIZE: 3000.0
+2023-08-29 03:36:50.131 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-08-29 03:36:50.131 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-08-29 03:36:50.158 [main] INFO  c.a.n.c.a.r.i.CredentialWatcher - null No credential found
+2023-08-29 03:36:50.219 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 03:36:50.229 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:/Users/lihaohui/nacos/config
+2023-08-29 03:36:50.233 [main] INFO  c.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of f548cf89-dcd3-4d18-8773-57aeccfcba64_config-0
+2023-08-29 03:36:50.249 [main] INFO  c.alibaba.nacos.common.remote.client - [f548cf89-dcd3-4d18-8773-57aeccfcba64_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$860/0x0000000800fce568
+2023-08-29 03:36:50.249 [main] INFO  c.alibaba.nacos.common.remote.client - [f548cf89-dcd3-4d18-8773-57aeccfcba64_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$861/0x0000000800fce998
+2023-08-29 03:36:50.249 [main] INFO  c.alibaba.nacos.common.remote.client - [f548cf89-dcd3-4d18-8773-57aeccfcba64_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2023-08-29 03:36:50.250 [main] INFO  c.alibaba.nacos.common.remote.client - [f548cf89-dcd3-4d18-8773-57aeccfcba64_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2023-08-29 03:36:50.258 [main] INFO  c.alibaba.nacos.common.remote.client - [f548cf89-dcd3-4d18-8773-57aeccfcba64_config-0] Try to connect to server on start up, server: {serverIp = '10.211.55.8', server main port = 8848}
+2023-08-29 03:36:50.278 [main] INFO  c.a.n.c.r.client.grpc.GrpcClient - grpc client connection server:10.211.55.8 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2023-08-29 03:36:50.740 [main] INFO  c.alibaba.nacos.common.remote.client - [f548cf89-dcd3-4d18-8773-57aeccfcba64_config-0] Success to connect to server [10.211.55.8:8848] on start up, connectionId = 1693234235193_10.211.55.2_50760
+2023-08-29 03:36:50.740 [com.alibaba.nacos.client.remote.worker] INFO  c.alibaba.nacos.common.remote.client - [f548cf89-dcd3-4d18-8773-57aeccfcba64_config-0] Notify connected event to listeners.
+2023-08-29 03:36:50.740 [com.alibaba.nacos.client.remote.worker] INFO  c.a.n.c.config.impl.ClientWorker - [f548cf89-dcd3-4d18-8773-57aeccfcba64_config-0] Connected,notify listen context...
+2023-08-29 03:36:50.740 [main] INFO  c.alibaba.nacos.common.remote.client - [f548cf89-dcd3-4d18-8773-57aeccfcba64_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2023-08-29 03:36:50.741 [main] INFO  c.alibaba.nacos.common.remote.client - [f548cf89-dcd3-4d18-8773-57aeccfcba64_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$881/0x00000008011216d8
+2023-08-29 03:36:50.762 [main] INFO  c.a.nacos.client.config.impl.Limiter - limitTime:5.0
+2023-08-29 03:36:50.775 [main] INFO  c.a.n.client.config.utils.JvmUtil - isMultiInstance:false
+2023-08-29 03:36:50.787 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[leadnews-article.yml] & group[DEFAULT_GROUP]
+2023-08-29 03:36:50.788 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-leadnews-article.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-leadnews-article,DEFAULT_GROUP'}]
+2023-08-29 03:36:50.797 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 03:36:50.798 [main] INFO  c.leadnews.article.test.SearchTest - No active profile set, falling back to 1 default profile: "default"
+2023-08-29 03:36:51.442 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=449ec16e-332a-3d0e-b9fa-c713d414e121
+2023-08-29 03:36:51.850 [main] INFO  c.l.b.e.config.ElasticSearchConfig - connect hostname:10.211.55.8, port:9200
+2023-08-29 03:36:58.064 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-08-29 03:36:58.076 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-29 03:36:58.157 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [10.211.55.8:9091]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-leadnews-article-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = leadnews-article
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-08-29 03:36:58.230 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.3.2
+2023-08-29 03:36:58.230 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: b66af662e61082cb
+2023-08-29 03:36:58.230 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1693251418229
+2023-08-29 03:36:58.239 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Subscribed to topic(s): wm.news.up.or.down.topic
+2023-08-29 03:36:58.269 [main] INFO  c.leadnews.article.test.SearchTest - Started SearchTest in 8.474 seconds (process running for 9.313)
+2023-08-29 03:36:58.275 [main] INFO  c.a.n.client.config.impl.CacheData - nacos.cache.data.init.snapshot = true 
+2023-08-29 03:36:58.275 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [subscribe] leadnews-article.yml+DEFAULT_GROUP+4e85b1a4-8d96-4c12-8631-7c0473ed1614
+2023-08-29 03:36:58.282 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [add-listener] ok, tenant=4e85b1a4-8d96-4c12-8631-7c0473ed1614, dataId=leadnews-article.yml, group=DEFAULT_GROUP, cnt=1
+2023-08-29 03:36:58.282 [main] INFO  c.a.c.n.r.NacosContextRefresher - [Nacos Config] Listening config: dataId=leadnews-article.yml, group=DEFAULT_GROUP
+2023-08-29 03:36:58.283 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [subscribe] leadnews-article+DEFAULT_GROUP+4e85b1a4-8d96-4c12-8631-7c0473ed1614
+2023-08-29 03:36:58.283 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [add-listener] ok, tenant=4e85b1a4-8d96-4c12-8631-7c0473ed1614, dataId=leadnews-article, group=DEFAULT_GROUP, cnt=1
+2023-08-29 03:36:58.283 [main] INFO  c.a.c.n.r.NacosContextRefresher - [Nacos Config] Listening config: dataId=leadnews-article, group=DEFAULT_GROUP
+2023-08-29 03:36:58.432 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Resetting the last seen epoch of partition wm.news.up.or.down.topic-0 to 1 since the associated topicId changed from null to XMND6oZdS1OMHx9FitFk8A
+2023-08-29 03:36:58.433 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Cluster ID: skaJsOqUQvGIRQUGgDj8pA
+2023-08-29 03:36:58.643 [main] INFO  c.l.a.s.impl.ApArticleServiceImpl - search result SearchResponse: {"took":7,"timed_out":false,"_shards":{"failed":0.0,"successful":3.0,"total":3.0,"skipped":2.0},"hits":{"total":{"relation":"eq","value":24},"hits":[{"_index":"app_info_article","_id":"1695350872084578306","_score":null,"_source":"{id=1695350872084578306, title=12344, publishTime=1693038075000, layout=0, images=, authorId=1102, authorName=admin, content=[{\"type\":\"text\",\"value\":\"123\"}]}","sort":[1693038075000]},{"_index":"app_info_article","_id":"1695350398736400386","_score":null,"_source":"{id=1695350398736400386, title=123123, publishTime=1693037872000, layout=0, images=, authorId=1102, authorName=admin, content=[{\"type\":\"text\",\"value\":\"123123\"}]}","sort":[1693037872000]},{"_index":"app_info_article","_id":"1695032305959170050","_score":null,"_source":"{id=1695032305959170050, title=12312312321, publishTime=1692962166000, layout=0, images=, authorId=1102, authorName=admin, content=[{\"type\":\"text\",\"value\":\"我我的的fasdas，法1轮213功\"}]}","sort":[1692962166000]},{"_index":"app_info_article","_id":"1695015956104880130","_score":null,"_source":"{id=1695015956104880130, title=12344, publishTime=1692958040000, layout=1, images=http://10.211.55.8:9000/leadnews/2023/08/19/dd1867b2dd874019a15c18657fe9af3b.jpeg, authorId=1102, authorName=admin, content=[{\"type\":\"image\",\"value\":\"http://10.211.55.8:9000/leadnews/2023/08/19/dd1867b2dd874019a15c18657fe9af3b.jpeg\"}]}","sort":[1692958040000]},{"_index":"app_info_article","_id":"1695013366696779778","_score":null,"_source":"{id=1695013366696779778, title=123123, publishTime=1692957652000, layout=0, images=, authorId=1102, authorName=admin, content=[{\"type\":\"text\",\"value\":\"123\"}]}","sort":[1692957652000]},{"_index":"app_info_article","_id":"1695010724436250625","_score":null,"_source":"{id=1695010724436250625, title=1234, publishTime=1692956590000, layout=1, images=http://10.211.55.8:9000/leadnews/2023/08/19/dd1867b2dd874019a15c18657fe9af3b.jpeg, authorId=1102, authorName=admin, content=[{\"type\":\"image\",\"value\":\"http://10.211.55.8:9000/leadnews/2023/08/19/dd1867b2dd874019a15c18657fe9af3b.jpeg\"}]}","sort":[1692956590000]},{"_index":"app_info_article","_id":"1695010864303706113","_score":null,"_source":"{id=1695010864303706113, title=1234, publishTime=1692956590000, layout=1, images=http://10.211.55.8:9000/leadnews/2023/08/19/dd1867b2dd874019a15c18657fe9af3b.jpeg, authorId=1102, authorName=admin, content=[{\"type\":\"image\",\"value\":\"http://10.211.55.8:9000/leadnews/2023/08/19/dd1867b2dd874019a15c18657fe9af3b.jpeg\"}]}","sort":[1692956590000]},{"_index":"app_info_article","_id":"1695011714438799361","_score":null,"_source":"{id=1695011714438799361, title=1234, publishTime=1692956590000, layout=1, images=http://10.211.55.8:9000/leadnews/2023/08/19/dd1867b2dd874019a15c18657fe9af3b.jpeg, authorId=1102, authorName=admin, content=[{\"type\":\"image\",\"value\":\"http://10.211.55.8:9000/leadnews/2023/08/19/dd1867b2dd874019a15c18657fe9af3b.jpeg\"}]}","sort":[1692956590000]},{"_index":"app_info_article","_id":"1695011839647162370","_score":null,"_source":"{id=1695011839647162370, title=1234, publishTime=1692956590000, layout=1, images=http://10.211.55.8:9000/leadnews/2023/08/19/dd1867b2dd874019a15c18657fe9af3b.jpeg, authorId=1102, authorName=admin, content=[{\"type\":\"image\",\"value\":\"http://10.211.55.8:9000/leadnews/2023/08/19/dd1867b2dd874019a15c18657fe9af3b.jpeg\"}]}","sort":[1692956590000]},{"_index":"app_info_article","_id":"1695012256313516034","_score":null,"_source":"{id=1695012256313516034, title=1234, publishTime=1692956590000, layout=1, images=http://10.211.55.8:9000/leadnews/2023/08/19/dd1867b2dd874019a15c18657fe9af3b.jpeg, authorId=1102, authorName=admin, content=[{\"type\":\"image\",\"value\":\"http://10.211.55.8:9000/leadnews/2023/08/19/dd1867b2dd874019a15c18657fe9af3b.jpeg\"}]}","sort":[1692956590000]}],"max_score":null}}
+2023-08-29 03:36:58.655 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2023-08-29 03:36:58.655 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2023-08-29 03:36:58.655 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2023-08-29 03:36:58.656 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2023-08-29 03:36:58.658 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Resetting generation and member id due to: consumer pro-actively leaving the group
+2023-08-29 03:36:58.658 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Request joining group due to: consumer pro-actively leaving the group
+2023-08-29 03:36:58.658 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Unsubscribed all topics or patterns and assigned partitions
+2023-08-29 03:36:58.659 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Resetting generation and member id due to: consumer pro-actively leaving the group
+2023-08-29 03:36:58.659 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Request joining group due to: consumer pro-actively leaving the group
+2023-08-29 03:36:58.659 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2023-08-29 03:36:58.659 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-08-29 03:36:58.659 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2023-08-29 03:36:58.663 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-leadnews-article-1 unregistered
+2023-08-29 03:36:58.664 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - leadnews-article: Consumer stopped
+2023-08-29 03:41:25.269 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.leadnews.article.test.SearchTest]: SearchTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-08-29 03:41:25.335 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.leadnews.article.ArticleApplication for test class com.leadnews.article.test.SearchTest
+2023-08-29 03:41:25.564 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 03:41:25.569 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-08-29 03:41:25.589 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 03:41:25.709 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 03:41:25.710 [main] INFO  c.a.nacos.client.utils.ParamUtil - [settings] [req-serv] nacos-server port:8848
+2023-08-29 03:41:25.711 [main] INFO  c.a.nacos.client.utils.ParamUtil - [settings] [http-client] connect timeout:1000
+2023-08-29 03:41:25.711 [main] INFO  c.a.nacos.client.utils.ParamUtil - PER_TASK_CONFIG_SIZE: 3000.0
+2023-08-29 03:41:25.734 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-08-29 03:41:25.734 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-08-29 03:41:25.751 [main] INFO  c.a.n.c.a.r.i.CredentialWatcher - null No credential found
+2023-08-29 03:41:25.810 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 03:41:25.818 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:/Users/lihaohui/nacos/config
+2023-08-29 03:41:25.821 [main] INFO  c.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of a526a1f7-9e9f-4098-b0ca-aedaae16ec5e_config-0
+2023-08-29 03:41:25.833 [main] INFO  c.alibaba.nacos.common.remote.client - [a526a1f7-9e9f-4098-b0ca-aedaae16ec5e_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$860/0x0000000800fcea60
+2023-08-29 03:41:25.833 [main] INFO  c.alibaba.nacos.common.remote.client - [a526a1f7-9e9f-4098-b0ca-aedaae16ec5e_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$861/0x0000000800fcee90
+2023-08-29 03:41:25.834 [main] INFO  c.alibaba.nacos.common.remote.client - [a526a1f7-9e9f-4098-b0ca-aedaae16ec5e_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2023-08-29 03:41:25.834 [main] INFO  c.alibaba.nacos.common.remote.client - [a526a1f7-9e9f-4098-b0ca-aedaae16ec5e_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2023-08-29 03:41:25.838 [main] INFO  c.alibaba.nacos.common.remote.client - [a526a1f7-9e9f-4098-b0ca-aedaae16ec5e_config-0] Try to connect to server on start up, server: {serverIp = '10.211.55.8', server main port = 8848}
+2023-08-29 03:41:25.859 [main] INFO  c.a.n.c.r.client.grpc.GrpcClient - grpc client connection server:10.211.55.8 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2023-08-29 03:41:26.299 [main] INFO  c.alibaba.nacos.common.remote.client - [a526a1f7-9e9f-4098-b0ca-aedaae16ec5e_config-0] Success to connect to server [10.211.55.8:8848] on start up, connectionId = 1693234533732_10.211.55.2_52022
+2023-08-29 03:41:26.300 [com.alibaba.nacos.client.remote.worker] INFO  c.alibaba.nacos.common.remote.client - [a526a1f7-9e9f-4098-b0ca-aedaae16ec5e_config-0] Notify connected event to listeners.
+2023-08-29 03:41:26.300 [com.alibaba.nacos.client.remote.worker] INFO  c.a.n.c.config.impl.ClientWorker - [a526a1f7-9e9f-4098-b0ca-aedaae16ec5e_config-0] Connected,notify listen context...
+2023-08-29 03:41:26.300 [main] INFO  c.alibaba.nacos.common.remote.client - [a526a1f7-9e9f-4098-b0ca-aedaae16ec5e_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2023-08-29 03:41:26.300 [main] INFO  c.alibaba.nacos.common.remote.client - [a526a1f7-9e9f-4098-b0ca-aedaae16ec5e_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$881/0x0000000801121d30
+2023-08-29 03:41:26.325 [main] INFO  c.a.nacos.client.config.impl.Limiter - limitTime:5.0
+2023-08-29 03:41:26.341 [main] INFO  c.a.n.client.config.utils.JvmUtil - isMultiInstance:false
+2023-08-29 03:41:26.350 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[leadnews-article.yml] & group[DEFAULT_GROUP]
+2023-08-29 03:41:26.351 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-leadnews-article.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-leadnews-article,DEFAULT_GROUP'}]
+2023-08-29 03:41:26.359 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 03:41:26.360 [main] INFO  c.leadnews.article.test.SearchTest - No active profile set, falling back to 1 default profile: "default"
+2023-08-29 03:41:27.009 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=449ec16e-332a-3d0e-b9fa-c713d414e121
+2023-08-29 03:41:27.446 [main] INFO  c.l.b.e.config.ElasticSearchConfig - connect hostname:10.211.55.8, port:9200
+2023-08-29 03:41:34.176 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-08-29 03:41:34.188 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-29 03:41:34.262 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [10.211.55.8:9091]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-leadnews-article-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = leadnews-article
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-08-29 03:41:34.324 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.3.2
+2023-08-29 03:41:34.325 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: b66af662e61082cb
+2023-08-29 03:41:34.325 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1693251694324
+2023-08-29 03:41:34.335 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Subscribed to topic(s): wm.news.up.or.down.topic
+2023-08-29 03:41:34.361 [main] INFO  c.leadnews.article.test.SearchTest - Started SearchTest in 8.959 seconds (process running for 9.683)
+2023-08-29 03:41:34.365 [main] INFO  c.a.n.client.config.impl.CacheData - nacos.cache.data.init.snapshot = true 
+2023-08-29 03:41:34.366 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [subscribe] leadnews-article.yml+DEFAULT_GROUP+4e85b1a4-8d96-4c12-8631-7c0473ed1614
+2023-08-29 03:41:34.370 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [add-listener] ok, tenant=4e85b1a4-8d96-4c12-8631-7c0473ed1614, dataId=leadnews-article.yml, group=DEFAULT_GROUP, cnt=1
+2023-08-29 03:41:34.370 [main] INFO  c.a.c.n.r.NacosContextRefresher - [Nacos Config] Listening config: dataId=leadnews-article.yml, group=DEFAULT_GROUP
+2023-08-29 03:41:34.371 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [subscribe] leadnews-article+DEFAULT_GROUP+4e85b1a4-8d96-4c12-8631-7c0473ed1614
+2023-08-29 03:41:34.371 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [add-listener] ok, tenant=4e85b1a4-8d96-4c12-8631-7c0473ed1614, dataId=leadnews-article, group=DEFAULT_GROUP, cnt=1
+2023-08-29 03:41:34.371 [main] INFO  c.a.c.n.r.NacosContextRefresher - [Nacos Config] Listening config: dataId=leadnews-article, group=DEFAULT_GROUP
+2023-08-29 03:41:34.512 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Resetting the last seen epoch of partition wm.news.up.or.down.topic-0 to 1 since the associated topicId changed from null to XMND6oZdS1OMHx9FitFk8A
+2023-08-29 03:41:34.513 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Cluster ID: skaJsOqUQvGIRQUGgDj8pA
+2023-08-29 03:41:34.785 [main] INFO  c.l.a.s.impl.ApArticleServiceImpl - search result SearchResponse: {"took":3,"timed_out":false,"_shards":{"failed":0.0,"successful":3.0,"total":3.0,"skipped":2.0},"hits":{"total":{"relation":"eq","value":24},"hits":[{"_index":"app_info_article","_id":"1695350872084578306","_score":null,"_source":"{id=1695350872084578306, title=12344, publishTime=1693038075000, layout=0, images=, authorId=1102, authorName=admin, content=[{\"type\":\"text\",\"value\":\"123\"}]}","sort":[1693038075000]},{"_index":"app_info_article","_id":"1695350398736400386","_score":null,"_source":"{id=1695350398736400386, title=123123, publishTime=1693037872000, layout=0, images=, authorId=1102, authorName=admin, content=[{\"type\":\"text\",\"value\":\"123123\"}]}","sort":[1693037872000]},{"_index":"app_info_article","_id":"1695032305959170050","_score":null,"_source":"{id=1695032305959170050, title=12312312321, publishTime=1692962166000, layout=0, images=, authorId=1102, authorName=admin, content=[{\"type\":\"text\",\"value\":\"我我的的fasdas，法1轮213功\"}]}","sort":[1692962166000]},{"_index":"app_info_article","_id":"1695015956104880130","_score":null,"_source":"{id=1695015956104880130, title=12344, publishTime=1692958040000, layout=1, images=http://10.211.55.8:9000/leadnews/2023/08/19/dd1867b2dd874019a15c18657fe9af3b.jpeg, authorId=1102, authorName=admin, content=[{\"type\":\"image\",\"value\":\"http://10.211.55.8:9000/leadnews/2023/08/19/dd1867b2dd874019a15c18657fe9af3b.jpeg\"}]}","sort":[1692958040000]},{"_index":"app_info_article","_id":"1695013366696779778","_score":null,"_source":"{id=1695013366696779778, title=123123, publishTime=1692957652000, layout=0, images=, authorId=1102, authorName=admin, content=[{\"type\":\"text\",\"value\":\"123\"}]}","sort":[1692957652000]},{"_index":"app_info_article","_id":"1695010724436250625","_score":null,"_source":"{id=1695010724436250625, title=1234, publishTime=1692956590000, layout=1, images=http://10.211.55.8:9000/leadnews/2023/08/19/dd1867b2dd874019a15c18657fe9af3b.jpeg, authorId=1102, authorName=admin, content=[{\"type\":\"image\",\"value\":\"http://10.211.55.8:9000/leadnews/2023/08/19/dd1867b2dd874019a15c18657fe9af3b.jpeg\"}]}","sort":[1692956590000]},{"_index":"app_info_article","_id":"1695010864303706113","_score":null,"_source":"{id=1695010864303706113, title=1234, publishTime=1692956590000, layout=1, images=http://10.211.55.8:9000/leadnews/2023/08/19/dd1867b2dd874019a15c18657fe9af3b.jpeg, authorId=1102, authorName=admin, content=[{\"type\":\"image\",\"value\":\"http://10.211.55.8:9000/leadnews/2023/08/19/dd1867b2dd874019a15c18657fe9af3b.jpeg\"}]}","sort":[1692956590000]},{"_index":"app_info_article","_id":"1695011714438799361","_score":null,"_source":"{id=1695011714438799361, title=1234, publishTime=1692956590000, layout=1, images=http://10.211.55.8:9000/leadnews/2023/08/19/dd1867b2dd874019a15c18657fe9af3b.jpeg, authorId=1102, authorName=admin, content=[{\"type\":\"image\",\"value\":\"http://10.211.55.8:9000/leadnews/2023/08/19/dd1867b2dd874019a15c18657fe9af3b.jpeg\"}]}","sort":[1692956590000]},{"_index":"app_info_article","_id":"1695011839647162370","_score":null,"_source":"{id=1695011839647162370, title=1234, publishTime=1692956590000, layout=1, images=http://10.211.55.8:9000/leadnews/2023/08/19/dd1867b2dd874019a15c18657fe9af3b.jpeg, authorId=1102, authorName=admin, content=[{\"type\":\"image\",\"value\":\"http://10.211.55.8:9000/leadnews/2023/08/19/dd1867b2dd874019a15c18657fe9af3b.jpeg\"}]}","sort":[1692956590000]},{"_index":"app_info_article","_id":"1695012256313516034","_score":null,"_source":"{id=1695012256313516034, title=1234, publishTime=1692956590000, layout=1, images=http://10.211.55.8:9000/leadnews/2023/08/19/dd1867b2dd874019a15c18657fe9af3b.jpeg, authorId=1102, authorName=admin, content=[{\"type\":\"image\",\"value\":\"http://10.211.55.8:9000/leadnews/2023/08/19/dd1867b2dd874019a15c18657fe9af3b.jpeg\"}]}","sort":[1692956590000]}],"max_score":null}}
+2023-08-29 03:41:34.788 [main] INFO  c.l.a.s.impl.ApArticleServiceImpl - source {id=1695350872084578306, title=12344, publishTime=1693038075000, layout=0, images=, authorId=1102, authorName=admin, content=[{"type":"text","value":"123"}]}
+2023-08-29 03:41:34.788 [main] INFO  c.l.a.s.impl.ApArticleServiceImpl - source {id=1695350398736400386, title=123123, publishTime=1693037872000, layout=0, images=, authorId=1102, authorName=admin, content=[{"type":"text","value":"123123"}]}
+2023-08-29 03:41:34.788 [main] INFO  c.l.a.s.impl.ApArticleServiceImpl - source {id=1695032305959170050, title=12312312321, publishTime=1692962166000, layout=0, images=, authorId=1102, authorName=admin, content=[{"type":"text","value":"我我的的fasdas，法1轮213功"}]}
+2023-08-29 03:41:34.788 [main] INFO  c.l.a.s.impl.ApArticleServiceImpl - source {id=1695015956104880130, title=12344, publishTime=1692958040000, layout=1, images=http://10.211.55.8:9000/leadnews/2023/08/19/dd1867b2dd874019a15c18657fe9af3b.jpeg, authorId=1102, authorName=admin, content=[{"type":"image","value":"http://10.211.55.8:9000/leadnews/2023/08/19/dd1867b2dd874019a15c18657fe9af3b.jpeg"}]}
+2023-08-29 03:41:34.789 [main] INFO  c.l.a.s.impl.ApArticleServiceImpl - source {id=1695013366696779778, title=123123, publishTime=1692957652000, layout=0, images=, authorId=1102, authorName=admin, content=[{"type":"text","value":"123"}]}
+2023-08-29 03:41:34.789 [main] INFO  c.l.a.s.impl.ApArticleServiceImpl - source {id=1695010724436250625, title=1234, publishTime=1692956590000, layout=1, images=http://10.211.55.8:9000/leadnews/2023/08/19/dd1867b2dd874019a15c18657fe9af3b.jpeg, authorId=1102, authorName=admin, content=[{"type":"image","value":"http://10.211.55.8:9000/leadnews/2023/08/19/dd1867b2dd874019a15c18657fe9af3b.jpeg"}]}
+2023-08-29 03:41:34.789 [main] INFO  c.l.a.s.impl.ApArticleServiceImpl - source {id=1695010864303706113, title=1234, publishTime=1692956590000, layout=1, images=http://10.211.55.8:9000/leadnews/2023/08/19/dd1867b2dd874019a15c18657fe9af3b.jpeg, authorId=1102, authorName=admin, content=[{"type":"image","value":"http://10.211.55.8:9000/leadnews/2023/08/19/dd1867b2dd874019a15c18657fe9af3b.jpeg"}]}
+2023-08-29 03:41:34.789 [main] INFO  c.l.a.s.impl.ApArticleServiceImpl - source {id=1695011714438799361, title=1234, publishTime=1692956590000, layout=1, images=http://10.211.55.8:9000/leadnews/2023/08/19/dd1867b2dd874019a15c18657fe9af3b.jpeg, authorId=1102, authorName=admin, content=[{"type":"image","value":"http://10.211.55.8:9000/leadnews/2023/08/19/dd1867b2dd874019a15c18657fe9af3b.jpeg"}]}
+2023-08-29 03:41:34.789 [main] INFO  c.l.a.s.impl.ApArticleServiceImpl - source {id=1695011839647162370, title=1234, publishTime=1692956590000, layout=1, images=http://10.211.55.8:9000/leadnews/2023/08/19/dd1867b2dd874019a15c18657fe9af3b.jpeg, authorId=1102, authorName=admin, content=[{"type":"image","value":"http://10.211.55.8:9000/leadnews/2023/08/19/dd1867b2dd874019a15c18657fe9af3b.jpeg"}]}
+2023-08-29 03:41:34.789 [main] INFO  c.l.a.s.impl.ApArticleServiceImpl - source {id=1695012256313516034, title=1234, publishTime=1692956590000, layout=1, images=http://10.211.55.8:9000/leadnews/2023/08/19/dd1867b2dd874019a15c18657fe9af3b.jpeg, authorId=1102, authorName=admin, content=[{"type":"image","value":"http://10.211.55.8:9000/leadnews/2023/08/19/dd1867b2dd874019a15c18657fe9af3b.jpeg"}]}
+2023-08-29 03:41:34.797 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2023-08-29 03:41:34.797 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2023-08-29 03:41:34.797 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2023-08-29 03:41:34.797 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2023-08-29 03:41:34.799 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Resetting generation and member id due to: consumer pro-actively leaving the group
+2023-08-29 03:41:34.799 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Request joining group due to: consumer pro-actively leaving the group
+2023-08-29 03:41:34.799 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Unsubscribed all topics or patterns and assigned partitions
+2023-08-29 03:41:34.800 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Resetting generation and member id due to: consumer pro-actively leaving the group
+2023-08-29 03:41:34.800 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Request joining group due to: consumer pro-actively leaving the group
+2023-08-29 03:41:34.801 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2023-08-29 03:41:34.801 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-08-29 03:41:34.801 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2023-08-29 03:41:34.804 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-leadnews-article-1 unregistered
+2023-08-29 03:41:34.805 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - leadnews-article: Consumer stopped
+2023-08-29 03:42:42.080 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.leadnews.article.test.SearchTest]: SearchTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-08-29 03:42:42.142 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.leadnews.article.ArticleApplication for test class com.leadnews.article.test.SearchTest
+2023-08-29 03:42:42.362 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 03:42:42.368 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-08-29 03:42:42.388 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 03:42:42.488 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 03:42:42.489 [main] INFO  c.a.nacos.client.utils.ParamUtil - [settings] [req-serv] nacos-server port:8848
+2023-08-29 03:42:42.489 [main] INFO  c.a.nacos.client.utils.ParamUtil - [settings] [http-client] connect timeout:1000
+2023-08-29 03:42:42.490 [main] INFO  c.a.nacos.client.utils.ParamUtil - PER_TASK_CONFIG_SIZE: 3000.0
+2023-08-29 03:42:42.514 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-08-29 03:42:42.515 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-08-29 03:42:42.539 [main] INFO  c.a.n.c.a.r.i.CredentialWatcher - null No credential found
+2023-08-29 03:42:42.598 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 03:42:42.606 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:/Users/lihaohui/nacos/config
+2023-08-29 03:42:42.608 [main] INFO  c.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of 06565836-d5e3-4925-b7f2-7f4178edc429_config-0
+2023-08-29 03:42:42.618 [main] INFO  c.alibaba.nacos.common.remote.client - [06565836-d5e3-4925-b7f2-7f4178edc429_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$860/0x0000000800fce568
+2023-08-29 03:42:42.618 [main] INFO  c.alibaba.nacos.common.remote.client - [06565836-d5e3-4925-b7f2-7f4178edc429_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$861/0x0000000800fce998
+2023-08-29 03:42:42.619 [main] INFO  c.alibaba.nacos.common.remote.client - [06565836-d5e3-4925-b7f2-7f4178edc429_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2023-08-29 03:42:42.619 [main] INFO  c.alibaba.nacos.common.remote.client - [06565836-d5e3-4925-b7f2-7f4178edc429_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2023-08-29 03:42:42.623 [main] INFO  c.alibaba.nacos.common.remote.client - [06565836-d5e3-4925-b7f2-7f4178edc429_config-0] Try to connect to server on start up, server: {serverIp = '10.211.55.8', server main port = 8848}
+2023-08-29 03:42:42.641 [main] INFO  c.a.n.c.r.client.grpc.GrpcClient - grpc client connection server:10.211.55.8 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2023-08-29 03:42:43.070 [main] INFO  c.alibaba.nacos.common.remote.client - [06565836-d5e3-4925-b7f2-7f4178edc429_config-0] Success to connect to server [10.211.55.8:8848] on start up, connectionId = 1693234616896_10.211.55.2_52375
+2023-08-29 03:42:43.071 [com.alibaba.nacos.client.remote.worker] INFO  c.alibaba.nacos.common.remote.client - [06565836-d5e3-4925-b7f2-7f4178edc429_config-0] Notify connected event to listeners.
+2023-08-29 03:42:43.071 [main] INFO  c.alibaba.nacos.common.remote.client - [06565836-d5e3-4925-b7f2-7f4178edc429_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2023-08-29 03:42:43.071 [com.alibaba.nacos.client.remote.worker] INFO  c.a.n.c.config.impl.ClientWorker - [06565836-d5e3-4925-b7f2-7f4178edc429_config-0] Connected,notify listen context...
+2023-08-29 03:42:43.072 [main] INFO  c.alibaba.nacos.common.remote.client - [06565836-d5e3-4925-b7f2-7f4178edc429_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$881/0x0000000801122358
+2023-08-29 03:42:43.093 [main] INFO  c.a.nacos.client.config.impl.Limiter - limitTime:5.0
+2023-08-29 03:42:43.106 [main] INFO  c.a.n.client.config.utils.JvmUtil - isMultiInstance:false
+2023-08-29 03:42:43.115 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[leadnews-article.yml] & group[DEFAULT_GROUP]
+2023-08-29 03:42:43.115 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-leadnews-article.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-leadnews-article,DEFAULT_GROUP'}]
+2023-08-29 03:42:43.123 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 03:42:43.124 [main] INFO  c.leadnews.article.test.SearchTest - No active profile set, falling back to 1 default profile: "default"
+2023-08-29 03:42:43.667 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=449ec16e-332a-3d0e-b9fa-c713d414e121
+2023-08-29 03:42:44.001 [main] INFO  c.l.b.e.config.ElasticSearchConfig - connect hostname:10.211.55.8, port:9200
+2023-08-29 03:42:45.440 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-08-29 03:42:45.450 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-29 03:42:45.514 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [10.211.55.8:9091]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-leadnews-article-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = leadnews-article
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-08-29 03:42:45.574 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.3.2
+2023-08-29 03:42:45.574 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: b66af662e61082cb
+2023-08-29 03:42:45.574 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1693251765573
+2023-08-29 03:42:45.583 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Subscribed to topic(s): wm.news.up.or.down.topic
+2023-08-29 03:42:45.612 [main] INFO  c.leadnews.article.test.SearchTest - Started SearchTest in 3.399 seconds (process running for 4.089)
+2023-08-29 03:42:45.617 [main] INFO  c.a.n.client.config.impl.CacheData - nacos.cache.data.init.snapshot = true 
+2023-08-29 03:42:45.617 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [subscribe] leadnews-article.yml+DEFAULT_GROUP+4e85b1a4-8d96-4c12-8631-7c0473ed1614
+2023-08-29 03:42:45.621 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [add-listener] ok, tenant=4e85b1a4-8d96-4c12-8631-7c0473ed1614, dataId=leadnews-article.yml, group=DEFAULT_GROUP, cnt=1
+2023-08-29 03:42:45.622 [main] INFO  c.a.c.n.r.NacosContextRefresher - [Nacos Config] Listening config: dataId=leadnews-article.yml, group=DEFAULT_GROUP
+2023-08-29 03:42:45.622 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [subscribe] leadnews-article+DEFAULT_GROUP+4e85b1a4-8d96-4c12-8631-7c0473ed1614
+2023-08-29 03:42:45.622 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [add-listener] ok, tenant=4e85b1a4-8d96-4c12-8631-7c0473ed1614, dataId=leadnews-article, group=DEFAULT_GROUP, cnt=1
+2023-08-29 03:42:45.622 [main] INFO  c.a.c.n.r.NacosContextRefresher - [Nacos Config] Listening config: dataId=leadnews-article, group=DEFAULT_GROUP
+2023-08-29 03:42:45.770 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Resetting the last seen epoch of partition wm.news.up.or.down.topic-0 to 1 since the associated topicId changed from null to XMND6oZdS1OMHx9FitFk8A
+2023-08-29 03:42:45.771 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Cluster ID: skaJsOqUQvGIRQUGgDj8pA
+2023-08-29 03:42:45.949 [main] INFO  c.l.a.s.impl.ApArticleServiceImpl - search result SearchResponse: {"took":8,"timed_out":false,"_shards":{"failed":0.0,"successful":3.0,"total":3.0,"skipped":2.0},"hits":{"total":{"relation":"eq","value":2},"hits":[{"_index":"app_info_article","_id":"1302864436297482242","_score":null,"_source":"{id=1302864436297482242, title=Java语言跨平台原理, publishTime=1599490862000, layout=1, images=group1/M00/00/00/wKjIgl9V2n6AArZsAAGMmaPdt7w502.png, authorId=4, authorName=admin, content=[{\"type\":\"text\",\"value\":\"Java虚拟机——JVM\\n\\n- JVM（Java Virtual Machine ）：Java虚拟机，简称JVM，是运行所有Java程序的假想计算机，是Java程序的运行环境，是Java 最具吸引力的特性之一。我们编写的Java代码，都运行在JVM 之上。\\n- 跨平台：任何软件的运行，都必须要运行在操作系统之上，而我们用Java编写的软件可以运行在任何的操作系统上，这个特性称为Java语言的跨平台特性。该特性是由JVM实现的，我们编写的程序运行在JVM上，而JVM运行在操作系统上。\\n\"},{\"type\":\"image\",\"value\":\"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2n6AArZsAAGMmaPdt7w502.png\"},{\"type\":\"text\",\"value\":\"如图所示，Java的虚拟机本身不具备跨平台功能的，每个操作系统下都有不同版本的虚拟机。\\n\\n问题1: Java 是如何实现跨平台的呢？\\n\\n- 答：因为在不同操作系统中都安装了对应版本的 JVM 虚拟机\\n- 注意: Java程序想要运行, 必须依赖于JVM虚拟机.\\n\\n问题2: JVM 本身是否允许跨平台呢？\\n\\n- 答：不允许，允许跨平台的是 Java 程序，而不是虚拟机。\\n\"}]}","sort":[1599490862000]},{"_index":"app_info_article","_id":"1302862387124125698","_score":null,"_source":"{id=1302862387124125698, title=什么是Java语言, publishTime=1599490578000, layout=1, images=group1/M00/00/00/wKjIgl9V2CqAZe18AAOoOOsvWPc041.png, authorId=4, authorName=admin, staticUrl=http://10.211.55.8:9000/leadnews/2023/08/15/1302862387124125698.html, content=[{\"type\":\"text\",\"value\":\"Java语言是美国Sun公司（Stanford University Network），在1995年推出的高级的编程语言。所谓编程语言，是计算机的语言，人们可以使用编程语言对计算机下达命令，让计算机完成人们需要的功能。\\n\\n2009年，Sun公司被甲骨文公司收购，所以我们现在访问oracle官网即可：https://www.oracle.com\\nJava语言共同创始人之一：詹姆斯·高斯林 （James Gosling），被称为“Java之父”\\n\"},{\"type\":\"image\",\"value\":\"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2CqAZe18AAOoOOsvWPc041.png\"},{\"type\":\"text\",\"value\":\"Java语言发展历史\\n\\n- 1995年Sun公司推出Java语言\\n- 1996年发布Java 1.0版本\\n- 1997年发布Java 1.1版本\\n- 1998年发布Java 1.2版本\\n- 2000年发布Java 1.3版本\\n- 2002年发布Java 1.4版本\\n- 2004年发布Java 5.0版本\\n- 2006年发布Java 6.0版本\\n- 2009年Oracle甲骨文公司收购Sun公司\\n- 2011年发布Java 7.0版本\\n- 2014年发布Java 8.0版本\\n- 2017年9月发布Java 9.0版本\\n- 2018年3月发布Java 10.0版本\\n- 2018年9月发布Java 11.0版本\\n\"},{\"type\":\"text\",\"value\":\"Java 语言的三个版本\\n\\n- JavaSE：标准版，用于桌面应用的开发，是其他两个版本的基础。\\n  - 学习JavaSE的目的, 是为了就业班要学习的JavaEE打基础.\\n\"},{\"type\":\"image\",\"value\":\"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2F6AdQxAAAGyaOdp4gk784.png\"},{\"type\":\"text\",\"value\":\"- JavaEE：企业版，用于Web方向的网站开发\\n  - 网站：网页 + 后台服务器\\n\\nJava语言主要应用在互联网程序的开发领域。常见的互联网程序比如天猫、京东、物流系统、网银系统等，以及服务器后台处理大数据的存储、查询、数据挖掘等也有很多应用。\\n\"}]}","sort":[1599490578000]}],"max_score":null}}
+2023-08-29 03:42:45.952 [main] INFO  c.l.a.s.impl.ApArticleServiceImpl - source {id=1302864436297482242, title=Java语言跨平台原理, publishTime=1599490862000, layout=1, images=group1/M00/00/00/wKjIgl9V2n6AArZsAAGMmaPdt7w502.png, authorId=4, authorName=admin, content=[{"type":"text","value":"Java虚拟机——JVM\n\n- JVM（Java Virtual Machine ）：Java虚拟机，简称JVM，是运行所有Java程序的假想计算机，是Java程序的运行环境，是Java 最具吸引力的特性之一。我们编写的Java代码，都运行在JVM 之上。\n- 跨平台：任何软件的运行，都必须要运行在操作系统之上，而我们用Java编写的软件可以运行在任何的操作系统上，这个特性称为Java语言的跨平台特性。该特性是由JVM实现的，我们编写的程序运行在JVM上，而JVM运行在操作系统上。\n"},{"type":"image","value":"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2n6AArZsAAGMmaPdt7w502.png"},{"type":"text","value":"如图所示，Java的虚拟机本身不具备跨平台功能的，每个操作系统下都有不同版本的虚拟机。\n\n问题1: Java 是如何实现跨平台的呢？\n\n- 答：因为在不同操作系统中都安装了对应版本的 JVM 虚拟机\n- 注意: Java程序想要运行, 必须依赖于JVM虚拟机.\n\n问题2: JVM 本身是否允许跨平台呢？\n\n- 答：不允许，允许跨平台的是 Java 程序，而不是虚拟机。\n"}]}
+2023-08-29 03:42:45.952 [main] INFO  c.l.a.s.impl.ApArticleServiceImpl - source {id=1302862387124125698, title=什么是Java语言, publishTime=1599490578000, layout=1, images=group1/M00/00/00/wKjIgl9V2CqAZe18AAOoOOsvWPc041.png, authorId=4, authorName=admin, staticUrl=http://10.211.55.8:9000/leadnews/2023/08/15/1302862387124125698.html, content=[{"type":"text","value":"Java语言是美国Sun公司（Stanford University Network），在1995年推出的高级的编程语言。所谓编程语言，是计算机的语言，人们可以使用编程语言对计算机下达命令，让计算机完成人们需要的功能。\n\n2009年，Sun公司被甲骨文公司收购，所以我们现在访问oracle官网即可：https://www.oracle.com\nJava语言共同创始人之一：詹姆斯·高斯林 （James Gosling），被称为“Java之父”\n"},{"type":"image","value":"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2CqAZe18AAOoOOsvWPc041.png"},{"type":"text","value":"Java语言发展历史\n\n- 1995年Sun公司推出Java语言\n- 1996年发布Java 1.0版本\n- 1997年发布Java 1.1版本\n- 1998年发布Java 1.2版本\n- 2000年发布Java 1.3版本\n- 2002年发布Java 1.4版本\n- 2004年发布Java 5.0版本\n- 2006年发布Java 6.0版本\n- 2009年Oracle甲骨文公司收购Sun公司\n- 2011年发布Java 7.0版本\n- 2014年发布Java 8.0版本\n- 2017年9月发布Java 9.0版本\n- 2018年3月发布Java 10.0版本\n- 2018年9月发布Java 11.0版本\n"},{"type":"text","value":"Java 语言的三个版本\n\n- JavaSE：标准版，用于桌面应用的开发，是其他两个版本的基础。\n  - 学习JavaSE的目的, 是为了就业班要学习的JavaEE打基础.\n"},{"type":"image","value":"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2F6AdQxAAAGyaOdp4gk784.png"},{"type":"text","value":"- JavaEE：企业版，用于Web方向的网站开发\n  - 网站：网页 + 后台服务器\n\nJava语言主要应用在互联网程序的开发领域。常见的互联网程序比如天猫、京东、物流系统、网银系统等，以及服务器后台处理大数据的存储、查询、数据挖掘等也有很多应用。\n"}]}
+2023-08-29 03:42:45.960 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2023-08-29 03:42:45.960 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2023-08-29 03:42:45.960 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2023-08-29 03:42:45.961 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2023-08-29 03:42:45.962 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Resetting generation and member id due to: consumer pro-actively leaving the group
+2023-08-29 03:42:45.962 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Request joining group due to: consumer pro-actively leaving the group
+2023-08-29 03:42:45.962 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Unsubscribed all topics or patterns and assigned partitions
+2023-08-29 03:42:45.963 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Resetting generation and member id due to: consumer pro-actively leaving the group
+2023-08-29 03:42:45.964 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Request joining group due to: consumer pro-actively leaving the group
+2023-08-29 03:42:45.964 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2023-08-29 03:42:45.964 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-08-29 03:42:45.964 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2023-08-29 03:42:45.968 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-leadnews-article-1 unregistered
+2023-08-29 03:42:45.969 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - leadnews-article: Consumer stopped
+2023-08-29 03:44:40.590 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.leadnews.article.test.SearchTest]: SearchTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-08-29 03:44:40.648 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.leadnews.article.ArticleApplication for test class com.leadnews.article.test.SearchTest
+2023-08-29 03:44:40.872 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 03:44:40.878 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-08-29 03:44:40.898 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 03:44:40.997 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 03:44:40.998 [main] INFO  c.a.nacos.client.utils.ParamUtil - [settings] [req-serv] nacos-server port:8848
+2023-08-29 03:44:40.998 [main] INFO  c.a.nacos.client.utils.ParamUtil - [settings] [http-client] connect timeout:1000
+2023-08-29 03:44:40.999 [main] INFO  c.a.nacos.client.utils.ParamUtil - PER_TASK_CONFIG_SIZE: 3000.0
+2023-08-29 03:44:41.022 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-08-29 03:44:41.022 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-08-29 03:44:41.039 [main] INFO  c.a.n.c.a.r.i.CredentialWatcher - null No credential found
+2023-08-29 03:44:41.086 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 03:44:41.092 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:/Users/lihaohui/nacos/config
+2023-08-29 03:44:41.095 [main] INFO  c.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of baa365ad-b345-4036-b1b0-6b5bffc09c5d_config-0
+2023-08-29 03:44:41.104 [main] INFO  c.alibaba.nacos.common.remote.client - [baa365ad-b345-4036-b1b0-6b5bffc09c5d_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$860/0x0000000800fce090
+2023-08-29 03:44:41.104 [main] INFO  c.alibaba.nacos.common.remote.client - [baa365ad-b345-4036-b1b0-6b5bffc09c5d_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$861/0x0000000800fce4c0
+2023-08-29 03:44:41.104 [main] INFO  c.alibaba.nacos.common.remote.client - [baa365ad-b345-4036-b1b0-6b5bffc09c5d_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2023-08-29 03:44:41.104 [main] INFO  c.alibaba.nacos.common.remote.client - [baa365ad-b345-4036-b1b0-6b5bffc09c5d_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2023-08-29 03:44:41.108 [main] INFO  c.alibaba.nacos.common.remote.client - [baa365ad-b345-4036-b1b0-6b5bffc09c5d_config-0] Try to connect to server on start up, server: {serverIp = '10.211.55.8', server main port = 8848}
+2023-08-29 03:44:41.127 [main] INFO  c.a.n.c.r.client.grpc.GrpcClient - grpc client connection server:10.211.55.8 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2023-08-29 03:44:41.572 [main] INFO  c.alibaba.nacos.common.remote.client - [baa365ad-b345-4036-b1b0-6b5bffc09c5d_config-0] Success to connect to server [10.211.55.8:8848] on start up, connectionId = 1693234745269_10.211.55.2_52917
+2023-08-29 03:44:41.572 [com.alibaba.nacos.client.remote.worker] INFO  c.alibaba.nacos.common.remote.client - [baa365ad-b345-4036-b1b0-6b5bffc09c5d_config-0] Notify connected event to listeners.
+2023-08-29 03:44:41.573 [com.alibaba.nacos.client.remote.worker] INFO  c.a.n.c.config.impl.ClientWorker - [baa365ad-b345-4036-b1b0-6b5bffc09c5d_config-0] Connected,notify listen context...
+2023-08-29 03:44:41.573 [main] INFO  c.alibaba.nacos.common.remote.client - [baa365ad-b345-4036-b1b0-6b5bffc09c5d_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2023-08-29 03:44:41.573 [main] INFO  c.alibaba.nacos.common.remote.client - [baa365ad-b345-4036-b1b0-6b5bffc09c5d_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$881/0x0000000801121490
+2023-08-29 03:44:41.595 [main] INFO  c.a.nacos.client.config.impl.Limiter - limitTime:5.0
+2023-08-29 03:44:41.607 [main] INFO  c.a.n.client.config.utils.JvmUtil - isMultiInstance:false
+2023-08-29 03:44:41.616 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[leadnews-article.yml] & group[DEFAULT_GROUP]
+2023-08-29 03:44:41.617 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-leadnews-article.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-leadnews-article,DEFAULT_GROUP'}]
+2023-08-29 03:44:41.624 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 03:44:41.625 [main] INFO  c.leadnews.article.test.SearchTest - No active profile set, falling back to 1 default profile: "default"
+2023-08-29 03:44:42.156 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=449ec16e-332a-3d0e-b9fa-c713d414e121
+2023-08-29 03:44:42.503 [main] INFO  c.l.b.e.config.ElasticSearchConfig - connect hostname:10.211.55.8, port:9200
+2023-08-29 03:44:49.318 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-08-29 03:44:49.329 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-29 03:44:49.398 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [10.211.55.8:9091]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-leadnews-article-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = leadnews-article
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-08-29 03:44:49.452 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.3.2
+2023-08-29 03:44:49.452 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: b66af662e61082cb
+2023-08-29 03:44:49.452 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1693251889451
+2023-08-29 03:44:49.461 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Subscribed to topic(s): wm.news.up.or.down.topic
+2023-08-29 03:44:49.486 [main] INFO  c.leadnews.article.test.SearchTest - Started SearchTest in 8.764 seconds (process running for 9.406)
+2023-08-29 03:44:49.490 [main] INFO  c.a.n.client.config.impl.CacheData - nacos.cache.data.init.snapshot = true 
+2023-08-29 03:44:49.490 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [subscribe] leadnews-article.yml+DEFAULT_GROUP+4e85b1a4-8d96-4c12-8631-7c0473ed1614
+2023-08-29 03:44:49.494 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [add-listener] ok, tenant=4e85b1a4-8d96-4c12-8631-7c0473ed1614, dataId=leadnews-article.yml, group=DEFAULT_GROUP, cnt=1
+2023-08-29 03:44:49.494 [main] INFO  c.a.c.n.r.NacosContextRefresher - [Nacos Config] Listening config: dataId=leadnews-article.yml, group=DEFAULT_GROUP
+2023-08-29 03:44:49.495 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [subscribe] leadnews-article+DEFAULT_GROUP+4e85b1a4-8d96-4c12-8631-7c0473ed1614
+2023-08-29 03:44:49.495 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [add-listener] ok, tenant=4e85b1a4-8d96-4c12-8631-7c0473ed1614, dataId=leadnews-article, group=DEFAULT_GROUP, cnt=1
+2023-08-29 03:44:49.495 [main] INFO  c.a.c.n.r.NacosContextRefresher - [Nacos Config] Listening config: dataId=leadnews-article, group=DEFAULT_GROUP
+2023-08-29 03:44:49.638 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Resetting the last seen epoch of partition wm.news.up.or.down.topic-0 to 1 since the associated topicId changed from null to XMND6oZdS1OMHx9FitFk8A
+2023-08-29 03:44:49.639 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Cluster ID: skaJsOqUQvGIRQUGgDj8pA
+2023-08-29 03:44:49.826 [main] INFO  c.l.a.s.impl.ApArticleServiceImpl - search result SearchResponse: {"took":3,"timed_out":false,"_shards":{"failed":0.0,"successful":3.0,"total":3.0,"skipped":2.0},"hits":{"total":{"relation":"eq","value":2},"hits":[{"_index":"app_info_article","_id":"1302864436297482242","_score":null,"_source":"{id=1302864436297482242, title=Java语言跨平台原理, publishTime=1599490862000, layout=1, images=group1/M00/00/00/wKjIgl9V2n6AArZsAAGMmaPdt7w502.png, authorId=4, authorName=admin, content=[{\"type\":\"text\",\"value\":\"Java虚拟机——JVM\\n\\n- JVM（Java Virtual Machine ）：Java虚拟机，简称JVM，是运行所有Java程序的假想计算机，是Java程序的运行环境，是Java 最具吸引力的特性之一。我们编写的Java代码，都运行在JVM 之上。\\n- 跨平台：任何软件的运行，都必须要运行在操作系统之上，而我们用Java编写的软件可以运行在任何的操作系统上，这个特性称为Java语言的跨平台特性。该特性是由JVM实现的，我们编写的程序运行在JVM上，而JVM运行在操作系统上。\\n\"},{\"type\":\"image\",\"value\":\"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2n6AArZsAAGMmaPdt7w502.png\"},{\"type\":\"text\",\"value\":\"如图所示，Java的虚拟机本身不具备跨平台功能的，每个操作系统下都有不同版本的虚拟机。\\n\\n问题1: Java 是如何实现跨平台的呢？\\n\\n- 答：因为在不同操作系统中都安装了对应版本的 JVM 虚拟机\\n- 注意: Java程序想要运行, 必须依赖于JVM虚拟机.\\n\\n问题2: JVM 本身是否允许跨平台呢？\\n\\n- 答：不允许，允许跨平台的是 Java 程序，而不是虚拟机。\\n\"}]}","sort":[1599490862000]},{"_index":"app_info_article","_id":"1302862387124125698","_score":null,"_source":"{id=1302862387124125698, title=什么是Java语言, publishTime=1599490578000, layout=1, images=group1/M00/00/00/wKjIgl9V2CqAZe18AAOoOOsvWPc041.png, authorId=4, authorName=admin, staticUrl=http://10.211.55.8:9000/leadnews/2023/08/15/1302862387124125698.html, content=[{\"type\":\"text\",\"value\":\"Java语言是美国Sun公司（Stanford University Network），在1995年推出的高级的编程语言。所谓编程语言，是计算机的语言，人们可以使用编程语言对计算机下达命令，让计算机完成人们需要的功能。\\n\\n2009年，Sun公司被甲骨文公司收购，所以我们现在访问oracle官网即可：https://www.oracle.com\\nJava语言共同创始人之一：詹姆斯·高斯林 （James Gosling），被称为“Java之父”\\n\"},{\"type\":\"image\",\"value\":\"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2CqAZe18AAOoOOsvWPc041.png\"},{\"type\":\"text\",\"value\":\"Java语言发展历史\\n\\n- 1995年Sun公司推出Java语言\\n- 1996年发布Java 1.0版本\\n- 1997年发布Java 1.1版本\\n- 1998年发布Java 1.2版本\\n- 2000年发布Java 1.3版本\\n- 2002年发布Java 1.4版本\\n- 2004年发布Java 5.0版本\\n- 2006年发布Java 6.0版本\\n- 2009年Oracle甲骨文公司收购Sun公司\\n- 2011年发布Java 7.0版本\\n- 2014年发布Java 8.0版本\\n- 2017年9月发布Java 9.0版本\\n- 2018年3月发布Java 10.0版本\\n- 2018年9月发布Java 11.0版本\\n\"},{\"type\":\"text\",\"value\":\"Java 语言的三个版本\\n\\n- JavaSE：标准版，用于桌面应用的开发，是其他两个版本的基础。\\n  - 学习JavaSE的目的, 是为了就业班要学习的JavaEE打基础.\\n\"},{\"type\":\"image\",\"value\":\"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2F6AdQxAAAGyaOdp4gk784.png\"},{\"type\":\"text\",\"value\":\"- JavaEE：企业版，用于Web方向的网站开发\\n  - 网站：网页 + 后台服务器\\n\\nJava语言主要应用在互联网程序的开发领域。常见的互联网程序比如天猫、京东、物流系统、网银系统等，以及服务器后台处理大数据的存储、查询、数据挖掘等也有很多应用。\\n\"}]}","sort":[1599490578000]}],"max_score":null}}
+2023-08-29 03:44:49.829 [main] INFO  c.l.a.s.impl.ApArticleServiceImpl - search hit Hit: {"_index":"app_info_article","_id":"1302864436297482242","_score":null,"_source":"{id=1302864436297482242, title=Java语言跨平台原理, publishTime=1599490862000, layout=1, images=group1/M00/00/00/wKjIgl9V2n6AArZsAAGMmaPdt7w502.png, authorId=4, authorName=admin, content=[{\"type\":\"text\",\"value\":\"Java虚拟机——JVM\\n\\n- JVM（Java Virtual Machine ）：Java虚拟机，简称JVM，是运行所有Java程序的假想计算机，是Java程序的运行环境，是Java 最具吸引力的特性之一。我们编写的Java代码，都运行在JVM 之上。\\n- 跨平台：任何软件的运行，都必须要运行在操作系统之上，而我们用Java编写的软件可以运行在任何的操作系统上，这个特性称为Java语言的跨平台特性。该特性是由JVM实现的，我们编写的程序运行在JVM上，而JVM运行在操作系统上。\\n\"},{\"type\":\"image\",\"value\":\"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2n6AArZsAAGMmaPdt7w502.png\"},{\"type\":\"text\",\"value\":\"如图所示，Java的虚拟机本身不具备跨平台功能的，每个操作系统下都有不同版本的虚拟机。\\n\\n问题1: Java 是如何实现跨平台的呢？\\n\\n- 答：因为在不同操作系统中都安装了对应版本的 JVM 虚拟机\\n- 注意: Java程序想要运行, 必须依赖于JVM虚拟机.\\n\\n问题2: JVM 本身是否允许跨平台呢？\\n\\n- 答：不允许，允许跨平台的是 Java 程序，而不是虚拟机。\\n\"}]}","sort":[1599490862000]}
+2023-08-29 03:44:49.830 [main] INFO  c.l.a.s.impl.ApArticleServiceImpl - source {id=1302864436297482242, title=Java语言跨平台原理, publishTime=1599490862000, layout=1, images=group1/M00/00/00/wKjIgl9V2n6AArZsAAGMmaPdt7w502.png, authorId=4, authorName=admin, content=[{"type":"text","value":"Java虚拟机——JVM\n\n- JVM（Java Virtual Machine ）：Java虚拟机，简称JVM，是运行所有Java程序的假想计算机，是Java程序的运行环境，是Java 最具吸引力的特性之一。我们编写的Java代码，都运行在JVM 之上。\n- 跨平台：任何软件的运行，都必须要运行在操作系统之上，而我们用Java编写的软件可以运行在任何的操作系统上，这个特性称为Java语言的跨平台特性。该特性是由JVM实现的，我们编写的程序运行在JVM上，而JVM运行在操作系统上。\n"},{"type":"image","value":"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2n6AArZsAAGMmaPdt7w502.png"},{"type":"text","value":"如图所示，Java的虚拟机本身不具备跨平台功能的，每个操作系统下都有不同版本的虚拟机。\n\n问题1: Java 是如何实现跨平台的呢？\n\n- 答：因为在不同操作系统中都安装了对应版本的 JVM 虚拟机\n- 注意: Java程序想要运行, 必须依赖于JVM虚拟机.\n\n问题2: JVM 本身是否允许跨平台呢？\n\n- 答：不允许，允许跨平台的是 Java 程序，而不是虚拟机。\n"}]}
+2023-08-29 03:44:49.830 [main] INFO  c.l.a.s.impl.ApArticleServiceImpl - search hit Hit: {"_index":"app_info_article","_id":"1302862387124125698","_score":null,"_source":"{id=1302862387124125698, title=什么是Java语言, publishTime=1599490578000, layout=1, images=group1/M00/00/00/wKjIgl9V2CqAZe18AAOoOOsvWPc041.png, authorId=4, authorName=admin, staticUrl=http://10.211.55.8:9000/leadnews/2023/08/15/1302862387124125698.html, content=[{\"type\":\"text\",\"value\":\"Java语言是美国Sun公司（Stanford University Network），在1995年推出的高级的编程语言。所谓编程语言，是计算机的语言，人们可以使用编程语言对计算机下达命令，让计算机完成人们需要的功能。\\n\\n2009年，Sun公司被甲骨文公司收购，所以我们现在访问oracle官网即可：https://www.oracle.com\\nJava语言共同创始人之一：詹姆斯·高斯林 （James Gosling），被称为“Java之父”\\n\"},{\"type\":\"image\",\"value\":\"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2CqAZe18AAOoOOsvWPc041.png\"},{\"type\":\"text\",\"value\":\"Java语言发展历史\\n\\n- 1995年Sun公司推出Java语言\\n- 1996年发布Java 1.0版本\\n- 1997年发布Java 1.1版本\\n- 1998年发布Java 1.2版本\\n- 2000年发布Java 1.3版本\\n- 2002年发布Java 1.4版本\\n- 2004年发布Java 5.0版本\\n- 2006年发布Java 6.0版本\\n- 2009年Oracle甲骨文公司收购Sun公司\\n- 2011年发布Java 7.0版本\\n- 2014年发布Java 8.0版本\\n- 2017年9月发布Java 9.0版本\\n- 2018年3月发布Java 10.0版本\\n- 2018年9月发布Java 11.0版本\\n\"},{\"type\":\"text\",\"value\":\"Java 语言的三个版本\\n\\n- JavaSE：标准版，用于桌面应用的开发，是其他两个版本的基础。\\n  - 学习JavaSE的目的, 是为了就业班要学习的JavaEE打基础.\\n\"},{\"type\":\"image\",\"value\":\"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2F6AdQxAAAGyaOdp4gk784.png\"},{\"type\":\"text\",\"value\":\"- JavaEE：企业版，用于Web方向的网站开发\\n  - 网站：网页 + 后台服务器\\n\\nJava语言主要应用在互联网程序的开发领域。常见的互联网程序比如天猫、京东、物流系统、网银系统等，以及服务器后台处理大数据的存储、查询、数据挖掘等也有很多应用。\\n\"}]}","sort":[1599490578000]}
+2023-08-29 03:44:49.830 [main] INFO  c.l.a.s.impl.ApArticleServiceImpl - source {id=1302862387124125698, title=什么是Java语言, publishTime=1599490578000, layout=1, images=group1/M00/00/00/wKjIgl9V2CqAZe18AAOoOOsvWPc041.png, authorId=4, authorName=admin, staticUrl=http://10.211.55.8:9000/leadnews/2023/08/15/1302862387124125698.html, content=[{"type":"text","value":"Java语言是美国Sun公司（Stanford University Network），在1995年推出的高级的编程语言。所谓编程语言，是计算机的语言，人们可以使用编程语言对计算机下达命令，让计算机完成人们需要的功能。\n\n2009年，Sun公司被甲骨文公司收购，所以我们现在访问oracle官网即可：https://www.oracle.com\nJava语言共同创始人之一：詹姆斯·高斯林 （James Gosling），被称为“Java之父”\n"},{"type":"image","value":"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2CqAZe18AAOoOOsvWPc041.png"},{"type":"text","value":"Java语言发展历史\n\n- 1995年Sun公司推出Java语言\n- 1996年发布Java 1.0版本\n- 1997年发布Java 1.1版本\n- 1998年发布Java 1.2版本\n- 2000年发布Java 1.3版本\n- 2002年发布Java 1.4版本\n- 2004年发布Java 5.0版本\n- 2006年发布Java 6.0版本\n- 2009年Oracle甲骨文公司收购Sun公司\n- 2011年发布Java 7.0版本\n- 2014年发布Java 8.0版本\n- 2017年9月发布Java 9.0版本\n- 2018年3月发布Java 10.0版本\n- 2018年9月发布Java 11.0版本\n"},{"type":"text","value":"Java 语言的三个版本\n\n- JavaSE：标准版，用于桌面应用的开发，是其他两个版本的基础。\n  - 学习JavaSE的目的, 是为了就业班要学习的JavaEE打基础.\n"},{"type":"image","value":"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2F6AdQxAAAGyaOdp4gk784.png"},{"type":"text","value":"- JavaEE：企业版，用于Web方向的网站开发\n  - 网站：网页 + 后台服务器\n\nJava语言主要应用在互联网程序的开发领域。常见的互联网程序比如天猫、京东、物流系统、网银系统等，以及服务器后台处理大数据的存储、查询、数据挖掘等也有很多应用。\n"}]}
+2023-08-29 03:44:49.838 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2023-08-29 03:44:49.838 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2023-08-29 03:44:49.838 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2023-08-29 03:44:49.839 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2023-08-29 03:44:49.841 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Resetting generation and member id due to: consumer pro-actively leaving the group
+2023-08-29 03:44:49.841 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Request joining group due to: consumer pro-actively leaving the group
+2023-08-29 03:44:49.841 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Unsubscribed all topics or patterns and assigned partitions
+2023-08-29 03:44:49.842 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Resetting generation and member id due to: consumer pro-actively leaving the group
+2023-08-29 03:44:49.842 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Request joining group due to: consumer pro-actively leaving the group
+2023-08-29 03:44:49.843 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2023-08-29 03:44:49.843 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-08-29 03:44:49.843 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2023-08-29 03:44:49.847 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-leadnews-article-1 unregistered
+2023-08-29 03:44:49.847 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - leadnews-article: Consumer stopped
+2023-08-29 03:55:13.621 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.leadnews.article.test.SearchTest]: SearchTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-08-29 03:55:13.712 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.leadnews.article.ArticleApplication for test class com.leadnews.article.test.SearchTest
+2023-08-29 03:55:14.047 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 03:55:14.054 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-08-29 03:55:14.098 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 03:55:14.292 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 03:55:14.294 [main] INFO  c.a.nacos.client.utils.ParamUtil - [settings] [req-serv] nacos-server port:8848
+2023-08-29 03:55:14.295 [main] INFO  c.a.nacos.client.utils.ParamUtil - [settings] [http-client] connect timeout:1000
+2023-08-29 03:55:14.295 [main] INFO  c.a.nacos.client.utils.ParamUtil - PER_TASK_CONFIG_SIZE: 3000.0
+2023-08-29 03:55:14.322 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-08-29 03:55:14.322 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-08-29 03:55:14.345 [main] INFO  c.a.n.c.a.r.i.CredentialWatcher - null No credential found
+2023-08-29 03:55:14.399 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 03:55:14.406 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:/Users/lihaohui/nacos/config
+2023-08-29 03:55:14.409 [main] INFO  c.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of 4d74c772-f3da-486b-ac03-e802d7c96e12_config-0
+2023-08-29 03:55:14.419 [main] INFO  c.alibaba.nacos.common.remote.client - [4d74c772-f3da-486b-ac03-e802d7c96e12_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$860/0x0000000800fce310
+2023-08-29 03:55:14.419 [main] INFO  c.alibaba.nacos.common.remote.client - [4d74c772-f3da-486b-ac03-e802d7c96e12_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$861/0x0000000800fce740
+2023-08-29 03:55:14.420 [main] INFO  c.alibaba.nacos.common.remote.client - [4d74c772-f3da-486b-ac03-e802d7c96e12_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2023-08-29 03:55:14.420 [main] INFO  c.alibaba.nacos.common.remote.client - [4d74c772-f3da-486b-ac03-e802d7c96e12_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2023-08-29 03:55:14.424 [main] INFO  c.alibaba.nacos.common.remote.client - [4d74c772-f3da-486b-ac03-e802d7c96e12_config-0] Try to connect to server on start up, server: {serverIp = '10.211.55.8', server main port = 8848}
+2023-08-29 03:55:14.440 [main] INFO  c.a.n.c.r.client.grpc.GrpcClient - grpc client connection server:10.211.55.8 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2023-08-29 03:55:14.934 [main] INFO  c.alibaba.nacos.common.remote.client - [4d74c772-f3da-486b-ac03-e802d7c96e12_config-0] Success to connect to server [10.211.55.8:8848] on start up, connectionId = 1693235431404_10.211.55.2_56698
+2023-08-29 03:55:14.934 [com.alibaba.nacos.client.remote.worker] INFO  c.alibaba.nacos.common.remote.client - [4d74c772-f3da-486b-ac03-e802d7c96e12_config-0] Notify connected event to listeners.
+2023-08-29 03:55:14.935 [com.alibaba.nacos.client.remote.worker] INFO  c.a.n.c.config.impl.ClientWorker - [4d74c772-f3da-486b-ac03-e802d7c96e12_config-0] Connected,notify listen context...
+2023-08-29 03:55:14.935 [main] INFO  c.alibaba.nacos.common.remote.client - [4d74c772-f3da-486b-ac03-e802d7c96e12_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2023-08-29 03:55:14.935 [main] INFO  c.alibaba.nacos.common.remote.client - [4d74c772-f3da-486b-ac03-e802d7c96e12_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$881/0x00000008011216d8
+2023-08-29 03:55:14.963 [main] INFO  c.a.nacos.client.config.impl.Limiter - limitTime:5.0
+2023-08-29 03:55:14.982 [main] INFO  c.a.n.client.config.utils.JvmUtil - isMultiInstance:false
+2023-08-29 03:55:14.991 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[leadnews-article.yml] & group[DEFAULT_GROUP]
+2023-08-29 03:55:14.992 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-leadnews-article.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-leadnews-article,DEFAULT_GROUP'}]
+2023-08-29 03:55:15.000 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 03:55:15.000 [main] INFO  c.leadnews.article.test.SearchTest - No active profile set, falling back to 1 default profile: "default"
+2023-08-29 03:55:15.575 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=449ec16e-332a-3d0e-b9fa-c713d414e121
+2023-08-29 03:55:15.929 [main] INFO  c.l.b.e.config.ElasticSearchConfig - connect hostname:10.211.55.8, port:9200
+2023-08-29 03:55:22.176 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-08-29 03:55:22.191 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-29 03:55:22.272 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [10.211.55.8:9091]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-leadnews-article-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = leadnews-article
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-08-29 03:55:22.335 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.3.2
+2023-08-29 03:55:22.335 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: b66af662e61082cb
+2023-08-29 03:55:22.335 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1693252522334
+2023-08-29 03:55:22.344 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Subscribed to topic(s): wm.news.up.or.down.topic
+2023-08-29 03:55:22.370 [main] INFO  c.leadnews.article.test.SearchTest - Started SearchTest in 8.536 seconds (process running for 9.521)
+2023-08-29 03:55:22.373 [main] INFO  c.a.n.client.config.impl.CacheData - nacos.cache.data.init.snapshot = true 
+2023-08-29 03:55:22.373 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [subscribe] leadnews-article.yml+DEFAULT_GROUP+4e85b1a4-8d96-4c12-8631-7c0473ed1614
+2023-08-29 03:55:22.377 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [add-listener] ok, tenant=4e85b1a4-8d96-4c12-8631-7c0473ed1614, dataId=leadnews-article.yml, group=DEFAULT_GROUP, cnt=1
+2023-08-29 03:55:22.378 [main] INFO  c.a.c.n.r.NacosContextRefresher - [Nacos Config] Listening config: dataId=leadnews-article.yml, group=DEFAULT_GROUP
+2023-08-29 03:55:22.378 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [subscribe] leadnews-article+DEFAULT_GROUP+4e85b1a4-8d96-4c12-8631-7c0473ed1614
+2023-08-29 03:55:22.378 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [add-listener] ok, tenant=4e85b1a4-8d96-4c12-8631-7c0473ed1614, dataId=leadnews-article, group=DEFAULT_GROUP, cnt=1
+2023-08-29 03:55:22.378 [main] INFO  c.a.c.n.r.NacosContextRefresher - [Nacos Config] Listening config: dataId=leadnews-article, group=DEFAULT_GROUP
+2023-08-29 03:55:22.520 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Resetting the last seen epoch of partition wm.news.up.or.down.topic-0 to 1 since the associated topicId changed from null to XMND6oZdS1OMHx9FitFk8A
+2023-08-29 03:55:22.521 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Cluster ID: skaJsOqUQvGIRQUGgDj8pA
+2023-08-29 03:55:22.706 [main] INFO  c.l.a.s.impl.ApArticleServiceImpl - search result SearchResponse: {"took":20,"timed_out":false,"_shards":{"failed":0.0,"successful":3.0,"total":3.0,"skipped":2.0},"hits":{"total":{"relation":"eq","value":2},"hits":[{"_index":"app_info_article","_id":"1302864436297482242","_score":null,"_source":"{id=1302864436297482242, title=Java语言跨平台原理, publishTime=1599490862000, layout=1, images=group1/M00/00/00/wKjIgl9V2n6AArZsAAGMmaPdt7w502.png, authorId=4, authorName=admin, content=[{\"type\":\"text\",\"value\":\"Java虚拟机——JVM\\n\\n- JVM（Java Virtual Machine ）：Java虚拟机，简称JVM，是运行所有Java程序的假想计算机，是Java程序的运行环境，是Java 最具吸引力的特性之一。我们编写的Java代码，都运行在JVM 之上。\\n- 跨平台：任何软件的运行，都必须要运行在操作系统之上，而我们用Java编写的软件可以运行在任何的操作系统上，这个特性称为Java语言的跨平台特性。该特性是由JVM实现的，我们编写的程序运行在JVM上，而JVM运行在操作系统上。\\n\"},{\"type\":\"image\",\"value\":\"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2n6AArZsAAGMmaPdt7w502.png\"},{\"type\":\"text\",\"value\":\"如图所示，Java的虚拟机本身不具备跨平台功能的，每个操作系统下都有不同版本的虚拟机。\\n\\n问题1: Java 是如何实现跨平台的呢？\\n\\n- 答：因为在不同操作系统中都安装了对应版本的 JVM 虚拟机\\n- 注意: Java程序想要运行, 必须依赖于JVM虚拟机.\\n\\n问题2: JVM 本身是否允许跨平台呢？\\n\\n- 答：不允许，允许跨平台的是 Java 程序，而不是虚拟机。\\n\"}]}","sort":[1599490862000]},{"_index":"app_info_article","_id":"1302862387124125698","_score":null,"_source":"{id=1302862387124125698, title=什么是Java语言, publishTime=1599490578000, layout=1, images=group1/M00/00/00/wKjIgl9V2CqAZe18AAOoOOsvWPc041.png, authorId=4, authorName=admin, staticUrl=http://10.211.55.8:9000/leadnews/2023/08/15/1302862387124125698.html, content=[{\"type\":\"text\",\"value\":\"Java语言是美国Sun公司（Stanford University Network），在1995年推出的高级的编程语言。所谓编程语言，是计算机的语言，人们可以使用编程语言对计算机下达命令，让计算机完成人们需要的功能。\\n\\n2009年，Sun公司被甲骨文公司收购，所以我们现在访问oracle官网即可：https://www.oracle.com\\nJava语言共同创始人之一：詹姆斯·高斯林 （James Gosling），被称为“Java之父”\\n\"},{\"type\":\"image\",\"value\":\"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2CqAZe18AAOoOOsvWPc041.png\"},{\"type\":\"text\",\"value\":\"Java语言发展历史\\n\\n- 1995年Sun公司推出Java语言\\n- 1996年发布Java 1.0版本\\n- 1997年发布Java 1.1版本\\n- 1998年发布Java 1.2版本\\n- 2000年发布Java 1.3版本\\n- 2002年发布Java 1.4版本\\n- 2004年发布Java 5.0版本\\n- 2006年发布Java 6.0版本\\n- 2009年Oracle甲骨文公司收购Sun公司\\n- 2011年发布Java 7.0版本\\n- 2014年发布Java 8.0版本\\n- 2017年9月发布Java 9.0版本\\n- 2018年3月发布Java 10.0版本\\n- 2018年9月发布Java 11.0版本\\n\"},{\"type\":\"text\",\"value\":\"Java 语言的三个版本\\n\\n- JavaSE：标准版，用于桌面应用的开发，是其他两个版本的基础。\\n  - 学习JavaSE的目的, 是为了就业班要学习的JavaEE打基础.\\n\"},{\"type\":\"image\",\"value\":\"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2F6AdQxAAAGyaOdp4gk784.png\"},{\"type\":\"text\",\"value\":\"- JavaEE：企业版，用于Web方向的网站开发\\n  - 网站：网页 + 后台服务器\\n\\nJava语言主要应用在互联网程序的开发领域。常见的互联网程序比如天猫、京东、物流系统、网银系统等，以及服务器后台处理大数据的存储、查询、数据挖掘等也有很多应用。\\n\"}]}","sort":[1599490578000]}],"max_score":null}}
+2023-08-29 03:55:22.709 [main] INFO  c.l.a.s.impl.ApArticleServiceImpl - search hit Hit: {"_index":"app_info_article","_id":"1302864436297482242","_score":null,"_source":"{id=1302864436297482242, title=Java语言跨平台原理, publishTime=1599490862000, layout=1, images=group1/M00/00/00/wKjIgl9V2n6AArZsAAGMmaPdt7w502.png, authorId=4, authorName=admin, content=[{\"type\":\"text\",\"value\":\"Java虚拟机——JVM\\n\\n- JVM（Java Virtual Machine ）：Java虚拟机，简称JVM，是运行所有Java程序的假想计算机，是Java程序的运行环境，是Java 最具吸引力的特性之一。我们编写的Java代码，都运行在JVM 之上。\\n- 跨平台：任何软件的运行，都必须要运行在操作系统之上，而我们用Java编写的软件可以运行在任何的操作系统上，这个特性称为Java语言的跨平台特性。该特性是由JVM实现的，我们编写的程序运行在JVM上，而JVM运行在操作系统上。\\n\"},{\"type\":\"image\",\"value\":\"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2n6AArZsAAGMmaPdt7w502.png\"},{\"type\":\"text\",\"value\":\"如图所示，Java的虚拟机本身不具备跨平台功能的，每个操作系统下都有不同版本的虚拟机。\\n\\n问题1: Java 是如何实现跨平台的呢？\\n\\n- 答：因为在不同操作系统中都安装了对应版本的 JVM 虚拟机\\n- 注意: Java程序想要运行, 必须依赖于JVM虚拟机.\\n\\n问题2: JVM 本身是否允许跨平台呢？\\n\\n- 答：不允许，允许跨平台的是 Java 程序，而不是虚拟机。\\n\"}]}","sort":[1599490862000]}
+2023-08-29 03:55:22.710 [main] INFO  c.l.a.s.impl.ApArticleServiceImpl - source {id=1302864436297482242, title=Java语言跨平台原理, publishTime=1599490862000, layout=1, images=group1/M00/00/00/wKjIgl9V2n6AArZsAAGMmaPdt7w502.png, authorId=4, authorName=admin, content=[{"type":"text","value":"Java虚拟机——JVM\n\n- JVM（Java Virtual Machine ）：Java虚拟机，简称JVM，是运行所有Java程序的假想计算机，是Java程序的运行环境，是Java 最具吸引力的特性之一。我们编写的Java代码，都运行在JVM 之上。\n- 跨平台：任何软件的运行，都必须要运行在操作系统之上，而我们用Java编写的软件可以运行在任何的操作系统上，这个特性称为Java语言的跨平台特性。该特性是由JVM实现的，我们编写的程序运行在JVM上，而JVM运行在操作系统上。\n"},{"type":"image","value":"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2n6AArZsAAGMmaPdt7w502.png"},{"type":"text","value":"如图所示，Java的虚拟机本身不具备跨平台功能的，每个操作系统下都有不同版本的虚拟机。\n\n问题1: Java 是如何实现跨平台的呢？\n\n- 答：因为在不同操作系统中都安装了对应版本的 JVM 虚拟机\n- 注意: Java程序想要运行, 必须依赖于JVM虚拟机.\n\n问题2: JVM 本身是否允许跨平台呢？\n\n- 答：不允许，允许跨平台的是 Java 程序，而不是虚拟机。\n"}]}
+2023-08-29 03:55:22.710 [main] INFO  c.l.a.s.impl.ApArticleServiceImpl - highlight {}
+2023-08-29 03:55:22.710 [main] INFO  c.l.a.s.impl.ApArticleServiceImpl - search hit Hit: {"_index":"app_info_article","_id":"1302862387124125698","_score":null,"_source":"{id=1302862387124125698, title=什么是Java语言, publishTime=1599490578000, layout=1, images=group1/M00/00/00/wKjIgl9V2CqAZe18AAOoOOsvWPc041.png, authorId=4, authorName=admin, staticUrl=http://10.211.55.8:9000/leadnews/2023/08/15/1302862387124125698.html, content=[{\"type\":\"text\",\"value\":\"Java语言是美国Sun公司（Stanford University Network），在1995年推出的高级的编程语言。所谓编程语言，是计算机的语言，人们可以使用编程语言对计算机下达命令，让计算机完成人们需要的功能。\\n\\n2009年，Sun公司被甲骨文公司收购，所以我们现在访问oracle官网即可：https://www.oracle.com\\nJava语言共同创始人之一：詹姆斯·高斯林 （James Gosling），被称为“Java之父”\\n\"},{\"type\":\"image\",\"value\":\"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2CqAZe18AAOoOOsvWPc041.png\"},{\"type\":\"text\",\"value\":\"Java语言发展历史\\n\\n- 1995年Sun公司推出Java语言\\n- 1996年发布Java 1.0版本\\n- 1997年发布Java 1.1版本\\n- 1998年发布Java 1.2版本\\n- 2000年发布Java 1.3版本\\n- 2002年发布Java 1.4版本\\n- 2004年发布Java 5.0版本\\n- 2006年发布Java 6.0版本\\n- 2009年Oracle甲骨文公司收购Sun公司\\n- 2011年发布Java 7.0版本\\n- 2014年发布Java 8.0版本\\n- 2017年9月发布Java 9.0版本\\n- 2018年3月发布Java 10.0版本\\n- 2018年9月发布Java 11.0版本\\n\"},{\"type\":\"text\",\"value\":\"Java 语言的三个版本\\n\\n- JavaSE：标准版，用于桌面应用的开发，是其他两个版本的基础。\\n  - 学习JavaSE的目的, 是为了就业班要学习的JavaEE打基础.\\n\"},{\"type\":\"image\",\"value\":\"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2F6AdQxAAAGyaOdp4gk784.png\"},{\"type\":\"text\",\"value\":\"- JavaEE：企业版，用于Web方向的网站开发\\n  - 网站：网页 + 后台服务器\\n\\nJava语言主要应用在互联网程序的开发领域。常见的互联网程序比如天猫、京东、物流系统、网银系统等，以及服务器后台处理大数据的存储、查询、数据挖掘等也有很多应用。\\n\"}]}","sort":[1599490578000]}
+2023-08-29 03:55:22.710 [main] INFO  c.l.a.s.impl.ApArticleServiceImpl - source {id=1302862387124125698, title=什么是Java语言, publishTime=1599490578000, layout=1, images=group1/M00/00/00/wKjIgl9V2CqAZe18AAOoOOsvWPc041.png, authorId=4, authorName=admin, staticUrl=http://10.211.55.8:9000/leadnews/2023/08/15/1302862387124125698.html, content=[{"type":"text","value":"Java语言是美国Sun公司（Stanford University Network），在1995年推出的高级的编程语言。所谓编程语言，是计算机的语言，人们可以使用编程语言对计算机下达命令，让计算机完成人们需要的功能。\n\n2009年，Sun公司被甲骨文公司收购，所以我们现在访问oracle官网即可：https://www.oracle.com\nJava语言共同创始人之一：詹姆斯·高斯林 （James Gosling），被称为“Java之父”\n"},{"type":"image","value":"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2CqAZe18AAOoOOsvWPc041.png"},{"type":"text","value":"Java语言发展历史\n\n- 1995年Sun公司推出Java语言\n- 1996年发布Java 1.0版本\n- 1997年发布Java 1.1版本\n- 1998年发布Java 1.2版本\n- 2000年发布Java 1.3版本\n- 2002年发布Java 1.4版本\n- 2004年发布Java 5.0版本\n- 2006年发布Java 6.0版本\n- 2009年Oracle甲骨文公司收购Sun公司\n- 2011年发布Java 7.0版本\n- 2014年发布Java 8.0版本\n- 2017年9月发布Java 9.0版本\n- 2018年3月发布Java 10.0版本\n- 2018年9月发布Java 11.0版本\n"},{"type":"text","value":"Java 语言的三个版本\n\n- JavaSE：标准版，用于桌面应用的开发，是其他两个版本的基础。\n  - 学习JavaSE的目的, 是为了就业班要学习的JavaEE打基础.\n"},{"type":"image","value":"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2F6AdQxAAAGyaOdp4gk784.png"},{"type":"text","value":"- JavaEE：企业版，用于Web方向的网站开发\n  - 网站：网页 + 后台服务器\n\nJava语言主要应用在互联网程序的开发领域。常见的互联网程序比如天猫、京东、物流系统、网银系统等，以及服务器后台处理大数据的存储、查询、数据挖掘等也有很多应用。\n"}]}
+2023-08-29 03:55:22.711 [main] INFO  c.l.a.s.impl.ApArticleServiceImpl - highlight {}
+2023-08-29 03:55:22.719 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2023-08-29 03:55:22.719 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2023-08-29 03:55:22.719 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2023-08-29 03:55:22.720 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2023-08-29 03:55:22.722 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Resetting generation and member id due to: consumer pro-actively leaving the group
+2023-08-29 03:55:22.722 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Request joining group due to: consumer pro-actively leaving the group
+2023-08-29 03:55:22.722 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Unsubscribed all topics or patterns and assigned partitions
+2023-08-29 03:55:22.723 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Resetting generation and member id due to: consumer pro-actively leaving the group
+2023-08-29 03:55:22.723 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Request joining group due to: consumer pro-actively leaving the group
+2023-08-29 03:55:22.723 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2023-08-29 03:55:22.723 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-08-29 03:55:22.723 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2023-08-29 03:55:22.727 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-leadnews-article-1 unregistered
+2023-08-29 03:55:22.728 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - leadnews-article: Consumer stopped
+2023-08-29 03:56:55.964 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.leadnews.article.test.SearchTest]: SearchTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-08-29 03:56:56.025 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.leadnews.article.ArticleApplication for test class com.leadnews.article.test.SearchTest
+2023-08-29 03:56:56.254 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 03:56:56.259 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-08-29 03:56:56.279 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 03:56:56.384 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 03:56:56.385 [main] INFO  c.a.nacos.client.utils.ParamUtil - [settings] [req-serv] nacos-server port:8848
+2023-08-29 03:56:56.385 [main] INFO  c.a.nacos.client.utils.ParamUtil - [settings] [http-client] connect timeout:1000
+2023-08-29 03:56:56.386 [main] INFO  c.a.nacos.client.utils.ParamUtil - PER_TASK_CONFIG_SIZE: 3000.0
+2023-08-29 03:56:56.413 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-08-29 03:56:56.413 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-08-29 03:56:56.435 [main] INFO  c.a.n.c.a.r.i.CredentialWatcher - null No credential found
+2023-08-29 03:56:56.492 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 03:56:56.500 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:/Users/lihaohui/nacos/config
+2023-08-29 03:56:56.503 [main] INFO  c.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of 923baa2a-213c-419d-a30e-c097daf5e9a3_config-0
+2023-08-29 03:56:56.514 [main] INFO  c.alibaba.nacos.common.remote.client - [923baa2a-213c-419d-a30e-c097daf5e9a3_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$860/0x0000000800fcea60
+2023-08-29 03:56:56.514 [main] INFO  c.alibaba.nacos.common.remote.client - [923baa2a-213c-419d-a30e-c097daf5e9a3_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$861/0x0000000800fcee90
+2023-08-29 03:56:56.514 [main] INFO  c.alibaba.nacos.common.remote.client - [923baa2a-213c-419d-a30e-c097daf5e9a3_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2023-08-29 03:56:56.514 [main] INFO  c.alibaba.nacos.common.remote.client - [923baa2a-213c-419d-a30e-c097daf5e9a3_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2023-08-29 03:56:56.519 [main] INFO  c.alibaba.nacos.common.remote.client - [923baa2a-213c-419d-a30e-c097daf5e9a3_config-0] Try to connect to server on start up, server: {serverIp = '10.211.55.8', server main port = 8848}
+2023-08-29 03:56:56.537 [main] INFO  c.a.n.c.r.client.grpc.GrpcClient - grpc client connection server:10.211.55.8 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2023-08-29 03:56:56.995 [main] INFO  c.alibaba.nacos.common.remote.client - [923baa2a-213c-419d-a30e-c097daf5e9a3_config-0] Success to connect to server [10.211.55.8:8848] on start up, connectionId = 1693235541974_10.211.55.2_57206
+2023-08-29 03:56:56.995 [com.alibaba.nacos.client.remote.worker] INFO  c.alibaba.nacos.common.remote.client - [923baa2a-213c-419d-a30e-c097daf5e9a3_config-0] Notify connected event to listeners.
+2023-08-29 03:56:56.996 [com.alibaba.nacos.client.remote.worker] INFO  c.a.n.c.config.impl.ClientWorker - [923baa2a-213c-419d-a30e-c097daf5e9a3_config-0] Connected,notify listen context...
+2023-08-29 03:56:56.996 [main] INFO  c.alibaba.nacos.common.remote.client - [923baa2a-213c-419d-a30e-c097daf5e9a3_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2023-08-29 03:56:56.996 [main] INFO  c.alibaba.nacos.common.remote.client - [923baa2a-213c-419d-a30e-c097daf5e9a3_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$881/0x0000000801121490
+2023-08-29 03:56:57.021 [main] INFO  c.a.nacos.client.config.impl.Limiter - limitTime:5.0
+2023-08-29 03:56:57.041 [main] INFO  c.a.n.client.config.utils.JvmUtil - isMultiInstance:false
+2023-08-29 03:56:57.051 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[leadnews-article.yml] & group[DEFAULT_GROUP]
+2023-08-29 03:56:57.052 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-leadnews-article.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-leadnews-article,DEFAULT_GROUP'}]
+2023-08-29 03:56:57.059 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 03:56:57.060 [main] INFO  c.leadnews.article.test.SearchTest - No active profile set, falling back to 1 default profile: "default"
+2023-08-29 03:56:57.598 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=449ec16e-332a-3d0e-b9fa-c713d414e121
+2023-08-29 03:56:57.954 [main] INFO  c.l.b.e.config.ElasticSearchConfig - connect hostname:10.211.55.8, port:9200
+2023-08-29 03:57:02.831 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-08-29 03:57:02.843 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-29 03:57:02.910 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [10.211.55.8:9091]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-leadnews-article-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = leadnews-article
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-08-29 03:57:02.976 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.3.2
+2023-08-29 03:57:02.976 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: b66af662e61082cb
+2023-08-29 03:57:02.976 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1693252622975
+2023-08-29 03:57:02.985 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Subscribed to topic(s): wm.news.up.or.down.topic
+2023-08-29 03:57:03.011 [main] INFO  c.leadnews.article.test.SearchTest - Started SearchTest in 6.917 seconds (process running for 7.627)
+2023-08-29 03:57:03.015 [main] INFO  c.a.n.client.config.impl.CacheData - nacos.cache.data.init.snapshot = true 
+2023-08-29 03:57:03.015 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [subscribe] leadnews-article.yml+DEFAULT_GROUP+4e85b1a4-8d96-4c12-8631-7c0473ed1614
+2023-08-29 03:57:03.020 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [add-listener] ok, tenant=4e85b1a4-8d96-4c12-8631-7c0473ed1614, dataId=leadnews-article.yml, group=DEFAULT_GROUP, cnt=1
+2023-08-29 03:57:03.020 [main] INFO  c.a.c.n.r.NacosContextRefresher - [Nacos Config] Listening config: dataId=leadnews-article.yml, group=DEFAULT_GROUP
+2023-08-29 03:57:03.021 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [subscribe] leadnews-article+DEFAULT_GROUP+4e85b1a4-8d96-4c12-8631-7c0473ed1614
+2023-08-29 03:57:03.021 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [add-listener] ok, tenant=4e85b1a4-8d96-4c12-8631-7c0473ed1614, dataId=leadnews-article, group=DEFAULT_GROUP, cnt=1
+2023-08-29 03:57:03.021 [main] INFO  c.a.c.n.r.NacosContextRefresher - [Nacos Config] Listening config: dataId=leadnews-article, group=DEFAULT_GROUP
+2023-08-29 03:57:03.153 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Resetting the last seen epoch of partition wm.news.up.or.down.topic-0 to 1 since the associated topicId changed from null to XMND6oZdS1OMHx9FitFk8A
+2023-08-29 03:57:03.154 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Cluster ID: skaJsOqUQvGIRQUGgDj8pA
+2023-08-29 03:57:03.341 [main] INFO  c.l.a.s.impl.ApArticleServiceImpl - search result SearchResponse: {"took":6,"timed_out":false,"_shards":{"failed":0.0,"successful":3.0,"total":3.0,"skipped":2.0},"hits":{"total":{"relation":"eq","value":2},"hits":[{"_index":"app_info_article","_id":"1302864436297482242","_score":null,"_source":"{id=1302864436297482242, title=Java语言跨平台原理, publishTime=1599490862000, layout=1, images=group1/M00/00/00/wKjIgl9V2n6AArZsAAGMmaPdt7w502.png, authorId=4, authorName=admin, content=[{\"type\":\"text\",\"value\":\"Java虚拟机——JVM\\n\\n- JVM（Java Virtual Machine ）：Java虚拟机，简称JVM，是运行所有Java程序的假想计算机，是Java程序的运行环境，是Java 最具吸引力的特性之一。我们编写的Java代码，都运行在JVM 之上。\\n- 跨平台：任何软件的运行，都必须要运行在操作系统之上，而我们用Java编写的软件可以运行在任何的操作系统上，这个特性称为Java语言的跨平台特性。该特性是由JVM实现的，我们编写的程序运行在JVM上，而JVM运行在操作系统上。\\n\"},{\"type\":\"image\",\"value\":\"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2n6AArZsAAGMmaPdt7w502.png\"},{\"type\":\"text\",\"value\":\"如图所示，Java的虚拟机本身不具备跨平台功能的，每个操作系统下都有不同版本的虚拟机。\\n\\n问题1: Java 是如何实现跨平台的呢？\\n\\n- 答：因为在不同操作系统中都安装了对应版本的 JVM 虚拟机\\n- 注意: Java程序想要运行, 必须依赖于JVM虚拟机.\\n\\n问题2: JVM 本身是否允许跨平台呢？\\n\\n- 答：不允许，允许跨平台的是 Java 程序，而不是虚拟机。\\n\"}]}","sort":[1599490862000]},{"_index":"app_info_article","_id":"1302862387124125698","_score":null,"_source":"{id=1302862387124125698, title=什么是Java语言, publishTime=1599490578000, layout=1, images=group1/M00/00/00/wKjIgl9V2CqAZe18AAOoOOsvWPc041.png, authorId=4, authorName=admin, staticUrl=http://10.211.55.8:9000/leadnews/2023/08/15/1302862387124125698.html, content=[{\"type\":\"text\",\"value\":\"Java语言是美国Sun公司（Stanford University Network），在1995年推出的高级的编程语言。所谓编程语言，是计算机的语言，人们可以使用编程语言对计算机下达命令，让计算机完成人们需要的功能。\\n\\n2009年，Sun公司被甲骨文公司收购，所以我们现在访问oracle官网即可：https://www.oracle.com\\nJava语言共同创始人之一：詹姆斯·高斯林 （James Gosling），被称为“Java之父”\\n\"},{\"type\":\"image\",\"value\":\"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2CqAZe18AAOoOOsvWPc041.png\"},{\"type\":\"text\",\"value\":\"Java语言发展历史\\n\\n- 1995年Sun公司推出Java语言\\n- 1996年发布Java 1.0版本\\n- 1997年发布Java 1.1版本\\n- 1998年发布Java 1.2版本\\n- 2000年发布Java 1.3版本\\n- 2002年发布Java 1.4版本\\n- 2004年发布Java 5.0版本\\n- 2006年发布Java 6.0版本\\n- 2009年Oracle甲骨文公司收购Sun公司\\n- 2011年发布Java 7.0版本\\n- 2014年发布Java 8.0版本\\n- 2017年9月发布Java 9.0版本\\n- 2018年3月发布Java 10.0版本\\n- 2018年9月发布Java 11.0版本\\n\"},{\"type\":\"text\",\"value\":\"Java 语言的三个版本\\n\\n- JavaSE：标准版，用于桌面应用的开发，是其他两个版本的基础。\\n  - 学习JavaSE的目的, 是为了就业班要学习的JavaEE打基础.\\n\"},{\"type\":\"image\",\"value\":\"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2F6AdQxAAAGyaOdp4gk784.png\"},{\"type\":\"text\",\"value\":\"- JavaEE：企业版，用于Web方向的网站开发\\n  - 网站：网页 + 后台服务器\\n\\nJava语言主要应用在互联网程序的开发领域。常见的互联网程序比如天猫、京东、物流系统、网银系统等，以及服务器后台处理大数据的存储、查询、数据挖掘等也有很多应用。\\n\"}]}","sort":[1599490578000]}],"max_score":null}}
+2023-08-29 03:57:03.344 [main] INFO  c.l.a.s.impl.ApArticleServiceImpl - search hit Hit: {"_index":"app_info_article","_id":"1302864436297482242","_score":null,"_source":"{id=1302864436297482242, title=Java语言跨平台原理, publishTime=1599490862000, layout=1, images=group1/M00/00/00/wKjIgl9V2n6AArZsAAGMmaPdt7w502.png, authorId=4, authorName=admin, content=[{\"type\":\"text\",\"value\":\"Java虚拟机——JVM\\n\\n- JVM（Java Virtual Machine ）：Java虚拟机，简称JVM，是运行所有Java程序的假想计算机，是Java程序的运行环境，是Java 最具吸引力的特性之一。我们编写的Java代码，都运行在JVM 之上。\\n- 跨平台：任何软件的运行，都必须要运行在操作系统之上，而我们用Java编写的软件可以运行在任何的操作系统上，这个特性称为Java语言的跨平台特性。该特性是由JVM实现的，我们编写的程序运行在JVM上，而JVM运行在操作系统上。\\n\"},{\"type\":\"image\",\"value\":\"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2n6AArZsAAGMmaPdt7w502.png\"},{\"type\":\"text\",\"value\":\"如图所示，Java的虚拟机本身不具备跨平台功能的，每个操作系统下都有不同版本的虚拟机。\\n\\n问题1: Java 是如何实现跨平台的呢？\\n\\n- 答：因为在不同操作系统中都安装了对应版本的 JVM 虚拟机\\n- 注意: Java程序想要运行, 必须依赖于JVM虚拟机.\\n\\n问题2: JVM 本身是否允许跨平台呢？\\n\\n- 答：不允许，允许跨平台的是 Java 程序，而不是虚拟机。\\n\"}]}","sort":[1599490862000]}
+2023-08-29 03:57:03.345 [main] INFO  c.l.a.s.impl.ApArticleServiceImpl - source {id=1302864436297482242, title=Java语言跨平台原理, publishTime=1599490862000, layout=1, images=group1/M00/00/00/wKjIgl9V2n6AArZsAAGMmaPdt7w502.png, authorId=4, authorName=admin, content=[{"type":"text","value":"Java虚拟机——JVM\n\n- JVM（Java Virtual Machine ）：Java虚拟机，简称JVM，是运行所有Java程序的假想计算机，是Java程序的运行环境，是Java 最具吸引力的特性之一。我们编写的Java代码，都运行在JVM 之上。\n- 跨平台：任何软件的运行，都必须要运行在操作系统之上，而我们用Java编写的软件可以运行在任何的操作系统上，这个特性称为Java语言的跨平台特性。该特性是由JVM实现的，我们编写的程序运行在JVM上，而JVM运行在操作系统上。\n"},{"type":"image","value":"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2n6AArZsAAGMmaPdt7w502.png"},{"type":"text","value":"如图所示，Java的虚拟机本身不具备跨平台功能的，每个操作系统下都有不同版本的虚拟机。\n\n问题1: Java 是如何实现跨平台的呢？\n\n- 答：因为在不同操作系统中都安装了对应版本的 JVM 虚拟机\n- 注意: Java程序想要运行, 必须依赖于JVM虚拟机.\n\n问题2: JVM 本身是否允许跨平台呢？\n\n- 答：不允许，允许跨平台的是 Java 程序，而不是虚拟机。\n"}]}
+2023-08-29 03:57:03.345 [main] INFO  c.l.a.s.impl.ApArticleServiceImpl - highlight {}
+2023-08-29 03:57:03.345 [main] INFO  c.l.a.s.impl.ApArticleServiceImpl - search hit Hit: {"_index":"app_info_article","_id":"1302862387124125698","_score":null,"_source":"{id=1302862387124125698, title=什么是Java语言, publishTime=1599490578000, layout=1, images=group1/M00/00/00/wKjIgl9V2CqAZe18AAOoOOsvWPc041.png, authorId=4, authorName=admin, staticUrl=http://10.211.55.8:9000/leadnews/2023/08/15/1302862387124125698.html, content=[{\"type\":\"text\",\"value\":\"Java语言是美国Sun公司（Stanford University Network），在1995年推出的高级的编程语言。所谓编程语言，是计算机的语言，人们可以使用编程语言对计算机下达命令，让计算机完成人们需要的功能。\\n\\n2009年，Sun公司被甲骨文公司收购，所以我们现在访问oracle官网即可：https://www.oracle.com\\nJava语言共同创始人之一：詹姆斯·高斯林 （James Gosling），被称为“Java之父”\\n\"},{\"type\":\"image\",\"value\":\"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2CqAZe18AAOoOOsvWPc041.png\"},{\"type\":\"text\",\"value\":\"Java语言发展历史\\n\\n- 1995年Sun公司推出Java语言\\n- 1996年发布Java 1.0版本\\n- 1997年发布Java 1.1版本\\n- 1998年发布Java 1.2版本\\n- 2000年发布Java 1.3版本\\n- 2002年发布Java 1.4版本\\n- 2004年发布Java 5.0版本\\n- 2006年发布Java 6.0版本\\n- 2009年Oracle甲骨文公司收购Sun公司\\n- 2011年发布Java 7.0版本\\n- 2014年发布Java 8.0版本\\n- 2017年9月发布Java 9.0版本\\n- 2018年3月发布Java 10.0版本\\n- 2018年9月发布Java 11.0版本\\n\"},{\"type\":\"text\",\"value\":\"Java 语言的三个版本\\n\\n- JavaSE：标准版，用于桌面应用的开发，是其他两个版本的基础。\\n  - 学习JavaSE的目的, 是为了就业班要学习的JavaEE打基础.\\n\"},{\"type\":\"image\",\"value\":\"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2F6AdQxAAAGyaOdp4gk784.png\"},{\"type\":\"text\",\"value\":\"- JavaEE：企业版，用于Web方向的网站开发\\n  - 网站：网页 + 后台服务器\\n\\nJava语言主要应用在互联网程序的开发领域。常见的互联网程序比如天猫、京东、物流系统、网银系统等，以及服务器后台处理大数据的存储、查询、数据挖掘等也有很多应用。\\n\"}]}","sort":[1599490578000]}
+2023-08-29 03:57:03.346 [main] INFO  c.l.a.s.impl.ApArticleServiceImpl - source {id=1302862387124125698, title=什么是Java语言, publishTime=1599490578000, layout=1, images=group1/M00/00/00/wKjIgl9V2CqAZe18AAOoOOsvWPc041.png, authorId=4, authorName=admin, staticUrl=http://10.211.55.8:9000/leadnews/2023/08/15/1302862387124125698.html, content=[{"type":"text","value":"Java语言是美国Sun公司（Stanford University Network），在1995年推出的高级的编程语言。所谓编程语言，是计算机的语言，人们可以使用编程语言对计算机下达命令，让计算机完成人们需要的功能。\n\n2009年，Sun公司被甲骨文公司收购，所以我们现在访问oracle官网即可：https://www.oracle.com\nJava语言共同创始人之一：詹姆斯·高斯林 （James Gosling），被称为“Java之父”\n"},{"type":"image","value":"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2CqAZe18AAOoOOsvWPc041.png"},{"type":"text","value":"Java语言发展历史\n\n- 1995年Sun公司推出Java语言\n- 1996年发布Java 1.0版本\n- 1997年发布Java 1.1版本\n- 1998年发布Java 1.2版本\n- 2000年发布Java 1.3版本\n- 2002年发布Java 1.4版本\n- 2004年发布Java 5.0版本\n- 2006年发布Java 6.0版本\n- 2009年Oracle甲骨文公司收购Sun公司\n- 2011年发布Java 7.0版本\n- 2014年发布Java 8.0版本\n- 2017年9月发布Java 9.0版本\n- 2018年3月发布Java 10.0版本\n- 2018年9月发布Java 11.0版本\n"},{"type":"text","value":"Java 语言的三个版本\n\n- JavaSE：标准版，用于桌面应用的开发，是其他两个版本的基础。\n  - 学习JavaSE的目的, 是为了就业班要学习的JavaEE打基础.\n"},{"type":"image","value":"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2F6AdQxAAAGyaOdp4gk784.png"},{"type":"text","value":"- JavaEE：企业版，用于Web方向的网站开发\n  - 网站：网页 + 后台服务器\n\nJava语言主要应用在互联网程序的开发领域。常见的互联网程序比如天猫、京东、物流系统、网银系统等，以及服务器后台处理大数据的存储、查询、数据挖掘等也有很多应用。\n"}]}
+2023-08-29 03:57:03.346 [main] INFO  c.l.a.s.impl.ApArticleServiceImpl - highlight {}
+2023-08-29 03:57:03.353 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2023-08-29 03:57:03.353 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2023-08-29 03:57:03.353 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2023-08-29 03:57:03.353 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2023-08-29 03:57:03.355 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Resetting generation and member id due to: consumer pro-actively leaving the group
+2023-08-29 03:57:03.355 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Request joining group due to: consumer pro-actively leaving the group
+2023-08-29 03:57:03.355 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Unsubscribed all topics or patterns and assigned partitions
+2023-08-29 03:57:03.356 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Resetting generation and member id due to: consumer pro-actively leaving the group
+2023-08-29 03:57:03.356 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Request joining group due to: consumer pro-actively leaving the group
+2023-08-29 03:57:03.356 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2023-08-29 03:57:03.356 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-08-29 03:57:03.356 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2023-08-29 03:57:03.360 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-leadnews-article-1 unregistered
+2023-08-29 03:57:03.361 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - leadnews-article: Consumer stopped
+2023-08-29 03:59:48.052 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.leadnews.article.test.SearchTest]: SearchTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-08-29 03:59:48.121 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.leadnews.article.ArticleApplication for test class com.leadnews.article.test.SearchTest
+2023-08-29 03:59:48.349 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 03:59:48.359 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-08-29 03:59:48.500 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 03:59:48.639 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 03:59:48.641 [main] INFO  c.a.nacos.client.utils.ParamUtil - [settings] [req-serv] nacos-server port:8848
+2023-08-29 03:59:48.641 [main] INFO  c.a.nacos.client.utils.ParamUtil - [settings] [http-client] connect timeout:1000
+2023-08-29 03:59:48.642 [main] INFO  c.a.nacos.client.utils.ParamUtil - PER_TASK_CONFIG_SIZE: 3000.0
+2023-08-29 03:59:48.664 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-08-29 03:59:48.665 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-08-29 03:59:48.687 [main] INFO  c.a.n.c.a.r.i.CredentialWatcher - null No credential found
+2023-08-29 03:59:48.741 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 03:59:48.750 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:/Users/lihaohui/nacos/config
+2023-08-29 03:59:48.754 [main] INFO  c.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of 96ec73d3-2c41-4880-baf4-3d3d3ea81119_config-0
+2023-08-29 03:59:48.765 [main] INFO  c.alibaba.nacos.common.remote.client - [96ec73d3-2c41-4880-baf4-3d3d3ea81119_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$860/0x0000000800fce568
+2023-08-29 03:59:48.765 [main] INFO  c.alibaba.nacos.common.remote.client - [96ec73d3-2c41-4880-baf4-3d3d3ea81119_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$861/0x0000000800fce998
+2023-08-29 03:59:48.765 [main] INFO  c.alibaba.nacos.common.remote.client - [96ec73d3-2c41-4880-baf4-3d3d3ea81119_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2023-08-29 03:59:48.765 [main] INFO  c.alibaba.nacos.common.remote.client - [96ec73d3-2c41-4880-baf4-3d3d3ea81119_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2023-08-29 03:59:48.769 [main] INFO  c.alibaba.nacos.common.remote.client - [96ec73d3-2c41-4880-baf4-3d3d3ea81119_config-0] Try to connect to server on start up, server: {serverIp = '10.211.55.8', server main port = 8848}
+2023-08-29 03:59:48.787 [main] INFO  c.a.n.c.r.client.grpc.GrpcClient - grpc client connection server:10.211.55.8 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2023-08-29 03:59:49.264 [main] INFO  c.alibaba.nacos.common.remote.client - [96ec73d3-2c41-4880-baf4-3d3d3ea81119_config-0] Success to connect to server [10.211.55.8:8848] on start up, connectionId = 1693235728601_10.211.55.2_58029
+2023-08-29 03:59:49.265 [com.alibaba.nacos.client.remote.worker] INFO  c.alibaba.nacos.common.remote.client - [96ec73d3-2c41-4880-baf4-3d3d3ea81119_config-0] Notify connected event to listeners.
+2023-08-29 03:59:49.265 [main] INFO  c.alibaba.nacos.common.remote.client - [96ec73d3-2c41-4880-baf4-3d3d3ea81119_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2023-08-29 03:59:49.265 [com.alibaba.nacos.client.remote.worker] INFO  c.a.n.c.config.impl.ClientWorker - [96ec73d3-2c41-4880-baf4-3d3d3ea81119_config-0] Connected,notify listen context...
+2023-08-29 03:59:49.266 [main] INFO  c.alibaba.nacos.common.remote.client - [96ec73d3-2c41-4880-baf4-3d3d3ea81119_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$881/0x00000008011216d8
+2023-08-29 03:59:49.291 [main] INFO  c.a.nacos.client.config.impl.Limiter - limitTime:5.0
+2023-08-29 03:59:49.313 [main] INFO  c.a.n.client.config.utils.JvmUtil - isMultiInstance:false
+2023-08-29 03:59:49.329 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[leadnews-article.yml] & group[DEFAULT_GROUP]
+2023-08-29 03:59:49.330 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-leadnews-article.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-leadnews-article,DEFAULT_GROUP'}]
+2023-08-29 03:59:49.339 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 03:59:49.340 [main] INFO  c.leadnews.article.test.SearchTest - No active profile set, falling back to 1 default profile: "default"
+2023-08-29 03:59:49.926 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=449ec16e-332a-3d0e-b9fa-c713d414e121
+2023-08-29 03:59:50.276 [main] INFO  c.l.b.e.config.ElasticSearchConfig - connect hostname:10.211.55.8, port:9200
+2023-08-29 03:59:55.817 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-08-29 03:59:55.830 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-29 03:59:55.908 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [10.211.55.8:9091]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-leadnews-article-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = leadnews-article
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-08-29 03:59:55.967 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.3.2
+2023-08-29 03:59:55.967 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: b66af662e61082cb
+2023-08-29 03:59:55.967 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1693252795966
+2023-08-29 03:59:55.976 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Subscribed to topic(s): wm.news.up.or.down.topic
+2023-08-29 03:59:56.001 [main] INFO  c.leadnews.article.test.SearchTest - Started SearchTest in 7.812 seconds (process running for 8.596)
+2023-08-29 03:59:56.008 [main] INFO  c.a.n.client.config.impl.CacheData - nacos.cache.data.init.snapshot = true 
+2023-08-29 03:59:56.008 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [subscribe] leadnews-article.yml+DEFAULT_GROUP+4e85b1a4-8d96-4c12-8631-7c0473ed1614
+2023-08-29 03:59:56.013 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [add-listener] ok, tenant=4e85b1a4-8d96-4c12-8631-7c0473ed1614, dataId=leadnews-article.yml, group=DEFAULT_GROUP, cnt=1
+2023-08-29 03:59:56.013 [main] INFO  c.a.c.n.r.NacosContextRefresher - [Nacos Config] Listening config: dataId=leadnews-article.yml, group=DEFAULT_GROUP
+2023-08-29 03:59:56.014 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [subscribe] leadnews-article+DEFAULT_GROUP+4e85b1a4-8d96-4c12-8631-7c0473ed1614
+2023-08-29 03:59:56.014 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [add-listener] ok, tenant=4e85b1a4-8d96-4c12-8631-7c0473ed1614, dataId=leadnews-article, group=DEFAULT_GROUP, cnt=1
+2023-08-29 03:59:56.014 [main] INFO  c.a.c.n.r.NacosContextRefresher - [Nacos Config] Listening config: dataId=leadnews-article, group=DEFAULT_GROUP
+2023-08-29 03:59:56.154 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Resetting the last seen epoch of partition wm.news.up.or.down.topic-0 to 1 since the associated topicId changed from null to XMND6oZdS1OMHx9FitFk8A
+2023-08-29 03:59:56.155 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Cluster ID: skaJsOqUQvGIRQUGgDj8pA
+2023-08-29 03:59:56.373 [main] INFO  c.l.a.s.impl.ApArticleServiceImpl - search result SearchResponse: {"took":20,"timed_out":false,"_shards":{"failed":0.0,"successful":3.0,"total":3.0,"skipped":2.0},"hits":{"total":{"relation":"eq","value":2},"hits":[{"_index":"app_info_article","_id":"1302864436297482242","_score":null,"highlight":{"title":["<font style='color: red; font-size: inherit;'>Java</font>语言跨平台原理"]},"_source":"{id=1302864436297482242, title=Java语言跨平台原理, publishTime=1599490862000, layout=1, images=group1/M00/00/00/wKjIgl9V2n6AArZsAAGMmaPdt7w502.png, authorId=4, authorName=admin, content=[{\"type\":\"text\",\"value\":\"Java虚拟机——JVM\\n\\n- JVM（Java Virtual Machine ）：Java虚拟机，简称JVM，是运行所有Java程序的假想计算机，是Java程序的运行环境，是Java 最具吸引力的特性之一。我们编写的Java代码，都运行在JVM 之上。\\n- 跨平台：任何软件的运行，都必须要运行在操作系统之上，而我们用Java编写的软件可以运行在任何的操作系统上，这个特性称为Java语言的跨平台特性。该特性是由JVM实现的，我们编写的程序运行在JVM上，而JVM运行在操作系统上。\\n\"},{\"type\":\"image\",\"value\":\"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2n6AArZsAAGMmaPdt7w502.png\"},{\"type\":\"text\",\"value\":\"如图所示，Java的虚拟机本身不具备跨平台功能的，每个操作系统下都有不同版本的虚拟机。\\n\\n问题1: Java 是如何实现跨平台的呢？\\n\\n- 答：因为在不同操作系统中都安装了对应版本的 JVM 虚拟机\\n- 注意: Java程序想要运行, 必须依赖于JVM虚拟机.\\n\\n问题2: JVM 本身是否允许跨平台呢？\\n\\n- 答：不允许，允许跨平台的是 Java 程序，而不是虚拟机。\\n\"}]}","sort":[1599490862000]},{"_index":"app_info_article","_id":"1302862387124125698","_score":null,"highlight":{"title":["什么是<font style='color: red; font-size: inherit;'>Java</font>语言"]},"_source":"{id=1302862387124125698, title=什么是Java语言, publishTime=1599490578000, layout=1, images=group1/M00/00/00/wKjIgl9V2CqAZe18AAOoOOsvWPc041.png, authorId=4, authorName=admin, staticUrl=http://10.211.55.8:9000/leadnews/2023/08/15/1302862387124125698.html, content=[{\"type\":\"text\",\"value\":\"Java语言是美国Sun公司（Stanford University Network），在1995年推出的高级的编程语言。所谓编程语言，是计算机的语言，人们可以使用编程语言对计算机下达命令，让计算机完成人们需要的功能。\\n\\n2009年，Sun公司被甲骨文公司收购，所以我们现在访问oracle官网即可：https://www.oracle.com\\nJava语言共同创始人之一：詹姆斯·高斯林 （James Gosling），被称为“Java之父”\\n\"},{\"type\":\"image\",\"value\":\"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2CqAZe18AAOoOOsvWPc041.png\"},{\"type\":\"text\",\"value\":\"Java语言发展历史\\n\\n- 1995年Sun公司推出Java语言\\n- 1996年发布Java 1.0版本\\n- 1997年发布Java 1.1版本\\n- 1998年发布Java 1.2版本\\n- 2000年发布Java 1.3版本\\n- 2002年发布Java 1.4版本\\n- 2004年发布Java 5.0版本\\n- 2006年发布Java 6.0版本\\n- 2009年Oracle甲骨文公司收购Sun公司\\n- 2011年发布Java 7.0版本\\n- 2014年发布Java 8.0版本\\n- 2017年9月发布Java 9.0版本\\n- 2018年3月发布Java 10.0版本\\n- 2018年9月发布Java 11.0版本\\n\"},{\"type\":\"text\",\"value\":\"Java 语言的三个版本\\n\\n- JavaSE：标准版，用于桌面应用的开发，是其他两个版本的基础。\\n  - 学习JavaSE的目的, 是为了就业班要学习的JavaEE打基础.\\n\"},{\"type\":\"image\",\"value\":\"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2F6AdQxAAAGyaOdp4gk784.png\"},{\"type\":\"text\",\"value\":\"- JavaEE：企业版，用于Web方向的网站开发\\n  - 网站：网页 + 后台服务器\\n\\nJava语言主要应用在互联网程序的开发领域。常见的互联网程序比如天猫、京东、物流系统、网银系统等，以及服务器后台处理大数据的存储、查询、数据挖掘等也有很多应用。\\n\"}]}","sort":[1599490578000]}],"max_score":null}}
+2023-08-29 03:59:56.377 [main] INFO  c.l.a.s.impl.ApArticleServiceImpl - search hit Hit: {"_index":"app_info_article","_id":"1302864436297482242","_score":null,"highlight":{"title":["<font style='color: red; font-size: inherit;'>Java</font>语言跨平台原理"]},"_source":"{id=1302864436297482242, title=Java语言跨平台原理, publishTime=1599490862000, layout=1, images=group1/M00/00/00/wKjIgl9V2n6AArZsAAGMmaPdt7w502.png, authorId=4, authorName=admin, content=[{\"type\":\"text\",\"value\":\"Java虚拟机——JVM\\n\\n- JVM（Java Virtual Machine ）：Java虚拟机，简称JVM，是运行所有Java程序的假想计算机，是Java程序的运行环境，是Java 最具吸引力的特性之一。我们编写的Java代码，都运行在JVM 之上。\\n- 跨平台：任何软件的运行，都必须要运行在操作系统之上，而我们用Java编写的软件可以运行在任何的操作系统上，这个特性称为Java语言的跨平台特性。该特性是由JVM实现的，我们编写的程序运行在JVM上，而JVM运行在操作系统上。\\n\"},{\"type\":\"image\",\"value\":\"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2n6AArZsAAGMmaPdt7w502.png\"},{\"type\":\"text\",\"value\":\"如图所示，Java的虚拟机本身不具备跨平台功能的，每个操作系统下都有不同版本的虚拟机。\\n\\n问题1: Java 是如何实现跨平台的呢？\\n\\n- 答：因为在不同操作系统中都安装了对应版本的 JVM 虚拟机\\n- 注意: Java程序想要运行, 必须依赖于JVM虚拟机.\\n\\n问题2: JVM 本身是否允许跨平台呢？\\n\\n- 答：不允许，允许跨平台的是 Java 程序，而不是虚拟机。\\n\"}]}","sort":[1599490862000]}
+2023-08-29 03:59:56.377 [main] INFO  c.l.a.s.impl.ApArticleServiceImpl - source {id=1302864436297482242, title=Java语言跨平台原理, publishTime=1599490862000, layout=1, images=group1/M00/00/00/wKjIgl9V2n6AArZsAAGMmaPdt7w502.png, authorId=4, authorName=admin, content=[{"type":"text","value":"Java虚拟机——JVM\n\n- JVM（Java Virtual Machine ）：Java虚拟机，简称JVM，是运行所有Java程序的假想计算机，是Java程序的运行环境，是Java 最具吸引力的特性之一。我们编写的Java代码，都运行在JVM 之上。\n- 跨平台：任何软件的运行，都必须要运行在操作系统之上，而我们用Java编写的软件可以运行在任何的操作系统上，这个特性称为Java语言的跨平台特性。该特性是由JVM实现的，我们编写的程序运行在JVM上，而JVM运行在操作系统上。\n"},{"type":"image","value":"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2n6AArZsAAGMmaPdt7w502.png"},{"type":"text","value":"如图所示，Java的虚拟机本身不具备跨平台功能的，每个操作系统下都有不同版本的虚拟机。\n\n问题1: Java 是如何实现跨平台的呢？\n\n- 答：因为在不同操作系统中都安装了对应版本的 JVM 虚拟机\n- 注意: Java程序想要运行, 必须依赖于JVM虚拟机.\n\n问题2: JVM 本身是否允许跨平台呢？\n\n- 答：不允许，允许跨平台的是 Java 程序，而不是虚拟机。\n"}]}
+2023-08-29 03:59:56.378 [main] INFO  c.l.a.s.impl.ApArticleServiceImpl - highlight {title=[<font style='color: red; font-size: inherit;'>Java</font>语言跨平台原理]}
+2023-08-29 03:59:56.378 [main] INFO  c.l.a.s.impl.ApArticleServiceImpl - search hit Hit: {"_index":"app_info_article","_id":"1302862387124125698","_score":null,"highlight":{"title":["什么是<font style='color: red; font-size: inherit;'>Java</font>语言"]},"_source":"{id=1302862387124125698, title=什么是Java语言, publishTime=1599490578000, layout=1, images=group1/M00/00/00/wKjIgl9V2CqAZe18AAOoOOsvWPc041.png, authorId=4, authorName=admin, staticUrl=http://10.211.55.8:9000/leadnews/2023/08/15/1302862387124125698.html, content=[{\"type\":\"text\",\"value\":\"Java语言是美国Sun公司（Stanford University Network），在1995年推出的高级的编程语言。所谓编程语言，是计算机的语言，人们可以使用编程语言对计算机下达命令，让计算机完成人们需要的功能。\\n\\n2009年，Sun公司被甲骨文公司收购，所以我们现在访问oracle官网即可：https://www.oracle.com\\nJava语言共同创始人之一：詹姆斯·高斯林 （James Gosling），被称为“Java之父”\\n\"},{\"type\":\"image\",\"value\":\"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2CqAZe18AAOoOOsvWPc041.png\"},{\"type\":\"text\",\"value\":\"Java语言发展历史\\n\\n- 1995年Sun公司推出Java语言\\n- 1996年发布Java 1.0版本\\n- 1997年发布Java 1.1版本\\n- 1998年发布Java 1.2版本\\n- 2000年发布Java 1.3版本\\n- 2002年发布Java 1.4版本\\n- 2004年发布Java 5.0版本\\n- 2006年发布Java 6.0版本\\n- 2009年Oracle甲骨文公司收购Sun公司\\n- 2011年发布Java 7.0版本\\n- 2014年发布Java 8.0版本\\n- 2017年9月发布Java 9.0版本\\n- 2018年3月发布Java 10.0版本\\n- 2018年9月发布Java 11.0版本\\n\"},{\"type\":\"text\",\"value\":\"Java 语言的三个版本\\n\\n- JavaSE：标准版，用于桌面应用的开发，是其他两个版本的基础。\\n  - 学习JavaSE的目的, 是为了就业班要学习的JavaEE打基础.\\n\"},{\"type\":\"image\",\"value\":\"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2F6AdQxAAAGyaOdp4gk784.png\"},{\"type\":\"text\",\"value\":\"- JavaEE：企业版，用于Web方向的网站开发\\n  - 网站：网页 + 后台服务器\\n\\nJava语言主要应用在互联网程序的开发领域。常见的互联网程序比如天猫、京东、物流系统、网银系统等，以及服务器后台处理大数据的存储、查询、数据挖掘等也有很多应用。\\n\"}]}","sort":[1599490578000]}
+2023-08-29 03:59:56.378 [main] INFO  c.l.a.s.impl.ApArticleServiceImpl - source {id=1302862387124125698, title=什么是Java语言, publishTime=1599490578000, layout=1, images=group1/M00/00/00/wKjIgl9V2CqAZe18AAOoOOsvWPc041.png, authorId=4, authorName=admin, staticUrl=http://10.211.55.8:9000/leadnews/2023/08/15/1302862387124125698.html, content=[{"type":"text","value":"Java语言是美国Sun公司（Stanford University Network），在1995年推出的高级的编程语言。所谓编程语言，是计算机的语言，人们可以使用编程语言对计算机下达命令，让计算机完成人们需要的功能。\n\n2009年，Sun公司被甲骨文公司收购，所以我们现在访问oracle官网即可：https://www.oracle.com\nJava语言共同创始人之一：詹姆斯·高斯林 （James Gosling），被称为“Java之父”\n"},{"type":"image","value":"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2CqAZe18AAOoOOsvWPc041.png"},{"type":"text","value":"Java语言发展历史\n\n- 1995年Sun公司推出Java语言\n- 1996年发布Java 1.0版本\n- 1997年发布Java 1.1版本\n- 1998年发布Java 1.2版本\n- 2000年发布Java 1.3版本\n- 2002年发布Java 1.4版本\n- 2004年发布Java 5.0版本\n- 2006年发布Java 6.0版本\n- 2009年Oracle甲骨文公司收购Sun公司\n- 2011年发布Java 7.0版本\n- 2014年发布Java 8.0版本\n- 2017年9月发布Java 9.0版本\n- 2018年3月发布Java 10.0版本\n- 2018年9月发布Java 11.0版本\n"},{"type":"text","value":"Java 语言的三个版本\n\n- JavaSE：标准版，用于桌面应用的开发，是其他两个版本的基础。\n  - 学习JavaSE的目的, 是为了就业班要学习的JavaEE打基础.\n"},{"type":"image","value":"http://192.168.200.130/group1/M00/00/00/wKjIgl9V2F6AdQxAAAGyaOdp4gk784.png"},{"type":"text","value":"- JavaEE：企业版，用于Web方向的网站开发\n  - 网站：网页 + 后台服务器\n\nJava语言主要应用在互联网程序的开发领域。常见的互联网程序比如天猫、京东、物流系统、网银系统等，以及服务器后台处理大数据的存储、查询、数据挖掘等也有很多应用。\n"}]}
+2023-08-29 03:59:56.379 [main] INFO  c.l.a.s.impl.ApArticleServiceImpl - highlight {title=[什么是<font style='color: red; font-size: inherit;'>Java</font>语言]}
+2023-08-29 03:59:56.388 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2023-08-29 03:59:56.388 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2023-08-29 03:59:56.389 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2023-08-29 03:59:56.389 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2023-08-29 03:59:56.391 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Resetting generation and member id due to: consumer pro-actively leaving the group
+2023-08-29 03:59:56.391 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Request joining group due to: consumer pro-actively leaving the group
+2023-08-29 03:59:56.391 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Unsubscribed all topics or patterns and assigned partitions
+2023-08-29 03:59:56.393 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Resetting generation and member id due to: consumer pro-actively leaving the group
+2023-08-29 03:59:56.393 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Request joining group due to: consumer pro-actively leaving the group
+2023-08-29 03:59:56.393 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2023-08-29 03:59:56.393 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-08-29 03:59:56.393 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2023-08-29 03:59:56.397 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-leadnews-article-1 unregistered
+2023-08-29 03:59:56.398 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - leadnews-article: Consumer stopped

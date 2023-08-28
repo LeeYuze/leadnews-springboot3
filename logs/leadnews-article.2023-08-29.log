@@ -1,0 +1,266 @@
+2023-08-29 04:07:40.454 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 04:07:40.458 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-08-29 04:07:40.491 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 04:07:40.610 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 04:07:40.611 [main] INFO  c.a.nacos.client.utils.ParamUtil - [settings] [req-serv] nacos-server port:8848
+2023-08-29 04:07:40.611 [main] INFO  c.a.nacos.client.utils.ParamUtil - [settings] [http-client] connect timeout:1000
+2023-08-29 04:07:40.612 [main] INFO  c.a.nacos.client.utils.ParamUtil - PER_TASK_CONFIG_SIZE: 3000.0
+2023-08-29 04:07:40.637 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-08-29 04:07:40.637 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-08-29 04:07:40.658 [main] INFO  c.a.n.c.a.r.i.CredentialWatcher - null No credential found
+2023-08-29 04:07:40.706 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 04:07:40.714 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:/Users/lihaohui/nacos/config
+2023-08-29 04:07:40.717 [main] INFO  c.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of ed4f516a-e65f-47f2-8716-76bf66109b74_config-0
+2023-08-29 04:07:40.728 [main] INFO  c.alibaba.nacos.common.remote.client - [ed4f516a-e65f-47f2-8716-76bf66109b74_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$563/0x0000000800f67d88
+2023-08-29 04:07:40.728 [main] INFO  c.alibaba.nacos.common.remote.client - [ed4f516a-e65f-47f2-8716-76bf66109b74_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$564/0x0000000800f68000
+2023-08-29 04:07:40.728 [main] INFO  c.alibaba.nacos.common.remote.client - [ed4f516a-e65f-47f2-8716-76bf66109b74_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2023-08-29 04:07:40.728 [main] INFO  c.alibaba.nacos.common.remote.client - [ed4f516a-e65f-47f2-8716-76bf66109b74_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2023-08-29 04:07:40.732 [main] INFO  c.alibaba.nacos.common.remote.client - [ed4f516a-e65f-47f2-8716-76bf66109b74_config-0] Try to connect to server on start up, server: {serverIp = '10.211.55.8', server main port = 8848}
+2023-08-29 04:07:40.748 [main] INFO  c.a.n.c.r.client.grpc.GrpcClient - grpc client connection server:10.211.55.8 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2023-08-29 04:07:41.212 [main] INFO  c.alibaba.nacos.common.remote.client - [ed4f516a-e65f-47f2-8716-76bf66109b74_config-0] Success to connect to server [10.211.55.8:8848] on start up, connectionId = 1693236239870_10.211.55.2_60348
+2023-08-29 04:07:41.213 [com.alibaba.nacos.client.remote.worker] INFO  c.alibaba.nacos.common.remote.client - [ed4f516a-e65f-47f2-8716-76bf66109b74_config-0] Notify connected event to listeners.
+2023-08-29 04:07:41.213 [com.alibaba.nacos.client.remote.worker] INFO  c.a.n.c.config.impl.ClientWorker - [ed4f516a-e65f-47f2-8716-76bf66109b74_config-0] Connected,notify listen context...
+2023-08-29 04:07:41.213 [main] INFO  c.alibaba.nacos.common.remote.client - [ed4f516a-e65f-47f2-8716-76bf66109b74_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2023-08-29 04:07:41.214 [main] INFO  c.alibaba.nacos.common.remote.client - [ed4f516a-e65f-47f2-8716-76bf66109b74_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$596/0x00000008010bb410
+2023-08-29 04:07:41.246 [main] INFO  c.a.nacos.client.config.impl.Limiter - limitTime:5.0
+2023-08-29 04:07:41.263 [main] INFO  c.a.n.client.config.utils.JvmUtil - isMultiInstance:false
+2023-08-29 04:07:41.272 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[leadnews-article.yml] & group[DEFAULT_GROUP]
+2023-08-29 04:07:41.273 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-leadnews-article.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-leadnews-article,DEFAULT_GROUP'}]
+2023-08-29 04:07:41.276 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 04:07:41.276 [main] INFO  c.l.article.ArticleApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-29 04:07:41.827 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=42cf2f21-b8db-3d8f-91fd-47d84e5f0f97
+2023-08-29 04:07:42.054 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 51901 (http)
+2023-08-29 04:07:42.060 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-51901"]
+2023-08-29 04:07:42.060 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-29 04:07:42.060 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-08-29 04:07:42.109 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-29 04:07:42.109 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 824 ms
+2023-08-29 04:07:42.380 [main] INFO  c.l.b.e.config.ElasticSearchConfig - connect hostname:10.211.55.8, port:9200
+2023-08-29 04:07:47.276 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-08-29 04:07:47.290 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-29 04:07:47.353 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-51901"]
+2023-08-29 04:07:47.362 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 51901 (http) with context path ''
+2023-08-29 04:07:47.366 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from ans.namespace attribute : null
+2023-08-29 04:07:47.366 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from ALIBABA_ALIWARE_NAMESPACE attribute :null
+2023-08-29 04:07:47.366 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from namespace attribute :null
+2023-08-29 04:07:47.371 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-08-29 04:07:47.371 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-08-29 04:07:47.373 [main] INFO  c.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of 07afd4a4-f334-4ba7-8b61-0309562bcb78
+2023-08-29 04:07:47.374 [main] INFO  c.alibaba.nacos.common.remote.client - [07afd4a4-f334-4ba7-8b61-0309562bcb78] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2023-08-29 04:07:47.374 [main] INFO  c.alibaba.nacos.common.remote.client - [07afd4a4-f334-4ba7-8b61-0309562bcb78] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2023-08-29 04:07:47.374 [main] INFO  c.alibaba.nacos.common.remote.client - [07afd4a4-f334-4ba7-8b61-0309562bcb78] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2023-08-29 04:07:47.374 [main] INFO  c.alibaba.nacos.common.remote.client - [07afd4a4-f334-4ba7-8b61-0309562bcb78] Try to connect to server on start up, server: {serverIp = '10.211.55.8', server main port = 8848}
+2023-08-29 04:07:47.375 [main] INFO  c.a.n.c.r.client.grpc.GrpcClient - grpc client connection server:10.211.55.8 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2023-08-29 04:07:47.509 [main] INFO  c.alibaba.nacos.common.remote.client - [07afd4a4-f334-4ba7-8b61-0309562bcb78] Success to connect to server [10.211.55.8:8848] on start up, connectionId = 1693236246740_10.211.55.2_60386
+2023-08-29 04:07:47.509 [main] INFO  c.alibaba.nacos.common.remote.client - [07afd4a4-f334-4ba7-8b61-0309562bcb78] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2023-08-29 04:07:47.509 [main] INFO  c.alibaba.nacos.common.remote.client - [07afd4a4-f334-4ba7-8b61-0309562bcb78] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$596/0x00000008010bb410
+2023-08-29 04:07:47.509 [com.alibaba.nacos.client.remote.worker] INFO  c.alibaba.nacos.common.remote.client - [07afd4a4-f334-4ba7-8b61-0309562bcb78] Notify connected event to listeners.
+2023-08-29 04:07:47.509 [com.alibaba.nacos.client.remote.worker] INFO  com.alibaba.nacos.client.naming - Grpc connection connect
+2023-08-29 04:07:47.510 [main] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] 4e85b1a4-8d96-4c12-8631-7c0473ed1614 registering service leadnews-article with instance Instance{instanceId='null', ip='192.168.10.4', port=51901, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=[2409:8a55:d910:5304:5907:2f68:7193:279], preserved.register.source=SPRING_CLOUD}}
+2023-08-29 04:07:47.518 [main] INFO  c.a.c.n.r.NacosServiceRegistry - nacos registry, DEFAULT_GROUP leadnews-article 192.168.10.4:51901 register finished
+2023-08-29 04:07:47.545 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [10.211.55.8:9091]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-leadnews-article-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = leadnews-article
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-08-29 04:07:47.589 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.3.2
+2023-08-29 04:07:47.590 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: b66af662e61082cb
+2023-08-29 04:07:47.590 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1693253267589
+2023-08-29 04:07:47.598 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Subscribed to topic(s): wm.news.up.or.down.topic
+2023-08-29 04:07:47.615 [main] INFO  c.l.article.ArticleApplication - Started ArticleApplication in 7.399 seconds (process running for 7.776)
+2023-08-29 04:07:47.619 [main] INFO  c.a.n.client.config.impl.CacheData - nacos.cache.data.init.snapshot = true 
+2023-08-29 04:07:47.620 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [subscribe] leadnews-article.yml+DEFAULT_GROUP+4e85b1a4-8d96-4c12-8631-7c0473ed1614
+2023-08-29 04:07:47.629 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [add-listener] ok, tenant=4e85b1a4-8d96-4c12-8631-7c0473ed1614, dataId=leadnews-article.yml, group=DEFAULT_GROUP, cnt=1
+2023-08-29 04:07:47.630 [main] INFO  c.a.c.n.r.NacosContextRefresher - [Nacos Config] Listening config: dataId=leadnews-article.yml, group=DEFAULT_GROUP
+2023-08-29 04:07:47.630 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [subscribe] leadnews-article+DEFAULT_GROUP+4e85b1a4-8d96-4c12-8631-7c0473ed1614
+2023-08-29 04:07:47.630 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [add-listener] ok, tenant=4e85b1a4-8d96-4c12-8631-7c0473ed1614, dataId=leadnews-article, group=DEFAULT_GROUP, cnt=1
+2023-08-29 04:07:47.630 [main] INFO  c.a.c.n.r.NacosContextRefresher - [Nacos Config] Listening config: dataId=leadnews-article, group=DEFAULT_GROUP
+2023-08-29 04:07:47.632 [main] INFO  c.l.article.ArticleApplication - 
+----------------------------------------------------------
+	Application 'leadnews-article' is running! Access URLs:
+	Local: 		http://localhost:51901
+	External: 	http://127.0.0.1:51901
+	Doc: 	http://127.0.0.1:51901/doc.html
+----------------------------------------------------------
+2023-08-29 04:07:47.806 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Resetting the last seen epoch of partition wm.news.up.or.down.topic-0 to 1 since the associated topicId changed from null to XMND6oZdS1OMHx9FitFk8A
+2023-08-29 04:07:47.807 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Cluster ID: skaJsOqUQvGIRQUGgDj8pA
+2023-08-29 04:07:47.834 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-29 04:07:47.834 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-29 04:07:47.835 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-08-29 04:07:47.845 [RMI TCP Connection(1)-127.0.0.1] WARN  o.s.b.a.e.ElasticsearchRestClientHealthIndicator - Elasticsearch health check failed
+java.net.ConnectException: Connection refused
+	at org.elasticsearch.client.RestClient.extractAndWrapCause(RestClient.java:930)
+	at org.elasticsearch.client.RestClient.performRequest(RestClient.java:300)
+	at org.elasticsearch.client.RestClient.performRequest(RestClient.java:288)
+	at org.springframework.boot.actuate.elasticsearch.ElasticsearchRestClientHealthIndicator.doHealthCheck(ElasticsearchRestClientHealthIndicator.java:60)
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:82)
+	at org.springframework.boot.actuate.health.HealthIndicator.getHealth(HealthIndicator.java:37)
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:82)
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:41)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getLoggedHealth(HealthEndpointSupport.java:172)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:145)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getAggregateContribution(HealthEndpointSupport.java:156)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:141)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:110)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:81)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:76)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:281)
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:74)
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:122)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:97)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.GeneratedMethodAccessor39.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:174)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:148)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:351)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	... 1 common frames omitted
+2023-08-29 04:07:47.849 [RMI TCP Connection(1)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-08-29 04:07:48.001 [RMI TCP Connection(1)-127.0.0.1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2e856f41
+2023-08-29 04:07:48.002 [RMI TCP Connection(1)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-08-29 04:16:47.830 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Node -1 disconnected.
+2023-08-29 04:22:13.600 [nacos-grpc-client-executor-10.211.55.8-331] INFO  c.alibaba.nacos.common.remote.client - [ed4f516a-e65f-47f2-8716-76bf66109b74_config-0] Receive server push request, request = ConfigChangeNotifyRequest, requestId = 9
+2023-08-29 04:22:13.601 [nacos-grpc-client-executor-10.211.55.8-331] INFO  c.a.n.c.config.impl.ClientWorker - [ed4f516a-e65f-47f2-8716-76bf66109b74_config-0] [server-push] config changed. dataId=leadnews-article, group=DEFAULT_GROUP,tenant=4e85b1a4-8d96-4c12-8631-7c0473ed1614
+2023-08-29 04:22:13.601 [nacos-grpc-client-executor-10.211.55.8-331] INFO  c.alibaba.nacos.common.remote.client - [ed4f516a-e65f-47f2-8716-76bf66109b74_config-0] Ack server push request, request = ConfigChangeNotifyRequest, requestId = 9
+2023-08-29 04:22:13.615 [com.alibaba.nacos.client.Worker] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [data-received] dataId=leadnews-article, group=DEFAULT_GROUP, tenant=4e85b1a4-8d96-4c12-8631-7c0473ed1614, md5=a0b4fc47c55efac3cccf8b8b41536d7e, content=spring:
+  kafka:
+    bootstrap-servers: 10.211.55.8:9091
+    consumer:
+      group-id: ${spring.appl..., type=yaml
+2023-08-29 04:22:13.617 [nacos.client.cachedata.internal.notifier] INFO  c.a.n.client.config.impl.CacheData - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [notify-context] dataId=leadnews-article, group=DEFAULT_GROUP, md5=a0b4fc47c55efac3cccf8b8b41536d7e
+2023-08-29 04:22:13.617 [com.alibaba.nacos.client.Worker] INFO  c.a.n.client.config.impl.CacheData - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [notify-listener] time cost=0ms in ClientWorker, dataId=leadnews-article, group=DEFAULT_GROUP, md5=a0b4fc47c55efac3cccf8b8b41536d7e, listener=com.alibaba.cloud.nacos.refresh.NacosContextRefresher$1@279dac4e 
+2023-08-29 04:22:13.663 [nacos.client.cachedata.internal.notifier] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 04:22:13.667 [nacos.client.cachedata.internal.notifier] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 04:22:13.685 [nacos.client.cachedata.internal.notifier] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 04:22:13.823 [nacos.client.cachedata.internal.notifier] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[leadnews-article.yml] & group[DEFAULT_GROUP]
+2023-08-29 04:22:13.824 [nacos.client.cachedata.internal.notifier] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-leadnews-article.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-leadnews-article,DEFAULT_GROUP'}]
+2023-08-29 04:22:13.825 [nacos.client.cachedata.internal.notifier] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 04:22:13.826 [nacos.client.cachedata.internal.notifier] INFO  o.s.boot.SpringApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-29 04:22:13.830 [nacos.client.cachedata.internal.notifier] INFO  o.s.boot.SpringApplication - Started application in 0.207 seconds (process running for 873.995)
+2023-08-29 04:22:13.855 [nacos.client.cachedata.internal.notifier] WARN  o.s.c.LocalVariableTableParameterNameDiscoverer - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: org.apache.ibatis.mapping.Environment
+2023-08-29 04:22:13.855 [nacos.client.cachedata.internal.notifier] WARN  o.s.c.LocalVariableTableParameterNameDiscoverer - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: org.apache.ibatis.builder.CacheRefResolver
+2023-08-29 04:22:13.857 [nacos.client.cachedata.internal.notifier] WARN  o.s.c.LocalVariableTableParameterNameDiscoverer - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: org.apache.ibatis.builder.MapperBuilderAssistant
+2023-08-29 04:22:13.857 [nacos.client.cachedata.internal.notifier] WARN  o.s.c.LocalVariableTableParameterNameDiscoverer - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: org.apache.ibatis.builder.annotation.MethodResolver
+2023-08-29 04:22:13.859 [nacos.client.cachedata.internal.notifier] WARN  o.s.c.LocalVariableTableParameterNameDiscoverer - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: org.apache.ibatis.builder.annotation.MapperAnnotationBuilder
+2023-08-29 04:22:13.860 [nacos.client.cachedata.internal.notifier] WARN  o.s.c.LocalVariableTableParameterNameDiscoverer - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: org.apache.ibatis.builder.ResultMapResolver
+2023-08-29 04:22:13.993 [nacos.client.cachedata.internal.notifier] INFO  o.s.c.e.event.RefreshEventListener - Refresh keys changed: [spring.es.host, spring.es.password, spring.es.port, spring.es.username]
+2023-08-29 04:22:13.994 [nacos.client.cachedata.internal.notifier] INFO  c.a.n.client.config.impl.CacheData - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [notify-ok] dataId=leadnews-article, group=DEFAULT_GROUP, md5=a0b4fc47c55efac3cccf8b8b41536d7e, listener=com.alibaba.cloud.nacos.refresh.NacosContextRefresher$1@279dac4e ,cost=377 millis.

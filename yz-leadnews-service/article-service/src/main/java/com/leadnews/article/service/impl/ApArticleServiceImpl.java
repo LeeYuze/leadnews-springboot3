@@ -1,6 +1,13 @@
 package com.leadnews.article.service.impl;
 
 import cn.hutool.core.util.StrUtil;
+import co.elastic.clients.elasticsearch.ElasticsearchClient;
+import co.elastic.clients.elasticsearch._types.ElasticsearchException;
+import co.elastic.clients.elasticsearch._types.SortOrder;
+import co.elastic.clients.elasticsearch.core.SearchRequest;
+import co.elastic.clients.elasticsearch.core.SearchResponse;
+import co.elastic.clients.elasticsearch.core.search.Hit;
+import co.elastic.clients.json.JsonData;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.leadnews.article.mapper.ApArticleConfigMapper;
@@ -15,12 +22,18 @@ import com.leadnews.model.article.pojos.ApArticleConfig;
 import com.leadnews.model.article.pojos.ApArticleContent;
 import com.leadnews.model.common.dtos.ResponseResult;
 import com.leadnews.model.common.enums.AppHttpCodeEnum;
+import com.leadnews.model.search.dtos.UserSearchDTO;
 import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author lihaohui
@@ -30,11 +43,13 @@ import java.util.List;
 @RequiredArgsConstructor
 public class ApArticleServiceImpl extends ServiceImpl<ApArticleMapper, ApArticle> implements ApArticleService {
 
+
     private final ApArticleMapper apArticleMapper;
 
     private final ApArticleConfigMapper apArticleConfigMapper;
 
     private final ApArticleContentMapper apArticleContentMapper;
+
 
     // 单页最大加载的数字
     private final static Integer MAX_PAGE_SIZE = 50;
@@ -115,4 +130,6 @@ public class ApArticleServiceImpl extends ServiceImpl<ApArticleMapper, ApArticle
 
         return ResponseResult.okResult(apArticle.getId());
     }
+
+
 }

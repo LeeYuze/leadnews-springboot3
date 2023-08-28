@@ -9,7 +9,8 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>article-service</artifactId>
+    <groupId>com.leadnews</groupId>
+    <artifactId>search-service</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -20,15 +21,10 @@
     <dependencies>
 
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-freemarker</artifactId>
+            <groupId>com.leadnews</groupId>
+            <artifactId>spring-boot-starter-elasticsearch</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>com.leadnews</groupId>
-            <artifactId>spring-boot-starter-file</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
     </dependencies>
 
 </project>
