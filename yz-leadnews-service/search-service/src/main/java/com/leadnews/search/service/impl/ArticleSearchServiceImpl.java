@@ -4,6 +4,7 @@ import cn.hutool.core.util.StrUtil;
 import co.elastic.clients.elasticsearch.ElasticsearchClient;
 import co.elastic.clients.elasticsearch._types.ElasticsearchException;
 import co.elastic.clients.elasticsearch._types.SortOrder;
+import co.elastic.clients.elasticsearch._types.query_dsl.Operator;
 import co.elastic.clients.elasticsearch.core.SearchRequest;
 import co.elastic.clients.elasticsearch.core.SearchResponse;
 import co.elastic.clients.elasticsearch.core.search.Hit;
@@ -49,11 +50,7 @@ public class ArticleSearchServiceImpl implements ArticleSearchService {
         searchBuilder.query(query -> {
             query.bool(bool -> {
                 //关键字的分词之后查询
-                bool.must(must -> {
-                    must.match(m -> m.field("title").query(userSearchDto.getSearchWords()));
-                    must.match(m -> m.field("content").query(userSearchDto.getSearchWords()));
-                    return must;
-                });
+                bool.must(must -> must.queryString(qs -> qs.fields("title", "content").defaultOperator(Operator.Or).query(userSearchDto.getSearchWords())));
 
                 //查询小于mindate的数据
                 bool.filter(fileter -> {

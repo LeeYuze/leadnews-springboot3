@@ -1,0 +1,1173 @@
+2023-08-29 04:56:37.661 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 04:56:37.672 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-08-29 04:56:37.703 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 04:56:37.815 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 04:56:37.816 [main] INFO  c.a.nacos.client.utils.ParamUtil - [settings] [req-serv] nacos-server port:8848
+2023-08-29 04:56:37.816 [main] INFO  c.a.nacos.client.utils.ParamUtil - [settings] [http-client] connect timeout:1000
+2023-08-29 04:56:37.817 [main] INFO  c.a.nacos.client.utils.ParamUtil - PER_TASK_CONFIG_SIZE: 3000.0
+2023-08-29 04:56:37.836 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-08-29 04:56:37.837 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-08-29 04:56:37.868 [main] INFO  c.a.n.c.a.r.i.CredentialWatcher - null No credential found
+2023-08-29 04:56:37.924 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 04:56:37.932 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:/Users/lihaohui/nacos/config
+2023-08-29 04:56:37.935 [main] INFO  c.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of 755ead55-d5d2-4621-9f7e-45ff778d2c7f_config-0
+2023-08-29 04:56:37.946 [main] INFO  c.alibaba.nacos.common.remote.client - [755ead55-d5d2-4621-9f7e-45ff778d2c7f_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$563/0x0000000800f695f8
+2023-08-29 04:56:37.946 [main] INFO  c.alibaba.nacos.common.remote.client - [755ead55-d5d2-4621-9f7e-45ff778d2c7f_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$564/0x0000000800f69a28
+2023-08-29 04:56:37.946 [main] INFO  c.alibaba.nacos.common.remote.client - [755ead55-d5d2-4621-9f7e-45ff778d2c7f_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2023-08-29 04:56:37.946 [main] INFO  c.alibaba.nacos.common.remote.client - [755ead55-d5d2-4621-9f7e-45ff778d2c7f_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2023-08-29 04:56:37.950 [main] INFO  c.alibaba.nacos.common.remote.client - [755ead55-d5d2-4621-9f7e-45ff778d2c7f_config-0] Try to connect to server on start up, server: {serverIp = '10.211.55.8', server main port = 8848}
+2023-08-29 04:56:37.966 [main] INFO  c.a.n.c.r.client.grpc.GrpcClient - grpc client connection server:10.211.55.8 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2023-08-29 04:56:38.408 [main] INFO  c.alibaba.nacos.common.remote.client - [755ead55-d5d2-4621-9f7e-45ff778d2c7f_config-0] Success to connect to server [10.211.55.8:8848] on start up, connectionId = 1693238357831_10.211.55.2_54293
+2023-08-29 04:56:38.409 [com.alibaba.nacos.client.remote.worker] INFO  c.alibaba.nacos.common.remote.client - [755ead55-d5d2-4621-9f7e-45ff778d2c7f_config-0] Notify connected event to listeners.
+2023-08-29 04:56:38.409 [com.alibaba.nacos.client.remote.worker] INFO  c.a.n.c.config.impl.ClientWorker - [755ead55-d5d2-4621-9f7e-45ff778d2c7f_config-0] Connected,notify listen context...
+2023-08-29 04:56:38.409 [main] INFO  c.alibaba.nacos.common.remote.client - [755ead55-d5d2-4621-9f7e-45ff778d2c7f_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2023-08-29 04:56:38.410 [main] INFO  c.alibaba.nacos.common.remote.client - [755ead55-d5d2-4621-9f7e-45ff778d2c7f_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$596/0x0000000801105fe8
+2023-08-29 04:56:38.443 [main] INFO  c.a.nacos.client.config.impl.Limiter - limitTime:5.0
+2023-08-29 04:56:38.453 [main] INFO  c.a.n.client.config.utils.JvmUtil - isMultiInstance:false
+2023-08-29 04:56:38.462 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[leadnews-wemedia.yml] & group[DEFAULT_GROUP]
+2023-08-29 04:56:38.463 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-leadnews-wemedia.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-leadnews-wemedia,DEFAULT_GROUP'}]
+2023-08-29 04:56:38.471 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-29 04:56:38.471 [main] INFO  c.l.wemedia.WeMediaApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-29 04:56:39.045 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=647986c3-3c8f-3f1a-968e-a35aeb83cc95
+2023-08-29 04:56:39.089 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.leadnews.apis.article.IArticleClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-29 04:56:39.090 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.leadnews.apis.schedule.IScheduleClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-29 04:56:39.289 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 52001 (http)
+2023-08-29 04:56:39.295 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-52001"]
+2023-08-29 04:56:39.295 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-29 04:56:39.295 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-08-29 04:56:39.343 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-29 04:56:39.343 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 860 ms
+2023-08-29 04:56:39.980 [main] INFO  o.s.c.o.FeignClientFactoryBean - For 'leadnews-schedule' URL not provided. Will try picking an instance via load-balancing.
+2023-08-29 04:56:40.039 [main] INFO  o.s.c.o.FeignClientFactoryBean - For 'leadnews-article' URL not provided. Will try picking an instance via load-balancing.
+2023-08-29 04:56:40.696 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-08-29 04:56:40.701 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-29 04:56:40.751 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-52001"]
+2023-08-29 04:56:40.758 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 52001 (http) with context path ''
+2023-08-29 04:56:40.760 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from ans.namespace attribute : null
+2023-08-29 04:56:40.761 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from ALIBABA_ALIWARE_NAMESPACE attribute :null
+2023-08-29 04:56:40.761 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from namespace attribute :null
+2023-08-29 04:56:40.765 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-08-29 04:56:40.766 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-08-29 04:56:40.767 [main] INFO  c.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of 7393b0a0-802c-41cd-a9b9-8168a40fec11
+2023-08-29 04:56:40.768 [main] INFO  c.alibaba.nacos.common.remote.client - [7393b0a0-802c-41cd-a9b9-8168a40fec11] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2023-08-29 04:56:40.768 [main] INFO  c.alibaba.nacos.common.remote.client - [7393b0a0-802c-41cd-a9b9-8168a40fec11] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2023-08-29 04:56:40.768 [main] INFO  c.alibaba.nacos.common.remote.client - [7393b0a0-802c-41cd-a9b9-8168a40fec11] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2023-08-29 04:56:40.769 [main] INFO  c.alibaba.nacos.common.remote.client - [7393b0a0-802c-41cd-a9b9-8168a40fec11] Try to connect to server on start up, server: {serverIp = '10.211.55.8', server main port = 8848}
+2023-08-29 04:56:40.769 [main] INFO  c.a.n.c.r.client.grpc.GrpcClient - grpc client connection server:10.211.55.8 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2023-08-29 04:56:40.879 [main] INFO  c.alibaba.nacos.common.remote.client - [7393b0a0-802c-41cd-a9b9-8168a40fec11] Success to connect to server [10.211.55.8:8848] on start up, connectionId = 1693238360561_10.211.55.2_54309
+2023-08-29 04:56:40.880 [main] INFO  c.alibaba.nacos.common.remote.client - [7393b0a0-802c-41cd-a9b9-8168a40fec11] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2023-08-29 04:56:40.880 [com.alibaba.nacos.client.remote.worker] INFO  c.alibaba.nacos.common.remote.client - [7393b0a0-802c-41cd-a9b9-8168a40fec11] Notify connected event to listeners.
+2023-08-29 04:56:40.880 [main] INFO  c.alibaba.nacos.common.remote.client - [7393b0a0-802c-41cd-a9b9-8168a40fec11] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$596/0x0000000801105fe8
+2023-08-29 04:56:40.880 [com.alibaba.nacos.client.remote.worker] INFO  com.alibaba.nacos.client.naming - Grpc connection connect
+2023-08-29 04:56:40.881 [main] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] 4e85b1a4-8d96-4c12-8631-7c0473ed1614 registering service leadnews-wemedia with instance Instance{instanceId='null', ip='192.168.10.4', port=52001, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=[2409:8a55:d910:5304:5907:2f68:7193:279], preserved.register.source=SPRING_CLOUD}}
+2023-08-29 04:56:40.890 [main] INFO  c.a.c.n.r.NacosServiceRegistry - nacos registry, DEFAULT_GROUP leadnews-wemedia 192.168.10.4:52001 register finished
+2023-08-29 04:56:40.909 [main] INFO  c.l.wemedia.WeMediaApplication - Started WeMediaApplication in 3.459 seconds (process running for 3.83)
+2023-08-29 04:56:40.915 [main] INFO  c.a.n.client.config.impl.CacheData - nacos.cache.data.init.snapshot = true 
+2023-08-29 04:56:40.916 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [subscribe] leadnews-wemedia+DEFAULT_GROUP+4e85b1a4-8d96-4c12-8631-7c0473ed1614
+2023-08-29 04:56:40.922 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [add-listener] ok, tenant=4e85b1a4-8d96-4c12-8631-7c0473ed1614, dataId=leadnews-wemedia, group=DEFAULT_GROUP, cnt=1
+2023-08-29 04:56:40.922 [main] INFO  c.a.c.n.r.NacosContextRefresher - [Nacos Config] Listening config: dataId=leadnews-wemedia, group=DEFAULT_GROUP
+2023-08-29 04:56:40.922 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [subscribe] leadnews-wemedia.yml+DEFAULT_GROUP+4e85b1a4-8d96-4c12-8631-7c0473ed1614
+2023-08-29 04:56:40.922 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [add-listener] ok, tenant=4e85b1a4-8d96-4c12-8631-7c0473ed1614, dataId=leadnews-wemedia.yml, group=DEFAULT_GROUP, cnt=1
+2023-08-29 04:56:40.922 [main] INFO  c.a.c.n.r.NacosContextRefresher - [Nacos Config] Listening config: dataId=leadnews-wemedia.yml, group=DEFAULT_GROUP
+2023-08-29 04:56:40.923 [main] INFO  c.l.wemedia.WeMediaApplication - 
+----------------------------------------------------------
+	Application 'leadnews-wemedia' is running! Access URLs:
+	Local: 		http://localhost:52001
+	External: 	http://127.0.0.1:52001
+	Doc: 	http://127.0.0.1:52001/doc.html
+----------------------------------------------------------
+2023-08-29 04:56:40.954 [scheduling-1] INFO  com.alibaba.nacos.client.naming - [SUBSCRIBE-SERVICE] service:leadnews-schedule, group:DEFAULT_GROUP, clusters: 
+2023-08-29 04:56:40.962 [scheduling-1] INFO  com.alibaba.nacos.client.naming - init new ips(0) service: DEFAULT_GROUP@@leadnews-schedule -> []
+2023-08-29 04:56:40.962 [scheduling-1] INFO  com.alibaba.nacos.client.naming - current ips:(0) service: DEFAULT_GROUP@@leadnews-schedule -> []
+2023-08-29 04:56:40.969 [scheduling-1] WARN  o.s.c.l.core.RoundRobinLoadBalancer - No servers available for service: leadnews-schedule
+2023-08-29 04:56:40.971 [scheduling-1] WARN  o.s.c.o.l.RetryableFeignBlockingLoadBalancerClient - Service instance was not resolved, executing the original request
+2023-08-29 04:56:41.404 [RMI TCP Connection(1)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-29 04:56:41.404 [RMI TCP Connection(1)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-29 04:56:41.404 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-08-29 04:56:41.406 [RMI TCP Connection(1)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2023-08-29 04:56:41.500 [nacos-grpc-client-executor-10.211.55.8-13] INFO  c.alibaba.nacos.common.remote.client - [7393b0a0-802c-41cd-a9b9-8168a40fec11] Receive server push request, request = NotifySubscriberRequest, requestId = 17
+2023-08-29 04:56:41.500 [nacos-grpc-client-executor-10.211.55.8-13] INFO  c.alibaba.nacos.common.remote.client - [7393b0a0-802c-41cd-a9b9-8168a40fec11] Ack server push request, request = NotifySubscriberRequest, requestId = 17
+2023-08-29 04:56:41.543 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5bd65108
+2023-08-29 04:56:41.544 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-08-29 04:56:45.573 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+feign.FeignException$BadGateway: [502 Bad Gateway] during [GET] to [http://leadnews-schedule/api/v1/task/poll/1001/1] [IScheduleClient#poll(int,int)]: []
+	at feign.FeignException.serverErrorStatus(FeignException.java:263)
+	at feign.FeignException.errorStatus(FeignException.java:206)
+	at feign.FeignException.errorStatus(FeignException.java:194)
+	at feign.FeignException.errorStatus(FeignException.java:171)
+	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:92)
+	at feign.ResponseHandler.decodeError(ResponseHandler.java:136)
+	at feign.ResponseHandler.handleResponse(ResponseHandler.java:70)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:116)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:72)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:98)
+	at jdk.proxy2/jdk.proxy2.$Proxy138.poll(Unknown Source)
+	at com.leadnews.wemedia.service.impl.WmNewsTaskServiceImpl.scanNewsByTask(WmNewsTaskServiceImpl.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:211)
+	at jdk.proxy2/jdk.proxy2.$Proxy142.scanNewsByTask(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-08-29 04:56:45.579 [scheduling-1] WARN  o.s.c.l.core.RoundRobinLoadBalancer - No servers available for service: leadnews-schedule
+2023-08-29 04:56:45.579 [scheduling-1] WARN  o.s.c.o.l.RetryableFeignBlockingLoadBalancerClient - Service instance was not resolved, executing the original request
+2023-08-29 04:56:49.856 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+feign.FeignException$BadGateway: [502 Bad Gateway] during [GET] to [http://leadnews-schedule/api/v1/task/poll/1001/1] [IScheduleClient#poll(int,int)]: []
+	at feign.FeignException.serverErrorStatus(FeignException.java:263)
+	at feign.FeignException.errorStatus(FeignException.java:206)
+	at feign.FeignException.errorStatus(FeignException.java:194)
+	at feign.FeignException.errorStatus(FeignException.java:171)
+	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:92)
+	at feign.ResponseHandler.decodeError(ResponseHandler.java:136)
+	at feign.ResponseHandler.handleResponse(ResponseHandler.java:70)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:116)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:72)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:98)
+	at jdk.proxy2/jdk.proxy2.$Proxy138.poll(Unknown Source)
+	at com.leadnews.wemedia.service.impl.WmNewsTaskServiceImpl.scanNewsByTask(WmNewsTaskServiceImpl.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:211)
+	at jdk.proxy2/jdk.proxy2.$Proxy142.scanNewsByTask(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-08-29 04:56:49.859 [scheduling-1] WARN  o.s.c.l.core.RoundRobinLoadBalancer - No servers available for service: leadnews-schedule
+2023-08-29 04:56:49.859 [scheduling-1] WARN  o.s.c.o.l.RetryableFeignBlockingLoadBalancerClient - Service instance was not resolved, executing the original request
+2023-08-29 04:56:54.158 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+feign.FeignException$BadGateway: [502 Bad Gateway] during [GET] to [http://leadnews-schedule/api/v1/task/poll/1001/1] [IScheduleClient#poll(int,int)]: []
+	at feign.FeignException.serverErrorStatus(FeignException.java:263)
+	at feign.FeignException.errorStatus(FeignException.java:206)
+	at feign.FeignException.errorStatus(FeignException.java:194)
+	at feign.FeignException.errorStatus(FeignException.java:171)
+	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:92)
+	at feign.ResponseHandler.decodeError(ResponseHandler.java:136)
+	at feign.ResponseHandler.handleResponse(ResponseHandler.java:70)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:116)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:72)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:98)
+	at jdk.proxy2/jdk.proxy2.$Proxy138.poll(Unknown Source)
+	at com.leadnews.wemedia.service.impl.WmNewsTaskServiceImpl.scanNewsByTask(WmNewsTaskServiceImpl.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:211)
+	at jdk.proxy2/jdk.proxy2.$Proxy142.scanNewsByTask(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-08-29 04:56:54.160 [scheduling-1] WARN  o.s.c.l.core.RoundRobinLoadBalancer - No servers available for service: leadnews-schedule
+2023-08-29 04:56:54.160 [scheduling-1] WARN  o.s.c.o.l.RetryableFeignBlockingLoadBalancerClient - Service instance was not resolved, executing the original request
+2023-08-29 04:56:58.458 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+feign.FeignException$BadGateway: [502 Bad Gateway] during [GET] to [http://leadnews-schedule/api/v1/task/poll/1001/1] [IScheduleClient#poll(int,int)]: []
+	at feign.FeignException.serverErrorStatus(FeignException.java:263)
+	at feign.FeignException.errorStatus(FeignException.java:206)
+	at feign.FeignException.errorStatus(FeignException.java:194)
+	at feign.FeignException.errorStatus(FeignException.java:171)
+	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:92)
+	at feign.ResponseHandler.decodeError(ResponseHandler.java:136)
+	at feign.ResponseHandler.handleResponse(ResponseHandler.java:70)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:116)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:72)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:98)
+	at jdk.proxy2/jdk.proxy2.$Proxy138.poll(Unknown Source)
+	at com.leadnews.wemedia.service.impl.WmNewsTaskServiceImpl.scanNewsByTask(WmNewsTaskServiceImpl.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:211)
+	at jdk.proxy2/jdk.proxy2.$Proxy142.scanNewsByTask(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-08-29 04:56:58.461 [scheduling-1] WARN  o.s.c.l.core.RoundRobinLoadBalancer - No servers available for service: leadnews-schedule
+2023-08-29 04:56:58.462 [scheduling-1] WARN  o.s.c.o.l.RetryableFeignBlockingLoadBalancerClient - Service instance was not resolved, executing the original request
+2023-08-29 04:57:02.760 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+feign.FeignException$BadGateway: [502 Bad Gateway] during [GET] to [http://leadnews-schedule/api/v1/task/poll/1001/1] [IScheduleClient#poll(int,int)]: []
+	at feign.FeignException.serverErrorStatus(FeignException.java:263)
+	at feign.FeignException.errorStatus(FeignException.java:206)
+	at feign.FeignException.errorStatus(FeignException.java:194)
+	at feign.FeignException.errorStatus(FeignException.java:171)
+	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:92)
+	at feign.ResponseHandler.decodeError(ResponseHandler.java:136)
+	at feign.ResponseHandler.handleResponse(ResponseHandler.java:70)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:116)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:72)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:98)
+	at jdk.proxy2/jdk.proxy2.$Proxy138.poll(Unknown Source)
+	at com.leadnews.wemedia.service.impl.WmNewsTaskServiceImpl.scanNewsByTask(WmNewsTaskServiceImpl.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:211)
+	at jdk.proxy2/jdk.proxy2.$Proxy142.scanNewsByTask(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-08-29 04:57:02.763 [scheduling-1] WARN  o.s.c.l.core.RoundRobinLoadBalancer - No servers available for service: leadnews-schedule
+2023-08-29 04:57:02.764 [scheduling-1] WARN  o.s.c.o.l.RetryableFeignBlockingLoadBalancerClient - Service instance was not resolved, executing the original request
+2023-08-29 04:57:07.062 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+feign.FeignException$BadGateway: [502 Bad Gateway] during [GET] to [http://leadnews-schedule/api/v1/task/poll/1001/1] [IScheduleClient#poll(int,int)]: []
+	at feign.FeignException.serverErrorStatus(FeignException.java:263)
+	at feign.FeignException.errorStatus(FeignException.java:206)
+	at feign.FeignException.errorStatus(FeignException.java:194)
+	at feign.FeignException.errorStatus(FeignException.java:171)
+	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:92)
+	at feign.ResponseHandler.decodeError(ResponseHandler.java:136)
+	at feign.ResponseHandler.handleResponse(ResponseHandler.java:70)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:116)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:72)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:98)
+	at jdk.proxy2/jdk.proxy2.$Proxy138.poll(Unknown Source)
+	at com.leadnews.wemedia.service.impl.WmNewsTaskServiceImpl.scanNewsByTask(WmNewsTaskServiceImpl.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:211)
+	at jdk.proxy2/jdk.proxy2.$Proxy142.scanNewsByTask(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-08-29 04:57:07.065 [scheduling-1] WARN  o.s.c.l.core.RoundRobinLoadBalancer - No servers available for service: leadnews-schedule
+2023-08-29 04:57:07.066 [scheduling-1] WARN  o.s.c.o.l.RetryableFeignBlockingLoadBalancerClient - Service instance was not resolved, executing the original request
+2023-08-29 04:57:11.361 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+feign.FeignException$BadGateway: [502 Bad Gateway] during [GET] to [http://leadnews-schedule/api/v1/task/poll/1001/1] [IScheduleClient#poll(int,int)]: []
+	at feign.FeignException.serverErrorStatus(FeignException.java:263)
+	at feign.FeignException.errorStatus(FeignException.java:206)
+	at feign.FeignException.errorStatus(FeignException.java:194)
+	at feign.FeignException.errorStatus(FeignException.java:171)
+	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:92)
+	at feign.ResponseHandler.decodeError(ResponseHandler.java:136)
+	at feign.ResponseHandler.handleResponse(ResponseHandler.java:70)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:116)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:72)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:98)
+	at jdk.proxy2/jdk.proxy2.$Proxy138.poll(Unknown Source)
+	at com.leadnews.wemedia.service.impl.WmNewsTaskServiceImpl.scanNewsByTask(WmNewsTaskServiceImpl.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:211)
+	at jdk.proxy2/jdk.proxy2.$Proxy142.scanNewsByTask(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-08-29 04:57:11.364 [scheduling-1] WARN  o.s.c.l.core.RoundRobinLoadBalancer - No servers available for service: leadnews-schedule
+2023-08-29 04:57:11.364 [scheduling-1] WARN  o.s.c.o.l.RetryableFeignBlockingLoadBalancerClient - Service instance was not resolved, executing the original request
+2023-08-29 04:57:15.660 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+feign.FeignException$BadGateway: [502 Bad Gateway] during [GET] to [http://leadnews-schedule/api/v1/task/poll/1001/1] [IScheduleClient#poll(int,int)]: []
+	at feign.FeignException.serverErrorStatus(FeignException.java:263)
+	at feign.FeignException.errorStatus(FeignException.java:206)
+	at feign.FeignException.errorStatus(FeignException.java:194)
+	at feign.FeignException.errorStatus(FeignException.java:171)
+	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:92)
+	at feign.ResponseHandler.decodeError(ResponseHandler.java:136)
+	at feign.ResponseHandler.handleResponse(ResponseHandler.java:70)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:116)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:72)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:98)
+	at jdk.proxy2/jdk.proxy2.$Proxy138.poll(Unknown Source)
+	at com.leadnews.wemedia.service.impl.WmNewsTaskServiceImpl.scanNewsByTask(WmNewsTaskServiceImpl.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:211)
+	at jdk.proxy2/jdk.proxy2.$Proxy142.scanNewsByTask(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-08-29 04:57:15.662 [scheduling-1] WARN  o.s.c.l.core.RoundRobinLoadBalancer - No servers available for service: leadnews-schedule
+2023-08-29 04:57:15.662 [scheduling-1] WARN  o.s.c.o.l.RetryableFeignBlockingLoadBalancerClient - Service instance was not resolved, executing the original request
+2023-08-29 04:57:19.962 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+feign.FeignException$BadGateway: [502 Bad Gateway] during [GET] to [http://leadnews-schedule/api/v1/task/poll/1001/1] [IScheduleClient#poll(int,int)]: []
+	at feign.FeignException.serverErrorStatus(FeignException.java:263)
+	at feign.FeignException.errorStatus(FeignException.java:206)
+	at feign.FeignException.errorStatus(FeignException.java:194)
+	at feign.FeignException.errorStatus(FeignException.java:171)
+	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:92)
+	at feign.ResponseHandler.decodeError(ResponseHandler.java:136)
+	at feign.ResponseHandler.handleResponse(ResponseHandler.java:70)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:116)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:72)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:98)
+	at jdk.proxy2/jdk.proxy2.$Proxy138.poll(Unknown Source)
+	at com.leadnews.wemedia.service.impl.WmNewsTaskServiceImpl.scanNewsByTask(WmNewsTaskServiceImpl.java:50)
+	at jdk.internal.reflect.GeneratedMethodAccessor58.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:211)
+	at jdk.proxy2/jdk.proxy2.$Proxy142.scanNewsByTask(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor58.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-08-29 04:57:19.963 [scheduling-1] WARN  o.s.c.l.core.RoundRobinLoadBalancer - No servers available for service: leadnews-schedule
+2023-08-29 04:57:19.963 [scheduling-1] WARN  o.s.c.o.l.RetryableFeignBlockingLoadBalancerClient - Service instance was not resolved, executing the original request
+2023-08-29 04:57:23.416 [nacos-grpc-client-executor-10.211.55.8-30] INFO  c.alibaba.nacos.common.remote.client - [7393b0a0-802c-41cd-a9b9-8168a40fec11] Receive server push request, request = NotifySubscriberRequest, requestId = 18
+2023-08-29 04:57:23.418 [nacos-grpc-client-executor-10.211.55.8-30] INFO  com.alibaba.nacos.client.naming - new ips(1) service: DEFAULT_GROUP@@leadnews-schedule -> [{"ip":"192.168.10.4","port":51701,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-schedule","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:5907:2f68:7193:279]"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-08-29 04:57:23.418 [nacos-grpc-client-executor-10.211.55.8-30] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: DEFAULT_GROUP@@leadnews-schedule -> [{"ip":"192.168.10.4","port":51701,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-schedule","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:5907:2f68:7193:279]"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-08-29 04:57:23.419 [nacos-grpc-client-executor-10.211.55.8-30] INFO  c.alibaba.nacos.common.remote.client - [7393b0a0-802c-41cd-a9b9-8168a40fec11] Ack server push request, request = NotifySubscriberRequest, requestId = 18
+2023-08-29 04:57:24.214 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+feign.FeignException$BadGateway: [502 Bad Gateway] during [GET] to [http://leadnews-schedule/api/v1/task/poll/1001/1] [IScheduleClient#poll(int,int)]: []
+	at feign.FeignException.serverErrorStatus(FeignException.java:263)
+	at feign.FeignException.errorStatus(FeignException.java:206)
+	at feign.FeignException.errorStatus(FeignException.java:194)
+	at feign.FeignException.errorStatus(FeignException.java:171)
+	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:92)
+	at feign.ResponseHandler.decodeError(ResponseHandler.java:136)
+	at feign.ResponseHandler.handleResponse(ResponseHandler.java:70)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:116)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:72)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:98)
+	at jdk.proxy2/jdk.proxy2.$Proxy138.poll(Unknown Source)
+	at com.leadnews.wemedia.service.impl.WmNewsTaskServiceImpl.scanNewsByTask(WmNewsTaskServiceImpl.java:50)
+	at jdk.internal.reflect.GeneratedMethodAccessor58.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:211)
+	at jdk.proxy2/jdk.proxy2.$Proxy142.scanNewsByTask(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor58.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-08-29 05:14:45.717 [http-nio-52001-exec-1] WARN  c.b.m.c.t.support.ReflectLambdaMeta - Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @7b9a4292
+2023-08-29 05:14:45.960 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:14:47.442 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:14:47.453 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:14:53.417 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:14:53.446 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:15:01.150 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:15:01.282 [task-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----begin
+2023-08-29 05:15:01.285 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:15:01.385 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:15:01.391 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:15:01.392 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:15:01.440 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:15:01.523 [task-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----end
+2023-08-29 05:15:01.948 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 文章审核---消费任务执行---拿到任务---进行审核
+2023-08-29 05:15:01.948 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 任务对象feign data:{taskId=1696270182693064706, taskType=1001, priority=1, executeTime=1693257298000, parameters=CKsx}
+2023-08-29 05:15:01.956 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 解析json获取的task对象:Task(taskId=1696270182693064706, taskType=1001, priority=1, executeTime=1693257298000, parameters=[8, -85, 49])
+2023-08-29 05:15:01.960 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 6315-----------
+2023-08-29 05:15:01.998 [scheduling-1] INFO  com.alibaba.nacos.client.naming - [SUBSCRIBE-SERVICE] service:leadnews-article, group:DEFAULT_GROUP, clusters: 
+2023-08-29 05:15:02.011 [scheduling-1] INFO  com.alibaba.nacos.client.naming - init new ips(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:5907:2f68:7193:279]"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-08-29 05:15:02.011 [scheduling-1] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:5907:2f68:7193:279]"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-08-29 05:15:02.555 [nacos-grpc-client-executor-10.211.55.8-398] INFO  c.alibaba.nacos.common.remote.client - [7393b0a0-802c-41cd-a9b9-8168a40fec11] Receive server push request, request = NotifySubscriberRequest, requestId = 22
+2023-08-29 05:15:02.555 [nacos-grpc-client-executor-10.211.55.8-398] INFO  c.alibaba.nacos.common.remote.client - [7393b0a0-802c-41cd-a9b9-8168a40fec11] Ack server push request, request = NotifySubscriberRequest, requestId = 22
+2023-08-29 05:15:04.653 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:15:04.654 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:15:04.669 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:15:04.693 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:17:20.016 [nacos-grpc-client-executor-10.211.55.8-444] INFO  c.alibaba.nacos.common.remote.client - [7393b0a0-802c-41cd-a9b9-8168a40fec11] Receive server push request, request = NotifySubscriberRequest, requestId = 24
+2023-08-29 05:17:20.018 [nacos-grpc-client-executor-10.211.55.8-444] INFO  com.alibaba.nacos.client.naming - removed ips(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:5907:2f68:7193:279]"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-08-29 05:17:20.018 [nacos-grpc-client-executor-10.211.55.8-444] INFO  com.alibaba.nacos.client.naming - current ips:(0) service: DEFAULT_GROUP@@leadnews-article -> []
+2023-08-29 05:17:20.019 [nacos-grpc-client-executor-10.211.55.8-444] INFO  c.alibaba.nacos.common.remote.client - [7393b0a0-802c-41cd-a9b9-8168a40fec11] Ack server push request, request = NotifySubscriberRequest, requestId = 24
+2023-08-29 05:17:30.674 [nacos-grpc-client-executor-10.211.55.8-446] INFO  c.alibaba.nacos.common.remote.client - [7393b0a0-802c-41cd-a9b9-8168a40fec11] Receive server push request, request = NotifySubscriberRequest, requestId = 26
+2023-08-29 05:17:30.678 [nacos-grpc-client-executor-10.211.55.8-446] INFO  com.alibaba.nacos.client.naming - new ips(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:5907:2f68:7193:279]"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-08-29 05:17:30.679 [nacos-grpc-client-executor-10.211.55.8-446] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:5907:2f68:7193:279]"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-08-29 05:17:30.681 [nacos-grpc-client-executor-10.211.55.8-446] INFO  c.alibaba.nacos.common.remote.client - [7393b0a0-802c-41cd-a9b9-8168a40fec11] Ack server push request, request = NotifySubscriberRequest, requestId = 26
+2023-08-29 05:17:33.307 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:17:33.377 [http-nio-52001-exec-1] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [10.211.55.8:9091]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 10
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2023-08-29 05:17:33.396 [http-nio-52001-exec-1] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Instantiated an idempotent producer.
+2023-08-29 05:17:33.417 [http-nio-52001-exec-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.3.2
+2023-08-29 05:17:33.417 [http-nio-52001-exec-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: b66af662e61082cb
+2023-08-29 05:17:33.417 [http-nio-52001-exec-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1693257453415
+2023-08-29 05:17:33.574 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Resetting the last seen epoch of partition wm.news.up.or.down.topic-0 to 1 since the associated topicId changed from null to XMND6oZdS1OMHx9FitFk8A
+2023-08-29 05:17:33.575 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: skaJsOqUQvGIRQUGgDj8pA
+2023-08-29 05:17:33.622 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:17:33.666 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:17:33.699 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:17:33.844 [kafka-producer-network-thread | producer-1] INFO  o.a.k.c.p.i.TransactionManager - [Producer clientId=producer-1] ProducerId set to 2000 with epoch 0
+2023-08-29 05:17:35.225 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:17:35.225 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:17:35.230 [http-nio-52001-exec-3] WARN  o.s.c.LocalVariableTableParameterNameDiscoverer - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.leadnews.wemedia.controller.v1.WmNewsController
+2023-08-29 05:17:35.235 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:17:35.238 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:17:36.482 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:17:36.510 [task-2] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----begin
+2023-08-29 05:17:36.516 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:17:36.565 [task-2] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----end
+2023-08-29 05:17:36.584 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:17:36.585 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:17:36.587 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:17:36.603 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:17:36.902 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 文章审核---消费任务执行---拿到任务---进行审核
+2023-08-29 05:17:36.902 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 任务对象feign data:{taskId=1696270833388998657, taskType=1001, priority=1, executeTime=1693257298000, parameters=CKsx}
+2023-08-29 05:17:36.905 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 解析json获取的task对象:Task(taskId=1696270833388998657, taskType=1001, priority=1, executeTime=1693257298000, parameters=[8, -85, 49])
+2023-08-29 05:17:36.905 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 6315-----------
+2023-08-29 05:19:33.597 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='{"enable":0,"articleId":1696270185821999105}' to topic wm.news.up.or.down.topic:
+org.apache.kafka.common.errors.TimeoutException: Expiring 1 record(s) for wm.news.up.or.down.topic-0:120002 ms has passed since batch creation
+2023-08-29 05:24:57.240 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:24:57.250 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:24:57.264 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:24:57.264 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:24:58.410 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:24:58.433 [task-3] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----begin
+2023-08-29 05:24:58.463 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:24:58.487 [task-3] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----end
+2023-08-29 05:24:58.521 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:24:58.530 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:24:58.531 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:24:58.549 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:24:58.905 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 文章审核---消费任务执行---拿到任务---进行审核
+2023-08-29 05:24:58.905 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 任务对象feign data:{taskId=1696272687032291330, taskType=1001, priority=1, executeTime=1693257298000, parameters=CKsx}
+2023-08-29 05:24:58.909 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 解析json获取的task对象:Task(taskId=1696272687032291330, taskType=1001, priority=1, executeTime=1693257298000, parameters=[8, -85, 49])
+2023-08-29 05:24:58.909 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 6315-----------
+2023-08-29 05:27:00.434 [kafka-producer-network-thread | producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Node -1 disconnected.
+2023-08-29 05:35:21.284 [nacos-grpc-client-executor-10.211.55.8-742] INFO  c.alibaba.nacos.common.remote.client - [7393b0a0-802c-41cd-a9b9-8168a40fec11] Receive server push request, request = NotifySubscriberRequest, requestId = 29
+2023-08-29 05:35:21.285 [nacos-grpc-client-executor-10.211.55.8-742] INFO  com.alibaba.nacos.client.naming - removed ips(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:5907:2f68:7193:279]"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-08-29 05:35:21.285 [nacos-grpc-client-executor-10.211.55.8-742] INFO  com.alibaba.nacos.client.naming - current ips:(0) service: DEFAULT_GROUP@@leadnews-article -> []
+2023-08-29 05:35:21.288 [nacos-grpc-client-executor-10.211.55.8-742] INFO  c.alibaba.nacos.common.remote.client - [7393b0a0-802c-41cd-a9b9-8168a40fec11] Ack server push request, request = NotifySubscriberRequest, requestId = 29
+2023-08-29 05:35:31.013 [nacos-grpc-client-executor-10.211.55.8-744] INFO  c.alibaba.nacos.common.remote.client - [7393b0a0-802c-41cd-a9b9-8168a40fec11] Receive server push request, request = NotifySubscriberRequest, requestId = 31
+2023-08-29 05:35:31.021 [nacos-grpc-client-executor-10.211.55.8-744] INFO  com.alibaba.nacos.client.naming - new ips(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:5907:2f68:7193:279]"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-08-29 05:35:31.029 [nacos-grpc-client-executor-10.211.55.8-744] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:5907:2f68:7193:279]"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-08-29 05:35:31.031 [nacos-grpc-client-executor-10.211.55.8-744] INFO  c.alibaba.nacos.common.remote.client - [7393b0a0-802c-41cd-a9b9-8168a40fec11] Ack server push request, request = NotifySubscriberRequest, requestId = 31
+2023-08-29 05:42:57.000 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:42:57.000 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:42:57.014 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:42:57.014 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:43:03.155 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:43:03.174 [task-4] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----begin
+2023-08-29 05:43:03.183 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:43:03.240 [task-4] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----end
+2023-08-29 05:43:03.251 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:43:03.251 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:43:03.254 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:43:03.265 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:43:04.020 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 文章审核---消费任务执行---拿到任务---进行审核
+2023-08-29 05:43:04.021 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 任务对象feign data:{taskId=1696277236673531905, taskType=1001, priority=1, executeTime=1693257298000, parameters=CKsx}
+2023-08-29 05:43:04.025 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 解析json获取的task对象:Task(taskId=1696277236673531905, taskType=1001, priority=1, executeTime=1693257298000, parameters=[8, -85, 49])
+2023-08-29 05:43:04.026 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 6315-----------
+2023-08-29 05:44:00.339 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:44:00.377 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:44:00.426 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:44:00.451 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:44:01.949 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:44:01.958 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Resetting the last seen epoch of partition wm.news.up.or.down.topic-0 to 1 since the associated topicId changed from null to XMND6oZdS1OMHx9FitFk8A
+2023-08-29 05:44:01.977 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:44:01.999 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:44:02.030 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:44:03.855 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:44:03.855 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:44:03.858 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:44:03.858 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:44:05.046 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:44:05.064 [task-5] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----begin
+2023-08-29 05:44:05.069 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:44:05.099 [task-5] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----end
+2023-08-29 05:44:05.119 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:44:05.124 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:44:05.125 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:44:05.155 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:44:06.007 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 文章审核---消费任务执行---拿到任务---进行审核
+2023-08-29 05:44:06.007 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 任务对象feign data:{taskId=1696277496263200769, taskType=1001, priority=1, executeTime=1693257298000, parameters=CKsx}
+2023-08-29 05:44:06.010 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 解析json获取的task对象:Task(taskId=1696277496263200769, taskType=1001, priority=1, executeTime=1693257298000, parameters=[8, -85, 49])
+2023-08-29 05:44:06.010 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 6315-----------
+2023-08-29 05:46:01.970 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='{"enable":0,"articleId":1696270185821999105}' to topic wm.news.up.or.down.topic:
+org.apache.kafka.common.errors.TimeoutException: Expiring 1 record(s) for wm.news.up.or.down.topic-0:120001 ms has passed since batch creation
+2023-08-29 05:47:40.795 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:47:40.795 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:47:40.810 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:47:40.834 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:47:42.591 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:47:42.613 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:47:42.649 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:47:42.677 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:47:48.407 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:47:48.407 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:47:48.413 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:47:48.413 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:47:49.544 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:47:49.570 [task-6] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----begin
+2023-08-29 05:47:49.578 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:47:49.620 [task-6] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----end
+2023-08-29 05:47:49.640 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:47:49.642 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:47:49.643 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:47:49.657 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:47:50.006 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 文章审核---消费任务执行---拿到任务---进行审核
+2023-08-29 05:47:50.006 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 任务对象feign data:{taskId=1696278437968334850, taskType=1001, priority=1, executeTime=1693257298000, parameters=CKsx}
+2023-08-29 05:47:50.009 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 解析json获取的task对象:Task(taskId=1696278437968334850, taskType=1001, priority=1, executeTime=1693257298000, parameters=[8, -85, 49])
+2023-08-29 05:47:50.009 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 6315-----------
+2023-08-29 05:49:42.601 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='{"enable":0,"articleId":1696270185821999105}' to topic wm.news.up.or.down.topic:
+org.apache.kafka.common.errors.TimeoutException: Expiring 1 record(s) for wm.news.up.or.down.topic-0:120001 ms has passed since batch creation
+2023-08-29 05:51:26.100 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:51:26.100 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:51:26.113 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:51:26.113 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:51:27.098 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:51:27.115 [task-7] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----begin
+2023-08-29 05:51:27.122 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:51:27.140 [task-7] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----end
+2023-08-29 05:51:27.193 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:51:27.193 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:51:27.197 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:51:27.210 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:51:28.001 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 文章审核---消费任务执行---拿到任务---进行审核
+2023-08-29 05:51:28.001 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 任务对象feign data:{taskId=1696279350346895361, taskType=1001, priority=1, executeTime=1693257298000, parameters=CKsx}
+2023-08-29 05:51:28.003 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 解析json获取的task对象:Task(taskId=1696279350346895361, taskType=1001, priority=1, executeTime=1693257298000, parameters=[8, -85, 49])
+2023-08-29 05:51:28.004 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 6315-----------
+2023-08-29 05:51:31.126 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:51:31.127 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:51:31.131 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:51:31.151 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:53:25.699 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:53:25.754 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:53:25.786 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:53:25.812 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:53:27.045 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:53:27.056 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:53:27.070 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:53:27.074 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:53:27.961 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:53:27.977 [task-8] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----begin
+2023-08-29 05:53:27.985 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:53:28.021 [task-8] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----end
+2023-08-29 05:53:28.036 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:53:28.036 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:53:28.040 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:53:28.054 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:53:29.005 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 文章审核---消费任务执行---拿到任务---进行审核
+2023-08-29 05:53:29.005 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 任务对象feign data:{taskId=1696279857295642626, taskType=1001, priority=1, executeTime=1693257298000, parameters=CKsx}
+2023-08-29 05:53:29.008 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 解析json获取的task对象:Task(taskId=1696279857295642626, taskType=1001, priority=1, executeTime=1693257298000, parameters=[8, -85, 49])
+2023-08-29 05:53:29.008 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 6315-----------
+2023-08-29 05:55:25.740 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='{"enable":0,"articleId":1696270185821999105}' to topic wm.news.up.or.down.topic:
+org.apache.kafka.common.errors.TimeoutException: Expiring 1 record(s) for wm.news.up.or.down.topic-0:120001 ms has passed since batch creation
+2023-08-29 05:57:54.826 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:57:54.826 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:57:54.861 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:57:54.861 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:57:55.796 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:57:55.812 [task-9] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----begin
+2023-08-29 05:57:55.827 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:57:55.872 [task-9] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----end
+2023-08-29 05:57:55.904 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:57:55.906 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 05:57:55.908 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:57:55.920 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 05:57:56.027 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 文章审核---消费任务执行---拿到任务---进行审核
+2023-08-29 05:57:56.027 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 任务对象feign data:{taskId=1696280980677054466, taskType=1001, priority=1, executeTime=1693257298000, parameters=CKsx}
+2023-08-29 05:57:56.030 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 解析json获取的task对象:Task(taskId=1696280980677054466, taskType=1001, priority=1, executeTime=1693257298000, parameters=[8, -85, 49])
+2023-08-29 05:57:56.030 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 6315-----------
+2023-08-29 06:00:09.054 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:00:09.054 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:00:09.087 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:00:09.088 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:00:10.188 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:00:10.209 [task-10] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----begin
+2023-08-29 06:00:10.218 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:00:10.260 [task-10] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----end
+2023-08-29 06:00:10.273 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:00:10.275 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:00:10.276 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:00:10.293 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:00:11.010 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 文章审核---消费任务执行---拿到任务---进行审核
+2023-08-29 06:00:11.010 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 任务对象feign data:{taskId=1696281544387317761, taskType=1001, priority=1, executeTime=1693257298000, parameters=CKsx}
+2023-08-29 06:00:11.013 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 解析json获取的task对象:Task(taskId=1696281544387317761, taskType=1001, priority=1, executeTime=1693257298000, parameters=[8, -85, 49])
+2023-08-29 06:00:11.014 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 6315-----------
+2023-08-29 06:00:13.445 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:00:13.445 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:00:13.450 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:00:13.479 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:09:49.866 [nacos-grpc-client-executor-10.211.55.8-1293] INFO  c.alibaba.nacos.common.remote.client - [7393b0a0-802c-41cd-a9b9-8168a40fec11] Receive server push request, request = NotifySubscriberRequest, requestId = 42
+2023-08-29 06:09:49.868 [nacos-grpc-client-executor-10.211.55.8-1293] INFO  com.alibaba.nacos.client.naming - removed ips(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:5907:2f68:7193:279]"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-08-29 06:09:49.868 [nacos-grpc-client-executor-10.211.55.8-1293] INFO  com.alibaba.nacos.client.naming - current ips:(0) service: DEFAULT_GROUP@@leadnews-article -> []
+2023-08-29 06:09:49.870 [nacos-grpc-client-executor-10.211.55.8-1293] INFO  c.alibaba.nacos.common.remote.client - [7393b0a0-802c-41cd-a9b9-8168a40fec11] Ack server push request, request = NotifySubscriberRequest, requestId = 42
+2023-08-29 06:10:02.053 [nacos-grpc-client-executor-10.211.55.8-1296] INFO  c.alibaba.nacos.common.remote.client - [7393b0a0-802c-41cd-a9b9-8168a40fec11] Receive server push request, request = NotifySubscriberRequest, requestId = 44
+2023-08-29 06:10:02.054 [nacos-grpc-client-executor-10.211.55.8-1296] INFO  com.alibaba.nacos.client.naming - new ips(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:5907:2f68:7193:279]"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-08-29 06:10:02.054 [nacos-grpc-client-executor-10.211.55.8-1296] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:5907:2f68:7193:279]"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-08-29 06:10:02.055 [nacos-grpc-client-executor-10.211.55.8-1296] INFO  c.alibaba.nacos.common.remote.client - [7393b0a0-802c-41cd-a9b9-8168a40fec11] Ack server push request, request = NotifySubscriberRequest, requestId = 44
+2023-08-29 06:10:03.849 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:10:03.861 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Resetting the last seen epoch of partition wm.news.up.or.down.topic-0 to 1 since the associated topicId changed from null to XMND6oZdS1OMHx9FitFk8A
+2023-08-29 06:10:03.870 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:10:03.890 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:10:03.904 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:10:05.415 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:10:05.430 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:10:05.433 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:10:05.436 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:10:06.513 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:10:06.528 [task-11] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----begin
+2023-08-29 06:10:06.533 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:10:06.550 [task-11] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----end
+2023-08-29 06:10:06.598 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:10:06.599 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:10:06.603 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:10:06.619 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:10:07.001 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 文章审核---消费任务执行---拿到任务---进行审核
+2023-08-29 06:10:07.001 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 任务对象feign data:{taskId=1696284045496930306, taskType=1001, priority=1, executeTime=1693257298000, parameters=CKsx}
+2023-08-29 06:10:07.004 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 解析json获取的task对象:Task(taskId=1696284045496930306, taskType=1001, priority=1, executeTime=1693257298000, parameters=[8, -85, 49])
+2023-08-29 06:10:07.004 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 6315-----------
+2023-08-29 06:12:00.711 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:12:00.711 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:12:00.724 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:12:00.736 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:12:03.863 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='{"enable":0,"articleId":1696270185821999105}' to topic wm.news.up.or.down.topic:
+org.apache.kafka.common.errors.TimeoutException: Expiring 1 record(s) for wm.news.up.or.down.topic-0:120000 ms has passed since batch creation
+2023-08-29 06:12:41.601 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:12:41.659 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:12:41.678 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:12:41.696 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:12:43.547 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:12:43.563 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:12:43.585 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:12:43.613 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:12:44.391 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:12:44.403 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:12:44.426 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:12:44.453 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:12:44.961 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:12:44.968 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:12:44.971 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:12:44.978 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:12:46.030 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:12:46.046 [task-12] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----begin
+2023-08-29 06:12:46.052 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:12:46.077 [task-12] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----end
+2023-08-29 06:12:46.128 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:12:46.131 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:12:46.134 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:12:46.150 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:12:47.014 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 文章审核---消费任务执行---拿到任务---进行审核
+2023-08-29 06:12:47.014 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 任务对象feign data:{taskId=1696284714584887298, taskType=1001, priority=1, executeTime=1693257298000, parameters=CKsx}
+2023-08-29 06:12:47.017 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 解析json获取的task对象:Task(taskId=1696284714584887298, taskType=1001, priority=1, executeTime=1693257298000, parameters=[8, -85, 49])
+2023-08-29 06:12:47.018 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 6315-----------
+2023-08-29 06:13:46.898 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:13:46.898 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:13:46.920 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:13:46.921 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:13:47.891 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:13:47.907 [task-13] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----begin
+2023-08-29 06:13:47.918 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:13:47.959 [task-13] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----end
+2023-08-29 06:13:48.003 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 文章审核---消费任务执行---拿到任务---进行审核
+2023-08-29 06:13:48.003 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 任务对象feign data:{taskId=1696284974057115650, taskType=1001, priority=1, executeTime=1693257298000, parameters=CKsx}
+2023-08-29 06:13:48.004 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:13:48.005 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 解析json获取的task对象:Task(taskId=1696284974057115650, taskType=1001, priority=1, executeTime=1693257298000, parameters=[8, -85, 49])
+2023-08-29 06:13:48.006 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 6315-----------
+2023-08-29 06:13:48.008 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:13:48.014 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:13:48.028 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:14:09.515 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:14:09.515 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:14:09.541 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:14:09.542 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:14:10.435 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:14:10.451 [task-14] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----begin
+2023-08-29 06:14:10.458 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:14:10.481 [task-14] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----end
+2023-08-29 06:14:10.547 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:14:10.547 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:14:10.551 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:14:10.561 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:14:11.006 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 文章审核---消费任务执行---拿到任务---进行审核
+2023-08-29 06:14:11.006 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 任务对象feign data:{taskId=1696285068592533506, taskType=1001, priority=1, executeTime=1693257298000, parameters=CKsx}
+2023-08-29 06:14:11.008 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 解析json获取的task对象:Task(taskId=1696285068592533506, taskType=1001, priority=1, executeTime=1693257298000, parameters=[8, -85, 49])
+2023-08-29 06:14:11.008 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 6315-----------
+2023-08-29 06:14:29.836 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:14:29.836 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:14:29.883 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:14:29.895 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:14:41.625 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='{"enable":0,"articleId":1696270185821999105}' to topic wm.news.up.or.down.topic:
+org.apache.kafka.common.errors.TimeoutException: Expiring 3 record(s) for wm.news.up.or.down.topic-0:120001 ms has passed since batch creation
+2023-08-29 06:14:41.625 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='{"enable":1,"articleId":1696270185821999105}' to topic wm.news.up.or.down.topic:
+org.apache.kafka.common.errors.TimeoutException: Expiring 3 record(s) for wm.news.up.or.down.topic-0:120001 ms has passed since batch creation
+2023-08-29 06:14:41.626 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='{"enable":0,"articleId":1696270185821999105}' to topic wm.news.up.or.down.topic:
+org.apache.kafka.common.errors.TimeoutException: Expiring 3 record(s) for wm.news.up.or.down.topic-0:120001 ms has passed since batch creation
+2023-08-29 06:19:02.144 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:19:03.794 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:19:03.798 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:19:03.800 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:19:03.821 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:19:05.192 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:19:05.214 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:19:05.232 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:19:05.260 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:19:07.080 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:19:07.080 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:19:07.089 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:19:07.087 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:19:08.317 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:19:08.330 [task-15] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----begin
+2023-08-29 06:19:08.335 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:19:08.361 [task-15] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----end
+2023-08-29 06:19:08.387 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:19:08.390 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:19:08.391 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:19:08.409 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:19:09.000 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 文章审核---消费任务执行---拿到任务---进行审核
+2023-08-29 06:19:09.000 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 任务对象feign data:{taskId=1696286317987614722, taskType=1001, priority=1, executeTime=1693257298000, parameters=CKsx}
+2023-08-29 06:19:09.003 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 解析json获取的task对象:Task(taskId=1696286317987614722, taskType=1001, priority=1, executeTime=1693257298000, parameters=[8, -85, 49])
+2023-08-29 06:19:09.003 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 6315-----------
+2023-08-29 06:21:05.207 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='{"enable":0,"articleId":1696270185821999105}' to topic wm.news.up.or.down.topic:
+org.apache.kafka.common.errors.TimeoutException: Expiring 1 record(s) for wm.news.up.or.down.topic-0:120001 ms has passed since batch creation
+2023-08-29 06:21:21.270 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:21:21.270 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:21:21.285 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:21:21.292 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:21:23.208 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:21:23.226 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:21:23.244 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:21:23.271 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:21:25.017 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:21:25.017 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:21:25.022 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:21:25.022 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:21:26.438 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:21:26.459 [task-16] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----begin
+2023-08-29 06:21:26.482 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:21:26.526 [task-16] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----end
+2023-08-29 06:21:26.542 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:21:26.543 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:21:26.546 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:21:26.557 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:21:27.008 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 文章审核---消费任务执行---拿到任务---进行审核
+2023-08-29 06:21:27.009 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 任务对象feign data:{taskId=1696286897489432578, taskType=1001, priority=1, executeTime=1693257298000, parameters=CKsx}
+2023-08-29 06:21:27.012 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 解析json获取的task对象:Task(taskId=1696286897489432578, taskType=1001, priority=1, executeTime=1693257298000, parameters=[8, -85, 49])
+2023-08-29 06:21:27.012 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 6315-----------
+2023-08-29 06:21:50.042 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:21:50.042 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:21:50.054 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:21:50.054 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:21:51.442 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:21:51.460 [task-17] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----begin
+2023-08-29 06:21:51.466 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:21:51.508 [task-17] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----end
+2023-08-29 06:21:51.515 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:21:51.515 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:21:51.519 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:21:51.536 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:21:52.026 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 文章审核---消费任务执行---拿到任务---进行审核
+2023-08-29 06:21:52.026 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 任务对象feign data:{taskId=1696287002217009154, taskType=1001, priority=1, executeTime=1693257298000, parameters=CKsx}
+2023-08-29 06:21:52.030 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 解析json获取的task对象:Task(taskId=1696287002217009154, taskType=1001, priority=1, executeTime=1693257298000, parameters=[8, -85, 49])
+2023-08-29 06:21:52.030 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 6315-----------
+2023-08-29 06:21:55.673 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:21:55.676 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:21:55.678 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:21:55.699 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:21:57.322 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:21:57.333 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:21:57.353 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:21:57.379 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:21:58.363 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:21:58.365 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:21:58.374 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:21:58.374 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:21:59.502 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:21:59.513 [task-18] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----begin
+2023-08-29 06:21:59.518 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:21:59.534 [task-18] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----end
+2023-08-29 06:21:59.566 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:21:59.572 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:21:59.580 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:21:59.600 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:22:00.003 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 文章审核---消费任务执行---拿到任务---进行审核
+2023-08-29 06:22:00.003 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 任务对象feign data:{taskId=1696287035968573441, taskType=1001, priority=1, executeTime=1693257298000, parameters=CKsx}
+2023-08-29 06:22:00.005 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 解析json获取的task对象:Task(taskId=1696287035968573441, taskType=1001, priority=1, executeTime=1693257298000, parameters=[8, -85, 49])
+2023-08-29 06:22:00.005 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 6315-----------
+2023-08-29 06:22:02.239 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:22:02.239 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:22:02.260 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:22:02.276 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:23:23.216 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='{"enable":0,"articleId":1696270185821999105}' to topic wm.news.up.or.down.topic:
+org.apache.kafka.common.errors.TimeoutException: Expiring 2 record(s) for wm.news.up.or.down.topic-0:120000 ms has passed since batch creation
+2023-08-29 06:23:23.218 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='{"enable":0,"articleId":1696270185821999105}' to topic wm.news.up.or.down.topic:
+org.apache.kafka.common.errors.TimeoutException: Expiring 2 record(s) for wm.news.up.or.down.topic-0:120000 ms has passed since batch creation
+2023-08-29 06:24:18.524 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:24:18.555 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:24:18.574 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:24:18.592 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:24:19.628 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:24:19.638 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:24:19.650 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:24:19.667 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:24:22.079 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:24:22.079 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:24:22.085 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:24:22.110 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:26:18.545 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='{"enable":0,"articleId":1696270185821999105}' to topic wm.news.up.or.down.topic:
+org.apache.kafka.common.errors.TimeoutException: Expiring 2 record(s) for wm.news.up.or.down.topic-0:120001 ms has passed since batch creation
+2023-08-29 06:26:18.547 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='{"enable":1,"articleId":1696270185821999105}' to topic wm.news.up.or.down.topic:
+org.apache.kafka.common.errors.TimeoutException: Expiring 2 record(s) for wm.news.up.or.down.topic-0:120001 ms has passed since batch creation
+2023-08-29 06:31:53.615 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:31:53.654 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:31:53.686 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:31:53.700 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:31:54.866 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:31:54.868 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:31:54.872 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:31:54.874 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:31:55.836 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:31:55.850 [task-19] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----begin
+2023-08-29 06:31:55.853 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:31:55.883 [task-19] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----end
+2023-08-29 06:31:55.910 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:31:55.910 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:31:55.913 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:31:55.923 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:31:56.019 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 文章审核---消费任务执行---拿到任务---进行审核
+2023-08-29 06:31:56.019 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 任务对象feign data:{taskId=1696289537212403714, taskType=1001, priority=1, executeTime=1693257298000, parameters=CKsx}
+2023-08-29 06:31:56.024 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 解析json获取的task对象:Task(taskId=1696289537212403714, taskType=1001, priority=1, executeTime=1693257298000, parameters=[8, -85, 49])
+2023-08-29 06:31:56.024 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 6315-----------
+2023-08-29 06:33:53.645 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='{"enable":0,"articleId":1696270185821999105}' to topic wm.news.up.or.down.topic:
+org.apache.kafka.common.errors.TimeoutException: Expiring 1 record(s) for wm.news.up.or.down.topic-0:120001 ms has passed since batch creation
+2023-08-29 06:35:47.615 [nacos-grpc-client-executor-10.211.55.8-1704] INFO  c.alibaba.nacos.common.remote.client - [7393b0a0-802c-41cd-a9b9-8168a40fec11] Receive server push request, request = NotifySubscriberRequest, requestId = 57
+2023-08-29 06:35:47.616 [nacos-grpc-client-executor-10.211.55.8-1704] INFO  com.alibaba.nacos.client.naming - removed ips(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:5907:2f68:7193:279]"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-08-29 06:35:47.617 [nacos-grpc-client-executor-10.211.55.8-1704] INFO  com.alibaba.nacos.client.naming - current ips:(0) service: DEFAULT_GROUP@@leadnews-article -> []
+2023-08-29 06:35:47.618 [nacos-grpc-client-executor-10.211.55.8-1704] INFO  c.alibaba.nacos.common.remote.client - [7393b0a0-802c-41cd-a9b9-8168a40fec11] Ack server push request, request = NotifySubscriberRequest, requestId = 57
+2023-08-29 06:35:53.347 [nacos-grpc-client-executor-10.211.55.8-1705] INFO  c.alibaba.nacos.common.remote.client - [7393b0a0-802c-41cd-a9b9-8168a40fec11] Receive server push request, request = NotifySubscriberRequest, requestId = 59
+2023-08-29 06:35:53.347 [nacos-grpc-client-executor-10.211.55.8-1705] INFO  com.alibaba.nacos.client.naming - new ips(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:5907:2f68:7193:279]"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-08-29 06:35:53.347 [nacos-grpc-client-executor-10.211.55.8-1705] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:5907:2f68:7193:279]"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-08-29 06:35:53.347 [nacos-grpc-client-executor-10.211.55.8-1705] INFO  c.alibaba.nacos.common.remote.client - [7393b0a0-802c-41cd-a9b9-8168a40fec11] Ack server push request, request = NotifySubscriberRequest, requestId = 59
+2023-08-29 06:36:00.378 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:36:00.378 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:36:00.386 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:36:00.386 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:36:01.296 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:36:01.331 [task-20] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----begin
+2023-08-29 06:36:01.338 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:36:01.385 [task-20] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----end
+2023-08-29 06:36:01.391 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:36:01.391 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:36:01.394 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:36:01.405 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:36:02.011 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 文章审核---消费任务执行---拿到任务---进行审核
+2023-08-29 06:36:02.011 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 任务对象feign data:{taskId=1696290566888869889, taskType=1001, priority=1, executeTime=1693257298000, parameters=CKsx}
+2023-08-29 06:36:02.014 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 解析json获取的task对象:Task(taskId=1696290566888869889, taskType=1001, priority=1, executeTime=1693257298000, parameters=[8, -85, 49])
+2023-08-29 06:36:02.014 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 6315-----------
+2023-08-29 06:36:50.410 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:36:50.410 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:36:50.426 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:36:50.426 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:36:51.454 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:36:51.471 [task-21] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----begin
+2023-08-29 06:36:51.479 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:36:51.503 [task-21] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----end
+2023-08-29 06:36:51.550 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:36:51.553 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:36:51.554 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:36:51.578 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:36:52.005 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 文章审核---消费任务执行---拿到任务---进行审核
+2023-08-29 06:36:52.005 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 任务对象feign data:{taskId=1696290777145135106, taskType=1001, priority=1, executeTime=1693257298000, parameters=CKsx}
+2023-08-29 06:36:52.008 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 解析json获取的task对象:Task(taskId=1696290777145135106, taskType=1001, priority=1, executeTime=1693257298000, parameters=[8, -85, 49])
+2023-08-29 06:36:52.008 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 6315-----------
+2023-08-29 06:36:53.134 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:36:53.134 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:36:53.139 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:36:53.161 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:37:44.941 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:37:44.970 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:37:45.002 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:37:45.026 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:37:46.367 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:37:46.370 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:37:46.390 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:37:46.395 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:37:50.649 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:37:50.662 [task-22] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----begin
+2023-08-29 06:37:50.668 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:37:50.692 [task-22] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----end
+2023-08-29 06:37:50.735 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:37:50.741 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:37:50.741 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:37:50.759 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:37:51.004 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 文章审核---消费任务执行---拿到任务---进行审核
+2023-08-29 06:37:51.004 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 任务对象feign data:{taskId=1696291025401794561, taskType=1001, priority=1, executeTime=1693257298000, parameters=CKsx}
+2023-08-29 06:37:51.006 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 解析json获取的task对象:Task(taskId=1696291025401794561, taskType=1001, priority=1, executeTime=1693257298000, parameters=[8, -85, 49])
+2023-08-29 06:37:51.007 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 6315-----------
+2023-08-29 06:39:44.960 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='{"enable":0,"articleId":1696270185821999105}' to topic wm.news.up.or.down.topic:
+org.apache.kafka.common.errors.TimeoutException: Expiring 1 record(s) for wm.news.up.or.down.topic-0:120000 ms has passed since batch creation
+2023-08-29 06:51:51.830 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:51:51.830 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:51:51.843 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:51:51.843 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:51:52.801 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:51:52.818 [task-23] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----begin
+2023-08-29 06:51:52.826 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:51:52.868 [task-23] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----end
+2023-08-29 06:51:52.924 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 文章审核---消费任务执行---拿到任务---进行审核
+2023-08-29 06:51:52.925 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 任务对象feign data:{taskId=1696294557651685378, taskType=1001, priority=1, executeTime=1693257298000, parameters=CKsx}
+2023-08-29 06:51:52.927 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 解析json获取的task对象:Task(taskId=1696294557651685378, taskType=1001, priority=1, executeTime=1693257298000, parameters=[8, -85, 49])
+2023-08-29 06:51:52.928 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 6315-----------
+2023-08-29 06:51:52.928 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:51:52.930 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:51:52.940 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:51:52.950 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:51:55.746 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:51:55.748 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:51:55.754 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:51:55.772 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:52:02.095 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:52:02.116 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Resetting the last seen epoch of partition wm.news.up.or.down.topic-0 to 1 since the associated topicId changed from null to XMND6oZdS1OMHx9FitFk8A
+2023-08-29 06:52:02.127 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:52:02.147 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:52:02.175 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:53:23.420 [kafka-producer-network-thread | producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Node 1 disconnected.
+2023-08-29 06:53:23.422 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 1 (/10.211.55.8:9092) could not be established. Broker may not be available.
+2023-08-29 06:53:23.470 [kafka-producer-network-thread | producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Node 1 disconnected.
+2023-08-29 06:53:23.470 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 1 (/10.211.55.8:9092) could not be established. Broker may not be available.
+2023-08-29 06:53:23.843 [kafka-producer-network-thread | producer-1] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-1] Got error produce response with correlation id 34337 on topic-partition wm.news.up.or.down.topic-0, retrying (9 attempts left). Error: NOT_LEADER_OR_FOLLOWER
+2023-08-29 06:53:23.844 [kafka-producer-network-thread | producer-1] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-1] Received invalid metadata error in produce request on partition wm.news.up.or.down.topic-0 due to org.apache.kafka.common.errors.NotLeaderOrFollowerException: For requests intended only for the leader, this error indicates that the broker is not the current leader. For requests intended for any replica, this error indicates that the broker is not a replica of the topic partition.. Going to request metadata update now
+2023-08-29 06:53:23.973 [kafka-producer-network-thread | producer-1] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-1] Got error produce response with correlation id 34339 on topic-partition wm.news.up.or.down.topic-0, retrying (8 attempts left). Error: NOT_LEADER_OR_FOLLOWER
+2023-08-29 06:53:23.973 [kafka-producer-network-thread | producer-1] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-1] Received invalid metadata error in produce request on partition wm.news.up.or.down.topic-0 due to org.apache.kafka.common.errors.NotLeaderOrFollowerException: For requests intended only for the leader, this error indicates that the broker is not the current leader. For requests intended for any replica, this error indicates that the broker is not a replica of the topic partition.. Going to request metadata update now
+2023-08-29 06:53:24.085 [kafka-producer-network-thread | producer-1] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-1] Got error produce response with correlation id 34342 on topic-partition wm.news.up.or.down.topic-0, retrying (7 attempts left). Error: NOT_LEADER_OR_FOLLOWER
+2023-08-29 06:53:24.085 [kafka-producer-network-thread | producer-1] WARN  o.a.k.c.producer.internals.Sender - [Producer clientId=producer-1] Received invalid metadata error in produce request on partition wm.news.up.or.down.topic-0 due to org.apache.kafka.common.errors.NotLeaderOrFollowerException: For requests intended only for the leader, this error indicates that the broker is not the current leader. For requests intended for any replica, this error indicates that the broker is not a replica of the topic partition.. Going to request metadata update now
+2023-08-29 06:53:26.995 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:53:27.044 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:53:27.060 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:53:27.084 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:53:52.715 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:53:52.768 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:53:52.785 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:53:52.799 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:57:34.007 [nacos-grpc-client-executor-10.211.55.8-2073] INFO  c.alibaba.nacos.common.remote.client - [7393b0a0-802c-41cd-a9b9-8168a40fec11] Receive server push request, request = NotifySubscriberRequest, requestId = 63
+2023-08-29 06:57:34.008 [nacos-grpc-client-executor-10.211.55.8-2073] INFO  com.alibaba.nacos.client.naming - removed ips(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:5907:2f68:7193:279]"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-08-29 06:57:34.008 [nacos-grpc-client-executor-10.211.55.8-2073] INFO  com.alibaba.nacos.client.naming - current ips:(0) service: DEFAULT_GROUP@@leadnews-article -> []
+2023-08-29 06:57:34.009 [nacos-grpc-client-executor-10.211.55.8-2073] INFO  c.alibaba.nacos.common.remote.client - [7393b0a0-802c-41cd-a9b9-8168a40fec11] Ack server push request, request = NotifySubscriberRequest, requestId = 63
+2023-08-29 06:57:44.820 [nacos-grpc-client-executor-10.211.55.8-2075] INFO  c.alibaba.nacos.common.remote.client - [7393b0a0-802c-41cd-a9b9-8168a40fec11] Receive server push request, request = NotifySubscriberRequest, requestId = 65
+2023-08-29 06:57:44.822 [nacos-grpc-client-executor-10.211.55.8-2075] INFO  com.alibaba.nacos.client.naming - new ips(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:5907:2f68:7193:279]"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-08-29 06:57:44.823 [nacos-grpc-client-executor-10.211.55.8-2075] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:5907:2f68:7193:279]"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-08-29 06:57:44.824 [nacos-grpc-client-executor-10.211.55.8-2075] INFO  c.alibaba.nacos.common.remote.client - [7393b0a0-802c-41cd-a9b9-8168a40fec11] Ack server push request, request = NotifySubscriberRequest, requestId = 65
+2023-08-29 06:57:53.879 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:57:53.879 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:57:53.893 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:57:53.898 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:57:55.144 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:57:55.162 [task-24] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----begin
+2023-08-29 06:57:55.170 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:57:55.200 [task-24] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----end
+2023-08-29 06:57:55.226 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:57:55.228 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:57:55.231 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:57:55.275 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:57:55.918 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 文章审核---消费任务执行---拿到任务---进行审核
+2023-08-29 06:57:55.918 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 任务对象feign data:{taskId=1696296077449351169, taskType=1001, priority=1, executeTime=1693257298000, parameters=CKsx}
+2023-08-29 06:57:55.920 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 解析json获取的task对象:Task(taskId=1696296077449351169, taskType=1001, priority=1, executeTime=1693257298000, parameters=[8, -85, 49])
+2023-08-29 06:57:55.921 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 6315-----------
+2023-08-29 06:59:57.203 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:59:57.203 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:59:57.226 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:59:57.226 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:59:58.029 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:59:58.047 [task-25] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----begin
+2023-08-29 06:59:58.055 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:59:58.080 [task-25] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----end
+2023-08-29 06:59:58.113 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:59:58.118 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:59:58.120 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 06:59:58.146 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 06:59:58.906 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 文章审核---消费任务执行---拿到任务---进行审核
+2023-08-29 06:59:58.906 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 任务对象feign data:{taskId=1696296592866398210, taskType=1001, priority=1, executeTime=1693257298000, parameters=CKsx}
+2023-08-29 06:59:58.909 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 解析json获取的task对象:Task(taskId=1696296592866398210, taskType=1001, priority=1, executeTime=1693257298000, parameters=[8, -85, 49])
+2023-08-29 06:59:58.910 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 6315-----------
+2023-08-29 07:02:54.220 [kafka-producer-network-thread | producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Node 1 disconnected.
+2023-08-29 07:03:38.715 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 07:03:38.715 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 07:03:38.727 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 07:03:38.727 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 07:03:39.595 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 07:03:39.610 [task-26] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----begin
+2023-08-29 07:03:39.619 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 07:03:39.647 [task-26] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----end
+2023-08-29 07:03:39.700 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 07:03:39.701 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 07:03:39.705 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 07:03:39.719 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 07:03:39.904 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 文章审核---消费任务执行---拿到任务---进行审核
+2023-08-29 07:03:39.904 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 任务对象feign data:{taskId=1696297522181558274, taskType=1001, priority=1, executeTime=1693257298000, parameters=CKsx}
+2023-08-29 07:03:39.907 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 解析json获取的task对象:Task(taskId=1696297522181558274, taskType=1001, priority=1, executeTime=1693257298000, parameters=[8, -85, 49])
+2023-08-29 07:03:39.908 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 6315-----------

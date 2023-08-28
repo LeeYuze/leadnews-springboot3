@@ -78,3 +78,4 @@
 2023-08-29 04:11:33.613 [http-nio-51801-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
 2023-08-29 04:11:33.765 [http-nio-51801-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@67b7bb9c
 2023-08-29 04:11:33.765 [http-nio-51801-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-08-29 04:50:56.261 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m52s236ms).

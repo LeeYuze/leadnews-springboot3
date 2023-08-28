@@ -1,19 +1,14 @@
 package com.leadnews.article.service.impl;
 
 import cn.hutool.core.util.StrUtil;
-import co.elastic.clients.elasticsearch.ElasticsearchClient;
-import co.elastic.clients.elasticsearch._types.ElasticsearchException;
-import co.elastic.clients.elasticsearch._types.SortOrder;
-import co.elastic.clients.elasticsearch.core.SearchRequest;
-import co.elastic.clients.elasticsearch.core.SearchResponse;
-import co.elastic.clients.elasticsearch.core.search.Hit;
-import co.elastic.clients.json.JsonData;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.leadnews.article.event.ArticleSaveOrEditEvent;
 import com.leadnews.article.mapper.ApArticleConfigMapper;
 import com.leadnews.article.mapper.ApArticleContentMapper;
 import com.leadnews.article.mapper.ApArticleMapper;
 import com.leadnews.article.service.ApArticleService;
+import com.leadnews.article.service.ArticleFreemarkerService;
 import com.leadnews.common.article.ArticleConstants;
 import com.leadnews.model.article.dtos.ArticleDTO;
 import com.leadnews.model.article.dtos.ArticleHomeDTO;
@@ -27,6 +22,7 @@ import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
+import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
@@ -49,6 +45,8 @@ public class ApArticleServiceImpl extends ServiceImpl<ApArticleMapper, ApArticle
     private final ApArticleConfigMapper apArticleConfigMapper;
 
     private final ApArticleContentMapper apArticleContentMapper;
+
+    private final ApplicationEventPublisher applicationEventPublisher;
 
 
     // 单页最大加载的数字
@@ -127,6 +125,8 @@ public class ApArticleServiceImpl extends ServiceImpl<ApArticleMapper, ApArticle
             apArticleContent.setContent(dto.getContent());
             apArticleContentMapper.updateById(apArticleContent);
         }
+
+        applicationEventPublisher.publishEvent(new ArticleSaveOrEditEvent(this, apArticle, dto.getContent()));
 
         return ResponseResult.okResult(apArticle.getId());
     }
