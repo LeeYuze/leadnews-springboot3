@@ -14,7 +14,7 @@ import java.net.UnknownHostException;
  * @date 2023/8/15
  */
 @SpringBootApplication
-public class MinioApplication {
+public class  MinioApplication {
 
     private static final Logger logger = LoggerFactory.getLogger(MinioApplication.class);
 

@@ -9,6 +9,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 
 import com.leadnews.common.execption.CustomException;
+import com.leadnews.common.message.MqConstants;
 import com.leadnews.common.wemedia.WemediaConstants;
 import com.leadnews.common.wemedia.WmNewsStatus;
 import com.leadnews.model.common.dtos.PageResponseResult;
@@ -29,13 +30,11 @@ import com.leadnews.wemedia.service.WmNewsTaskService;
 import com.leadnews.wemedia.utils.thread.WmUserLocalUtil;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.BeanUtils;
+import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 /**
@@ -53,6 +52,8 @@ public class WmNewsServiceImpl extends ServiceImpl<WmNewsMapper, WmNews>
     private final WmMaterialMapper wmMaterialMapper;
 
     private final WmNewsTaskService wmNewsTaskService;
+
+    private final KafkaTemplate<String, String> kafkaTemplate;
 
     @Override
     public ResponseResult findAll(WmNewsPageReqDTO dto) {
@@ -205,6 +206,15 @@ public class WmNewsServiceImpl extends ServiceImpl<WmNewsMapper, WmNews>
         }
 
         wmNews.setEnable(dto.getEnable());
+
+        // 发布到kafka，由article端消费
+        if (Objects.nonNull(wmNews.getArticleId())) {
+            Map<String, Object> map = new HashMap<>();
+            map.put("articleId", wmNews.getArticleId());
+            map.put("enable", dto.getEnable());
+            String jsonString = JSON.toJSONString(map);
+            kafkaTemplate.send(MqConstants.WM_NEWS_UP_OR_DOWN_TOPIC, jsonString);
+        }
 
         this.updateById(wmNews);
     }
