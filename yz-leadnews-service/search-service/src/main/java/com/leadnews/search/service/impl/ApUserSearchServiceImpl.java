@@ -1,6 +1,8 @@
 package com.leadnews.search.service.impl;
 
 import com.leadnews.model.common.dtos.ResponseResult;
+import com.leadnews.model.common.enums.AppHttpCodeEnum;
+import com.leadnews.model.search.dtos.HistorySearchDTO;
 import com.leadnews.model.search.pojos.ApUserSearch;
 import com.leadnews.model.user.pojos.ApUser;
 import com.leadnews.search.service.ApUserSearchService;
@@ -58,6 +60,19 @@ public class ApUserSearchServiceImpl implements ApUserSearchService {
         //根据用户查询数据，按照时间倒序
         List<ApUserSearch> apUserSearches = mongoTemplate.find(query, ApUserSearch.class);
         return ResponseResult.okResult(apUserSearches);
+    }
+
+    @Override
+    public ResponseResult delUserSearch(HistorySearchDTO historySearchDto) {
+        //1.检查参数
+        if (historySearchDto.getId() == null) {
+            return ResponseResult.errorResult(AppHttpCodeEnum.PARAM_INVALID);
+        }
+        ApUser user = UserLocalUtil.getUser();
+
+        //3.删除
+        mongoTemplate.remove(Query.query(Criteria.where("userId").is(user.getId()).and("id").is(historySearchDto.getId())), ApUserSearch.class);
+        return ResponseResult.okResult(AppHttpCodeEnum.SUCCESS);
     }
 
     public void deleteLastSearchHistory(Long userId, Integer maxSize) {

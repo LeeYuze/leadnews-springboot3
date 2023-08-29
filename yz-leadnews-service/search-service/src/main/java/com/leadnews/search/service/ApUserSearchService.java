@@ -1,6 +1,7 @@
 package com.leadnews.search.service;
 
 import com.leadnews.model.common.dtos.ResponseResult;
+import com.leadnews.model.search.dtos.HistorySearchDTO;
 
 /**
  * @author lihaohui
@@ -20,4 +21,11 @@ public interface ApUserSearchService {
      @return
      */
     ResponseResult findUserSearch();
+
+    /**
+     删除搜索历史
+     @param historySearchDto
+     @return
+     */
+    ResponseResult delUserSearch(HistorySearchDTO historySearchDto);
 }
