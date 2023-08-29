@@ -6,6 +6,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.core.env.ConfigurableEnvironment;
+import org.springframework.scheduling.annotation.EnableAsync;
 
 import javax.sql.DataSource;
 import java.net.InetAddress;
@@ -15,6 +16,7 @@ import java.net.UnknownHostException;
  * @author lihaohui
  * @date 2023/8/29
  */
+@EnableAsync
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
 public class SearchApplication {
     private static final Logger logger = LoggerFactory.getLogger(SearchApplication.class);

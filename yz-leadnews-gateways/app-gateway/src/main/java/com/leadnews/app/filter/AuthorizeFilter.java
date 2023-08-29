@@ -58,9 +58,10 @@ public class AuthorizeFilter implements Ordered, GlobalFilter {
             return response.setComplete();
         }
 
+        Claims claimsBody = null;
         //5.判断token是否有效
         try {
-            Claims claimsBody = AppJwtUtil.getClaimsBody(token);
+            claimsBody = AppJwtUtil.getClaimsBody(token);
             //是否是过期
             int result = AppJwtUtil.verifyToken(claimsBody);
             if(result == 1 || result  == 2){
@@ -73,6 +74,11 @@ public class AuthorizeFilter implements Ordered, GlobalFilter {
             response.setStatusCode(HttpStatus.UNAUTHORIZED);
             return response.setComplete();
         }
+
+        //              5. 如果解析成功，获取token中存放的用户id，并且将用户id设置到请求头中，路由给其他微服务
+        Object id = claimsBody.get("id");
+//                将用户id设置到请求头中,路由给其他微服务
+        request.mutate().header("userId", String.valueOf(id));
 
         logger.debug("============【AppGateway】结束登录校验============");
         return chain.filter(exchange);

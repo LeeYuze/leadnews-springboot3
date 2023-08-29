@@ -10,10 +10,15 @@ import co.elastic.clients.elasticsearch.core.SearchResponse;
 import co.elastic.clients.elasticsearch.core.search.Hit;
 import co.elastic.clients.json.JsonData;
 import com.leadnews.common.elasticsearch.EsConstants;
+import com.leadnews.model.common.dtos.PageRequestDTO;
 import com.leadnews.model.common.dtos.ResponseResult;
 import com.leadnews.model.common.enums.AppHttpCodeEnum;
 import com.leadnews.model.search.dtos.UserSearchDTO;
+import com.leadnews.model.user.pojos.ApUser;
+import com.leadnews.model.wemedia.pojos.WmUser;
+import com.leadnews.search.service.ApUserSearchService;
 import com.leadnews.search.service.ArticleSearchService;
+import com.leadnews.search.utils.thread.UserLocalUtil;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -37,6 +42,8 @@ public class ArticleSearchServiceImpl implements ArticleSearchService {
 
     private final ElasticsearchClient elasticsearchClient;
 
+    private final ApUserSearchService apUserSearchService;
+
 
     @Override
     public ResponseResult search(UserSearchDTO userSearchDto) {
@@ -45,6 +52,12 @@ public class ArticleSearchServiceImpl implements ArticleSearchService {
         if (userSearchDto == null || StrUtil.isBlank(userSearchDto.getSearchWords())) {
             return ResponseResult.errorResult(AppHttpCodeEnum.PARAM_INVALID);
         }
+
+        ApUser user = UserLocalUtil.getUser();
+
+        //异步调用 保存搜索记录
+        apUserSearchService.insert(userSearchDto.getSearchWords(), user.getId());
+
 
         SearchRequest.Builder searchBuilder = new SearchRequest.Builder();
 

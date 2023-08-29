@@ -21,6 +21,11 @@
     <dependencies>
 
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>com.leadnews</groupId>
             <artifactId>spring-boot-starter-elasticsearch</artifactId>
         </dependency>
