@@ -1171,3 +1171,106 @@ org.apache.kafka.common.errors.TimeoutException: Expiring 1 record(s) for wm.new
 2023-08-29 07:03:39.904 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 任务对象feign data:{taskId=1696297522181558274, taskType=1001, priority=1, executeTime=1693257298000, parameters=CKsx}
 2023-08-29 07:03:39.907 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 解析json获取的task对象:Task(taskId=1696297522181558274, taskType=1001, priority=1, executeTime=1693257298000, parameters=[8, -85, 49])
 2023-08-29 07:03:39.908 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 6315-----------
+2023-08-29 07:30:03.957 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 07:30:05.603 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 07:30:05.605 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 07:30:05.608 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 07:30:05.628 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 07:30:07.077 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 07:30:07.087 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Resetting the last seen epoch of partition wm.news.up.or.down.topic-0 to 2 since the associated topicId changed from null to XMND6oZdS1OMHx9FitFk8A
+2023-08-29 07:30:07.100 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 07:30:07.129 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 07:30:07.153 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 07:30:08.632 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 07:30:08.632 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 07:30:08.643 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 07:30:08.644 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 07:30:15.945 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 07:30:15.959 [task-27] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----begin
+2023-08-29 07:30:15.971 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 07:30:15.996 [task-27] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----end
+2023-08-29 07:30:16.038 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 07:30:16.042 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-29 07:30:16.044 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 07:30:16.064 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-29 07:30:16.961 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 文章审核---消费任务执行---拿到任务---进行审核
+2023-08-29 07:30:16.961 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 任务对象feign data:{taskId=1696304217746165761, taskType=1001, priority=1, executeTime=1693257298000, parameters=CKsx}
+2023-08-29 07:30:16.963 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 解析json获取的task对象:Task(taskId=1696304217746165761, taskType=1001, priority=1, executeTime=1693257298000, parameters=[8, -85, 49])
+2023-08-29 07:30:16.963 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 6315-----------
+2023-08-29 07:39:24.291 [kafka-producer-network-thread | producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Node 0 disconnected.
+2023-08-29 07:58:46.822 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m3s830ms).
+2023-08-29 08:07:27.183 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m10s386ms).
+2023-08-29 08:09:29.360 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m2s178ms).
+2023-08-29 08:13:35.041 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m5s681ms).
+2023-08-29 08:31:16.283 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m41s242ms).
+2023-08-29 08:47:37.116 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m20s833ms).
+2023-08-29 09:03:32.097 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s981ms).
+2023-08-29 09:04:26.991 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s894ms).
+2023-08-29 09:35:50.218 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=31m23s227ms).
+2023-08-29 09:53:14.194 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m23s976ms).
+2023-08-29 09:59:54.215 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m40s21ms).
+2023-08-29 10:16:38.965 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m44s750ms).
+2023-08-29 10:17:33.859 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s894ms).
+2023-08-29 10:34:19.637 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m45s778ms).
+2023-08-29 11:00:59.317 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=25m59s472ms).
+2023-08-29 11:02:19.099 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m19s782ms).
+2023-08-29 11:33:39.011 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=31m19s912ms).
+2023-08-29 11:34:58.847 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m19s836ms).
+2023-08-29 12:01:56.684 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=26m57s837ms).
+2023-08-29 12:18:16.553 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m19s868ms).
+2023-08-29 12:35:01.364 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m44s812ms).
+2023-08-29 12:36:21.182 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m19s818ms).
+2023-08-29 12:52:19.374 [com.alibaba.nacos.client.Worker] ERROR c.alibaba.nacos.common.remote.client - Send request fail, request = ConfigBatchListenRequest{headers={charset=UTF-8, Client-AppName=unknown, Client-RequestToken=9b98e7cbab8f792ee5d25f10d60b4357, Client-RequestTS=1693284711461, exConfigInfo=true}, requestId='null'}, retryTimes = 0, errorMessage = java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 10 milliseconds, 28750 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@634f061a[status=PENDING, info=[GrpcFuture{clientCall=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@2a44a102, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@23ea762, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@5609c20b}}}]]
+2023-08-29 12:52:19.381 [com.alibaba.nacos.client.Worker] ERROR c.a.n.c.config.impl.ClientWorker - Async listen config change error 
+com.alibaba.nacos.api.exception.NacosException: java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 10 milliseconds, 28750 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@634f061a[status=PENDING, info=[GrpcFuture{clientCall=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@2a44a102, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@23ea762, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@5609c20b}}}]]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcConnection.request(GrpcConnection.java:78)
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:645)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.requestProxy(ClientWorker.java:1011)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.requestProxy(ClientWorker.java:992)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.executeConfigListen(ClientWorker.java:786)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.lambda$startInternal$2(ClientWorker.java:704)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 10 milliseconds, 28750 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@634f061a[status=PENDING, info=[GrpcFuture{clientCall=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@2a44a102, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@23ea762, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@5609c20b}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcConnection.request(GrpcConnection.java:76)
+	... 11 common frames omitted
+2023-08-29 12:52:19.526 [com.alibaba.nacos.client.remote.worker] INFO  c.alibaba.nacos.common.remote.client - [755ead55-d5d2-4621-9f7e-45ff778d2c7f_config-0] Server check success, currentServer is 10.211.55.8:8848 
+2023-08-29 12:52:30.145 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m8s963ms).
+2023-08-29 13:02:51.238 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m21s93ms).
+2023-08-29 13:19:11.123 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m19s884ms).
+2023-08-29 13:37:53.098 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m41s976ms).
+2023-08-29 13:54:19.189 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m26s91ms).
+2023-08-29 14:00:55.425 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m36s236ms).
+2023-08-29 14:03:49.123 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m53s698ms).
+2023-08-29 14:19:44.083 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s960ms).
+2023-08-29 14:35:59.420 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m15s336ms).
+2023-08-29 14:52:37.474 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m38s55ms).
+2023-08-29 15:05:31.796 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m54s322ms).
+2023-08-29 15:06:26.691 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s895ms).
+2023-08-29 15:38:11.478 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=31m44s787ms).
+2023-08-29 15:39:06.394 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s916ms).
+2023-08-29 16:06:29.991 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=27m23s597ms).
+2023-08-29 16:23:14.776 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m44s785ms).
+2023-08-29 16:24:09.681 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s905ms).
+2023-08-29 16:55:54.491 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=31m44s810ms).
+2023-08-29 16:56:49.385 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s894ms).
+2023-08-29 17:25:41.742 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=28m52s357ms).
+2023-08-29 17:26:36.740 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s998ms).
+2023-08-29 17:57:56.656 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=31m19s916ms).
+2023-08-29 17:59:16.471 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m19s815ms).
+2023-08-29 18:11:39.669 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m23s198ms).
+2023-08-29 18:12:28.167 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48s498ms).
+2023-08-29 18:43:48.125 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=31m19s957ms).
+2023-08-29 18:46:41.701 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m53s577ms).
+2023-08-29 18:47:30.161 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48s460ms).
+2023-08-29 19:08:57.574 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=21m27s413ms).
+2023-08-29 19:10:17.372 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m19s798ms).
+2023-08-29 19:41:12.593 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=30m55s221ms).
+2023-08-29 19:42:07.483 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s890ms).
+2023-08-29 19:48:49.078 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m41s595ms).
+2023-08-29 19:53:42.796 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m23s704ms).
