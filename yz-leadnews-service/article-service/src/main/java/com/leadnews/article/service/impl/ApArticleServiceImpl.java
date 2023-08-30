@@ -9,30 +9,29 @@ import com.leadnews.article.mapper.ApArticleConfigMapper;
 import com.leadnews.article.mapper.ApArticleContentMapper;
 import com.leadnews.article.mapper.ApArticleMapper;
 import com.leadnews.article.service.ApArticleService;
-import com.leadnews.article.service.ArticleFreemarkerService;
-import com.leadnews.common.article.ArticleConstants;
+import com.leadnews.article.service.HotArticleService;
+import com.leadnews.common.constants.article.ArticleConstants;
 import com.leadnews.model.article.dtos.ArticleDTO;
 import com.leadnews.model.article.dtos.ArticleHomeDTO;
+import com.leadnews.model.article.mess.ArticleVisitStreamMess;
 import com.leadnews.model.article.pojos.ApArticle;
 import com.leadnews.model.article.pojos.ApArticleConfig;
 import com.leadnews.model.article.pojos.ApArticleContent;
 import com.leadnews.model.article.vos.HotArticleVO;
 import com.leadnews.model.common.dtos.ResponseResult;
 import com.leadnews.model.common.enums.AppHttpCodeEnum;
-import com.leadnews.model.search.dtos.UserSearchDTO;
 import com.leadnews.redis.utils.CacheService;
 import lombok.RequiredArgsConstructor;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.context.ApplicationEventPublisher;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
-import java.io.IOException;
-import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
-import java.util.Map;
+import java.util.stream.Collectors;
 
 /**
  * @author lihaohui
@@ -52,6 +51,8 @@ public class ApArticleServiceImpl extends ServiceImpl<ApArticleMapper, ApArticle
     private final ApplicationEventPublisher applicationEventPublisher;
 
     private final CacheService cacheService;
+
+    private final HotArticleService hotArticleService;
 
 
     // 单页最大加载的数字
@@ -147,6 +148,84 @@ public class ApArticleServiceImpl extends ServiceImpl<ApArticleMapper, ApArticle
         applicationEventPublisher.publishEvent(new ArticleSaveOrEditEvent(this, apArticle, dto.getContent()));
 
         return ResponseResult.okResult(apArticle.getId());
+    }
+
+    @Override
+    @Transactional(rollbackFor = Exception.class)
+    public void updateScore(ArticleVisitStreamMess mess) {
+        //1.更新文章的阅读、点赞、收藏、评论的数量 Mysql
+        ApArticle apArticle = updateArticleToDb(mess);
+
+        //2.计算文章的分值
+        Integer score = hotArticleService.computeScore(apArticle);
+
+        //3.替换当前文章对应频道的热点数据
+        replaceDataToRedis(apArticle, score, ArticleConstants.HOT_ARTICLE_FIRST_PAGE + apArticle.getChannelId());
+
+        //4.替换推荐对应的热点数据
+        replaceDataToRedis(apArticle, score, ArticleConstants.HOT_ARTICLE_FIRST_PAGE + ArticleConstants.DEFAULT_TAG);
+    }
+
+    /**
+     * 替换数据并且存入到redis
+     */
+    private void replaceDataToRedis(ApArticle apArticle, Integer score, String cachekey) {
+        String articleListStr = cacheService.get(cachekey);
+        if (StrUtil.isBlank(articleListStr)) {
+            return;
+        }
+
+        List<HotArticleVO> hotArticleVoList = JSON.parseArray(articleListStr, HotArticleVO.class);
+        boolean flag = true;
+
+        //如果缓存中存在该文章，只更新分值
+        for (HotArticleVO hotArticleVo : hotArticleVoList) {
+            if (hotArticleVo.getId().equals(apArticle.getId())) {
+                hotArticleVo.setScore(score);
+                flag = false;
+                break;
+            }
+        }
+
+        if (!flag) {
+            return;
+        }
+        //如果缓存中不存在，查询缓存中分值最小的一条数据，进行分值的比较，如果当前文章的分值大于缓存中的数据，就替换
+        if (hotArticleVoList.size() >= 30) {
+            hotArticleVoList = hotArticleVoList.stream().sorted(Comparator.comparing(HotArticleVO::getScore).reversed()).collect(Collectors.toList());
+            HotArticleVO lastHot = hotArticleVoList.get(hotArticleVoList.size() - 1);
+            if (lastHot.getScore() < score) {
+                hotArticleVoList.remove(lastHot);
+                HotArticleVO hot = new HotArticleVO();
+                BeanUtils.copyProperties(apArticle, hot);
+                hot.setScore(score);
+                hotArticleVoList.add(hot);
+            }
+        } else {
+            HotArticleVO hot = new HotArticleVO();
+            BeanUtils.copyProperties(apArticle, hot);
+            hot.setScore(score);
+            hotArticleVoList.add(hot);
+        }
+
+        //缓存到redis
+        hotArticleVoList = hotArticleVoList.stream().sorted(Comparator.comparing(HotArticleVO::getScore).reversed()).collect(Collectors.toList());
+        cacheService.set(cachekey, JSON.toJSONString(hotArticleVoList));
+    }
+
+    /**
+     * 更新文章行为数量
+     *
+     * @param mess
+     */
+    public ApArticle updateArticleToDb(ArticleVisitStreamMess mess) {
+        ApArticle apArticle = getById(mess.getArticleId());
+        apArticle.setCollection(apArticle.getCollection() == null ? 0 : apArticle.getCollection() + mess.getCollect());
+        apArticle.setComment(apArticle.getComment() == null ? 0 : apArticle.getComment() + mess.getComment());
+        apArticle.setLikes(apArticle.getLikes() == null ? 0 : apArticle.getLikes() + mess.getLike());
+        apArticle.setViews(apArticle.getViews() == null ? 0 : apArticle.getViews() + mess.getView());
+        updateById(apArticle);
+        return apArticle;
     }
 
 

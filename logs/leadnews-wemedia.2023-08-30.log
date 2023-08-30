@@ -2827,3 +2827,14 @@ Caused by: com.mongodb.MongoTimeoutException: Timed out after 30000 ms while wai
 2023-08-30 15:28:12.940 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@44ffd3c3
 2023-08-30 15:28:12.942 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
 2023-08-30 15:31:30.565 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-30 19:15:33.131 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m47s804ms).
+2023-08-30 19:18:17.897 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m44s770ms).
+2023-08-30 19:20:44.082 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m26s184ms).
+2023-08-30 19:24:04.603 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m20s521ms).
+2023-08-30 19:32:32.870 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m28s267ms).
+2023-08-30 21:02:13.104 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=32m9s808ms).
+2023-08-30 21:18:33.021 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m19s917ms).
+2023-08-30 21:35:17.797 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m44s777ms).
+2023-08-30 21:52:27.472 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m9s674ms).
+2023-08-30 21:53:32.487 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m5s14ms).
+2023-08-30 22:13:01.061 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=19m28s576ms).

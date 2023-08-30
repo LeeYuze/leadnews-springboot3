@@ -1,4 +1,4 @@
-package com.leadnews.common.elasticsearch;
+package com.leadnews.common.constants.elasticsearch;
 
 /**
  * @author lihaohui

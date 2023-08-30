@@ -2,7 +2,7 @@ package com.leadnews.article.event.listener;
 
 import com.alibaba.fastjson2.JSON;
 import com.leadnews.article.event.ArticleBuildedHtmlEvent;
-import com.leadnews.common.message.MqConstants;
+import com.leadnews.common.constants.message.MqConstants;
 import com.leadnews.model.article.pojos.ApArticle;
 import com.leadnews.model.search.vos.SearchArticleVO;
 import lombok.RequiredArgsConstructor;
@@ -12,7 +12,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.context.event.EventListener;
 import org.springframework.kafka.core.KafkaTemplate;
-import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
 
 /**

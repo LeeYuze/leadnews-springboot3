@@ -3,7 +3,7 @@ package com.leadnews.article.listener;
 import com.alibaba.fastjson2.JSON;
 import com.github.xiaoymin.knife4j.core.util.StrUtil;
 import com.leadnews.article.service.ApArticleConfigService;
-import com.leadnews.common.message.MqConstants;
+import com.leadnews.common.constants.message.MqConstants;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

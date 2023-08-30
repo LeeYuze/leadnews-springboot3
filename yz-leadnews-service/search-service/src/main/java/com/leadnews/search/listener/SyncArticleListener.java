@@ -3,14 +3,13 @@ package com.leadnews.search.listener;
 import co.elastic.clients.elasticsearch.ElasticsearchClient;
 import co.elastic.clients.elasticsearch.core.IndexRequest;
 import com.alibaba.fastjson2.JSON;
-import com.leadnews.common.elasticsearch.EsConstants;
-import com.leadnews.common.message.MqConstants;
+import com.leadnews.common.constants.elasticsearch.EsConstants;
+import com.leadnews.common.constants.message.MqConstants;
 import com.leadnews.model.search.vos.SearchArticleVO;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.kafka.annotation.KafkaListener;
-import org.springframework.kafka.annotation.TopicPartition;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;

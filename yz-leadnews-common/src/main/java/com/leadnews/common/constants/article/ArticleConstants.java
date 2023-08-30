@@ -1,4 +1,4 @@
-package com.leadnews.common.article;
+package com.leadnews.common.constants.article;
 
 /**
  * @author lihaohui

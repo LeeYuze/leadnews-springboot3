@@ -47,6 +47,12 @@
     <dependencyManagement>
         <dependencies>
 
+            <dependency>
+                <groupId>com.leadnews</groupId>
+                <artifactId>spring-boot-starter-kafka</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+
             <!--xxl-job-->
             <dependency>
                 <groupId>com.leadnews</groupId>

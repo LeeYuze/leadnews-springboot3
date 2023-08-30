@@ -17,6 +17,7 @@
         <module>article-service</module>
         <module>wemedia-service</module>
         <module>search-service</module>
+        <module>behavior-service</module>
     </modules>
 
     <properties>

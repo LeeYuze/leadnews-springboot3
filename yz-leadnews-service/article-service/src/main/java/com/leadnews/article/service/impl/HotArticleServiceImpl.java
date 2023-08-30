@@ -1,13 +1,10 @@
 package com.leadnews.article.service.impl;
 
-import cn.hutool.core.date.DateTime;
 import com.alibaba.fastjson2.JSON;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.leadnews.apis.wemedia.IWemediaClient;
 import com.leadnews.article.mapper.ApArticleMapper;
 import com.leadnews.article.service.HotArticleService;
-import com.leadnews.common.article.ArticleConstants;
+import com.leadnews.common.constants.article.ArticleConstants;
 import com.leadnews.model.article.pojos.ApArticle;
 import com.leadnews.model.article.vos.HotArticleVO;
 import com.leadnews.model.common.dtos.ResponseResult;
@@ -113,7 +110,7 @@ public class HotArticleServiceImpl implements HotArticleService {
      * @param apArticle
      * @return
      */
-    private Integer computeScore(ApArticle apArticle) {
+    public Integer computeScore(ApArticle apArticle) {
         Integer scere = 0;
         if (apArticle.getLikes() != null) {
             scere += apArticle.getLikes() * ArticleConstants.HOT_ARTICLE_LIKE_WEIGHT;
