@@ -1,0 +1,12 @@
+server:
+  port: 8881
+
+
+xxl:
+  job:
+    admin:
+      accessToken: default_token
+      addresses: http://10.211.55.8:8888/xxl-job-admin
+    executor:
+      appname: xxl-job-executor-demo
+      port: 9999
