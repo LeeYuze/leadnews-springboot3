@@ -1,6 +1,7 @@
 package com.leadnews.article.service.impl;
 
 import cn.hutool.core.util.StrUtil;
+import com.alibaba.fastjson2.JSON;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.leadnews.article.event.ArticleSaveOrEditEvent;
@@ -15,9 +16,11 @@ import com.leadnews.model.article.dtos.ArticleHomeDTO;
 import com.leadnews.model.article.pojos.ApArticle;
 import com.leadnews.model.article.pojos.ApArticleConfig;
 import com.leadnews.model.article.pojos.ApArticleContent;
+import com.leadnews.model.article.vos.HotArticleVO;
 import com.leadnews.model.common.dtos.ResponseResult;
 import com.leadnews.model.common.enums.AppHttpCodeEnum;
 import com.leadnews.model.search.dtos.UserSearchDTO;
+import com.leadnews.redis.utils.CacheService;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -47,6 +50,8 @@ public class ApArticleServiceImpl extends ServiceImpl<ApArticleMapper, ApArticle
     private final ApArticleContentMapper apArticleContentMapper;
 
     private final ApplicationEventPublisher applicationEventPublisher;
+
+    private final CacheService cacheService;
 
 
     // 单页最大加载的数字
@@ -87,6 +92,19 @@ public class ApArticleServiceImpl extends ServiceImpl<ApArticleMapper, ApArticle
         List<ApArticle> apArticles = apArticleMapper.loadArticleList(dto, loadtype);
 
         return ResponseResult.okResult(apArticles);
+    }
+
+    @Override
+    public ResponseResult loadByHot(Integer loadtype, ArticleHomeDTO dto, boolean firstPage) {
+        if (firstPage) {
+            String jsonStr = cacheService.get(ArticleConstants.HOT_ARTICLE_FIRST_PAGE + dto.getTag());
+            if (StrUtil.isNotBlank(jsonStr)) {
+                List<HotArticleVO> hotArticleVoList = JSON.parseArray(jsonStr, HotArticleVO.class);
+                ResponseResult responseResult = ResponseResult.okResult(hotArticleVoList);
+                return responseResult;
+            }
+        }
+        return load(loadtype, dto);
     }
 
     @Override

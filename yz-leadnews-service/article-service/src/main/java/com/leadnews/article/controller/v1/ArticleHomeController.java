@@ -1,14 +1,20 @@
 package com.leadnews.article.controller.v1;
 
+import cn.hutool.core.util.StrUtil;
+import com.alibaba.fastjson2.JSON;
 import com.leadnews.article.service.ApArticleService;
 import com.leadnews.common.article.ArticleConstants;
 import com.leadnews.model.article.dtos.ArticleHomeDTO;
+import com.leadnews.model.article.vos.HotArticleVO;
 import com.leadnews.model.common.dtos.ResponseResult;
+import com.leadnews.redis.utils.CacheService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 /**
  * @author lihaohui
@@ -23,7 +29,7 @@ public class ArticleHomeController {
 
     @PostMapping("/load")
     public ResponseResult load(@RequestBody ArticleHomeDTO dto) {
-        return apArticleService.load(ArticleConstants.LOADTYPE_LOAD_MORE, dto);
+        return apArticleService.loadByHot(ArticleConstants.LOADTYPE_LOAD_MORE, dto, true);
     }
 
     @PostMapping("/loadmore")

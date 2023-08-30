@@ -88,25 +88,25 @@ public class ApArticle implements Serializable {
      * 点赞数量
      */
     @TableField(value = "likes")
-    private Object likes;
+    private Integer likes;
 
     /**
      * 收藏数量
      */
     @TableField(value = "collection")
-    private Object collection;
+    private Integer collection;
 
     /**
      * 评论数量
      */
     @TableField(value = "comment")
-    private Object comment;
+    private Integer comment;
 
     /**
      * 阅读数量
      */
     @TableField(value = "views")
-    private Object views;
+    private Integer views;
 
     /**
      * 省市

@@ -47,6 +47,19 @@
     <dependencyManagement>
         <dependencies>
 
+            <!--xxl-job-->
+            <dependency>
+                <groupId>com.leadnews</groupId>
+                <artifactId>spring-boot-starter-xxljob</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.leadnews</groupId>
+                <artifactId>spring-boot-starter-redis</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+
             <dependency>
                 <groupId>com.leadnews</groupId>
                 <artifactId>spring-boot-starter-elasticsearch</artifactId>

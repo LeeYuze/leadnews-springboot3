@@ -21,6 +21,14 @@ public interface ApArticleService extends IService<ApArticle> {
     ResponseResult load(Integer loadtype, ArticleHomeDTO dto);
 
     /**
+     * 根据参数加载文章列表
+     * @param loadtype 1为加载更多  2为加载最新
+     * @param dto
+     * @return
+     */
+    ResponseResult loadByHot(Integer loadtype, ArticleHomeDTO dto, boolean firstPage);
+
+    /**
      * 保存app端相关文章
      * @param dto
      * @return
