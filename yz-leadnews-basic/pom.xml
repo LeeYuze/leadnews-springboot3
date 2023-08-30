@@ -19,6 +19,7 @@
         <module>spring-boot-starter-elasticsearch</module>
         <module>spring-boot-starter-redis</module>
         <module>spring-boot-starter-xxljob</module>
+        <module>spring-boot-starter-kafka</module>
     </modules>
 
     <properties>
