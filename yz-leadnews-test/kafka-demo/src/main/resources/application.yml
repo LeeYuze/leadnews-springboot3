@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: kafka-demo
+  kafka:
+    bootstrap-servers: 10.211.55.8:9091
+    streams:
+      group-id: ${spring.application.name}
