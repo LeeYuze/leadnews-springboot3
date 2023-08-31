@@ -9,7 +9,6 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.fsjust.boot</groupId>
     <artifactId>yz-leadnews-feign-api</artifactId>
 
     <properties>
