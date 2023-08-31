@@ -1,0 +1,477 @@
+2023-08-31 09:46:46.818 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-31 09:46:46.826 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-08-31 09:46:46.878 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-31 09:46:47.235 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-31 09:46:47.237 [main] INFO  c.a.nacos.client.utils.ParamUtil - [settings] [req-serv] nacos-server port:8848
+2023-08-31 09:46:47.237 [main] INFO  c.a.nacos.client.utils.ParamUtil - [settings] [http-client] connect timeout:1000
+2023-08-31 09:46:47.238 [main] INFO  c.a.nacos.client.utils.ParamUtil - PER_TASK_CONFIG_SIZE: 3000.0
+2023-08-31 09:46:47.296 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-08-31 09:46:47.296 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-08-31 09:46:47.339 [main] INFO  c.a.n.c.a.r.i.CredentialWatcher - null No credential found
+2023-08-31 09:46:47.420 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-31 09:46:47.436 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:/Users/lihaohui/nacos/config
+2023-08-31 09:46:47.439 [main] INFO  c.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of 8c3576c1-4fda-4938-9d33-a9cf69a861d9_config-0
+2023-08-31 09:46:47.454 [main] INFO  c.alibaba.nacos.common.remote.client - [8c3576c1-4fda-4938-9d33-a9cf69a861d9_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$575/0x0000000800f724e0
+2023-08-31 09:46:47.455 [main] INFO  c.alibaba.nacos.common.remote.client - [8c3576c1-4fda-4938-9d33-a9cf69a861d9_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$576/0x0000000800f72910
+2023-08-31 09:46:47.456 [main] INFO  c.alibaba.nacos.common.remote.client - [8c3576c1-4fda-4938-9d33-a9cf69a861d9_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2023-08-31 09:46:47.456 [main] INFO  c.alibaba.nacos.common.remote.client - [8c3576c1-4fda-4938-9d33-a9cf69a861d9_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2023-08-31 09:46:47.465 [main] INFO  c.alibaba.nacos.common.remote.client - [8c3576c1-4fda-4938-9d33-a9cf69a861d9_config-0] Try to connect to server on start up, server: {serverIp = '10.211.55.8', server main port = 8848}
+2023-08-31 09:46:47.491 [main] INFO  c.a.n.c.r.client.grpc.GrpcClient - grpc client connection server:10.211.55.8 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2023-08-31 09:46:48.265 [main] INFO  c.alibaba.nacos.common.remote.client - [8c3576c1-4fda-4938-9d33-a9cf69a861d9_config-0] Success to connect to server [10.211.55.8:8848] on start up, connectionId = 1693409495922_10.211.55.2_61793
+2023-08-31 09:46:48.266 [com.alibaba.nacos.client.remote.worker] INFO  c.alibaba.nacos.common.remote.client - [8c3576c1-4fda-4938-9d33-a9cf69a861d9_config-0] Notify connected event to listeners.
+2023-08-31 09:46:48.267 [com.alibaba.nacos.client.remote.worker] INFO  c.a.n.c.config.impl.ClientWorker - [8c3576c1-4fda-4938-9d33-a9cf69a861d9_config-0] Connected,notify listen context...
+2023-08-31 09:46:48.267 [main] INFO  c.alibaba.nacos.common.remote.client - [8c3576c1-4fda-4938-9d33-a9cf69a861d9_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2023-08-31 09:46:48.267 [main] INFO  c.alibaba.nacos.common.remote.client - [8c3576c1-4fda-4938-9d33-a9cf69a861d9_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$596/0x0000000801105068
+2023-08-31 09:46:48.312 [main] INFO  c.a.nacos.client.config.impl.Limiter - limitTime:5.0
+2023-08-31 09:46:48.360 [main] INFO  c.a.n.client.config.utils.JvmUtil - isMultiInstance:false
+2023-08-31 09:46:48.383 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[leadnews-wemedia.yml] & group[DEFAULT_GROUP]
+2023-08-31 09:46:48.384 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-leadnews-wemedia.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-leadnews-wemedia,DEFAULT_GROUP'}]
+2023-08-31 09:46:48.400 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-31 09:46:48.400 [main] INFO  c.l.wemedia.WeMediaApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-31 09:46:49.380 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-08-31 09:46:49.390 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 MongoDB repository interfaces.
+2023-08-31 09:46:49.656 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d65b706d-2162-3bc7-b5a1-cfb487f4912e
+2023-08-31 09:46:49.717 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.leadnews.apis.article.IArticleClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-31 09:46:49.718 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.leadnews.apis.schedule.IScheduleClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-31 09:46:49.718 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.leadnews.apis.wemedia.IWemediaClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-31 09:46:50.067 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 52001 (http)
+2023-08-31 09:46:50.076 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-52001"]
+2023-08-31 09:46:50.076 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-31 09:46:50.076 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-08-31 09:46:50.136 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-31 09:46:50.136 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1720 ms
+2023-08-31 09:46:50.870 [main] INFO  o.s.c.o.FeignClientFactoryBean - For 'leadnews-schedule' URL not provided. Will try picking an instance via load-balancing.
+2023-08-31 09:46:50.931 [main] INFO  o.s.c.o.FeignClientFactoryBean - For 'leadnews-article' URL not provided. Will try picking an instance via load-balancing.
+2023-08-31 09:46:51.677 [cluster-ClusterId{value='64eff10bfebece47e7650d2e', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:73)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:183)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:198)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:158)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:107)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:82)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:68)
+	... 4 common frames omitted
+2023-08-31 09:46:51.680 [main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.8.2"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "aarch64", "version": "14.0"}, "platform": "Java/Oracle Corporation/17.0.7+8-LTS-224"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@5471342], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@314407dd]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@7680beac], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-08-31 09:46:52.078 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-08-31 09:46:52.090 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-31 09:46:52.187 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-52001"]
+2023-08-31 09:46:52.219 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 52001 (http) with context path ''
+2023-08-31 09:46:52.223 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from ans.namespace attribute : null
+2023-08-31 09:46:52.223 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from ALIBABA_ALIWARE_NAMESPACE attribute :null
+2023-08-31 09:46:52.224 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from namespace attribute :null
+2023-08-31 09:46:52.232 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-08-31 09:46:52.233 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-08-31 09:46:52.237 [main] INFO  c.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of f70ab5f5-7e6d-4d67-9d18-59cc46aec96d
+2023-08-31 09:46:52.239 [main] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2023-08-31 09:46:52.239 [main] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2023-08-31 09:46:52.240 [main] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2023-08-31 09:46:52.240 [main] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Try to connect to server on start up, server: {serverIp = '10.211.55.8', server main port = 8848}
+2023-08-31 09:46:52.241 [main] INFO  c.a.n.c.r.client.grpc.GrpcClient - grpc client connection server:10.211.55.8 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2023-08-31 09:46:52.363 [main] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Success to connect to server [10.211.55.8:8848] on start up, connectionId = 1693409500465_10.211.55.2_61837
+2023-08-31 09:46:52.363 [main] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2023-08-31 09:46:52.363 [main] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$596/0x0000000801105068
+2023-08-31 09:46:52.363 [com.alibaba.nacos.client.remote.worker] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Notify connected event to listeners.
+2023-08-31 09:46:52.363 [com.alibaba.nacos.client.remote.worker] INFO  com.alibaba.nacos.client.naming - Grpc connection connect
+2023-08-31 09:46:52.365 [main] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] 4e85b1a4-8d96-4c12-8631-7c0473ed1614 registering service leadnews-wemedia with instance Instance{instanceId='null', ip='192.168.10.4', port=52001, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=[2409:8a55:d910:5304:105c:fee2:d886:d41e], preserved.register.source=SPRING_CLOUD}}
+2023-08-31 09:46:52.382 [main] INFO  c.a.c.n.r.NacosServiceRegistry - nacos registry, DEFAULT_GROUP leadnews-wemedia 192.168.10.4:52001 register finished
+2023-08-31 09:46:52.418 [main] INFO  c.l.wemedia.WeMediaApplication - Started WeMediaApplication in 5.966 seconds (process running for 6.473)
+2023-08-31 09:46:52.443 [main] INFO  c.a.n.client.config.impl.CacheData - nacos.cache.data.init.snapshot = true 
+2023-08-31 09:46:52.444 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [subscribe] leadnews-wemedia+DEFAULT_GROUP+4e85b1a4-8d96-4c12-8631-7c0473ed1614
+2023-08-31 09:46:52.593 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [add-listener] ok, tenant=4e85b1a4-8d96-4c12-8631-7c0473ed1614, dataId=leadnews-wemedia, group=DEFAULT_GROUP, cnt=1
+2023-08-31 09:46:52.594 [main] INFO  c.a.c.n.r.NacosContextRefresher - [Nacos Config] Listening config: dataId=leadnews-wemedia, group=DEFAULT_GROUP
+2023-08-31 09:46:52.594 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [subscribe] leadnews-wemedia.yml+DEFAULT_GROUP+4e85b1a4-8d96-4c12-8631-7c0473ed1614
+2023-08-31 09:46:52.594 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [add-listener] ok, tenant=4e85b1a4-8d96-4c12-8631-7c0473ed1614, dataId=leadnews-wemedia.yml, group=DEFAULT_GROUP, cnt=1
+2023-08-31 09:46:52.594 [main] INFO  c.a.c.n.r.NacosContextRefresher - [Nacos Config] Listening config: dataId=leadnews-wemedia.yml, group=DEFAULT_GROUP
+2023-08-31 09:46:52.603 [main] INFO  c.l.wemedia.WeMediaApplication - 
+----------------------------------------------------------
+	Application 'leadnews-wemedia' is running! Access URLs:
+	Local: 		http://localhost:52001
+	External: 	http://192.168.10.4:52001
+	Doc: 	http://192.168.10.4:52001/doc.html
+----------------------------------------------------------
+2023-08-31 09:46:52.691 [scheduling-1] INFO  com.alibaba.nacos.client.naming - [SUBSCRIBE-SERVICE] service:leadnews-schedule, group:DEFAULT_GROUP, clusters: 
+2023-08-31 09:46:52.788 [scheduling-1] INFO  com.alibaba.nacos.client.naming - init new ips(1) service: DEFAULT_GROUP@@leadnews-schedule -> [{"ip":"192.168.10.4","port":51701,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-schedule","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:105c:fee2:d886:d41e]"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-08-31 09:46:52.803 [scheduling-1] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: DEFAULT_GROUP@@leadnews-schedule -> [{"ip":"192.168.10.4","port":51701,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-schedule","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:105c:fee2:d886:d41e]"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-08-31 09:46:53.204 [nacos-grpc-client-executor-10.211.55.8-12] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Receive server push request, request = NotifySubscriberRequest, requestId = 132
+2023-08-31 09:46:53.205 [nacos-grpc-client-executor-10.211.55.8-12] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Ack server push request, request = NotifySubscriberRequest, requestId = 132
+2023-08-31 09:46:53.474 [RMI TCP Connection(2)-192.168.10.4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-31 09:46:53.474 [RMI TCP Connection(2)-192.168.10.4] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-31 09:46:53.476 [RMI TCP Connection(2)-192.168.10.4] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-08-31 09:46:53.476 [RMI TCP Connection(1)-192.168.10.4] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+2023-08-31 09:47:23.484 [RMI TCP Connection(1)-192.168.10.4] WARN  o.s.b.a.d.mongo.MongoHealthIndicator - MongoDB health check failed
+org.springframework.dao.DataAccessResourceFailureException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused}}]
+	at org.springframework.data.mongodb.core.MongoExceptionTranslator.translateExceptionIfPossible(MongoExceptionTranslator.java:91)
+	at org.springframework.data.mongodb.core.MongoTemplate.potentiallyConvertRuntimeException(MongoTemplate.java:2805)
+	at org.springframework.data.mongodb.core.MongoTemplate.execute(MongoTemplate.java:552)
+	at org.springframework.data.mongodb.core.MongoTemplate.executeCommand(MongoTemplate.java:484)
+	at org.springframework.boot.actuate.data.mongo.MongoHealthIndicator.doHealthCheck(MongoHealthIndicator.java:46)
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:82)
+	at org.springframework.boot.actuate.health.HealthIndicator.getHealth(HealthIndicator.java:37)
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:82)
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:41)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getLoggedHealth(HealthEndpointSupport.java:172)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:145)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getAggregateContribution(HealthEndpointSupport.java:156)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:141)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:110)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:81)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:76)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:281)
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:74)
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:122)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:97)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused}}]
+	at com.mongodb.internal.connection.BaseCluster.getDescription(BaseCluster.java:184)
+	at com.mongodb.internal.connection.SingleServerCluster.getDescription(SingleServerCluster.java:46)
+	at com.mongodb.client.internal.MongoClientDelegate.getConnectedClusterDescription(MongoClientDelegate.java:144)
+	at com.mongodb.client.internal.MongoClientDelegate.createClientSession(MongoClientDelegate.java:101)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.getClientSession(MongoClientDelegate.java:291)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:183)
+	at com.mongodb.client.internal.MongoDatabaseImpl.executeCommand(MongoDatabaseImpl.java:202)
+	at com.mongodb.client.internal.MongoDatabaseImpl.runCommand(MongoDatabaseImpl.java:171)
+	at com.mongodb.client.internal.MongoDatabaseImpl.runCommand(MongoDatabaseImpl.java:166)
+	at org.springframework.data.mongodb.core.MongoTemplate.lambda$executeCommand$3(MongoTemplate.java:484)
+	at org.springframework.data.mongodb.core.MongoTemplate.execute(MongoTemplate.java:550)
+	... 45 common frames omitted
+2023-08-31 09:47:23.502 [RMI TCP Connection(1)-192.168.10.4] WARN  o.s.b.a.health.HealthEndpointSupport - Health contributor org.springframework.boot.actuate.data.mongo.MongoHealthIndicator (mongo) took 30038ms to respond
+2023-08-31 09:47:23.512 [RMI TCP Connection(1)-192.168.10.4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-08-31 09:47:23.675 [RMI TCP Connection(1)-192.168.10.4] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@59ca20ca
+2023-08-31 09:47:23.677 [RMI TCP Connection(1)-192.168.10.4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-08-31 09:59:53.130 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m27s327ms).
+2023-08-31 10:22:25.180 [com.alibaba.nacos.client.Worker] ERROR c.alibaba.nacos.common.remote.client - Send request fail, request = ConfigBatchListenRequest{headers={charset=UTF-8, Client-AppName=unknown, Client-RequestToken=7f8f6587fc60b9a74076617972a68239, Client-RequestTS=1693448108838, exConfigInfo=true}, requestId='null'}, retryTimes = 0, errorMessage = java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 5 milliseconds, 183291 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@60e92b3a[status=PENDING, info=[GrpcFuture{clientCall=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@5067f301, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@7ab61670, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@5dcc372e}}}]]
+2023-08-31 10:22:25.184 [com.alibaba.nacos.client.Worker] ERROR c.a.n.c.config.impl.ClientWorker - Async listen config change error 
+com.alibaba.nacos.api.exception.NacosException: java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 5 milliseconds, 183291 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@60e92b3a[status=PENDING, info=[GrpcFuture{clientCall=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@5067f301, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@7ab61670, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@5dcc372e}}}]]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcConnection.request(GrpcConnection.java:78)
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:645)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.requestProxy(ClientWorker.java:1011)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.requestProxy(ClientWorker.java:992)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.executeConfigListen(ClientWorker.java:786)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.lambda$startInternal$2(ClientWorker.java:704)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 5 milliseconds, 183291 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@60e92b3a[status=PENDING, info=[GrpcFuture{clientCall=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@5067f301, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@7ab61670, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@5dcc372e}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcConnection.request(GrpcConnection.java:76)
+	... 11 common frames omitted
+2023-08-31 10:22:25.873 [com.alibaba.nacos.client.remote.worker] INFO  c.alibaba.nacos.common.remote.client - [8c3576c1-4fda-4938-9d33-a9cf69a861d9_config-0] Server check success, currentServer is 10.211.55.8:8848 
+2023-08-31 10:22:36.926 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=22m43s796ms).
+2023-08-31 10:37:25.835 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m18s800ms).
+2023-08-31 10:57:44.225 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:01:20.365 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:03:39.777 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:06:19.547 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:08:30.939 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:08:37.291 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:11:19.948 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:12:14.595 [http-nio-52001-exec-5] WARN  c.b.m.c.t.support.ReflectLambdaMeta - Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @37afeb11
+2023-08-31 11:12:14.853 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:12:15.873 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-31 11:12:15.873 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-31 11:12:15.880 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:12:15.931 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:13:06.606 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-31 11:13:06.765 [http-nio-52001-exec-8] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [10.211.55.8:9091]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 10
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2023-08-31 11:13:06.793 [http-nio-52001-exec-8] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Instantiated an idempotent producer.
+2023-08-31 11:13:06.828 [http-nio-52001-exec-8] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.3.2
+2023-08-31 11:13:06.828 [http-nio-52001-exec-8] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: b66af662e61082cb
+2023-08-31 11:13:06.828 [http-nio-52001-exec-8] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1693451586826
+2023-08-31 11:13:07.043 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Resetting the last seen epoch of partition wm.news.up.or.down.topic-0 to 2 since the associated topicId changed from null to XMND6oZdS1OMHx9FitFk8A
+2023-08-31 11:13:07.044 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: skaJsOqUQvGIRQUGgDj8pA
+2023-08-31 11:13:07.044 [kafka-producer-network-thread | producer-1] INFO  o.a.k.c.p.i.TransactionManager - [Producer clientId=producer-1] ProducerId set to 2048 with epoch 0
+2023-08-31 11:13:07.087 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:13:07.108 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-31 11:13:07.128 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:13:21.136 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-31 11:13:21.201 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:13:21.236 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-31 11:13:21.267 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:13:46.052 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:14:39.105 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-31 11:14:39.149 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:14:39.187 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-31 11:14:39.205 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:14:47.888 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-31 11:14:47.889 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-31 11:14:47.896 [http-nio-52001-exec-9] WARN  o.s.c.LocalVariableTableParameterNameDiscoverer - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.leadnews.wemedia.controller.v1.WmNewsController
+2023-08-31 11:14:47.897 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:14:47.907 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:14:55.670 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-31 11:14:55.743 [task-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----begin
+2023-08-31 11:14:55.763 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:14:55.871 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-31 11:14:55.871 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-31 11:14:55.879 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:14:55.900 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:14:56.198 [task-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----end
+2023-08-31 11:14:56.393 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 文章审核---消费任务执行---拿到任务---进行审核
+2023-08-31 11:14:56.393 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 任务对象feign data:{taskId=1697085532765409281, taskType=1001, priority=1, executeTime=1693037872000, parameters=CKox}
+2023-08-31 11:14:56.401 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 解析json获取的task对象:Task(taskId=1697085532765409281, taskType=1001, priority=1, executeTime=1693037872000, parameters=[8, -86, 49])
+2023-08-31 11:14:56.405 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 6314-----------
+2023-08-31 11:14:56.462 [scheduling-1] INFO  com.alibaba.nacos.client.naming - [SUBSCRIBE-SERVICE] service:leadnews-article, group:DEFAULT_GROUP, clusters: 
+2023-08-31 11:14:56.471 [scheduling-1] INFO  com.alibaba.nacos.client.naming - init new ips(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:105c:fee2:d886:d41e]"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-08-31 11:14:56.472 [scheduling-1] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:105c:fee2:d886:d41e]"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-08-31 11:14:57.016 [nacos-grpc-client-executor-10.211.55.8-934] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Receive server push request, request = NotifySubscriberRequest, requestId = 167
+2023-08-31 11:14:57.017 [nacos-grpc-client-executor-10.211.55.8-934] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Ack server push request, request = NotifySubscriberRequest, requestId = 167
+2023-08-31 11:15:13.127 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-31 11:15:13.127 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-31 11:15:13.138 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:15:13.138 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:15:14.974 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-31 11:15:15.021 [task-2] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----begin
+2023-08-31 11:15:15.025 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:15:15.051 [task-2] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----end
+2023-08-31 11:15:15.075 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-31 11:15:15.075 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-31 11:15:15.079 [http-nio-52001-exec-7] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:15:15.098 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:15:15.352 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 文章审核---消费任务执行---拿到任务---进行审核
+2023-08-31 11:15:15.352 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 任务对象feign data:{taskId=1697085612641734658, taskType=1001, priority=1, executeTime=1693038075000, parameters=CKkx}
+2023-08-31 11:15:15.354 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 解析json获取的task对象:Task(taskId=1697085612641734658, taskType=1001, priority=1, executeTime=1693038075000, parameters=[8, -87, 49])
+2023-08-31 11:15:15.355 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 6313-----------
+2023-08-31 11:15:19.087 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-31 11:15:19.113 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:15:19.134 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-31 11:15:19.164 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:15:20.264 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-31 11:15:20.264 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-31 11:15:20.268 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:15:20.268 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:16:15.624 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-31 11:16:15.645 [task-3] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----begin
+2023-08-31 11:16:15.650 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:16:15.683 [task-3] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----end
+2023-08-31 11:16:15.714 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-31 11:16:15.714 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-31 11:16:15.724 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:16:15.737 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:16:16.351 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 文章审核---消费任务执行---拿到任务---进行审核
+2023-08-31 11:16:16.351 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 任务对象feign data:{taskId=1697085866913026049, taskType=1001, priority=1, executeTime=1693037872000, parameters=CKox}
+2023-08-31 11:16:16.353 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 解析json获取的task对象:Task(taskId=1697085866913026049, taskType=1001, priority=1, executeTime=1693037872000, parameters=[8, -86, 49])
+2023-08-31 11:16:16.354 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 6314-----------
+2023-08-31 11:16:54.227 [http-nio-52001-exec-5] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:17:15.193 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-31 11:17:15.193 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-31 11:17:15.199 [http-nio-52001-exec-8] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:17:15.199 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:17:16.907 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-31 11:17:16.920 [task-4] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----begin
+2023-08-31 11:17:16.924 [http-nio-52001-exec-9] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:17:16.952 [task-4] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 添加任务到延迟服务中----end
+2023-08-31 11:17:16.985 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-31 11:17:16.988 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-31 11:17:16.989 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:17:17.005 [http-nio-52001-exec-10] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:17:17.349 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 文章审核---消费任务执行---拿到任务---进行审核
+2023-08-31 11:17:17.349 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 任务对象feign data:{taskId=1697086123923197953, taskType=1001, priority=1, executeTime=1693037872000, parameters=CKox}
+2023-08-31 11:17:17.352 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 解析json获取的task对象:Task(taskId=1697086123923197953, taskType=1001, priority=1, executeTime=1693037872000, parameters=[8, -86, 49])
+2023-08-31 11:17:17.352 [scheduling-1] INFO  c.l.w.s.impl.WmNewsTaskServiceImpl - 6314-----------
+2023-08-31 11:17:20.847 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-31 11:17:20.847 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - 将用户id：1102 设置到WmUserLocalUtil中
+2023-08-31 11:17:20.859 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:17:20.885 [http-nio-52001-exec-2] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:17:38.036 [http-nio-52001-exec-4] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:20:39.515 [nacos-grpc-client-executor-10.211.55.8-1022] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Receive server push request, request = NotifySubscriberRequest, requestId = 170
+2023-08-31 11:20:39.519 [nacos-grpc-client-executor-10.211.55.8-1022] INFO  com.alibaba.nacos.client.naming - removed ips(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:105c:fee2:d886:d41e]"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-08-31 11:20:39.520 [nacos-grpc-client-executor-10.211.55.8-1022] INFO  com.alibaba.nacos.client.naming - current ips:(0) service: DEFAULT_GROUP@@leadnews-article -> []
+2023-08-31 11:20:39.521 [nacos-grpc-client-executor-10.211.55.8-1022] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Ack server push request, request = NotifySubscriberRequest, requestId = 170
+2023-08-31 11:20:53.021 [nacos-grpc-client-executor-10.211.55.8-1024] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Receive server push request, request = NotifySubscriberRequest, requestId = 172
+2023-08-31 11:20:53.022 [nacos-grpc-client-executor-10.211.55.8-1024] INFO  com.alibaba.nacos.client.naming - new ips(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:105c:fee2:d886:d41e]"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-08-31 11:20:53.022 [nacos-grpc-client-executor-10.211.55.8-1024] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:105c:fee2:d886:d41e]"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-08-31 11:20:53.023 [nacos-grpc-client-executor-10.211.55.8-1024] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Ack server push request, request = NotifySubscriberRequest, requestId = 172
+2023-08-31 11:22:07.070 [kafka-producer-network-thread | producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Node -1 disconnected.
+2023-08-31 11:23:35.480 [nacos-grpc-client-executor-10.211.55.8-1065] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Receive server push request, request = NotifySubscriberRequest, requestId = 174
+2023-08-31 11:23:35.482 [nacos-grpc-client-executor-10.211.55.8-1065] INFO  com.alibaba.nacos.client.naming - removed ips(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:105c:fee2:d886:d41e]"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-08-31 11:23:35.483 [nacos-grpc-client-executor-10.211.55.8-1065] INFO  com.alibaba.nacos.client.naming - current ips:(0) service: DEFAULT_GROUP@@leadnews-article -> []
+2023-08-31 11:23:35.486 [nacos-grpc-client-executor-10.211.55.8-1065] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Ack server push request, request = NotifySubscriberRequest, requestId = 174
+2023-08-31 11:23:46.549 [nacos-grpc-client-executor-10.211.55.8-1067] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Receive server push request, request = NotifySubscriberRequest, requestId = 176
+2023-08-31 11:23:46.550 [nacos-grpc-client-executor-10.211.55.8-1067] INFO  com.alibaba.nacos.client.naming - new ips(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:105c:fee2:d886:d41e]"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-08-31 11:23:46.555 [nacos-grpc-client-executor-10.211.55.8-1067] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:105c:fee2:d886:d41e]"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-08-31 11:23:46.555 [nacos-grpc-client-executor-10.211.55.8-1067] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Ack server push request, request = NotifySubscriberRequest, requestId = 176
+2023-08-31 11:35:11.426 [nacos-grpc-client-executor-10.211.55.8-1241] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Receive server push request, request = NotifySubscriberRequest, requestId = 178
+2023-08-31 11:35:11.428 [nacos-grpc-client-executor-10.211.55.8-1241] INFO  com.alibaba.nacos.client.naming - removed ips(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:105c:fee2:d886:d41e]"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-08-31 11:35:11.428 [nacos-grpc-client-executor-10.211.55.8-1241] INFO  com.alibaba.nacos.client.naming - current ips:(0) service: DEFAULT_GROUP@@leadnews-article -> []
+2023-08-31 11:35:11.430 [nacos-grpc-client-executor-10.211.55.8-1241] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Ack server push request, request = NotifySubscriberRequest, requestId = 178
+2023-08-31 11:35:27.862 [nacos-grpc-client-executor-10.211.55.8-1245] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Receive server push request, request = NotifySubscriberRequest, requestId = 180
+2023-08-31 11:35:27.863 [nacos-grpc-client-executor-10.211.55.8-1245] INFO  com.alibaba.nacos.client.naming - new ips(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:105c:fee2:d886:d41e]"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-08-31 11:35:27.863 [nacos-grpc-client-executor-10.211.55.8-1245] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:105c:fee2:d886:d41e]"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-08-31 11:35:27.865 [nacos-grpc-client-executor-10.211.55.8-1245] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Ack server push request, request = NotifySubscriberRequest, requestId = 180
+2023-08-31 11:37:48.660 [nacos-grpc-client-executor-10.211.55.8-1282] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Receive server push request, request = NotifySubscriberRequest, requestId = 182
+2023-08-31 11:37:48.662 [nacos-grpc-client-executor-10.211.55.8-1282] INFO  com.alibaba.nacos.client.naming - removed ips(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:105c:fee2:d886:d41e]"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-08-31 11:37:48.663 [nacos-grpc-client-executor-10.211.55.8-1282] INFO  com.alibaba.nacos.client.naming - current ips:(0) service: DEFAULT_GROUP@@leadnews-article -> []
+2023-08-31 11:37:48.664 [nacos-grpc-client-executor-10.211.55.8-1282] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Ack server push request, request = NotifySubscriberRequest, requestId = 182
+2023-08-31 11:38:03.346 [nacos-grpc-client-executor-10.211.55.8-1285] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Receive server push request, request = NotifySubscriberRequest, requestId = 184
+2023-08-31 11:38:03.347 [nacos-grpc-client-executor-10.211.55.8-1285] INFO  com.alibaba.nacos.client.naming - new ips(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:105c:fee2:d886:d41e]"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-08-31 11:38:03.347 [nacos-grpc-client-executor-10.211.55.8-1285] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:105c:fee2:d886:d41e]"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-08-31 11:38:03.348 [nacos-grpc-client-executor-10.211.55.8-1285] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Ack server push request, request = NotifySubscriberRequest, requestId = 184
+2023-08-31 11:38:45.950 [http-nio-52001-exec-6] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:40:07.560 [nacos-grpc-client-executor-10.211.55.8-1316] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Receive server push request, request = NotifySubscriberRequest, requestId = 187
+2023-08-31 11:40:07.561 [nacos-grpc-client-executor-10.211.55.8-1316] INFO  com.alibaba.nacos.client.naming - removed ips(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:105c:fee2:d886:d41e]"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-08-31 11:40:07.562 [nacos-grpc-client-executor-10.211.55.8-1316] INFO  com.alibaba.nacos.client.naming - current ips:(0) service: DEFAULT_GROUP@@leadnews-article -> []
+2023-08-31 11:40:07.562 [nacos-grpc-client-executor-10.211.55.8-1316] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Ack server push request, request = NotifySubscriberRequest, requestId = 187
+2023-08-31 11:40:19.951 [nacos-grpc-client-executor-10.211.55.8-1318] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Receive server push request, request = NotifySubscriberRequest, requestId = 189
+2023-08-31 11:40:19.952 [nacos-grpc-client-executor-10.211.55.8-1318] INFO  com.alibaba.nacos.client.naming - new ips(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:105c:fee2:d886:d41e]"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-08-31 11:40:19.952 [nacos-grpc-client-executor-10.211.55.8-1318] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:105c:fee2:d886:d41e]"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-08-31 11:40:19.953 [nacos-grpc-client-executor-10.211.55.8-1318] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Ack server push request, request = NotifySubscriberRequest, requestId = 189
+2023-08-31 11:40:54.659 [http-nio-52001-exec-1] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:44:29.008 [nacos-grpc-client-executor-10.211.55.8-1381] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Receive server push request, request = NotifySubscriberRequest, requestId = 226
+2023-08-31 11:44:29.009 [nacos-grpc-client-executor-10.211.55.8-1381] INFO  com.alibaba.nacos.client.naming - removed ips(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:105c:fee2:d886:d41e]"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-08-31 11:44:29.009 [nacos-grpc-client-executor-10.211.55.8-1381] INFO  com.alibaba.nacos.client.naming - current ips:(0) service: DEFAULT_GROUP@@leadnews-article -> []
+2023-08-31 11:44:29.010 [nacos-grpc-client-executor-10.211.55.8-1381] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Ack server push request, request = NotifySubscriberRequest, requestId = 226
+2023-08-31 11:44:43.157 [nacos-grpc-client-executor-10.211.55.8-1384] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Receive server push request, request = NotifySubscriberRequest, requestId = 228
+2023-08-31 11:44:43.158 [nacos-grpc-client-executor-10.211.55.8-1384] INFO  com.alibaba.nacos.client.naming - new ips(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:105c:fee2:d886:d41e]"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-08-31 11:44:43.162 [nacos-grpc-client-executor-10.211.55.8-1384] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:105c:fee2:d886:d41e]"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-08-31 11:44:43.163 [nacos-grpc-client-executor-10.211.55.8-1384] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Ack server push request, request = NotifySubscriberRequest, requestId = 228
+2023-08-31 11:45:13.921 [http-nio-52001-exec-3] INFO  c.l.w.interceptor.WmTokenInterceptor - WmUserLocalUtil - 清理
+2023-08-31 11:46:23.038 [nacos-grpc-client-executor-10.211.55.8-1408] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Receive server push request, request = NotifySubscriberRequest, requestId = 236
+2023-08-31 11:46:23.039 [nacos-grpc-client-executor-10.211.55.8-1408] INFO  com.alibaba.nacos.client.naming - removed ips(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:105c:fee2:d886:d41e]"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-08-31 11:46:23.040 [nacos-grpc-client-executor-10.211.55.8-1408] INFO  com.alibaba.nacos.client.naming - current ips:(0) service: DEFAULT_GROUP@@leadnews-article -> []
+2023-08-31 11:46:23.042 [nacos-grpc-client-executor-10.211.55.8-1408] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Ack server push request, request = NotifySubscriberRequest, requestId = 236
+2023-08-31 11:46:36.854 [nacos-grpc-client-executor-10.211.55.8-1411] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Receive server push request, request = NotifySubscriberRequest, requestId = 238
+2023-08-31 11:46:36.858 [nacos-grpc-client-executor-10.211.55.8-1411] INFO  com.alibaba.nacos.client.naming - new ips(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:105c:fee2:d886:d41e]"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-08-31 11:46:36.858 [nacos-grpc-client-executor-10.211.55.8-1411] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:105c:fee2:d886:d41e]"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-08-31 11:46:36.864 [nacos-grpc-client-executor-10.211.55.8-1411] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Ack server push request, request = NotifySubscriberRequest, requestId = 238
+2023-08-31 11:49:00.097 [nacos-grpc-client-executor-10.211.55.8-1445] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Receive server push request, request = NotifySubscriberRequest, requestId = 240
+2023-08-31 11:49:00.099 [nacos-grpc-client-executor-10.211.55.8-1445] INFO  com.alibaba.nacos.client.naming - removed ips(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:105c:fee2:d886:d41e]"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-08-31 11:49:00.099 [nacos-grpc-client-executor-10.211.55.8-1445] INFO  com.alibaba.nacos.client.naming - current ips:(0) service: DEFAULT_GROUP@@leadnews-article -> []
+2023-08-31 11:49:00.100 [nacos-grpc-client-executor-10.211.55.8-1445] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Ack server push request, request = NotifySubscriberRequest, requestId = 240
+2023-08-31 11:49:15.593 [nacos-grpc-client-executor-10.211.55.8-1448] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Receive server push request, request = NotifySubscriberRequest, requestId = 242
+2023-08-31 11:49:15.595 [nacos-grpc-client-executor-10.211.55.8-1448] INFO  com.alibaba.nacos.client.naming - new ips(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:105c:fee2:d886:d41e]"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-08-31 11:49:15.598 [nacos-grpc-client-executor-10.211.55.8-1448] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:105c:fee2:d886:d41e]"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-08-31 11:49:15.601 [nacos-grpc-client-executor-10.211.55.8-1448] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Ack server push request, request = NotifySubscriberRequest, requestId = 242
+2023-08-31 11:56:25.490 [nacos-grpc-client-executor-10.211.55.8-1551] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Receive server push request, request = NotifySubscriberRequest, requestId = 244
+2023-08-31 11:56:25.492 [nacos-grpc-client-executor-10.211.55.8-1551] INFO  com.alibaba.nacos.client.naming - removed ips(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:105c:fee2:d886:d41e]"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-08-31 11:56:25.493 [nacos-grpc-client-executor-10.211.55.8-1551] INFO  com.alibaba.nacos.client.naming - current ips:(0) service: DEFAULT_GROUP@@leadnews-article -> []
+2023-08-31 11:56:25.494 [nacos-grpc-client-executor-10.211.55.8-1551] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Ack server push request, request = NotifySubscriberRequest, requestId = 244
+2023-08-31 11:56:37.061 [nacos-grpc-client-executor-10.211.55.8-1553] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Receive server push request, request = NotifySubscriberRequest, requestId = 246
+2023-08-31 11:56:37.062 [nacos-grpc-client-executor-10.211.55.8-1553] INFO  com.alibaba.nacos.client.naming - new ips(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:105c:fee2:d886:d41e]"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-08-31 11:56:37.062 [nacos-grpc-client-executor-10.211.55.8-1553] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: DEFAULT_GROUP@@leadnews-article -> [{"ip":"192.168.10.4","port":51901,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@leadnews-article","metadata":{"preserved.register.source":"SPRING_CLOUD","IPv6":"[2409:8a55:d910:5304:105c:fee2:d886:d41e]"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-08-31 11:56:37.063 [nacos-grpc-client-executor-10.211.55.8-1553] INFO  c.alibaba.nacos.common.remote.client - [f70ab5f5-7e6d-4d67-9d18-59cc46aec96d] Ack server push request, request = NotifySubscriberRequest, requestId = 246

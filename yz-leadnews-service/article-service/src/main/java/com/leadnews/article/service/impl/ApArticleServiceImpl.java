@@ -22,6 +22,7 @@ import com.leadnews.model.common.dtos.ResponseResult;
 import com.leadnews.model.common.enums.AppHttpCodeEnum;
 import com.leadnews.redis.utils.CacheService;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.scheduling.annotation.Async;
@@ -37,6 +38,7 @@ import java.util.stream.Collectors;
  * @author lihaohui
  * @date 2023/8/15
  */
+@Slf4j
 @Service
 @RequiredArgsConstructor
 public class ApArticleServiceImpl extends ServiceImpl<ApArticleMapper, ApArticle> implements ApArticleService {
@@ -153,6 +155,7 @@ public class ApArticleServiceImpl extends ServiceImpl<ApArticleMapper, ApArticle
     @Override
     @Transactional(rollbackFor = Exception.class)
     public void updateScore(ArticleVisitStreamMess mess) {
+        log.info("重新计算文章id:{} 分值:{}", mess.getArticleId(), mess);
         //1.更新文章的阅读、点赞、收藏、评论的数量 Mysql
         ApArticle apArticle = updateArticleToDb(mess);
 
@@ -187,26 +190,26 @@ public class ApArticleServiceImpl extends ServiceImpl<ApArticleMapper, ApArticle
             }
         }
 
-        if (!flag) {
-            return;
-        }
-        //如果缓存中不存在，查询缓存中分值最小的一条数据，进行分值的比较，如果当前文章的分值大于缓存中的数据，就替换
-        if (hotArticleVoList.size() >= 30) {
-            hotArticleVoList = hotArticleVoList.stream().sorted(Comparator.comparing(HotArticleVO::getScore).reversed()).collect(Collectors.toList());
-            HotArticleVO lastHot = hotArticleVoList.get(hotArticleVoList.size() - 1);
-            if (lastHot.getScore() < score) {
-                hotArticleVoList.remove(lastHot);
+        if (flag) {
+            //如果缓存中不存在，查询缓存中分值最小的一条数据，进行分值的比较，如果当前文章的分值大于缓存中的数据，就替换
+            if (hotArticleVoList.size() >= 30) {
+                hotArticleVoList = hotArticleVoList.stream().sorted(Comparator.comparing(HotArticleVO::getScore).reversed()).collect(Collectors.toList());
+                HotArticleVO lastHot = hotArticleVoList.get(hotArticleVoList.size() - 1);
+                if (lastHot.getScore() < score) {
+                    hotArticleVoList.remove(lastHot);
+                    HotArticleVO hot = new HotArticleVO();
+                    BeanUtils.copyProperties(apArticle, hot);
+                    hot.setScore(score);
+                    hotArticleVoList.add(hot);
+                }
+            } else {
                 HotArticleVO hot = new HotArticleVO();
                 BeanUtils.copyProperties(apArticle, hot);
                 hot.setScore(score);
                 hotArticleVoList.add(hot);
             }
-        } else {
-            HotArticleVO hot = new HotArticleVO();
-            BeanUtils.copyProperties(apArticle, hot);
-            hot.setScore(score);
-            hotArticleVoList.add(hot);
         }
+
 
         //缓存到redis
         hotArticleVoList = hotArticleVoList.stream().sorted(Comparator.comparing(HotArticleVO::getScore).reversed()).collect(Collectors.toList());

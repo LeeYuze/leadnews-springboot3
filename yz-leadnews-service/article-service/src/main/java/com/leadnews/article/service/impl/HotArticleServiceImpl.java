@@ -41,8 +41,8 @@ public class HotArticleServiceImpl implements HotArticleService {
         calendar.add(Calendar.DAY_OF_MONTH, -5);
         Date date = calendar.getTime();
 
-        //1.查询前5天的文章数据
-        List<ApArticle> apArticleList = apArticleMapper.findArticleListByLast5days(date);
+        //1.查询文章数据
+        List<ApArticle> apArticleList = apArticleMapper.findArticleListByDay(date);
 
         //2.计算文章的分值
         List<HotArticleVO> hotArticleVoList = computeHotArticle(apArticleList);
@@ -65,7 +65,7 @@ public class HotArticleServiceImpl implements HotArticleService {
         for (WmChannel wmChannel : wmChannels) {
             List<HotArticleVO> hotArticleVos = hotArticleVoList.stream().filter(x -> x.getChannelId().equals(wmChannel.getId())).collect(Collectors.toList());
             //给文章进行排序，取30条分值较高的文章存入redis  key：频道id   value：30条分值较高的文章
-            log.info("频道id:{} 缓存该频道 - 30条分值高的文章", wmChannel.getId());
+            log.info("频道id:{} {} 缓存该频道 - 30条分值高的文章 {}", wmChannel.getId(), wmChannel.getName(), hotArticleVos);
             sortAndCache(hotArticleVos, ArticleConstants.HOT_ARTICLE_FIRST_PAGE + wmChannel.getId());
         }
 
@@ -86,7 +86,8 @@ public class HotArticleServiceImpl implements HotArticleService {
         if (hotArticleVos.size() > 30) {
             hotArticleVos = hotArticleVos.subList(0, 30);
         }
-        cacheService.set(key, JSON.toJSONString(hotArticleVos));
+        String jsonString = JSON.toJSONString(hotArticleVos);
+        cacheService.set(key, jsonString);
     }
 
 

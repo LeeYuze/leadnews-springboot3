@@ -2838,3 +2838,36 @@ Caused by: com.mongodb.MongoTimeoutException: Timed out after 30000 ms while wai
 2023-08-30 21:52:27.472 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m9s674ms).
 2023-08-30 21:53:32.487 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m5s14ms).
 2023-08-30 22:13:01.061 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=19m28s576ms).
+2023-08-30 22:48:30.491 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2023-08-30 22:48:30.490 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2023-08-30 22:48:30.495 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2023-08-30 22:48:30.508 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2023-08-30 22:48:31.654 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+2023-08-30 22:48:31.654 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - [DEREGISTER-SERVICE] 4e85b1a4-8d96-4c12-8631-7c0473ed1614 deregistering service leadnews-wemedia with instance: Instance{instanceId='null', ip='192.168.10.4', port=52001, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+2023-08-30 22:48:31.661 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registration finished.
+2023-08-30 22:48:31.662 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown begin
+2023-08-30 22:48:31.662 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+2023-08-30 22:48:31.663 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+2023-08-30 22:48:31.663 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown stop
+2023-08-30 22:48:31.663 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown begin
+2023-08-30 22:48:31.663 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown begin
+2023-08-30 22:48:31.663 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown stop
+2023-08-30 22:48:31.663 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServerListManager do shutdown begin
+2023-08-30 22:48:31.663 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-08-30 22:48:31.664 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+2023-08-30 22:48:31.664 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServerListManager do shutdown stop
+2023-08-30 22:48:31.664 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown begin
+2023-08-30 22:48:31.664 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-08-30 22:48:31.664 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+2023-08-30 22:48:31.664 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown stop
+2023-08-30 22:48:31.664 [SpringApplicationShutdownHook] INFO  c.alibaba.nacos.common.remote.client - Shutdown rpc client, set status to shutdown
+2023-08-30 22:48:31.665 [SpringApplicationShutdownHook] INFO  c.alibaba.nacos.common.remote.client - Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@58ff955b[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+2023-08-30 22:48:31.665 [SpringApplicationShutdownHook] INFO  c.alibaba.nacos.common.remote.client - Close current connection 1693380462675_10.211.55.2_51789
+2023-08-30 22:48:31.667 [nacos-grpc-client-executor-10.211.55.8-5262] INFO  c.a.n.c.r.client.grpc.GrpcClient - [1693380462675_10.211.55.2_51789]Ignore complete event,isRunning:false,isAbandon=false
+2023-08-30 22:48:31.678 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.client.grpc.GrpcClient - Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@108cfbf5[Running, pool size = 7, active threads = 0, queued tasks = 0, completed tasks = 5263]
+2023-08-30 22:48:31.678 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - Shutdown grpc redo service executor java.util.concurrent.ScheduledThreadPoolExecutor@4ef3b996[Running, pool size = 1, active threads = 0, queued tasks = 1, completed tasks = 6362]
+2023-08-30 22:48:31.679 [SpringApplicationShutdownHook] INFO  c.a.n.c.a.r.i.CredentialWatcher - [null] CredentialWatcher is stopped
+2023-08-30 22:48:31.679 [SpringApplicationShutdownHook] INFO  c.a.n.c.a.r.i.CredentialService - [null] CredentialService is freed
+2023-08-30 22:48:31.679 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown stop
+2023-08-30 22:48:31.690 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-08-30 22:48:31.698 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

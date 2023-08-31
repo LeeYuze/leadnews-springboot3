@@ -1,1 +1,1 @@
-com.leadnews.kafka.config.KafkaConfig
+com.leadnews.kafka.config.KafkaStreamsConfig

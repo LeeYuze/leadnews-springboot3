@@ -17,6 +17,6 @@ import java.util.List;
 public interface ApArticleMapper extends BaseMapper<ApArticle> {
     List<ApArticle> loadArticleList(@Param("dto") ArticleHomeDTO dto, @Param("type") Integer type);
 
-    List<ApArticle> findArticleListByLast5days(@Param("dayParam") Date dayParam);
+    List<ApArticle> findArticleListByDay(@Param("dayParam") Date dayParam);
 
 }

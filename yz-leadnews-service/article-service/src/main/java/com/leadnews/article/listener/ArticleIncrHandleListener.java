@@ -23,10 +23,11 @@ public class ArticleIncrHandleListener {
 
     @KafkaListener(topics = HotArticleConstants.HOT_ARTICLE_INCR_HANDLE_TOPIC)
     public void onMessage(String mess){
-        if(StrUtil.isNotBlank(mess)){
-            ArticleVisitStreamMess articleVisitStreamMess = JSON.parseObject(mess, ArticleVisitStreamMess.class);
-            apArticleService.updateScore(articleVisitStreamMess);
-
+        if(StrUtil.isBlank(mess)){
+          return;
         }
+
+        ArticleVisitStreamMess articleVisitStreamMess = JSON.parseObject(mess, ArticleVisitStreamMess.class);
+        apArticleService.updateScore(articleVisitStreamMess);
     }
 }

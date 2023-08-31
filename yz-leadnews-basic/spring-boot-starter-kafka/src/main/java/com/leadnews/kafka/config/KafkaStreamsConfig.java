@@ -3,6 +3,7 @@ package com.leadnews.kafka.config;
 import org.apache.kafka.common.serialization.Serdes;
 import org.apache.kafka.streams.StreamsConfig;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.annotation.EnableKafkaStreams;
@@ -20,7 +21,8 @@ import static org.apache.kafka.streams.StreamsConfig.*;
  */
 @Configuration
 @EnableKafkaStreams
-public class KafkaConfig {
+@ConditionalOnProperty(name = "spring.kafka.streams.enable", havingValue = "true")
+public class KafkaStreamsConfig {
 
     @Value(value = "${spring.kafka.bootstrap-servers}")
     private String bootstrapAddress;

@@ -1885,13 +1885,13 @@ org.apache.kafka.common.errors.DisconnectException: null
 2023-08-30 22:28:58.728 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
 2023-08-30 22:28:58.729 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1124 ms
 2023-08-30 22:29:01.721 [main] INFO  o.s.c.o.FeignClientFactoryBean - For 'leadnews-wemedia' URL not provided. Will try picking an instance via load-balancing.
-2023-08-30 22:29:01.758 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kStream' defined in class path resource [com/leadnews/article/streams/HotArticleStreamHandler.class]: Unsatisfied dependency expressed through method 'kStream' parameter 0: Error creating bean with name 'defaultKafkaStreamsBuilder' defined in class path resource [org/springframework/kafka/annotation/KafkaStreamsDefaultConfiguration.class]: Failed to instantiate [org.springframework.kafka.config.StreamsBuilderFactoryBean]: Factory method 'defaultKafkaStreamsBuilder' threw exception with message: Error creating bean with name 'com.leadnews.kafka.config.KafkaConfig': Injection of autowired dependencies failed
+2023-08-30 22:29:01.758 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kStream' defined in class path resource [com/leadnews/article/streams/HotArticleStreamHandler.class]: Unsatisfied dependency expressed through method 'kStream' parameter 0: Error creating bean with name 'defaultKafkaStreamsBuilder' defined in class path resource [org/springframework/kafka/annotation/KafkaStreamsDefaultConfiguration.class]: Failed to instantiate [org.springframework.kafka.config.StreamsBuilderFactoryBean]: Factory method 'defaultKafkaStreamsBuilder' threw exception with message: Error creating bean with name 'com.leadnews.kafka.config.KafkaStreamsConfig': Injection of autowired dependencies failed
 2023-08-30 22:29:01.764 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
 2023-08-30 22:29:01.776 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
 2023-08-30 22:29:01.785 [main] ERROR o.s.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kStream' defined in class path resource [com/leadnews/article/streams/HotArticleStreamHandler.class]: Unsatisfied dependency expressed through method 'kStream' parameter 0: Error creating bean with name 'defaultKafkaStreamsBuilder' defined in class path resource [org/springframework/kafka/annotation/KafkaStreamsDefaultConfiguration.class]: Failed to instantiate [org.springframework.kafka.config.StreamsBuilderFactoryBean]: Factory method 'defaultKafkaStreamsBuilder' threw exception with message: Error creating bean with name 'com.leadnews.kafka.config.KafkaConfig': Injection of autowired dependencies failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kStream' defined in class path resource [com/leadnews/article/streams/HotArticleStreamHandler.class]: Unsatisfied dependency expressed through method 'kStream' parameter 0: Error creating bean with name 'defaultKafkaStreamsBuilder' defined in class path resource [org/springframework/kafka/annotation/KafkaStreamsDefaultConfiguration.class]: Failed to instantiate [org.springframework.kafka.config.StreamsBuilderFactoryBean]: Factory method 'defaultKafkaStreamsBuilder' threw exception with message: Error creating bean with name 'com.leadnews.kafka.config.KafkaStreamsConfig': Injection of autowired dependencies failed
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:798)
 	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:548)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324)
@@ -1912,7 +1912,7 @@ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
 	at com.leadnews.article.ArticleApplication.main(ArticleApplication.java:29)
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'defaultKafkaStreamsBuilder' defined in class path resource [org/springframework/kafka/annotation/KafkaStreamsDefaultConfiguration.class]: Failed to instantiate [org.springframework.kafka.config.StreamsBuilderFactoryBean]: Factory method 'defaultKafkaStreamsBuilder' threw exception with message: Error creating bean with name 'com.leadnews.kafka.config.KafkaConfig': Injection of autowired dependencies failed
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'defaultKafkaStreamsBuilder' defined in class path resource [org/springframework/kafka/annotation/KafkaStreamsDefaultConfiguration.class]: Failed to instantiate [org.springframework.kafka.config.StreamsBuilderFactoryBean]: Factory method 'defaultKafkaStreamsBuilder' threw exception with message: Error creating bean with name 'com.leadnews.kafka.config.KafkaStreamsConfig': Injection of autowired dependencies failed
 	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
 	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324)
@@ -1929,11 +1929,11 @@ Caused by: org.springframework.beans.factory.BeanCreationException: Error creati
 	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:885)
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:789)
 	... 19 common frames omitted
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.kafka.config.StreamsBuilderFactoryBean]: Factory method 'defaultKafkaStreamsBuilder' threw exception with message: Error creating bean with name 'com.leadnews.kafka.config.KafkaConfig': Injection of autowired dependencies failed
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.kafka.config.StreamsBuilderFactoryBean]: Factory method 'defaultKafkaStreamsBuilder' threw exception with message: Error creating bean with name 'com.leadnews.kafka.config.KafkaStreamsConfig': Injection of autowired dependencies failed
 	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171)
 	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
 	... 33 common frames omitted
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.leadnews.kafka.config.KafkaConfig': Injection of autowired dependencies failed
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.leadnews.kafka.config.KafkaStreamsConfig': Injection of autowired dependencies failed
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:487)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1397)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
@@ -3721,3 +3721,96 @@ Caused by: com.mongodb.MongoTimeoutException: Timed out after 30000 ms while wai
 2023-08-30 22:44:20.988 [kafka-admin-client-thread | leadnews-article_stream_cid-admin] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=leadnews-article_stream_cid-admin] Node 0 disconnected.
 2023-08-30 22:45:04.249 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [leadnews-article_stream_cid-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
 2023-08-30 22:47:04.294 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [leadnews-article_stream_cid-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-08-30 22:48:30.711 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2023-08-30 22:48:30.713 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2023-08-30 22:48:30.716 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2023-08-30 22:48:30.719 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2023-08-30 22:48:30.738 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Revoke previously assigned partitions wm.news.up.or.down.topic-0
+2023-08-30 22:48:30.739 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - leadnews-article: partitions revoked: [wm.news.up.or.down.topic-0]
+2023-08-30 22:48:30.740 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Member consumer-leadnews-article-1-4761f0e6-97cc-49fa-a238-e2bb2bf6940f sending LeaveGroup request to coordinator 10.211.55.8:9093 (id: 2147483645 rack: null) due to the consumer unsubscribed from all topics
+2023-08-30 22:48:30.742 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Resetting generation and member id due to: consumer pro-actively leaving the group
+2023-08-30 22:48:30.742 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Request joining group due to: consumer pro-actively leaving the group
+2023-08-30 22:48:30.742 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Unsubscribed all topics or patterns and assigned partitions
+2023-08-30 22:48:30.749 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Resetting generation and member id due to: consumer pro-actively leaving the group
+2023-08-30 22:48:30.749 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Request joining group due to: consumer pro-actively leaving the group
+2023-08-30 22:48:30.750 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2023-08-30 22:48:30.750 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-08-30 22:48:30.750 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2023-08-30 22:48:30.752 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-leadnews-article-1 unregistered
+2023-08-30 22:48:30.753 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - leadnews-article: Consumer stopped
+2023-08-30 22:48:30.754 [SpringApplicationShutdownHook] INFO  o.apache.kafka.streams.KafkaStreams - stream-client [leadnews-article_stream_cid] State transition from RUNNING to PENDING_SHUTDOWN
+2023-08-30 22:48:30.755 [leadnews-article_stream_cid-CloseThread] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [leadnews-article_stream_cid-StreamThread-1] Informed to shut down
+2023-08-30 22:48:30.755 [leadnews-article_stream_cid-CloseThread] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [leadnews-article_stream_cid-StreamThread-1] State transition from RUNNING to PENDING_SHUTDOWN
+2023-08-30 22:48:30.755 [leadnews-article_stream_cid-CloseThread] INFO  o.apache.kafka.streams.KafkaStreams - stream-client [leadnews-article_stream_cid] Shutting down 1 stream threads
+2023-08-30 22:48:30.855 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [leadnews-article_stream_cid-StreamThread-1] Shutting down
+2023-08-30 22:48:30.868 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamTask - stream-thread [leadnews-article_stream_cid-StreamThread-1] task [0_0] Suspended RUNNING
+2023-08-30 22:48:30.868 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamTask - stream-thread [leadnews-article_stream_cid-StreamThread-1] task [0_0] Suspended running
+2023-08-30 22:48:30.870 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=leadnews-article_stream_cid-StreamThread-1-restore-consumer, groupId=null] Assigned to partition(s): leadnews-article_stream_aid-hot-atricle-stream-count-001-changelog-0
+2023-08-30 22:48:30.870 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.i.RecordCollectorImpl - stream-thread [leadnews-article_stream_cid-StreamThread-1] task [0_0] Closing record collector clean
+2023-08-30 22:48:30.870 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamTask - stream-thread [leadnews-article_stream_cid-StreamThread-1] task [0_0] Closed clean
+2023-08-30 22:48:30.870 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamTask - stream-thread [leadnews-article_stream_cid-StreamThread-1] task [1_0] Suspended RUNNING
+2023-08-30 22:48:30.870 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamTask - stream-thread [leadnews-article_stream_cid-StreamThread-1] task [1_0] Suspended running
+2023-08-30 22:48:30.871 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=leadnews-article_stream_cid-StreamThread-1-restore-consumer, groupId=null] Unsubscribed all topics or patterns and assigned partitions
+2023-08-30 22:48:30.873 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.i.RecordCollectorImpl - stream-thread [leadnews-article_stream_cid-StreamThread-1] task [1_0] Closing record collector clean
+2023-08-30 22:48:30.873 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamTask - stream-thread [leadnews-article_stream_cid-StreamThread-1] task [1_0] Closed clean
+2023-08-30 22:48:30.873 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=leadnews-article_stream_cid-StreamThread-1-producer] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2023-08-30 22:48:30.875 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2023-08-30 22:48:30.875 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-08-30 22:48:30.875 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2023-08-30 22:48:30.875 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.producer for leadnews-article_stream_cid-StreamThread-1-producer unregistered
+2023-08-30 22:48:30.876 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=leadnews-article_stream_cid-StreamThread-1-restore-consumer, groupId=null] Unsubscribed all topics or patterns and assigned partitions
+2023-08-30 22:48:30.876 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2023-08-30 22:48:30.876 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-08-30 22:48:30.876 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2023-08-30 22:48:30.877 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for leadnews-article_stream_cid-StreamThread-1-consumer unregistered
+2023-08-30 22:48:30.877 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2023-08-30 22:48:30.877 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-08-30 22:48:30.877 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2023-08-30 22:48:30.878 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for leadnews-article_stream_cid-StreamThread-1-restore-consumer unregistered
+2023-08-30 22:48:30.878 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [leadnews-article_stream_cid-StreamThread-1] State transition from PENDING_SHUTDOWN to DEAD
+2023-08-30 22:48:30.878 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [leadnews-article_stream_cid-StreamThread-1] Shutdown complete
+2023-08-30 22:48:30.878 [leadnews-article_stream_cid-CloseThread] INFO  o.apache.kafka.streams.KafkaStreams - stream-client [leadnews-article_stream_cid] Shutdown 1 stream threads complete
+2023-08-30 22:48:30.879 [kafka-admin-client-thread | leadnews-article_stream_cid-admin] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for leadnews-article_stream_cid-admin unregistered
+2023-08-30 22:48:30.880 [kafka-admin-client-thread | leadnews-article_stream_cid-admin] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2023-08-30 22:48:30.880 [kafka-admin-client-thread | leadnews-article_stream_cid-admin] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-08-30 22:48:30.880 [kafka-admin-client-thread | leadnews-article_stream_cid-admin] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2023-08-30 22:48:30.880 [leadnews-article_stream_cid-CloseThread] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2023-08-30 22:48:30.880 [leadnews-article_stream_cid-CloseThread] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-08-30 22:48:30.880 [leadnews-article_stream_cid-CloseThread] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2023-08-30 22:48:30.880 [leadnews-article_stream_cid-CloseThread] INFO  o.apache.kafka.streams.KafkaStreams - stream-client [leadnews-article_stream_cid] State transition from PENDING_SHUTDOWN to NOT_RUNNING
+2023-08-30 22:48:30.880 [SpringApplicationShutdownHook] INFO  o.apache.kafka.streams.KafkaStreams - stream-client [leadnews-article_stream_cid] Streams client stopped completely
+2023-08-30 22:48:31.991 [Thread-16] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server stop.
+2023-08-30 22:48:32.080 [xxl-job, executor ExecutorRegistryThread] INFO  c.x.j.c.t.ExecutorRegistryThread - >>>>>>>>>>> xxl-job registry-remove success, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='leadnews-hot-article-executor', registryValue='http://10.37.129.2:9999/'}, registryResult:ReturnT [code=200, msg=null, content=null]
+2023-08-30 22:48:32.080 [xxl-job, executor ExecutorRegistryThread] INFO  c.x.j.c.t.ExecutorRegistryThread - >>>>>>>>>>> xxl-job, executor registry thread destroy.
+2023-08-30 22:48:32.080 [SpringApplicationShutdownHook] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server destroy success.
+2023-08-30 22:48:32.080 [xxl-job, executor TriggerCallbackThread] INFO  c.x.j.c.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor callback thread destroy.
+2023-08-30 22:48:32.081 [Thread-15] INFO  c.x.j.c.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor retry callback thread destroy.
+2023-08-30 22:48:32.081 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+2023-08-30 22:48:32.081 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - [DEREGISTER-SERVICE] 4e85b1a4-8d96-4c12-8631-7c0473ed1614 deregistering service leadnews-article with instance: Instance{instanceId='null', ip='192.168.10.4', port=51901, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+2023-08-30 22:48:32.094 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registration finished.
+2023-08-30 22:48:32.095 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown begin
+2023-08-30 22:48:32.095 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+2023-08-30 22:48:32.095 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+2023-08-30 22:48:32.095 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown stop
+2023-08-30 22:48:32.096 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown begin
+2023-08-30 22:48:32.096 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown begin
+2023-08-30 22:48:32.096 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown stop
+2023-08-30 22:48:32.096 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServerListManager do shutdown begin
+2023-08-30 22:48:32.096 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-08-30 22:48:32.096 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+2023-08-30 22:48:32.096 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServerListManager do shutdown stop
+2023-08-30 22:48:32.096 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown begin
+2023-08-30 22:48:32.096 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-08-30 22:48:32.096 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+2023-08-30 22:48:32.096 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown stop
+2023-08-30 22:48:32.096 [SpringApplicationShutdownHook] INFO  c.alibaba.nacos.common.remote.client - Shutdown rpc client, set status to shutdown
+2023-08-30 22:48:32.097 [SpringApplicationShutdownHook] INFO  c.alibaba.nacos.common.remote.client - Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@5625d901[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+2023-08-30 22:48:32.097 [SpringApplicationShutdownHook] INFO  c.alibaba.nacos.common.remote.client - Close current connection 1693399133898_10.211.55.2_64731
+2023-08-30 22:48:32.100 [nacos-grpc-client-executor-10.211.55.8-291] INFO  c.a.n.c.r.client.grpc.GrpcClient - [1693399133898_10.211.55.2_64731]Ignore complete event,isRunning:false,isAbandon=false
+2023-08-30 22:48:32.103 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.client.grpc.GrpcClient - Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@29ae8e1f[Running, pool size = 6, active threads = 0, queued tasks = 0, completed tasks = 292]
+2023-08-30 22:48:32.103 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - Shutdown grpc redo service executor java.util.concurrent.ScheduledThreadPoolExecutor@35bf29ae[Running, pool size = 1, active threads = 0, queued tasks = 1, completed tasks = 269]
+2023-08-30 22:48:32.103 [SpringApplicationShutdownHook] INFO  c.a.n.c.a.r.i.CredentialWatcher - [null] CredentialWatcher is stopped
+2023-08-30 22:48:32.103 [SpringApplicationShutdownHook] INFO  c.a.n.c.a.r.i.CredentialService - [null] CredentialService is freed
+2023-08-30 22:48:32.104 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown stop
+2023-08-30 22:48:32.235 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-08-30 22:48:32.240 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

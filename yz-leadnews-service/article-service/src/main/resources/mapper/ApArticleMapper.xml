@@ -26,7 +26,7 @@
         <result column="sync_status" property="syncStatus"/>
     </resultMap>
 
-    <select id="findArticleListByLast5days" resultMap="resultMap">
+    <select id="findArticleListByDay" resultMap="resultMap">
         SELECT
         aa.*
         FROM
