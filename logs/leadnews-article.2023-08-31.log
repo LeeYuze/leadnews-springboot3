@@ -20918,3 +20918,1109 @@ Caused by: com.mongodb.MongoTimeoutException: Timed out after 30000 ms while wai
 2023-08-31 11:57:39.137 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.l.a.s.impl.ApArticleServiceImpl - 重新计算文章id:1696270185821999105 分值:ArticleVisitStreamMess(articleId=1696270185821999105, view=0, collect=0, comment=0, like=1)
 2023-08-31 11:58:36.817 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [leadnews-article_stream_cid-StreamThread-1] Processed 2 total records, ran 0 punctuators, and committed 2 total tasks since the last update
 2023-08-31 12:00:36.839 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [leadnews-article_stream_cid-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-08-31 12:01:36.811 [kafka-admin-client-thread | leadnews-article_stream_cid-admin] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=leadnews-article_stream_cid-admin] Node -1 disconnected.
+2023-08-31 12:01:36.819 [kafka-producer-network-thread | leadnews-article_stream_cid-StreamThread-1-producer] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=leadnews-article_stream_cid-StreamThread-1-producer] Resetting the last seen epoch of partition leadnews-article_stream_aid-hot-atricle-stream-count-001-repartition-0 to 0 since the associated topicId changed from null to bpANgdqIRXiWn984oKWJkg
+2023-08-31 12:01:36.819 [kafka-producer-network-thread | leadnews-article_stream_cid-StreamThread-1-producer] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=leadnews-article_stream_cid-StreamThread-1-producer] Resetting the last seen epoch of partition leadnews-article_stream_aid-hot-atricle-stream-count-001-changelog-0 to 0 since the associated topicId changed from null to Y3KCwgbiTaCvW0RyIMqf1Q
+2023-08-31 12:02:36.896 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [leadnews-article_stream_cid-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-08-31 12:04:36.905 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [leadnews-article_stream_cid-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-08-31 12:05:36.833 [kafka-producer-network-thread | leadnews-article_stream_cid-StreamThread-1-producer] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=leadnews-article_stream_cid-StreamThread-1-producer] Node -1 disconnected.
+2023-08-31 12:05:36.833 [leadnews-article_stream_cid-StreamThread-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=leadnews-article_stream_cid-StreamThread-1-consumer, groupId=leadnews-article_stream_aid] Node -1 disconnected.
+2023-08-31 12:05:36.870 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-leadnews-article-2, groupId=leadnews-article] Node -1 disconnected.
+2023-08-31 12:05:37.054 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Node -1 disconnected.
+2023-08-31 12:06:36.663 [leadnews-article_stream_cid-CleanupThread] INFO  o.a.k.s.p.internals.StateDirectory - stream-thread [leadnews-article_stream_cid-CleanupThread] Deleting obsolete state directory 0_0 for task 0_0 as 1886890ms has elapsed (cleanup delay is 600000ms).
+2023-08-31 12:06:36.823 [kafka-admin-client-thread | leadnews-article_stream_cid-admin] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=leadnews-article_stream_cid-admin] Node 2 disconnected.
+2023-08-31 12:06:36.995 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [leadnews-article_stream_cid-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-08-31 12:07:06.879 [kafka-producer-network-thread | leadnews-article_stream_cid-StreamThread-1-producer] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=leadnews-article_stream_cid-StreamThread-1-producer] Node 2 disconnected.
+2023-08-31 12:07:06.881 [kafka-producer-network-thread | leadnews-article_stream_cid-StreamThread-1-producer] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=leadnews-article_stream_cid-StreamThread-1-producer] Node 0 disconnected.
+2023-08-31 12:08:37.066 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [leadnews-article_stream_cid-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-08-31 12:19:05.898 [leadnews-article_stream_cid-StreamThread-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=leadnews-article_stream_cid-StreamThread-1-consumer, groupId=leadnews-article_stream_aid] Disconnecting from node 0 due to request timeout.
+2023-08-31 12:19:05.991 [leadnews-article_stream_cid-StreamThread-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=leadnews-article_stream_cid-StreamThread-1-consumer, groupId=leadnews-article_stream_aid] Cancelled in-flight FETCH request with correlation id 3150 due to node 0 being disconnected (elapsed time since creation: 589278ms, elapsed time since send: 589278ms, request timeout: 30000ms)
+2023-08-31 12:19:06.045 [leadnews-article_stream_cid-StreamThread-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=leadnews-article_stream_cid-StreamThread-1-consumer, groupId=leadnews-article_stream_aid] Disconnecting from node 2 due to request timeout.
+2023-08-31 12:19:06.045 [leadnews-article_stream_cid-StreamThread-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=leadnews-article_stream_cid-StreamThread-1-consumer, groupId=leadnews-article_stream_aid] Cancelled in-flight FETCH request with correlation id 3149 due to node 2 being disconnected (elapsed time since creation: 589280ms, elapsed time since send: 589280ms, request timeout: 30000ms)
+2023-08-31 12:19:06.045 [leadnews-article_stream_cid-StreamThread-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=leadnews-article_stream_cid-StreamThread-1-consumer, groupId=leadnews-article_stream_aid] Disconnecting from node 2147483645 due to request timeout.
+2023-08-31 12:19:06.045 [leadnews-article_stream_cid-StreamThread-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=leadnews-article_stream_cid-StreamThread-1-consumer, groupId=leadnews-article_stream_aid] Cancelled in-flight HEARTBEAT request with correlation id 3151 due to node 2147483645 being disconnected (elapsed time since creation: 588566ms, elapsed time since send: 588566ms, request timeout: 30000ms)
+2023-08-31 12:19:06.046 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.clients.FetchSessionHandler - [Consumer clientId=leadnews-article_stream_cid-StreamThread-1-consumer, groupId=leadnews-article_stream_aid] Error sending fetch request (sessionId=1252167817, epoch=1444) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2023-08-31 12:19:06.047 [kafka-coordinator-heartbeat-thread | leadnews-article_stream_aid] INFO  o.a.k.clients.FetchSessionHandler - [Consumer clientId=leadnews-article_stream_cid-StreamThread-1-consumer, groupId=leadnews-article_stream_aid] Error sending fetch request (sessionId=1954414782, epoch=1446) to node 2:
+org.apache.kafka.common.errors.DisconnectException: null
+2023-08-31 12:19:06.047 [kafka-coordinator-heartbeat-thread | leadnews-article_stream_aid] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=leadnews-article_stream_cid-StreamThread-1-consumer, groupId=leadnews-article_stream_aid] Group coordinator 10.211.55.8:9093 (id: 2147483645 rack: null) is unavailable or invalid due to cause: session timed out without receiving a heartbeat response. isDisconnected: false. Rediscovery will be attempted.
+2023-08-31 12:19:06.047 [kafka-coordinator-heartbeat-thread | leadnews-article_stream_aid] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=leadnews-article_stream_cid-StreamThread-1-consumer, groupId=leadnews-article_stream_aid] Requesting disconnect from last known coordinator 10.211.55.8:9093 (id: 2147483645 rack: null)
+2023-08-31 12:19:06.048 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [leadnews-article_stream_cid-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-08-31 12:19:07.482 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Disconnecting from node 0 due to request timeout.
+2023-08-31 12:19:07.482 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Cancelled in-flight FETCH request with correlation id 1767 due to node 0 being disconnected (elapsed time since creation: 590861ms, elapsed time since send: 590861ms, request timeout: 30000ms)
+2023-08-31 12:19:07.484 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-leadnews-article-2, groupId=leadnews-article] Disconnecting from node 1 due to request timeout.
+2023-08-31 12:19:07.485 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-leadnews-article-2, groupId=leadnews-article] Cancelled in-flight FETCH request with correlation id 1767 due to node 1 being disconnected (elapsed time since creation: 590861ms, elapsed time since send: 590861ms, request timeout: 30000ms)
+2023-08-31 12:19:07.490 [kafka-coordinator-heartbeat-thread | leadnews-article] INFO  o.a.k.clients.FetchSessionHandler - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Error sending fetch request (sessionId=99779807, epoch=1502) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2023-08-31 12:19:07.493 [kafka-coordinator-heartbeat-thread | leadnews-article] INFO  o.a.k.clients.FetchSessionHandler - [Consumer clientId=consumer-leadnews-article-2, groupId=leadnews-article] Error sending fetch request (sessionId=2000093788, epoch=1502) to node 1:
+org.apache.kafka.common.errors.DisconnectException: null
+2023-08-31 12:19:07.493 [kafka-coordinator-heartbeat-thread | leadnews-article] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-2, groupId=leadnews-article] Group coordinator 10.211.55.8:9093 (id: 2147483645 rack: null) is unavailable or invalid due to cause: session timed out without receiving a heartbeat response. isDisconnected: false. Rediscovery will be attempted.
+2023-08-31 12:19:07.494 [kafka-coordinator-heartbeat-thread | leadnews-article] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-2, groupId=leadnews-article] Requesting disconnect from last known coordinator 10.211.55.8:9093 (id: 2147483645 rack: null)
+2023-08-31 12:19:07.494 [kafka-coordinator-heartbeat-thread | leadnews-article] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-leadnews-article-2, groupId=leadnews-article] Client requested disconnect from node 2147483645
+2023-08-31 12:19:07.493 [kafka-coordinator-heartbeat-thread | leadnews-article] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Group coordinator 10.211.55.8:9093 (id: 2147483645 rack: null) is unavailable or invalid due to cause: session timed out without receiving a heartbeat response. isDisconnected: false. Rediscovery will be attempted.
+2023-08-31 12:19:07.496 [kafka-coordinator-heartbeat-thread | leadnews-article] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Requesting disconnect from last known coordinator 10.211.55.8:9093 (id: 2147483645 rack: null)
+2023-08-31 12:19:07.496 [kafka-coordinator-heartbeat-thread | leadnews-article] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Client requested disconnect from node 2147483645
+2023-08-31 12:19:07.650 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-2, groupId=leadnews-article] Discovered group coordinator 10.211.55.8:9093 (id: 2147483645 rack: null)
+2023-08-31 12:19:07.829 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Discovered group coordinator 10.211.55.8:9093 (id: 2147483645 rack: null)
+2023-08-31 12:19:07.835 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=leadnews-article_stream_cid-StreamThread-1-consumer, groupId=leadnews-article_stream_aid] Discovered group coordinator 10.211.55.8:9093 (id: 2147483645 rack: null)
+2023-08-31 12:19:07.851 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=leadnews-article_stream_cid-StreamThread-1-consumer, groupId=leadnews-article_stream_aid] Discovered group coordinator 10.211.55.8:9093 (id: 2147483645 rack: null)
+2023-08-31 12:19:07.867 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=leadnews-article_stream_cid-StreamThread-1-consumer, groupId=leadnews-article_stream_aid] Discovered group coordinator 10.211.55.8:9093 (id: 2147483645 rack: null)
+2023-08-31 12:19:07.867 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=leadnews-article_stream_cid-StreamThread-1-consumer, groupId=leadnews-article_stream_aid] Discovered group coordinator 10.211.55.8:9093 (id: 2147483645 rack: null)
+2023-08-31 12:19:07.867 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=leadnews-article_stream_cid-StreamThread-1-consumer, groupId=leadnews-article_stream_aid] Discovered group coordinator 10.211.55.8:9093 (id: 2147483645 rack: null)
+2023-08-31 12:19:07.867 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=leadnews-article_stream_cid-StreamThread-1-consumer, groupId=leadnews-article_stream_aid] Discovered group coordinator 10.211.55.8:9093 (id: 2147483645 rack: null)
+2023-08-31 12:19:07.867 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=leadnews-article_stream_cid-StreamThread-1-consumer, groupId=leadnews-article_stream_aid] Discovered group coordinator 10.211.55.8:9093 (id: 2147483645 rack: null)
+2023-08-31 12:19:08.204 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=leadnews-article_stream_cid-StreamThread-1-consumer, groupId=leadnews-article_stream_aid] Discovered group coordinator 10.211.55.8:9093 (id: 2147483645 rack: null)
+2023-08-31 12:19:08.205 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=leadnews-article_stream_cid-StreamThread-1-consumer, groupId=leadnews-article_stream_aid] Discovered group coordinator 10.211.55.8:9093 (id: 2147483645 rack: null)
+2023-08-31 12:19:08.205 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=leadnews-article_stream_cid-StreamThread-1-consumer, groupId=leadnews-article_stream_aid] Discovered group coordinator 10.211.55.8:9093 (id: 2147483645 rack: null)
+2023-08-31 12:19:08.205 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=leadnews-article_stream_cid-StreamThread-1-consumer, groupId=leadnews-article_stream_aid] Discovered group coordinator 10.211.55.8:9093 (id: 2147483645 rack: null)
+2023-08-31 12:19:08.205 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=leadnews-article_stream_cid-StreamThread-1-consumer, groupId=leadnews-article_stream_aid] Discovered group coordinator 10.211.55.8:9093 (id: 2147483645 rack: null)
+2023-08-31 12:19:08.205 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=leadnews-article_stream_cid-StreamThread-1-consumer, groupId=leadnews-article_stream_aid] Discovered group coordinator 10.211.55.8:9093 (id: 2147483645 rack: null)
+2023-08-31 12:19:08.283 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=leadnews-article_stream_cid-StreamThread-1-consumer, groupId=leadnews-article_stream_aid] Discovered group coordinator 10.211.55.8:9093 (id: 2147483645 rack: null)
+2023-08-31 12:19:08.285 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=leadnews-article_stream_cid-StreamThread-1-consumer, groupId=leadnews-article_stream_aid] Discovered group coordinator 10.211.55.8:9093 (id: 2147483645 rack: null)
+2023-08-31 12:19:08.304 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=leadnews-article_stream_cid-StreamThread-1-consumer, groupId=leadnews-article_stream_aid] Discovered group coordinator 10.211.55.8:9093 (id: 2147483645 rack: null)
+2023-08-31 12:19:08.326 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=leadnews-article_stream_cid-StreamThread-1-consumer, groupId=leadnews-article_stream_aid] Discovered group coordinator 10.211.55.8:9093 (id: 2147483645 rack: null)
+2023-08-31 12:19:08.334 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=leadnews-article_stream_cid-StreamThread-1-consumer, groupId=leadnews-article_stream_aid] Discovered group coordinator 10.211.55.8:9093 (id: 2147483645 rack: null)
+2023-08-31 12:19:08.335 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=leadnews-article_stream_cid-StreamThread-1-consumer, groupId=leadnews-article_stream_aid] Discovered group coordinator 10.211.55.8:9093 (id: 2147483645 rack: null)
+2023-08-31 12:19:23.705 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m16s98ms).
+2023-08-31 12:21:06.068 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [leadnews-article_stream_cid-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-08-31 12:21:22.968 [kafka-admin-client-thread | leadnews-article_stream_cid-admin] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=leadnews-article_stream_cid-admin] Node 1 disconnected.
+2023-08-31 12:23:06.114 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [leadnews-article_stream_cid-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-08-31 12:25:06.172 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [leadnews-article_stream_cid-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-08-31 12:26:22.984 [kafka-admin-client-thread | leadnews-article_stream_cid-admin] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=leadnews-article_stream_cid-admin] Node 0 disconnected.
+2023-08-31 12:27:06.236 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [leadnews-article_stream_cid-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-08-31 12:29:06.261 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [leadnews-article_stream_cid-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-08-31 12:31:06.266 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [leadnews-article_stream_cid-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-08-31 12:31:23.017 [kafka-admin-client-thread | leadnews-article_stream_cid-admin] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=leadnews-article_stream_cid-admin] Node 2 disconnected.
+2023-08-31 12:33:06.341 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [leadnews-article_stream_cid-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-08-31 12:35:06.353 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [leadnews-article_stream_cid-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-08-31 12:36:23.034 [kafka-admin-client-thread | leadnews-article_stream_cid-admin] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=leadnews-article_stream_cid-admin] Node 1 disconnected.
+2023-08-31 12:37:06.454 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [leadnews-article_stream_cid-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-08-31 12:39:06.530 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [leadnews-article_stream_cid-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-08-31 12:40:02.272 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2023-08-31 12:40:02.271 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2023-08-31 12:40:02.273 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2023-08-31 12:40:02.275 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2023-08-31 12:40:02.298 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Revoke previously assigned partitions hot.article.incr.handle.topic-0
+2023-08-31 12:40:02.298 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-2, groupId=leadnews-article] Revoke previously assigned partitions wm.news.up.or.down.topic-0
+2023-08-31 12:40:02.299 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - leadnews-article: partitions revoked: [hot.article.incr.handle.topic-0]
+2023-08-31 12:40:02.299 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - leadnews-article: partitions revoked: [wm.news.up.or.down.topic-0]
+2023-08-31 12:40:02.299 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-2, groupId=leadnews-article] Member consumer-leadnews-article-2-af1b9607-b4cc-4b8c-9fa8-aa7bd8bbd5e7 sending LeaveGroup request to coordinator 10.211.55.8:9093 (id: 2147483645 rack: null) due to the consumer unsubscribed from all topics
+2023-08-31 12:40:02.299 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Member consumer-leadnews-article-1-d4ec9dbf-2763-4672-bdd2-9a5c9ba13a71 sending LeaveGroup request to coordinator 10.211.55.8:9093 (id: 2147483645 rack: null) due to the consumer unsubscribed from all topics
+2023-08-31 12:40:02.300 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-2, groupId=leadnews-article] Resetting generation and member id due to: consumer pro-actively leaving the group
+2023-08-31 12:40:02.300 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Resetting generation and member id due to: consumer pro-actively leaving the group
+2023-08-31 12:40:02.300 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-2, groupId=leadnews-article] Request joining group due to: consumer pro-actively leaving the group
+2023-08-31 12:40:02.300 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Request joining group due to: consumer pro-actively leaving the group
+2023-08-31 12:40:02.300 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-leadnews-article-2, groupId=leadnews-article] Unsubscribed all topics or patterns and assigned partitions
+2023-08-31 12:40:02.300 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Unsubscribed all topics or patterns and assigned partitions
+2023-08-31 12:40:02.301 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-2, groupId=leadnews-article] Resetting generation and member id due to: consumer pro-actively leaving the group
+2023-08-31 12:40:02.301 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-2, groupId=leadnews-article] Request joining group due to: consumer pro-actively leaving the group
+2023-08-31 12:40:02.301 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Resetting generation and member id due to: consumer pro-actively leaving the group
+2023-08-31 12:40:02.301 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Request joining group due to: consumer pro-actively leaving the group
+2023-08-31 12:40:02.303 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2023-08-31 12:40:02.303 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-08-31 12:40:02.303 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2023-08-31 12:40:02.305 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-leadnews-article-2 unregistered
+2023-08-31 12:40:02.306 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - leadnews-article: Consumer stopped
+2023-08-31 12:40:02.308 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2023-08-31 12:40:02.308 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-08-31 12:40:02.308 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2023-08-31 12:40:02.309 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-leadnews-article-1 unregistered
+2023-08-31 12:40:02.309 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - leadnews-article: Consumer stopped
+2023-08-31 12:40:02.309 [SpringApplicationShutdownHook] INFO  o.apache.kafka.streams.KafkaStreams - stream-client [leadnews-article_stream_cid] State transition from RUNNING to PENDING_SHUTDOWN
+2023-08-31 12:40:02.311 [leadnews-article_stream_cid-CloseThread] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [leadnews-article_stream_cid-StreamThread-1] Informed to shut down
+2023-08-31 12:40:02.311 [leadnews-article_stream_cid-CloseThread] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [leadnews-article_stream_cid-StreamThread-1] State transition from RUNNING to PENDING_SHUTDOWN
+2023-08-31 12:40:02.311 [leadnews-article_stream_cid-CloseThread] INFO  o.apache.kafka.streams.KafkaStreams - stream-client [leadnews-article_stream_cid] Shutting down 1 stream threads
+2023-08-31 12:40:02.406 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [leadnews-article_stream_cid-StreamThread-1] Shutting down
+2023-08-31 12:40:02.442 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamTask - stream-thread [leadnews-article_stream_cid-StreamThread-1] task [0_0] Suspended RUNNING
+2023-08-31 12:40:02.442 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamTask - stream-thread [leadnews-article_stream_cid-StreamThread-1] task [0_0] Suspended running
+2023-08-31 12:40:02.443 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=leadnews-article_stream_cid-StreamThread-1-restore-consumer, groupId=null] Assigned to partition(s): leadnews-article_stream_aid-hot-atricle-stream-count-001-changelog-0
+2023-08-31 12:40:02.444 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.i.RecordCollectorImpl - stream-thread [leadnews-article_stream_cid-StreamThread-1] task [0_0] Closing record collector clean
+2023-08-31 12:40:02.444 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamTask - stream-thread [leadnews-article_stream_cid-StreamThread-1] task [0_0] Closed clean
+2023-08-31 12:40:02.444 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamTask - stream-thread [leadnews-article_stream_cid-StreamThread-1] task [1_0] Suspended RUNNING
+2023-08-31 12:40:02.444 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamTask - stream-thread [leadnews-article_stream_cid-StreamThread-1] task [1_0] Suspended running
+2023-08-31 12:40:02.444 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=leadnews-article_stream_cid-StreamThread-1-restore-consumer, groupId=null] Unsubscribed all topics or patterns and assigned partitions
+2023-08-31 12:40:02.453 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.i.RecordCollectorImpl - stream-thread [leadnews-article_stream_cid-StreamThread-1] task [1_0] Closing record collector clean
+2023-08-31 12:40:02.453 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamTask - stream-thread [leadnews-article_stream_cid-StreamThread-1] task [1_0] Closed clean
+2023-08-31 12:40:02.459 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=leadnews-article_stream_cid-StreamThread-1-producer] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2023-08-31 12:40:02.464 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2023-08-31 12:40:02.464 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-08-31 12:40:02.464 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2023-08-31 12:40:02.464 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.producer for leadnews-article_stream_cid-StreamThread-1-producer unregistered
+2023-08-31 12:40:02.465 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=leadnews-article_stream_cid-StreamThread-1-restore-consumer, groupId=null] Unsubscribed all topics or patterns and assigned partitions
+2023-08-31 12:40:02.465 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2023-08-31 12:40:02.465 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-08-31 12:40:02.465 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2023-08-31 12:40:02.467 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for leadnews-article_stream_cid-StreamThread-1-consumer unregistered
+2023-08-31 12:40:02.467 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2023-08-31 12:40:02.467 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-08-31 12:40:02.467 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2023-08-31 12:40:02.468 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for leadnews-article_stream_cid-StreamThread-1-restore-consumer unregistered
+2023-08-31 12:40:02.469 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [leadnews-article_stream_cid-StreamThread-1] State transition from PENDING_SHUTDOWN to DEAD
+2023-08-31 12:40:02.469 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [leadnews-article_stream_cid-StreamThread-1] Shutdown complete
+2023-08-31 12:40:02.469 [leadnews-article_stream_cid-CloseThread] INFO  o.apache.kafka.streams.KafkaStreams - stream-client [leadnews-article_stream_cid] Shutdown 1 stream threads complete
+2023-08-31 12:40:02.470 [kafka-admin-client-thread | leadnews-article_stream_cid-admin] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for leadnews-article_stream_cid-admin unregistered
+2023-08-31 12:40:02.472 [kafka-admin-client-thread | leadnews-article_stream_cid-admin] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2023-08-31 12:40:02.472 [kafka-admin-client-thread | leadnews-article_stream_cid-admin] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-08-31 12:40:02.472 [kafka-admin-client-thread | leadnews-article_stream_cid-admin] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2023-08-31 12:40:02.472 [leadnews-article_stream_cid-CloseThread] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2023-08-31 12:40:02.472 [leadnews-article_stream_cid-CloseThread] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-08-31 12:40:02.472 [leadnews-article_stream_cid-CloseThread] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2023-08-31 12:40:02.472 [leadnews-article_stream_cid-CloseThread] INFO  o.apache.kafka.streams.KafkaStreams - stream-client [leadnews-article_stream_cid] State transition from PENDING_SHUTDOWN to NOT_RUNNING
+2023-08-31 12:40:02.472 [SpringApplicationShutdownHook] INFO  o.apache.kafka.streams.KafkaStreams - stream-client [leadnews-article_stream_cid] Streams client stopped completely
+2023-08-31 12:40:03.495 [Thread-15] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server stop.
+2023-08-31 12:40:03.517 [xxl-job, executor ExecutorRegistryThread] INFO  c.x.j.c.t.ExecutorRegistryThread - >>>>>>>>>>> xxl-job registry-remove success, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='leadnews-hot-article-executor', registryValue='http://10.37.129.2:9999/'}, registryResult:ReturnT [code=200, msg=null, content=null]
+2023-08-31 12:40:03.517 [xxl-job, executor ExecutorRegistryThread] INFO  c.x.j.c.t.ExecutorRegistryThread - >>>>>>>>>>> xxl-job, executor registry thread destroy.
+2023-08-31 12:40:03.517 [SpringApplicationShutdownHook] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server destroy success.
+2023-08-31 12:40:03.517 [xxl-job, executor TriggerCallbackThread] INFO  c.x.j.c.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor callback thread destroy.
+2023-08-31 12:40:03.517 [Thread-14] INFO  c.x.j.c.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor retry callback thread destroy.
+2023-08-31 12:40:03.518 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+2023-08-31 12:40:03.518 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - [DEREGISTER-SERVICE] 4e85b1a4-8d96-4c12-8631-7c0473ed1614 deregistering service leadnews-article with instance: Instance{instanceId='null', ip='192.168.10.4', port=51901, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+2023-08-31 12:40:03.523 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registration finished.
+2023-08-31 12:40:03.524 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown begin
+2023-08-31 12:40:03.524 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+2023-08-31 12:40:03.524 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+2023-08-31 12:40:03.524 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown stop
+2023-08-31 12:40:03.524 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown begin
+2023-08-31 12:40:03.524 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown begin
+2023-08-31 12:40:03.524 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown stop
+2023-08-31 12:40:03.524 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServerListManager do shutdown begin
+2023-08-31 12:40:03.524 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-08-31 12:40:03.524 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+2023-08-31 12:40:03.524 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServerListManager do shutdown stop
+2023-08-31 12:40:03.524 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown begin
+2023-08-31 12:40:03.524 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-08-31 12:40:03.524 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+2023-08-31 12:40:03.524 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown stop
+2023-08-31 12:40:03.524 [SpringApplicationShutdownHook] INFO  c.alibaba.nacos.common.remote.client - Shutdown rpc client, set status to shutdown
+2023-08-31 12:40:03.524 [SpringApplicationShutdownHook] INFO  c.alibaba.nacos.common.remote.client - Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@6a7aae02[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+2023-08-31 12:40:03.524 [SpringApplicationShutdownHook] INFO  c.alibaba.nacos.common.remote.client - Close current connection 1693454196405_10.211.55.2_62557
+2023-08-31 12:40:03.528 [nacos-grpc-client-executor-10.211.55.8-684] INFO  c.a.n.c.r.client.grpc.GrpcClient - [1693454196405_10.211.55.2_62557]Ignore complete event,isRunning:false,isAbandon=false
+2023-08-31 12:40:03.537 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.client.grpc.GrpcClient - Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@17fc6b84[Running, pool size = 7, active threads = 0, queued tasks = 0, completed tasks = 685]
+2023-08-31 12:40:03.537 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - Shutdown grpc redo service executor java.util.concurrent.ScheduledThreadPoolExecutor@4f2d4308[Running, pool size = 1, active threads = 0, queued tasks = 1, completed tasks = 672]
+2023-08-31 12:40:03.538 [SpringApplicationShutdownHook] INFO  c.a.n.c.a.r.i.CredentialWatcher - [null] CredentialWatcher is stopped
+2023-08-31 12:40:03.538 [SpringApplicationShutdownHook] INFO  c.a.n.c.a.r.i.CredentialService - [null] CredentialService is freed
+2023-08-31 12:40:03.539 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown stop
+2023-08-31 12:40:03.662 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-08-31 12:40:03.668 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-08-31 21:28:04.714 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-31 21:28:04.723 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-08-31 21:28:04.753 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-31 21:28:05.039 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-31 21:28:05.040 [main] INFO  c.a.nacos.client.utils.ParamUtil - [settings] [req-serv] nacos-server port:8848
+2023-08-31 21:28:05.040 [main] INFO  c.a.nacos.client.utils.ParamUtil - [settings] [http-client] connect timeout:1000
+2023-08-31 21:28:05.042 [main] INFO  c.a.nacos.client.utils.ParamUtil - PER_TASK_CONFIG_SIZE: 3000.0
+2023-08-31 21:28:05.067 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-08-31 21:28:05.068 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-08-31 21:28:05.097 [main] INFO  c.a.n.c.a.r.i.CredentialWatcher - null No credential found
+2023-08-31 21:28:05.231 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-31 21:28:05.245 [main] INFO  c.a.n.c.c.i.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:/Users/lihaohui/nacos/config
+2023-08-31 21:28:05.248 [main] INFO  c.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of d9737fa4-dd23-42b2-914a-59ddd4e6bcb2_config-0
+2023-08-31 21:28:05.262 [main] INFO  c.alibaba.nacos.common.remote.client - [d9737fa4-dd23-42b2-914a-59ddd4e6bcb2_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$621/0x0000000800fa6f20
+2023-08-31 21:28:05.262 [main] INFO  c.alibaba.nacos.common.remote.client - [d9737fa4-dd23-42b2-914a-59ddd4e6bcb2_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$622/0x0000000800fa7350
+2023-08-31 21:28:05.262 [main] INFO  c.alibaba.nacos.common.remote.client - [d9737fa4-dd23-42b2-914a-59ddd4e6bcb2_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2023-08-31 21:28:05.262 [main] INFO  c.alibaba.nacos.common.remote.client - [d9737fa4-dd23-42b2-914a-59ddd4e6bcb2_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2023-08-31 21:28:05.274 [main] INFO  c.alibaba.nacos.common.remote.client - [d9737fa4-dd23-42b2-914a-59ddd4e6bcb2_config-0] Try to connect to server on start up, server: {serverIp = '10.211.55.8', server main port = 8848}
+2023-08-31 21:28:05.302 [main] INFO  c.a.n.c.r.client.grpc.GrpcClient - grpc client connection server:10.211.55.8 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2023-08-31 21:28:06.034 [main] INFO  c.alibaba.nacos.common.remote.client - [d9737fa4-dd23-42b2-914a-59ddd4e6bcb2_config-0] Success to connect to server [10.211.55.8:8848] on start up, connectionId = 1693482036496_10.211.55.2_54396
+2023-08-31 21:28:06.035 [com.alibaba.nacos.client.remote.worker] INFO  c.alibaba.nacos.common.remote.client - [d9737fa4-dd23-42b2-914a-59ddd4e6bcb2_config-0] Notify connected event to listeners.
+2023-08-31 21:28:06.035 [main] INFO  c.alibaba.nacos.common.remote.client - [d9737fa4-dd23-42b2-914a-59ddd4e6bcb2_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2023-08-31 21:28:06.036 [com.alibaba.nacos.client.remote.worker] INFO  c.a.n.c.config.impl.ClientWorker - [d9737fa4-dd23-42b2-914a-59ddd4e6bcb2_config-0] Connected,notify listen context...
+2023-08-31 21:28:06.036 [main] INFO  c.alibaba.nacos.common.remote.client - [d9737fa4-dd23-42b2-914a-59ddd4e6bcb2_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$642/0x000000080113a358
+2023-08-31 21:28:06.075 [main] INFO  c.a.nacos.client.config.impl.Limiter - limitTime:5.0
+2023-08-31 21:28:06.102 [main] INFO  c.a.n.client.config.utils.JvmUtil - isMultiInstance:false
+2023-08-31 21:28:06.126 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[leadnews-article.yml] & group[DEFAULT_GROUP]
+2023-08-31 21:28:06.126 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-leadnews-article.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-leadnews-article,DEFAULT_GROUP'}]
+2023-08-31 21:28:06.132 [main] WARN  c.a.n.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-31 21:28:06.133 [main] INFO  c.l.article.ArticleApplication - No active profile set, falling back to 1 default profile: "default"
+2023-08-31 21:28:07.474 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-31 21:28:07.475 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-08-31 21:28:07.487 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 MongoDB repository interfaces.
+2023-08-31 21:28:07.495 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-31 21:28:07.496 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-31 21:28:07.505 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2023-08-31 21:28:07.931 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=75cfa9ba-09de-38b2-a357-d1d33ba99d01
+2023-08-31 21:28:08.010 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.leadnews.apis.article.IArticleClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-31 21:28:08.012 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.leadnews.apis.schedule.IScheduleClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-31 21:28:08.015 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.leadnews.apis.wemedia.IWemediaClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-31 21:28:08.403 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 51901 (http)
+2023-08-31 21:28:08.411 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-51901"]
+2023-08-31 21:28:08.412 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-31 21:28:08.412 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-08-31 21:28:08.516 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-31 21:28:08.517 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2368 ms
+2023-08-31 21:28:14.171 [main] INFO  o.s.c.o.FeignClientFactoryBean - For 'leadnews-wemedia' URL not provided. Will try picking an instance via load-balancing.
+2023-08-31 21:28:15.880 [main] INFO  c.l.xxljob.config.XxlJobConfig - >>>>>>>>>>> xxl-job config init.
+2023-08-31 21:28:16.076 [cluster-ClusterId{value='64f0957033b8c91e32cac0a0', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:73)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:183)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:198)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:158)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:107)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:82)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:68)
+	... 4 common frames omitted
+2023-08-31 21:28:16.083 [main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.8.2"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "aarch64", "version": "14.0"}, "platform": "Java/Oracle Corporation/17.0.7+8-LTS-224"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@645a9649], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@4723445c]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@7631fb3e], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-08-31 21:28:16.674 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-08-31 21:28:16.682 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-31 21:28:16.724 [main] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:computeHotArticleJob, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@1dd17c0c[class com.leadnews.article.job.ComputeHotArticleJob#handle]
+2023-08-31 21:28:16.739 [main] INFO  o.s.c.o.FeignClientFactoryBean - For 'leadnews-article' URL not provided. Will try picking an instance via load-balancing.
+2023-08-31 21:28:16.751 [main] INFO  o.s.c.o.FeignClientFactoryBean - For 'leadnews-schedule' URL not provided. Will try picking an instance via load-balancing.
+2023-08-31 21:28:16.878 [Thread-16] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9999
+2023-08-31 21:28:16.933 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-51901"]
+2023-08-31 21:28:16.958 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 51901 (http) with context path ''
+2023-08-31 21:28:16.964 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from ans.namespace attribute : null
+2023-08-31 21:28:16.964 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from ALIBABA_ALIWARE_NAMESPACE attribute :null
+2023-08-31 21:28:16.964 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from namespace attribute :null
+2023-08-31 21:28:16.982 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-08-31 21:28:16.982 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-08-31 21:28:16.991 [main] INFO  c.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of f683c32b-95ab-4a49-bb2d-6a36cb34596f
+2023-08-31 21:28:16.999 [main] INFO  c.alibaba.nacos.common.remote.client - [f683c32b-95ab-4a49-bb2d-6a36cb34596f] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2023-08-31 21:28:16.999 [main] INFO  c.alibaba.nacos.common.remote.client - [f683c32b-95ab-4a49-bb2d-6a36cb34596f] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2023-08-31 21:28:17.000 [main] INFO  c.alibaba.nacos.common.remote.client - [f683c32b-95ab-4a49-bb2d-6a36cb34596f] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2023-08-31 21:28:17.001 [main] INFO  c.alibaba.nacos.common.remote.client - [f683c32b-95ab-4a49-bb2d-6a36cb34596f] Try to connect to server on start up, server: {serverIp = '10.211.55.8', server main port = 8848}
+2023-08-31 21:28:17.002 [main] INFO  c.a.n.c.r.client.grpc.GrpcClient - grpc client connection server:10.211.55.8 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2023-08-31 21:28:17.172 [main] INFO  c.alibaba.nacos.common.remote.client - [f683c32b-95ab-4a49-bb2d-6a36cb34596f] Success to connect to server [10.211.55.8:8848] on start up, connectionId = 1693482048618_10.211.55.2_54485
+2023-08-31 21:28:17.172 [main] INFO  c.alibaba.nacos.common.remote.client - [f683c32b-95ab-4a49-bb2d-6a36cb34596f] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2023-08-31 21:28:17.172 [main] INFO  c.alibaba.nacos.common.remote.client - [f683c32b-95ab-4a49-bb2d-6a36cb34596f] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$642/0x000000080113a358
+2023-08-31 21:28:17.173 [main] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] 4e85b1a4-8d96-4c12-8631-7c0473ed1614 registering service leadnews-article with instance Instance{instanceId='null', ip='192.168.10.4', port=51901, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=[2409:8a55:d910:5304:cf5:81fb:6f46:48e1], preserved.register.source=SPRING_CLOUD}}
+2023-08-31 21:28:17.177 [com.alibaba.nacos.client.remote.worker] INFO  c.alibaba.nacos.common.remote.client - [f683c32b-95ab-4a49-bb2d-6a36cb34596f] Notify connected event to listeners.
+2023-08-31 21:28:17.177 [com.alibaba.nacos.client.remote.worker] INFO  com.alibaba.nacos.client.naming - Grpc connection connect
+2023-08-31 21:28:17.191 [main] INFO  c.a.c.n.r.NacosServiceRegistry - nacos registry, DEFAULT_GROUP leadnews-article 192.168.10.4:51901 register finished
+2023-08-31 21:28:17.242 [main] INFO  o.apache.kafka.streams.StreamsConfig - StreamsConfig values: 
+	acceptable.recovery.lag = 10000
+	application.id = leadnews-article_stream_aid
+	application.server = 
+	bootstrap.servers = [10.211.55.8:9091]
+	buffered.records.per.partition = 1000
+	built.in.metrics.version = latest
+	cache.max.bytes.buffering = 10485760
+	client.id = leadnews-article_stream_cid
+	commit.interval.ms = 30000
+	connections.max.idle.ms = 540000
+	default.deserialization.exception.handler = class org.apache.kafka.streams.errors.LogAndFailExceptionHandler
+	default.dsl.store = rocksDB
+	default.key.serde = class org.apache.kafka.common.serialization.Serdes$StringSerde
+	default.list.key.serde.inner = null
+	default.list.key.serde.type = null
+	default.list.value.serde.inner = null
+	default.list.value.serde.type = null
+	default.production.exception.handler = class org.apache.kafka.streams.errors.DefaultProductionExceptionHandler
+	default.timestamp.extractor = class org.apache.kafka.streams.processor.FailOnInvalidTimestamp
+	default.value.serde = class org.apache.kafka.common.serialization.Serdes$StringSerde
+	max.task.idle.ms = 0
+	max.warmup.replicas = 2
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	num.standby.replicas = 0
+	num.stream.threads = 1
+	poll.ms = 100
+	probing.rebalance.interval.ms = 600000
+	processing.guarantee = at_least_once
+	rack.aware.assignment.tags = []
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	repartition.purge.interval.ms = 30000
+	replication.factor = -1
+	request.timeout.ms = 40000
+	retries = 10
+	retry.backoff.ms = 100
+	rocksdb.config.setter = null
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	state.cleanup.delay.ms = 600000
+	state.dir = /var/folders/l2/5zgpkxms7vs50r9jyg4fww_w0000gn/T//kafka-streams
+	task.timeout.ms = 300000
+	topology.optimization = none
+	upgrade.from = null
+	window.size.ms = null
+	windowed.inner.class.serde = null
+	windowstore.changelog.additional.retention.ms = 86400000
+
+2023-08-31 21:28:17.243 [main] WARN  o.apache.kafka.streams.StreamsConfig - Configuration parameter `retries` is deprecated and will be removed in the 4.0.0 release.
+2023-08-31 21:28:17.293 [main] WARN  o.a.k.s.p.internals.StateDirectory - Using an OS temp directory in the state.dir property can cause failures with writing the checkpoint file due to the fact that this directory can be cleared by the OS. Resolved state.dir: [/var/folders/l2/5zgpkxms7vs50r9jyg4fww_w0000gn/T//kafka-streams]
+2023-08-31 21:28:17.311 [main] INFO  o.a.k.s.p.internals.StateDirectory - No process id found on disk, got fresh process id f7fe6889-347a-44ce-97b5-68464c36dac8
+2023-08-31 21:28:17.329 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [10.211.55.8:9091]
+	client.dns.lookup = use_all_dns_ips
+	client.id = leadnews-article_stream_cid-admin
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 10
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-08-31 21:28:17.395 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.3.2
+2023-08-31 21:28:17.396 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: b66af662e61082cb
+2023-08-31 21:28:17.396 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1693488497394
+2023-08-31 21:28:17.399 [main] WARN  o.a.k.s.i.metrics.ClientMetrics - Error while loading kafka-streams-version.properties
+java.lang.NullPointerException: inStream parameter is null
+	at java.base/java.util.Objects.requireNonNull(Objects.java:233)
+	at java.base/java.util.Properties.load(Properties.java:407)
+	at org.apache.kafka.streams.internals.metrics.ClientMetrics.<clinit>(ClientMetrics.java:53)
+	at org.apache.kafka.streams.KafkaStreams.<init>(KafkaStreams.java:894)
+	at org.apache.kafka.streams.KafkaStreams.<init>(KafkaStreams.java:850)
+	at org.apache.kafka.streams.KafkaStreams.<init>(KafkaStreams.java:756)
+	at org.springframework.kafka.config.StreamsBuilderFactoryBean.start(StreamsBuilderFactoryBean.java:335)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:587)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.leadnews.article.ArticleApplication.main(ArticleApplication.java:29)
+2023-08-31 21:28:17.399 [main] INFO  o.apache.kafka.streams.KafkaStreams - stream-client [leadnews-article_stream_cid] Kafka Streams version: unknown
+2023-08-31 21:28:17.399 [main] INFO  o.apache.kafka.streams.KafkaStreams - stream-client [leadnews-article_stream_cid] Kafka Streams commit ID: unknown
+2023-08-31 21:28:17.474 [main] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [leadnews-article_stream_cid-StreamThread-1] Creating restore consumer client
+2023-08-31 21:28:17.478 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = none
+	bootstrap.servers = [10.211.55.8:9091]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = leadnews-article_stream_cid-StreamThread-1-restore-consumer
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = null
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = false
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2023-08-31 21:28:17.506 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.3.2
+2023-08-31 21:28:17.506 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: b66af662e61082cb
+2023-08-31 21:28:17.506 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1693488497506
+2023-08-31 21:28:17.511 [main] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [leadnews-article_stream_cid-StreamThread-1] Creating thread producer client
+2023-08-31 21:28:17.516 [main] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [10.211.55.8:9091]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = leadnews-article_stream_cid-StreamThread-1-producer
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 100
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 10
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+2023-08-31 21:28:17.536 [main] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=leadnews-article_stream_cid-StreamThread-1-producer] Instantiated an idempotent producer.
+2023-08-31 21:28:17.547 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.3.2
+2023-08-31 21:28:17.548 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: b66af662e61082cb
+2023-08-31 21:28:17.548 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1693488497547
+2023-08-31 21:28:17.555 [main] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [leadnews-article_stream_cid-StreamThread-1] Creating consumer client
+2023-08-31 21:28:17.558 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = false
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [10.211.55.8:9091]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = leadnews-article_stream_cid-StreamThread-1-consumer
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = leadnews-article_stream_aid
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = false
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2023-08-31 21:28:17.566 [main] INFO  o.a.k.s.p.i.a.AssignorConfiguration - stream-thread [leadnews-article_stream_cid-StreamThread-1-consumer] Cooperative rebalancing protocol is enabled now
+2023-08-31 21:28:17.580 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.3.2
+2023-08-31 21:28:17.580 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: b66af662e61082cb
+2023-08-31 21:28:17.580 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1693488497580
+2023-08-31 21:28:17.584 [main] INFO  o.apache.kafka.streams.KafkaStreams - stream-client [leadnews-article_stream_cid] State transition from CREATED to REBALANCING
+2023-08-31 21:28:17.584 [main] INFO  o.apache.kafka.streams.KafkaStreams - stream-client [leadnews-article_stream_cid] Started 1 stream threads
+2023-08-31 21:28:17.584 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [leadnews-article_stream_cid-StreamThread-1] Starting
+2023-08-31 21:28:17.584 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [leadnews-article_stream_cid-StreamThread-1] State transition from CREATED to STARTING
+2023-08-31 21:28:17.585 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=leadnews-article_stream_cid-StreamThread-1-consumer, groupId=leadnews-article_stream_aid] Subscribed to topic(s): hot.article.score.topic, leadnews-article_stream_aid-hot-atricle-stream-count-001-repartition
+2023-08-31 21:28:17.619 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [10.211.55.8:9091]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-leadnews-article-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = leadnews-article
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-08-31 21:28:17.621 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.3.2
+2023-08-31 21:28:17.621 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: b66af662e61082cb
+2023-08-31 21:28:17.621 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1693488497621
+2023-08-31 21:28:17.650 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Subscribed to topic(s): hot.article.incr.handle.topic
+2023-08-31 21:28:17.657 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [10.211.55.8:9091]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-leadnews-article-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = leadnews-article
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-08-31 21:28:17.659 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.3.2
+2023-08-31 21:28:17.659 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: b66af662e61082cb
+2023-08-31 21:28:17.659 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1693488497659
+2023-08-31 21:28:17.663 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-leadnews-article-2, groupId=leadnews-article] Subscribed to topic(s): wm.news.up.or.down.topic
+2023-08-31 21:28:17.684 [main] INFO  c.l.article.ArticleApplication - Started ArticleApplication in 13.239 seconds (process running for 13.69)
+2023-08-31 21:28:17.694 [main] INFO  c.a.n.client.config.impl.CacheData - nacos.cache.data.init.snapshot = true 
+2023-08-31 21:28:17.694 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [subscribe] leadnews-article.yml+DEFAULT_GROUP+4e85b1a4-8d96-4c12-8631-7c0473ed1614
+2023-08-31 21:28:17.704 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [add-listener] ok, tenant=4e85b1a4-8d96-4c12-8631-7c0473ed1614, dataId=leadnews-article.yml, group=DEFAULT_GROUP, cnt=1
+2023-08-31 21:28:17.705 [main] INFO  c.a.c.n.r.NacosContextRefresher - [Nacos Config] Listening config: dataId=leadnews-article.yml, group=DEFAULT_GROUP
+2023-08-31 21:28:17.706 [main] INFO  c.a.n.c.config.impl.ClientWorker - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [subscribe] leadnews-article+DEFAULT_GROUP+4e85b1a4-8d96-4c12-8631-7c0473ed1614
+2023-08-31 21:28:17.706 [main] INFO  c.a.n.client.config.impl.CacheData - [fixed-4e85b1a4-8d96-4c12-8631-7c0473ed1614-10.211.55.8_8848] [add-listener] ok, tenant=4e85b1a4-8d96-4c12-8631-7c0473ed1614, dataId=leadnews-article, group=DEFAULT_GROUP, cnt=1
+2023-08-31 21:28:17.706 [main] INFO  c.a.c.n.r.NacosContextRefresher - [Nacos Config] Listening config: dataId=leadnews-article, group=DEFAULT_GROUP
+2023-08-31 21:28:17.707 [main] INFO  c.l.article.ArticleApplication - 
+----------------------------------------------------------
+	Application 'leadnews-article' is running! Access URLs:
+	Local: 		http://localhost:51901
+	External: 	http://127.0.0.1:51901
+	Doc: 	http://127.0.0.1:51901/doc.html
+----------------------------------------------------------
+2023-08-31 21:28:17.793 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [leadnews-article_stream_cid-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-08-31 21:28:17.890 [kafka-producer-network-thread | leadnews-article_stream_cid-StreamThread-1-producer] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=leadnews-article_stream_cid-StreamThread-1-producer] Cluster ID: skaJsOqUQvGIRQUGgDj8pA
+2023-08-31 21:28:17.890 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Resetting the last seen epoch of partition hot.article.incr.handle.topic-0 to 1 since the associated topicId changed from null to GoEmog1mSwyhJSL8L_x-Nw
+2023-08-31 21:28:17.891 [leadnews-article_stream_cid-StreamThread-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=leadnews-article_stream_cid-StreamThread-1-consumer, groupId=leadnews-article_stream_aid] Resetting the last seen epoch of partition leadnews-article_stream_aid-hot-atricle-stream-count-001-repartition-0 to 1 since the associated topicId changed from null to bpANgdqIRXiWn984oKWJkg
+2023-08-31 21:28:17.891 [leadnews-article_stream_cid-StreamThread-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=leadnews-article_stream_cid-StreamThread-1-consumer, groupId=leadnews-article_stream_aid] Resetting the last seen epoch of partition hot.article.score.topic-0 to 1 since the associated topicId changed from null to dvI5wEa6Sma6SYqLTZ-ytA
+2023-08-31 21:28:17.892 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-leadnews-article-2, groupId=leadnews-article] Resetting the last seen epoch of partition wm.news.up.or.down.topic-0 to 3 since the associated topicId changed from null to XMND6oZdS1OMHx9FitFk8A
+2023-08-31 21:28:17.892 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-leadnews-article-2, groupId=leadnews-article] Cluster ID: skaJsOqUQvGIRQUGgDj8pA
+2023-08-31 21:28:17.893 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Cluster ID: skaJsOqUQvGIRQUGgDj8pA
+2023-08-31 21:28:17.892 [leadnews-article_stream_cid-StreamThread-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=leadnews-article_stream_cid-StreamThread-1-consumer, groupId=leadnews-article_stream_aid] Cluster ID: skaJsOqUQvGIRQUGgDj8pA
+2023-08-31 21:28:17.944 [kafka-producer-network-thread | leadnews-article_stream_cid-StreamThread-1-producer] INFO  o.a.k.c.p.i.TransactionManager - [Producer clientId=leadnews-article_stream_cid-StreamThread-1-producer] ProducerId set to 3000 with epoch 0
+2023-08-31 21:28:18.273 [RMI TCP Connection(7)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-31 21:28:18.273 [RMI TCP Connection(7)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-31 21:28:18.275 [RMI TCP Connection(7)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2023-08-31 21:28:18.291 [RMI TCP Connection(6)-127.0.0.1] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+2023-08-31 21:28:48.298 [RMI TCP Connection(6)-127.0.0.1] WARN  o.s.b.a.d.mongo.MongoHealthIndicator - MongoDB health check failed
+org.springframework.dao.DataAccessResourceFailureException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused}}]
+	at org.springframework.data.mongodb.core.MongoExceptionTranslator.translateExceptionIfPossible(MongoExceptionTranslator.java:91)
+	at org.springframework.data.mongodb.core.MongoTemplate.potentiallyConvertRuntimeException(MongoTemplate.java:2805)
+	at org.springframework.data.mongodb.core.MongoTemplate.execute(MongoTemplate.java:552)
+	at org.springframework.data.mongodb.core.MongoTemplate.executeCommand(MongoTemplate.java:484)
+	at org.springframework.boot.actuate.data.mongo.MongoHealthIndicator.doHealthCheck(MongoHealthIndicator.java:46)
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:82)
+	at org.springframework.boot.actuate.health.HealthIndicator.getHealth(HealthIndicator.java:37)
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:82)
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:41)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getLoggedHealth(HealthEndpointSupport.java:172)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:145)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getAggregateContribution(HealthEndpointSupport.java:156)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:141)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:110)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:81)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:76)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:281)
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:74)
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:122)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:97)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.GeneratedMethodAccessor43.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.ConnectException: Connection refused}}]
+	at com.mongodb.internal.connection.BaseCluster.getDescription(BaseCluster.java:184)
+	at com.mongodb.internal.connection.SingleServerCluster.getDescription(SingleServerCluster.java:46)
+	at com.mongodb.client.internal.MongoClientDelegate.getConnectedClusterDescription(MongoClientDelegate.java:144)
+	at com.mongodb.client.internal.MongoClientDelegate.createClientSession(MongoClientDelegate.java:101)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.getClientSession(MongoClientDelegate.java:291)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:183)
+	at com.mongodb.client.internal.MongoDatabaseImpl.executeCommand(MongoDatabaseImpl.java:202)
+	at com.mongodb.client.internal.MongoDatabaseImpl.runCommand(MongoDatabaseImpl.java:171)
+	at com.mongodb.client.internal.MongoDatabaseImpl.runCommand(MongoDatabaseImpl.java:166)
+	at org.springframework.data.mongodb.core.MongoTemplate.lambda$executeCommand$3(MongoTemplate.java:484)
+	at org.springframework.data.mongodb.core.MongoTemplate.execute(MongoTemplate.java:550)
+	... 45 common frames omitted
+2023-08-31 21:28:48.304 [RMI TCP Connection(6)-127.0.0.1] WARN  o.s.b.a.health.HealthEndpointSupport - Health contributor org.springframework.boot.actuate.data.mongo.MongoHealthIndicator (mongo) took 30032ms to respond
+2023-08-31 21:28:48.308 [RMI TCP Connection(6)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-08-31 21:28:48.455 [RMI TCP Connection(6)-127.0.0.1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4a133399
+2023-08-31 21:28:48.456 [RMI TCP Connection(6)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-08-31 21:29:24.623 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2023-08-31 21:29:24.623 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2023-08-31 21:29:24.624 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2023-08-31 21:29:24.626 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2023-08-31 21:29:24.653 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-2, groupId=leadnews-article] Resetting generation and member id due to: consumer pro-actively leaving the group
+2023-08-31 21:29:24.654 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-2, groupId=leadnews-article] Request joining group due to: consumer pro-actively leaving the group
+2023-08-31 21:29:24.654 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-leadnews-article-2, groupId=leadnews-article] Unsubscribed all topics or patterns and assigned partitions
+2023-08-31 21:29:24.655 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Resetting generation and member id due to: consumer pro-actively leaving the group
+2023-08-31 21:29:24.655 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Request joining group due to: consumer pro-actively leaving the group
+2023-08-31 21:29:24.655 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Unsubscribed all topics or patterns and assigned partitions
+2023-08-31 21:29:24.658 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Resetting generation and member id due to: consumer pro-actively leaving the group
+2023-08-31 21:29:24.658 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-2, groupId=leadnews-article] Resetting generation and member id due to: consumer pro-actively leaving the group
+2023-08-31 21:29:24.659 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-2, groupId=leadnews-article] Request joining group due to: consumer pro-actively leaving the group
+2023-08-31 21:29:24.659 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-leadnews-article-1, groupId=leadnews-article] Request joining group due to: consumer pro-actively leaving the group
+2023-08-31 21:29:24.660 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2023-08-31 21:29:24.660 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2023-08-31 21:29:24.660 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-08-31 21:29:24.660 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-08-31 21:29:24.660 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2023-08-31 21:29:24.660 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2023-08-31 21:29:24.664 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-leadnews-article-1 unregistered
+2023-08-31 21:29:24.664 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-leadnews-article-2 unregistered
+2023-08-31 21:29:24.665 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - leadnews-article: Consumer stopped
+2023-08-31 21:29:24.665 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - leadnews-article: Consumer stopped
+2023-08-31 21:29:24.666 [SpringApplicationShutdownHook] INFO  o.apache.kafka.streams.KafkaStreams - stream-client [leadnews-article_stream_cid] State transition from REBALANCING to PENDING_SHUTDOWN
+2023-08-31 21:29:24.667 [leadnews-article_stream_cid-CloseThread] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [leadnews-article_stream_cid-StreamThread-1] Informed to shut down
+2023-08-31 21:29:24.667 [leadnews-article_stream_cid-CloseThread] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [leadnews-article_stream_cid-StreamThread-1] State transition from STARTING to PENDING_SHUTDOWN
+2023-08-31 21:29:24.667 [leadnews-article_stream_cid-CloseThread] INFO  o.apache.kafka.streams.KafkaStreams - stream-client [leadnews-article_stream_cid] Shutting down 1 stream threads
+2023-08-31 21:29:24.744 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [leadnews-article_stream_cid-StreamThread-1] Shutting down
+2023-08-31 21:29:24.751 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=leadnews-article_stream_cid-StreamThread-1-producer] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2023-08-31 21:29:24.755 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2023-08-31 21:29:24.755 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-08-31 21:29:24.756 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2023-08-31 21:29:24.756 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.producer for leadnews-article_stream_cid-StreamThread-1-producer unregistered
+2023-08-31 21:29:24.758 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=leadnews-article_stream_cid-StreamThread-1-restore-consumer, groupId=null] Unsubscribed all topics or patterns and assigned partitions
+2023-08-31 21:29:24.758 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2023-08-31 21:29:24.758 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-08-31 21:29:24.758 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2023-08-31 21:29:24.759 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for leadnews-article_stream_cid-StreamThread-1-consumer unregistered
+2023-08-31 21:29:24.759 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2023-08-31 21:29:24.759 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-08-31 21:29:24.759 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2023-08-31 21:29:24.760 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for leadnews-article_stream_cid-StreamThread-1-restore-consumer unregistered
+2023-08-31 21:29:24.760 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [leadnews-article_stream_cid-StreamThread-1] State transition from PENDING_SHUTDOWN to DEAD
+2023-08-31 21:29:24.760 [leadnews-article_stream_cid-StreamThread-1] INFO  o.a.k.s.p.internals.StreamThread - stream-thread [leadnews-article_stream_cid-StreamThread-1] Shutdown complete
+2023-08-31 21:29:24.761 [leadnews-article_stream_cid-CloseThread] INFO  o.apache.kafka.streams.KafkaStreams - stream-client [leadnews-article_stream_cid] Shutdown 1 stream threads complete
+2023-08-31 21:29:24.762 [kafka-admin-client-thread | leadnews-article_stream_cid-admin] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for leadnews-article_stream_cid-admin unregistered
+2023-08-31 21:29:24.763 [kafka-admin-client-thread | leadnews-article_stream_cid-admin] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2023-08-31 21:29:24.763 [kafka-admin-client-thread | leadnews-article_stream_cid-admin] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-08-31 21:29:24.764 [kafka-admin-client-thread | leadnews-article_stream_cid-admin] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2023-08-31 21:29:24.765 [leadnews-article_stream_cid-CloseThread] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2023-08-31 21:29:24.765 [leadnews-article_stream_cid-CloseThread] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-08-31 21:29:24.765 [leadnews-article_stream_cid-CloseThread] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2023-08-31 21:29:24.765 [leadnews-article_stream_cid-CloseThread] INFO  o.apache.kafka.streams.KafkaStreams - stream-client [leadnews-article_stream_cid] State transition from PENDING_SHUTDOWN to NOT_RUNNING
+2023-08-31 21:29:24.765 [SpringApplicationShutdownHook] INFO  o.apache.kafka.streams.KafkaStreams - stream-client [leadnews-article_stream_cid] Streams client stopped completely
+2023-08-31 21:29:25.783 [Thread-16] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server stop.
+2023-08-31 21:29:25.817 [xxl-job, executor ExecutorRegistryThread] INFO  c.x.j.c.t.ExecutorRegistryThread - >>>>>>>>>>> xxl-job registry-remove success, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='leadnews-hot-article-executor', registryValue='http://10.37.129.2:9999/'}, registryResult:ReturnT [code=200, msg=null, content=null]
+2023-08-31 21:29:25.817 [xxl-job, executor ExecutorRegistryThread] INFO  c.x.j.c.t.ExecutorRegistryThread - >>>>>>>>>>> xxl-job, executor registry thread destroy.
+2023-08-31 21:29:25.817 [SpringApplicationShutdownHook] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server destroy success.
+2023-08-31 21:29:25.818 [xxl-job, executor TriggerCallbackThread] INFO  c.x.j.c.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor callback thread destroy.
+2023-08-31 21:29:25.818 [Thread-15] INFO  c.x.j.c.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor retry callback thread destroy.
+2023-08-31 21:29:25.818 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+2023-08-31 21:29:25.818 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - [DEREGISTER-SERVICE] 4e85b1a4-8d96-4c12-8631-7c0473ed1614 deregistering service leadnews-article with instance: Instance{instanceId='null', ip='192.168.10.4', port=51901, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+2023-08-31 21:29:25.823 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - De-registration finished.
+2023-08-31 21:29:25.824 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown begin
+2023-08-31 21:29:25.824 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+2023-08-31 21:29:25.824 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+2023-08-31 21:29:25.825 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown stop
+2023-08-31 21:29:25.825 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown begin
+2023-08-31 21:29:25.825 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown begin
+2023-08-31 21:29:25.825 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown stop
+2023-08-31 21:29:25.825 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServerListManager do shutdown begin
+2023-08-31 21:29:25.825 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-08-31 21:29:25.825 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+2023-08-31 21:29:25.825 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.ServerListManager do shutdown stop
+2023-08-31 21:29:25.825 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown begin
+2023-08-31 21:29:25.825 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-08-31 21:29:25.825 [SpringApplicationShutdownHook] WARN  com.alibaba.nacos.client.naming - [NamingHttpClientManager] Destruction of the end
+2023-08-31 21:29:25.825 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown stop
+2023-08-31 21:29:25.825 [SpringApplicationShutdownHook] INFO  c.alibaba.nacos.common.remote.client - Shutdown rpc client, set status to shutdown
+2023-08-31 21:29:25.825 [SpringApplicationShutdownHook] INFO  c.alibaba.nacos.common.remote.client - Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@49f9fdae[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+2023-08-31 21:29:25.825 [SpringApplicationShutdownHook] INFO  c.alibaba.nacos.common.remote.client - Close current connection 1693482048618_10.211.55.2_54485
+2023-08-31 21:29:25.827 [nacos-grpc-client-executor-10.211.55.8-34] INFO  c.a.n.c.r.client.grpc.GrpcClient - [1693482048618_10.211.55.2_54485]Ignore complete event,isRunning:false,isAbandon=false
+2023-08-31 21:29:25.829 [SpringApplicationShutdownHook] INFO  c.a.n.c.r.client.grpc.GrpcClient - Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@74a4fdfe[Running, pool size = 7, active threads = 0, queued tasks = 0, completed tasks = 35]
+2023-08-31 21:29:25.829 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - Shutdown grpc redo service executor java.util.concurrent.ScheduledThreadPoolExecutor@3e9e705[Running, pool size = 1, active threads = 0, queued tasks = 1, completed tasks = 22]
+2023-08-31 21:29:25.829 [SpringApplicationShutdownHook] INFO  c.a.n.c.a.r.i.CredentialWatcher - [null] CredentialWatcher is stopped
+2023-08-31 21:29:25.829 [SpringApplicationShutdownHook] INFO  c.a.n.c.a.r.i.CredentialService - [null] CredentialService is freed
+2023-08-31 21:29:25.830 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown stop
+2023-08-31 21:29:25.958 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-08-31 21:29:25.969 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

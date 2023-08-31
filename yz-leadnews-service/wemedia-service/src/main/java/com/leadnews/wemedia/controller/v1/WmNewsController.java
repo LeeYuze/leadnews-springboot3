@@ -3,7 +3,6 @@ package com.leadnews.wemedia.controller.v1;
 import com.leadnews.model.common.dtos.ResponseResult;
 import com.leadnews.model.wemedia.dtos.WmNewsDTO;
 import com.leadnews.model.wemedia.dtos.WmNewsPageReqDTO;
-import com.leadnews.model.wemedia.pojos.WmNews;
 import com.leadnews.wemedia.service.WmNewsService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;

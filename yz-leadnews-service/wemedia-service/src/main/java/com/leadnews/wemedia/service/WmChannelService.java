@@ -1,9 +1,7 @@
 package com.leadnews.wemedia.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.leadnews.model.common.dtos.ResponseResult;
 import com.leadnews.model.wemedia.pojos.WmChannel;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 

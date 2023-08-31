@@ -6,7 +6,6 @@ import com.leadnews.model.article.dtos.ArticleHomeDTO;
 import com.leadnews.model.article.mess.ArticleVisitStreamMess;
 import com.leadnews.model.article.pojos.ApArticle;
 import com.leadnews.model.common.dtos.ResponseResult;
-import com.leadnews.model.search.dtos.UserSearchDTO;
 
 /**
  * @author lihaohui

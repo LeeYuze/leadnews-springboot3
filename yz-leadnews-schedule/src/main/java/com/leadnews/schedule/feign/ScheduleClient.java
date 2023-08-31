@@ -1,11 +1,9 @@
 package com.leadnews.schedule.feign;
 
-import com.alibaba.fastjson2.JSON;
 import com.leadnews.apis.schedule.IScheduleClient;
 import com.leadnews.model.common.dtos.ResponseResult;
 import com.leadnews.model.schedule.dtos.Task;
 import com.leadnews.schedule.service.TaskService;
-import io.swagger.v3.core.util.Json;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

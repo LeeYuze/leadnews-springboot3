@@ -11,6 +11,9 @@ public class LoginDTO  {
      */
     private Integer equipmentId;
 
+
+    private String username;
+
     /**
      * 手机号
      */

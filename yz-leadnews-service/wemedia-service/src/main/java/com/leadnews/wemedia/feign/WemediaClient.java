@@ -9,7 +9,6 @@ import com.leadnews.apis.wemedia.IWemediaClient;
 import com.leadnews.model.common.dtos.ResponseResult;
 import com.leadnews.wemedia.service.WmChannelService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 

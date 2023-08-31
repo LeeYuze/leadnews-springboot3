@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.leadnews</groupId>
-        <artifactId>yz-leadnews</artifactId>
+        <artifactId>yz-leadnews-basic</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>yz-leadnews-common</artifactId>
+    <artifactId>spring-boot-starter-security</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -18,11 +18,25 @@
     </properties>
 
     <dependencies>
+
+        <!-- Spring 核心 -->
         <dependency>
-            <groupId>cn.hutool</groupId>
-            <artifactId>hutool-all</artifactId>
-            <version>5.8.20</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
+        <!-- spring boot 配置所需依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+
     </dependencies>
 
 </project>

@@ -4,7 +4,6 @@ import com.leadnews.apis.article.fallback.IArticleFallback;
 import com.leadnews.model.article.dtos.ArticleDTO;
 import com.leadnews.model.common.dtos.ResponseResult;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 

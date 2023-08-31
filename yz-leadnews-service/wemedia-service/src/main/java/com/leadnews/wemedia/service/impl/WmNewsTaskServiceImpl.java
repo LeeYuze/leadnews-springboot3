@@ -1,6 +1,5 @@
 package com.leadnews.wemedia.service.impl;
 
-import com.alibaba.fastjson2.JSON;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.leadnews.apis.schedule.IScheduleClient;
 import com.leadnews.model.common.dtos.ResponseResult;
