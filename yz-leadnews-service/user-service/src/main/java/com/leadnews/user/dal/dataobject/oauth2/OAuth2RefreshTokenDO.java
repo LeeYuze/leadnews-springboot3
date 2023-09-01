@@ -39,7 +39,6 @@ public class OAuth2RefreshTokenDO extends BaseDO {
     /**
      * 用户类型
      *
-     * 枚举 {@link com.leadnews.common.constants.user.UserTypeEnum}
      */
     private Integer userType;
     /**
