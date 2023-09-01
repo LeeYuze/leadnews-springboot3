@@ -1,6 +1,8 @@
 package com.leadnews.user.service.oauth2;
 
+import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.IdUtil;
+import cn.hutool.core.util.ObjectUtil;
 import com.leadnews.common.execption.CustomException;
 import com.leadnews.model.common.enums.AppHttpCodeEnum;
 import com.leadnews.user.dal.dataobject.oauth2.OAuth2AccessTokenDO;
@@ -16,6 +18,8 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.util.List;
+
+import static com.leadnews.user.utils.collection.CollectionUtils.convertSet;
 
 /**
  * @author lihaohui
@@ -33,6 +37,12 @@ public class OAuth2TokenServiceImpl implements OAuth2TokenService {
     private final OAuth2AccessTokenMapper oAuth2AccessTokenMapper;
 
     private final OAuth2AccessTokenRedisDAO oAuth2AccessTokenRedisDAO;
+
+    private final OAuth2RefreshTokenMapper oauth2RefreshTokenMapper;
+
+    private final OAuth2AccessTokenRedisDAO oauth2AccessTokenRedisDAO;
+
+    private final OAuth2AccessTokenMapper oauth2AccessTokenMapper;
 
     @Override
     public OAuth2AccessTokenDO createAccessToken(Long userId, Integer userType, String clientId, List<String> scopes) {
@@ -72,7 +82,31 @@ public class OAuth2TokenServiceImpl implements OAuth2TokenService {
 
     @Override
     public OAuth2AccessTokenDO refreshAccessToken(String refreshToken, String clientId) {
-        return null;
+        // 查询访问令牌
+        OAuth2RefreshTokenDO refreshTokenDO = oauth2RefreshTokenMapper.selectByRefreshToken(refreshToken);
+        if (refreshTokenDO == null) {
+            throw new CustomException(AppHttpCodeEnum.PARAM_INVALID, "无效的刷新令牌");
+        }
+
+        OAuth2ClientDO clientDO = oauth2ClientService.validOAuthClientFromCache(clientId);
+        if (ObjectUtil.notEqual(clientId, refreshTokenDO.getClientId())) {
+            throw new CustomException(AppHttpCodeEnum.PARAM_INVALID, "刷新令牌的客户端编号不正确");
+        }
+
+        // 移除相关的访问令牌
+        List<OAuth2AccessTokenDO> accessTokenDOs = oauth2AccessTokenMapper.selectListByRefreshToken(refreshToken);
+        if (CollUtil.isNotEmpty(accessTokenDOs)) {
+            oauth2AccessTokenMapper.deleteBatchIds(convertSet(accessTokenDOs, OAuth2AccessTokenDO::getId));
+            oauth2AccessTokenRedisDAO.deleteList(convertSet(accessTokenDOs, OAuth2AccessTokenDO::getAccessToken));
+        }
+
+        // 已过期的情况下，删除刷新令牌
+        if (DateUtils.isExpired(refreshTokenDO.getExpiresTime())) {
+            oauth2RefreshTokenMapper.deleteById(refreshTokenDO.getId());
+            throw new CustomException(AppHttpCodeEnum.PARAM_INVALID, "刷新令牌已过期");
+        }
+
+        return createOAuth2AccessToken(refreshTokenDO, clientDO);
     }
 
     @Override

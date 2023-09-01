@@ -2,6 +2,7 @@
 import axios from 'axios';
 import * as TokenConstants from "@/constants/tokenConstants.ts"
 import * as API from '@/api'
+import {refreshToken} from "@/api";
 
 
 const service = axios.create({
@@ -13,17 +14,9 @@ const service = axios.create({
     withCredentials: false,
 })
 
-
 service.interceptors.request.use(function (config) {
     // 在发送请求之前做些什么
-    // console.log(config);
     // config.headers.Authorization
-    var token = localStorage.getItem(TokenConstants.ACCESSTOKEN_KEY);
-
-    if (token) {
-        config.headers['Authorization'] = 'Bearer ' + token;
-    }
-
     return config;
 }, function (error) {
     // 对请求错误做些什么
@@ -35,26 +28,9 @@ service.interceptors.request.use(function (config) {
 service.interceptors.response.use(function (response) {
     // 对响应数据做点什么
     return response.status === 200 ? Promise.resolve(response.data) : Promise.reject(response);
-}, async function (error) {
+}, function (error) {
     // 对响应错误做点什么
     const {response} = error;
-    const {data} = response;
-    const {code} = data;
-
-
-    if (code === 401) {
-        // 刷新token, 不行就登录
-        const res = await API.refreshToken()
-        const {data} = res;
-
-        localStorage.setItem(TokenConstants.ACCESSTOKEN_KEY, data.accessToken)
-
-        return service(response.config)
-    }
-
-    if (response) {
-        return Promise.reject(response.data);
-    }
 });
 
 export default service;

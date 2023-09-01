@@ -64,7 +64,7 @@ public class SecurityConfiguration {
                 // 禁用默认登出页
                 .logout().disable();
 
-        httpSecurity   .exceptionHandling().authenticationEntryPoint(authenticationEntryPoint)
+        httpSecurity.exceptionHandling().authenticationEntryPoint(authenticationEntryPoint)
                 .accessDeniedHandler(accessDeniedHandler);
 
         Multimap<HttpMethod, String> permitAllUrls = getPermitAllUrlsFromAnnotations();
@@ -74,8 +74,8 @@ public class SecurityConfiguration {
         httpSecurity
                 .authorizeHttpRequests(chain -> chain
                         .requestMatchers(HttpMethod.GET, "/*.html", "/*/*.html", "/*/*.css", "/*/*.js").permitAll()
-                        .requestMatchers(HttpMethod.GET,  "/system/oauth2/token/check").permitAll()
-                        .requestMatchers(HttpMethod.POST, "/system/auth/login").permitAll()
+                        .requestMatchers(HttpMethod.GET, "/system/oauth2/token/check").permitAll()
+                        .requestMatchers(HttpMethod.POST, "/system/auth/login", "/system/auth/refresh-token").permitAll()
                         .requestMatchers(HttpMethod.GET, permitAllUrls.get(HttpMethod.GET).toArray(new String[0])).permitAll()
                         .requestMatchers(HttpMethod.POST, permitAllUrls.get(HttpMethod.POST).toArray(new String[0])).permitAll()
                         .requestMatchers(HttpMethod.PUT, permitAllUrls.get(HttpMethod.PUT).toArray(new String[0])).permitAll()
