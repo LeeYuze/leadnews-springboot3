@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.core.env.ConfigurableEnvironment;
 
@@ -14,7 +15,7 @@ import java.net.UnknownHostException;
  * @author lihaohui
  * @date 2023/8/14
  */
-@SpringBootApplication
+@SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
 @RefreshScope
 public class AppGatewayApplication {
     private static final Logger logger = LoggerFactory.getLogger(AppGatewayApplication.class);
