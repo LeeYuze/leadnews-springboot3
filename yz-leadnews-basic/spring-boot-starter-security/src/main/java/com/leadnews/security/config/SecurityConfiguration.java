@@ -2,6 +2,7 @@ package com.leadnews.security.config;
 
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
+import com.leadnews.security.core.filter.TokenAuthenticationFilter;
 import jakarta.annotation.Resource;
 import jakarta.annotation.security.PermitAll;
 import org.springframework.context.ApplicationContext;
@@ -11,7 +12,10 @@ import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.access.AccessDeniedHandler;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.mvc.method.RequestMappingInfo;
 import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping;
@@ -29,6 +33,21 @@ public class SecurityConfiguration {
     @Resource
     private ApplicationContext applicationContext;
 
+
+    /**
+     * 认证失败处理类 Bean
+     */
+    @Resource
+    private AuthenticationEntryPoint authenticationEntryPoint;
+    /**
+     * 权限不够处理器 Bean
+     */
+    @Resource
+    private AccessDeniedHandler accessDeniedHandler;
+
+    @Resource
+    private TokenAuthenticationFilter authenticationTokenFilter;
+
     @Bean
     protected SecurityFilterChain filterChain(HttpSecurity httpSecurity) throws Exception {
         httpSecurity
@@ -44,6 +63,9 @@ public class SecurityConfiguration {
                 .formLogin().disable()
                 // 禁用默认登出页
                 .logout().disable();
+
+        httpSecurity   .exceptionHandling().authenticationEntryPoint(authenticationEntryPoint)
+                .accessDeniedHandler(accessDeniedHandler);
 
         Multimap<HttpMethod, String> permitAllUrls = getPermitAllUrlsFromAnnotations();
 
@@ -61,6 +83,8 @@ public class SecurityConfiguration {
                         .anyRequest().authenticated()
                 );
 
+        // 添加 Token Filter
+        httpSecurity.addFilterBefore(authenticationTokenFilter, UsernamePasswordAuthenticationFilter.class);
         return httpSecurity.build();
     }
 

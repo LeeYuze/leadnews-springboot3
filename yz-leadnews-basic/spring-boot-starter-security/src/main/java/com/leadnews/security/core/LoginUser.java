@@ -3,6 +3,7 @@ package com.leadnews.security.core;
 import cn.hutool.core.map.MapUtil;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
+import lombok.experimental.Accessors;
 
 import java.util.HashMap;
 import java.util.List;
@@ -14,6 +15,7 @@ import java.util.Map;
  * @author 芋道源码
  */
 @Data
+@Accessors(chain = true)
 public class LoginUser {
 
     /**
