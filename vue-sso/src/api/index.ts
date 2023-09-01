@@ -7,3 +7,10 @@ export function login(data) {
         data,
     })
 }
+
+export function getUserInfo() {
+    return http({
+        method: 'get',
+        url: '/user/system/auth/get-permission-info'
+    })
+}

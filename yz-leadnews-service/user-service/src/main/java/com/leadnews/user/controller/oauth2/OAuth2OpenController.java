@@ -1,7 +1,6 @@
 package com.leadnews.user.controller.oauth2;
 
 import com.leadnews.model.common.dtos.ResponseResult;
-import com.leadnews.user.controller.oauth2.dto.OAuth2AccessTokenCheckRespDTO;
 import com.leadnews.user.convert.OAuth2TokenConvert;
 import com.leadnews.user.service.oauth2.Oauth2TokenService;
 import lombok.RequiredArgsConstructor;

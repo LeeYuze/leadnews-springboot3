@@ -28,6 +28,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>com.leadnews</groupId>
+            <artifactId>yz-leadnews-feign-api</artifactId>
+        </dependency>
     </dependencies>
 
 

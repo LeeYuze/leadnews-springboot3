@@ -2,12 +2,14 @@ package com.leadnews.app.filter.security;
 
 import cn.hutool.core.util.StrUtil;
 import com.fasterxml.jackson.core.type.TypeReference;
+import com.leadnews.apis.oauth2.OAuth2TokenApi;
 import com.leadnews.app.dto.OAuth2AccessTokenCheckRespDTO;
 import com.leadnews.app.utils.JsonUtils;
 import com.leadnews.app.utils.SecurityFrameworkUtils;
 import com.leadnews.app.utils.WebFrameworkUtils;
 import com.leadnews.model.common.dtos.ResponseResult;
 import com.leadnews.model.common.enums.AppHttpCodeEnum;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.streams.KeyValue;
 import org.springframework.cloud.client.loadbalancer.reactive.ReactorLoadBalancerExchangeFilterFunction;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
@@ -27,6 +29,7 @@ import java.util.function.Function;
  * @author lihaohui
  * @date 2023/9/1
  */
+@Slf4j
 @Component
 public class TokenAuthenticationFilter implements GlobalFilter, Ordered {
 
@@ -35,17 +38,6 @@ public class TokenAuthenticationFilter implements GlobalFilter, Ordered {
     };
 
     private static final LoginUser LOGIN_USER_EMPTY = new LoginUser();
-
-
-    String NAME = "leadnews-user";
-
-    String PREFIX = "/system/oauth2/token";
-
-    /**
-     * 校验 Token 的 URL 地址，主要是提供给 Gateway 使用
-     */
-    @SuppressWarnings("HttpUrlsUsage")
-    String URL_CHECK = "http://" + NAME + PREFIX + "/check";
 
 
     private final WebClient webClient;
@@ -79,6 +71,9 @@ public class TokenAuthenticationFilter implements GlobalFilter, Ordered {
 
             // 2.1 有用户，则设置登录用户
             SecurityFrameworkUtils.setLoginUser(exchange, user);
+
+            log.info("Token令牌 {} - 用户信息 - {}", token, user);
+
             // 2.2 将 user 并设置到 login-user 的请求头，使用 json 存储值
             ServerWebExchange newExchange = exchange.mutate()
                     .request(builder -> SecurityFrameworkUtils.setLoginUserHeader(builder, user))
@@ -110,9 +105,9 @@ public class TokenAuthenticationFilter implements GlobalFilter, Ordered {
         });
     }
 
-    private Mono<String> checkAccessToken( String token) {
+    private Mono<String> checkAccessToken(String token) {
         return webClient.get()
-                .uri(URL_CHECK, uriBuilder -> uriBuilder.queryParam("accessToken", token).build())
+                .uri(OAuth2TokenApi.URL_CHECK, uriBuilder -> uriBuilder.queryParam("accessToken", token).build())
                 .retrieve()
                 .bodyToMono(String.class);
     }

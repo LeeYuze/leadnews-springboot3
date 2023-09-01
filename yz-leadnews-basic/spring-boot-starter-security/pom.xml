@@ -19,6 +19,11 @@
 
     <dependencies>
 
+        <dependency>
+            <groupId>com.leadnews</groupId>
+            <artifactId>yz-leadnews-feign-api</artifactId>
+        </dependency>
+
         <!-- Spring 核心 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

@@ -26,6 +26,11 @@
 
         <dependency>
             <groupId>com.leadnews</groupId>
+            <artifactId>yz-leadnews-feign-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.leadnews</groupId>
             <artifactId>yz-leadnews-model</artifactId>
         </dependency>
 
