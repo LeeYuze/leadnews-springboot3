@@ -12,11 +12,19 @@ router.beforeEach((to, from, next) => {
         if (to.path === '/login') {
             next({path: '/'})
         } else {
-            // 获取用户信息
-            getUserInfo().then(res => {
+            var user = localStorage.getItem("user");
+            if (!user) {
+                // 获取用户信息
+                getUserInfo().then(res => {
+                    if (res.code === 0) {
+                        localStorage.setItem("user", JSON.stringify(res.data))
+                        next({...to, replace: true}) // hack方法 确保addRoutes已完成
+                    }
+                })
+            } else {
+                next()
+            }
 
-            })
-            next();
         }
     } else {
         // 没有token

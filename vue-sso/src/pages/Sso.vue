@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {computed, reactive} from "vue";
+import {computed, onMounted, reactive, ref, watch} from "vue";
 import * as API from "@/api"
 import * as TokenConstants from '@/constants/tokenConstants.ts'
 import {useRoute, useRouter} from "vue-router";
@@ -7,44 +7,70 @@ import {useRoute, useRouter} from "vue-router";
 const $router = useRouter();
 const $route = useRoute();
 
-const redirect = computed(() => $route.query.redirect ? decodeURIComponent($route.query.redirect as string) : undefined);
+const client = ref();
 
-
-const state = reactive({
-  username: "admin",
-  password: "admin"
+const params = reactive({
+  redirectUri: $route.query.redirectUri,
+  responseType: $route.query.responseType,
+  clientId: $route.query.clientId,
+  state: $route.query.state,
+  scopes: $route.query.scopes as string,
+  scopesArr: []
 })
 
-const login = () => {
-  console.log(state)
-  API.login(state).then(res => {
-    const {code, data} = res;
-    if (code === 0) {
-      const {accessToken, refreshToken} = data;
-      // storage accessToken
-      localStorage.setItem(TokenConstants.ACCESSTOKEN_KEY, accessToken)
-      // storage refreshToken
-      localStorage.setItem(TokenConstants.REFRESHTOKEN_KEY, refreshToken)
+const loginForm = reactive({
+  scopes: []
+})
 
-      $router.push({path: redirect.value || "/"})
+
+onMounted(() => {
+
+  if (params.scopes) {
+    params.scopesArr = params.scopes.split(" ")
+  }
+
+  // 获取授权页的基本信息
+  API.getAuthorize(params.clientId).then(res => {
+    client.value = res.data.client
+    // 解析 scope
+    let scopes
+    // 1.1 如果 params.scope 非空，则过滤下返回的 scopes
+    if (params.scopesArr.length > 0) {
+      scopes = []
+      for (const scope of res.data.scopes) {
+        if (params.scopesArr.indexOf(scope.key) >= 0) {
+          scopes.push(scope)
+        }
+      }
+      // 1.2 如果 params.scope 为空，则使用返回的 scopes 设置它
+    } else {
+      scopes = res.data.scopes
+      for (const scope of scopes) {
+        params.scopesArr.push(scope.key)
+      }
+    }
+    // 生成已选中的 checkedScopes
+    for (const scope of scopes) {
+      if (scope.value) {
+        loginForm.scopes.push(scope.key)
+      }
     }
   })
-}
+
+})
+
+
 </script>
 
 <template>
   <div class="container">
     <div class="login-wrapper">
-      <div class="header">Login</div>
+      <div class="header">用户授权</div>
       <div class="form-wrapper">
-        <input type="text" name="username" placeholder="username" class="input-item" :value="state.username">
-        <input type="password" name="password" placeholder="password" class="input-item" :value="state.password">
-        <div class="btn" @click="login">Login</div>
+        <p style="text-align: center">授权所有用户个人信息</p>
+        <div class="btn">授权</div>
       </div>
-      <div class="msg" style="display: none">
-        Don't have account?
-        <a href="#">Sign up</a>
-      </div>
+
     </div>
   </div>
 </template>
@@ -59,7 +85,7 @@ const login = () => {
 .login-wrapper {
   background-color: #fff;
   width: 358px;
-  height: 500px;
+  height: 300px;
   border-radius: 15px;
   padding: 0 50px;
   position: relative;
@@ -72,7 +98,7 @@ const login = () => {
   font-size: 38px;
   font-weight: bold;
   text-align: center;
-  line-height: 200px;
+  line-height: 150px;
 }
 
 .input-item {

@@ -10,6 +10,7 @@ import com.leadnews.user.dal.dataobject.user.AdminUserDO;
 import com.leadnews.user.service.auth.AdminAuthService;
 import com.leadnews.user.service.user.AdminUserService;
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
 import jakarta.annotation.security.PermitAll;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -48,5 +49,14 @@ public class AuthController {
         }
 
         return ResponseResult.okResult(AuthConvert.INSTANCE.convert(user));
+    }
+
+    @PostMapping("/refresh-token")
+    @PermitAll
+    @Operation(summary = "刷新令牌")
+    @Parameter(name = "refreshToken", description = "刷新令牌", required = true)
+    public ResponseResult<AuthLoginRespVO> refreshToken(@RequestParam("refreshToken") String refreshToken) {
+        AuthLoginRespVO authLoginRespVO = authService.refreshToken(refreshToken);
+        return ResponseResult.okResult(authLoginRespVO);
     }
 }

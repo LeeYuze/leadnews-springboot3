@@ -24,9 +24,9 @@ import java.util.List;
 @Service
 @Slf4j
 @RequiredArgsConstructor
-public class Oauth2TokenServiceImpl implements Oauth2TokenService {
+public class OAuth2TokenServiceImpl implements OAuth2TokenService {
 
-    private final Oauth2ClientService oauth2ClientService;
+    private final OAuth2ClientService oauth2ClientService;
 
     private final OAuth2RefreshTokenMapper oAuth2RefreshTokenMapper;
 

@@ -20,7 +20,7 @@ import java.util.Collection;
 @Slf4j
 @Service
 @RequiredArgsConstructor
-public class Oauth2ClientServiceImpl implements Oauth2ClientService{
+public class OAuth2ClientServiceImpl implements OAuth2ClientService {
 
     private final OAuth2ClientMapper oAuth2ClientMapper;
 
@@ -58,7 +58,7 @@ public class Oauth2ClientServiceImpl implements Oauth2ClientService{
      *
      * @return 自己
      */
-    private Oauth2ClientServiceImpl getSelf() {
+    private OAuth2ClientServiceImpl getSelf() {
         return SpringUtil.getBean(getClass());
     }
 }

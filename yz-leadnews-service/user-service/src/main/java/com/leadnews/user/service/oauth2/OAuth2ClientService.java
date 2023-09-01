@@ -8,7 +8,7 @@ import java.util.Collection;
  * @author lihaohui
  * @date 2023/9/1
  */
-public interface Oauth2ClientService {
+public interface OAuth2ClientService {
     /**
      * 获得 OAuth2 客户端
      *

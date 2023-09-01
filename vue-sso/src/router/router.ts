@@ -12,7 +12,11 @@ const routes = [
         name: 'Home',
         component: () => import('@/pages/Home.vue'),  // 配置路径别名后，可以使用@
     },
-    ,
+    {
+        path: '/sso',
+        name: 'Sso',
+        component: () => import('@/pages/Sso.vue'),  // 配置路径别名后，可以使用@
+    },
     {
         path: '/login',
         name: 'Login',

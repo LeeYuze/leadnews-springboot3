@@ -7,7 +7,7 @@ import com.leadnews.apis.oauth2.dto.OAuth2AccessTokenRespDTO;
 import com.leadnews.model.common.dtos.ResponseResult;
 import com.leadnews.user.convert.OAuth2TokenConvert;
 import com.leadnews.user.dal.dataobject.oauth2.OAuth2AccessTokenDO;
-import com.leadnews.user.service.oauth2.Oauth2TokenService;
+import com.leadnews.user.service.oauth2.OAuth2TokenService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class OAuth2TokenApiImpl implements OAuth2TokenApi {
 
-    private final Oauth2TokenService oauth2TokenService;
+    private final OAuth2TokenService oauth2TokenService;
 
 
     @Override

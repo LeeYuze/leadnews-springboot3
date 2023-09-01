@@ -9,7 +9,7 @@ import com.leadnews.user.controller.auth.vo.AuthLoginRespVO;
 import com.leadnews.user.convert.AuthConvert;
 import com.leadnews.user.dal.dataobject.oauth2.OAuth2AccessTokenDO;
 import com.leadnews.user.dal.dataobject.user.AdminUserDO;
-import com.leadnews.user.service.oauth2.Oauth2TokenService;
+import com.leadnews.user.service.oauth2.OAuth2TokenService;
 import com.leadnews.user.service.user.AdminUserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -26,7 +26,7 @@ public class AdminAuthServiceImpl implements AdminAuthService {
 
     private final AdminUserService userService;
 
-    private final Oauth2TokenService oauth2TokenService;
+    private final OAuth2TokenService oauth2TokenService;
 
 
     @Override
@@ -63,6 +63,13 @@ public class AdminAuthServiceImpl implements AdminAuthService {
 
         // TODO yz 校验是否禁用
         return user;
+    }
+
+    @Override
+    public AuthLoginRespVO refreshToken(String refreshToken) {
+        OAuth2AccessTokenDO accessTokenDO = oauth2TokenService.refreshAccessToken(refreshToken, OAuth2ClientConstants.CLIENT_ID_DEFAULT);
+
+        return  AuthConvert.INSTANCE.convert(accessTokenDO);
     }
 
     private UserTypeEnum getUserType() {

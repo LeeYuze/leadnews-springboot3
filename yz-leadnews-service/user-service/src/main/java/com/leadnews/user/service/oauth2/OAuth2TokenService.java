@@ -9,7 +9,7 @@ import java.util.List;
  * @author lihaohui
  * @date 2023/9/1
  */
-public interface Oauth2TokenService {
+public interface OAuth2TokenService {
 
     /**
      * 创建访问令牌
