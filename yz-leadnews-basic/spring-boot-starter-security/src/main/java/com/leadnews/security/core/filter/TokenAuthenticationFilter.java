@@ -43,7 +43,6 @@ public class TokenAuthenticationFilter extends OncePerRequestFilter {
                 Integer userType = WebFrameworkUtils.getLoginUserType(request);
 
                 loginUser = buildLoginUserByToken(token, userType);
-
             }
         }
 

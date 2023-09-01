@@ -1,10 +1,14 @@
 package com.leadnews.user.convert;
 
+import com.leadnews.security.core.utils.SecurityFrameworkUtils;
 import com.leadnews.user.controller.oauth2.vo.KeyValue;
+import com.leadnews.user.controller.oauth2.vo.open.OAuth2OpenAccessTokenRespVO;
 import com.leadnews.user.controller.oauth2.vo.open.OAuth2OpenAuthorizeInfoRespVO;
+import com.leadnews.user.dal.dataobject.oauth2.OAuth2AccessTokenDO;
 import com.leadnews.user.dal.dataobject.oauth2.OAuth2ApproveDO;
 import com.leadnews.user.dal.dataobject.oauth2.OAuth2ClientDO;
 import com.leadnews.user.utils.collection.CollectionUtils;
+import com.leadnews.user.utils.oauth2.OAuth2Utils;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
@@ -19,6 +23,17 @@ import java.util.Map;
 @Mapper
 public interface OAuth2OpenConvert {
     OAuth2OpenConvert INSTANCE = Mappers.getMapper(OAuth2OpenConvert.class);
+
+    default OAuth2OpenAccessTokenRespVO convert(OAuth2AccessTokenDO bean) {
+        OAuth2OpenAccessTokenRespVO respVO = convert0(bean);
+        respVO.setTokenType(SecurityFrameworkUtils.AUTHORIZATION_BEARER.toLowerCase());
+        respVO.setExpiresIn(OAuth2Utils.getExpiresIn(bean.getExpiresTime()));
+        respVO.setScope(OAuth2Utils.buildScopeStr(bean.getScopes()));
+        return respVO;
+    }
+
+    OAuth2OpenAccessTokenRespVO convert0(OAuth2AccessTokenDO bean);
+
 
     default OAuth2OpenAuthorizeInfoRespVO convert(OAuth2ClientDO client, List<OAuth2ApproveDO> approves) {
         // 构建 scopes

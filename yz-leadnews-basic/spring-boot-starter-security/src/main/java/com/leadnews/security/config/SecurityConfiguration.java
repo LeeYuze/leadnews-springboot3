@@ -19,9 +19,11 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.mvc.method.RequestMappingInfo;
 import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping;
+import org.springframework.web.util.pattern.PathPattern;
 
 import java.util.Map;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 /**
  * @author lihaohui
@@ -100,10 +102,10 @@ public class SecurityConfiguration {
             if (!handlerMethod.hasMethodAnnotation(PermitAll.class)) {
                 continue;
             }
-            if (entry.getKey().getPatternsCondition() == null) {
+            if (entry.getKey().getPathPatternsCondition() == null) {
                 continue;
             }
-            Set<String> urls = entry.getKey().getPatternsCondition().getPatterns();
+            Set<String> urls = entry.getKey().getPathPatternsCondition().getPatterns().stream().map(PathPattern::getPatternString).collect(Collectors.toSet());
             // 根据请求方法，添加到 result 结果
             entry.getKey().getMethodsCondition().getMethods().forEach(requestMethod -> {
                 switch (requestMethod) {
