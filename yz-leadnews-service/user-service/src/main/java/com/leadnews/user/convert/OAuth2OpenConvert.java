@@ -1,9 +1,12 @@
 package com.leadnews.user.convert;
 
+import cn.hutool.core.date.LocalDateTimeUtil;
 import com.leadnews.security.core.utils.SecurityFrameworkUtils;
+import com.leadnews.user.common.enums.user.UserTypeEnum;
 import com.leadnews.user.controller.oauth2.vo.KeyValue;
 import com.leadnews.user.controller.oauth2.vo.open.OAuth2OpenAccessTokenRespVO;
 import com.leadnews.user.controller.oauth2.vo.open.OAuth2OpenAuthorizeInfoRespVO;
+import com.leadnews.user.controller.oauth2.vo.open.OAuth2OpenCheckTokenRespVO;
 import com.leadnews.user.dal.dataobject.oauth2.OAuth2AccessTokenDO;
 import com.leadnews.user.dal.dataobject.oauth2.OAuth2ApproveDO;
 import com.leadnews.user.dal.dataobject.oauth2.OAuth2ClientDO;
@@ -31,8 +34,18 @@ public interface OAuth2OpenConvert {
         respVO.setScope(OAuth2Utils.buildScopeStr(bean.getScopes()));
         return respVO;
     }
-
     OAuth2OpenAccessTokenRespVO convert0(OAuth2AccessTokenDO bean);
+
+
+    default OAuth2OpenCheckTokenRespVO convert2(OAuth2AccessTokenDO bean) {
+        OAuth2OpenCheckTokenRespVO respVO = convert3(bean);
+        respVO.setExp(LocalDateTimeUtil.toEpochMilli(bean.getExpiresTime()) / 1000L);
+        respVO.setUserType(UserTypeEnum.ADMIN.getValue());
+        return respVO;
+    }
+    OAuth2OpenCheckTokenRespVO convert3(OAuth2AccessTokenDO bean);
+
+
 
 
     default OAuth2OpenAuthorizeInfoRespVO convert(OAuth2ClientDO client, List<OAuth2ApproveDO> approves) {

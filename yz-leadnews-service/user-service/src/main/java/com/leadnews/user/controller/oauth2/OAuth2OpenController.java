@@ -10,6 +10,7 @@ import com.leadnews.user.common.enums.oauth2.OAuth2GrantTypeEnum;
 import com.leadnews.user.common.enums.user.UserTypeEnum;
 import com.leadnews.user.controller.oauth2.vo.open.OAuth2OpenAccessTokenRespVO;
 import com.leadnews.user.controller.oauth2.vo.open.OAuth2OpenAuthorizeInfoRespVO;
+import com.leadnews.user.controller.oauth2.vo.open.OAuth2OpenCheckTokenRespVO;
 import com.leadnews.user.convert.OAuth2OpenConvert;
 import com.leadnews.user.dal.dataobject.oauth2.OAuth2AccessTokenDO;
 import com.leadnews.user.dal.dataobject.oauth2.OAuth2ApproveDO;
@@ -17,6 +18,7 @@ import com.leadnews.user.dal.dataobject.oauth2.OAuth2ClientDO;
 import com.leadnews.user.service.oauth2.OAuth2ApproveService;
 import com.leadnews.user.service.oauth2.OAuth2ClientService;
 import com.leadnews.user.service.oauth2.OAuth2GrantService;
+import com.leadnews.user.service.oauth2.OAuth2TokenService;
 import com.leadnews.user.utils.json.JsonUtils;
 import com.leadnews.user.utils.oauth2.OAuth2Utils;
 import io.swagger.v3.oas.annotations.Operation;
@@ -51,6 +53,31 @@ public class OAuth2OpenController {
     private final OAuth2ApproveService oAuth2ApproveService;
 
     private final OAuth2GrantService oAuth2GrantService;
+
+    private final OAuth2TokenService oAuth2TokenService;
+
+
+
+    /**
+     * 对应 Spring Security OAuth 的 CheckTokenEndpoint 类的 checkToken 方法
+     */
+    @PostMapping("/check-token")
+    @PermitAll
+    @Operation(summary = "校验访问令牌")
+    @Parameter(name = "token", required = true, description = "访问令牌", example = "biu")
+    public ResponseResult<OAuth2OpenCheckTokenRespVO> checkToken(HttpServletRequest request,
+                                                               @RequestParam("token") String token) {
+        // 校验客户端
+        String[] clientIdAndSecret = obtainBasicAuthorization(request);
+        oAuth2ClientService.validOAuthClientFromCache(clientIdAndSecret[0], clientIdAndSecret[1],
+                null, null, null);
+
+        // 校验令牌
+        OAuth2AccessTokenDO accessTokenDO = oAuth2TokenService.checkAccessToken(token);
+        Assert.notNull(accessTokenDO, "访问令牌不能为空"); // 防御性检查
+        return ResponseResult.okResult(OAuth2OpenConvert.INSTANCE.convert2(accessTokenDO));
+    }
+
 
     @PostMapping("/token")
     @PermitAll
