@@ -3,6 +3,7 @@ import {computed, onMounted, reactive, ref, watch} from "vue";
 import * as API from "@/api"
 import * as TokenConstants from '@/constants/tokenConstants.ts'
 import {useRoute, useRouter} from "vue-router";
+import {authorize} from "@/api";
 
 const $router = useRouter();
 const $route = useRoute();
@@ -22,6 +23,14 @@ const loginForm = reactive({
   scopes: []
 })
 
+onMounted(()=>{
+  console.log( $route)
+  params.redirectUri = $route.query.redirect_uri;
+  params.responseType = $route.query.response_type;
+  params.clientId = $route.query.client_id;
+  params.state = $route.query.state;
+  params.scopes = $route.query.scopes;
+})
 
 onMounted(() => {
 
@@ -59,6 +68,23 @@ onMounted(() => {
 
 })
 
+const doAuthorize = (autoApprove, checkedScopes, uncheckedScopes) => {
+  return authorize(params.responseType, params.clientId, params.redirectUri, params.state,
+      autoApprove, checkedScopes, uncheckedScopes)
+}
+const handleAuthorize = () => {
+  // 没得拒绝hhhhhh
+  let checkedScopes = params.scopesArr;
+  let uncheckedScopes = [];
+
+  doAuthorize(false, checkedScopes, uncheckedScopes).then(res => {
+    const href = res.data
+    if (!href) {
+      return;
+    }
+    location.href = href
+  });
+}
 
 </script>
 
@@ -68,7 +94,7 @@ onMounted(() => {
       <div class="header">用户授权</div>
       <div class="form-wrapper">
         <p style="text-align: center">授权所有用户个人信息</p>
-        <div class="btn">授权</div>
+        <div class="btn" @click="handleAuthorize">授权</div>
       </div>
 
     </div>
