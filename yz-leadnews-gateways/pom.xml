@@ -26,6 +26,16 @@
 
         <dependency>
             <groupId>com.leadnews</groupId>
+            <artifactId>yz-leadnews-model</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-json</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.leadnews</groupId>
             <artifactId>yz-leadnews-utils</artifactId>
         </dependency>
 

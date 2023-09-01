@@ -26,4 +26,13 @@ public interface AdminUserService extends IService<AdminUserDO> {
      * @return 是否匹配
      */
     boolean isPasswordMatch(String rawPassword, String encodedPassword);
+
+
+    /**
+     * 通过用户 ID 查询用户
+     *
+     * @param id 用户ID
+     * @return 用户对象信息
+     */
+    AdminUserDO getUser(Long id);
 }

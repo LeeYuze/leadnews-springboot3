@@ -71,7 +71,6 @@ public class TokenAuthenticationFilter implements GlobalFilter, Ordered {
         }
 
         // 情况二，如果有 Token 令牌，则解析对应 userId、userType 等字段，并通过 通过 Header 转发给服务
-
         return getLoginUser(exchange, token).defaultIfEmpty(LOGIN_USER_EMPTY).flatMap(user -> {
             // 1. 无用户，直接 filter 继续请求
             if (user == LOGIN_USER_EMPTY) {
@@ -90,7 +89,7 @@ public class TokenAuthenticationFilter implements GlobalFilter, Ordered {
 
     private Mono<LoginUser> getLoginUser(ServerWebExchange exchange, String token) {
         // 从缓存中，获取 LoginUser
-        Long tenantId = WebFrameworkUtils.getTenantId(exchange);
+//        Long tenantId = WebFrameworkUtils.getTenantId(exchange);
 //        KeyValue<Long, String> cacheKey = new KeyValue<Long, String>().setKey(tenantId).setValue(token);
 //        LoginUser localUser = loginUserCache.getIfPresent(cacheKey);
 //        if (localUser != null) {
@@ -99,23 +98,23 @@ public class TokenAuthenticationFilter implements GlobalFilter, Ordered {
         // TODO yz 先查用户缓存，如果命中就返回
 
         // 缓存不存在，则请求远程服务
-        return checkAccessToken(tenantId, token).flatMap((Function<String, Mono<LoginUser>>) body -> {
+        return checkAccessToken(token).flatMap((Function<String, Mono<LoginUser>>) body -> {
             LoginUser remoteUser = buildUser(body);
             if (remoteUser != null) {
                 // 非空，则进行缓存
                 // TODO yz 保存用户缓存
-//                loginUserCache.put(cacheKey, remoteUser);
+                // loginUserCache.put(cacheKey, remoteUser);
                 return Mono.just(remoteUser);
             }
             return Mono.empty();
         });
     }
 
-    private Mono<String> checkAccessToken(Long tenantId, String token) {
+    private Mono<String> checkAccessToken( String token) {
         return webClient.get()
                 .uri(URL_CHECK, uriBuilder -> uriBuilder.queryParam("accessToken", token).build())
-                .headers(httpHeaders -> WebFrameworkUtils.setTenantIdHeader(tenantId, httpHeaders)) // 设置租户的 Header
-                .retrieve().bodyToMono(String.class);
+                .retrieve()
+                .bodyToMono(String.class);
     }
 
     private LoginUser buildUser(String body) {

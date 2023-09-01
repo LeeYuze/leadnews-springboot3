@@ -52,6 +52,8 @@ public class SecurityConfiguration {
         httpSecurity
                 .authorizeHttpRequests(chain -> chain
                         .requestMatchers(HttpMethod.GET, "/*.html", "/*/*.html", "/*/*.css", "/*/*.js").permitAll()
+                        .requestMatchers(HttpMethod.GET,  "/system/oauth2/token/check").permitAll()
+                        .requestMatchers(HttpMethod.POST, "/system/auth/login").permitAll()
                         .requestMatchers(HttpMethod.GET, permitAllUrls.get(HttpMethod.GET).toArray(new String[0])).permitAll()
                         .requestMatchers(HttpMethod.POST, permitAllUrls.get(HttpMethod.POST).toArray(new String[0])).permitAll()
                         .requestMatchers(HttpMethod.PUT, permitAllUrls.get(HttpMethod.PUT).toArray(new String[0])).permitAll()

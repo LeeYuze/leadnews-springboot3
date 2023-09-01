@@ -1,12 +1,15 @@
 package com.leadnews.user.service.oauth2;
 
 import cn.hutool.core.util.IdUtil;
+import com.leadnews.common.execption.CustomException;
+import com.leadnews.model.common.enums.AppHttpCodeEnum;
 import com.leadnews.user.dal.dataobject.oauth2.OAuth2AccessTokenDO;
 import com.leadnews.user.dal.dataobject.oauth2.OAuth2ClientDO;
 import com.leadnews.user.dal.dataobject.oauth2.OAuth2RefreshTokenDO;
 import com.leadnews.user.dal.redis.oauth2.OAuth2AccessTokenRedisDAO;
 import com.leadnews.user.mapper.oauth2.OAuth2AccessTokenMapper;
 import com.leadnews.user.mapper.oauth2.OAuth2RefreshTokenMapper;
+import com.leadnews.user.utils.date.DateUtils;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -74,12 +77,30 @@ public class Oauth2TokenServiceImpl implements Oauth2TokenService {
 
     @Override
     public OAuth2AccessTokenDO getAccessToken(String accessToken) {
-        return null;
+        // 优先从 Redis 中获取
+        OAuth2AccessTokenDO accessTokenDO = oAuth2AccessTokenRedisDAO.get(accessToken);
+        if (accessTokenDO != null) {
+            return accessTokenDO;
+        }
+        // 获取不到，从 MySQL 中获取
+        accessTokenDO = oAuth2AccessTokenMapper.selectByAccessToken(accessToken);
+        // 如果在 MySQL 存在，则往 Redis 中写入
+        if (accessTokenDO != null && !DateUtils.isExpired(accessTokenDO.getExpiresTime())) {
+            oAuth2AccessTokenRedisDAO.set(accessTokenDO);
+        }
+        return accessTokenDO;
     }
 
     @Override
     public OAuth2AccessTokenDO checkAccessToken(String accessToken) {
-        return null;
+        OAuth2AccessTokenDO accessTokenDO = getAccessToken(accessToken);
+        if (accessTokenDO == null) {
+            throw new CustomException(AppHttpCodeEnum.TOKEN_INVALID);
+        }
+        if (DateUtils.isExpired(accessTokenDO.getExpiresTime())) {
+            throw new CustomException(AppHttpCodeEnum.TOKEN_EXPIRE);
+        }
+        return accessTokenDO;
     }
 
     @Override

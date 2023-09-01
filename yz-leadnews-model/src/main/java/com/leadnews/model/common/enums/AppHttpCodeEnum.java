@@ -10,6 +10,10 @@ public enum AppHttpCodeEnum {
     LOGIN_PASSWORD_ERROR(2, "密码错误"),
     LOGIN_STATUS_ERROR(3, "用户状态异常,请联系管理员"),
 
+    AUTH_LOGIN_BAD_CREDENTIALS(4, "登录失败，账号密码不正确"),
+
+    OAUTH2_CLIENT_NOT_EXISTS(5, "OAuth2 客户端不存在"),
+
     // TOKEN50~100
     TOKEN_INVALID(50, "无效的TOKEN"),
     TOKEN_EXPIRE(51, "TOKEN已过期"),

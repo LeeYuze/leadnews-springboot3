@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import {reactive} from "vue";
 import * as API from "@/api"
+import * as TokenConstants from '@/constants/tokenConstants.ts'
+import {useRouter} from "vue-router";
+
+const $router = useRouter();
 
 const state = reactive({
   username: "admin",
@@ -10,7 +14,16 @@ const state = reactive({
 const login = () => {
   console.log(state)
   API.login(state).then(res => {
-    console.log(res)
+    const {code, data} = res;
+    if (code === 0) {
+      const {accessToken, refreshToken} = data;
+      // storage accessToken
+      localStorage.setItem(TokenConstants.ACCESSTOKEN_KEY, accessToken)
+      // storage refreshToken
+      localStorage.setItem(TokenConstants.REFRESHTOKEN_KEY, refreshToken)
+
+      $router.push("/")
+    }
   })
 }
 </script>

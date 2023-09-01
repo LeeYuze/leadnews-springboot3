@@ -32,6 +32,7 @@
         <hutool.version>5.8.20</hutool.version>
         <fastjson2.version>2.0.39-SNAPSHOT</fastjson2.version>
         <jwt.version>0.9.1</jwt.version>
+        <mapstruct.version>1.4.2.Final</mapstruct.version>
     </properties>
 
     <dependencies>
@@ -46,6 +47,12 @@
 
     <dependencyManagement>
         <dependencies>
+
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>5.8.20</version>
+            </dependency>
 
             <dependency>
                 <groupId>com.leadnews</groupId>
@@ -70,6 +77,24 @@
                 <groupId>com.leadnews</groupId>
                 <artifactId>spring-boot-starter-elasticsearch</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct</artifactId> <!-- use mapstruct-jdk8 for Java 8 or higher -->
+                <version>${mapstruct.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct-jdk8</artifactId>
+                <version>${mapstruct.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct-processor</artifactId>
+                <version>${mapstruct.version}</version>
             </dependency>
 
             <dependency>
@@ -233,6 +258,23 @@
                     <source>17</source>
                     <target>17</target>
                     <encoding>UTF-8</encoding>
+                    <annotationProcessorPaths>
+                        <path>
+                            <groupId>org.springframework.boot</groupId>
+                            <artifactId>spring-boot-configuration-processor</artifactId>
+                            <version>${spring-boot.version}</version>
+                        </path>
+                        <path>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                            <version>${lombok.version}</version>
+                        </path>
+                        <path>
+                            <groupId>org.mapstruct</groupId>
+                            <artifactId>mapstruct-processor</artifactId>
+                            <version>${mapstruct.version}</version>
+                        </path>
+                    </annotationProcessorPaths>
                 </configuration>
             </plugin>
             <plugin>

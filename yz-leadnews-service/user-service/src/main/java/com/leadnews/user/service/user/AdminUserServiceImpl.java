@@ -32,6 +32,11 @@ public class AdminUserServiceImpl extends ServiceImpl<AdminUserMapper, AdminUser
     public boolean isPasswordMatch(String rawPassword, String encodedPassword) {
         return passwordEncoder.matches(rawPassword, encodedPassword);
     }
+
+    @Override
+    public AdminUserDO getUser(Long id) {
+        return userMapper.selectById(id);
+    }
 }
 
 

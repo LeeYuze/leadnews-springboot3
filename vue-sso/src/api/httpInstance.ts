@@ -1,5 +1,7 @@
 // 这个时axios的配置
 import axios from 'axios';
+import * as TokenConstants from "@/constants/tokenConstants.ts"
+
 // import { config } from 'vue/types/umd';
 axios.defaults.baseURL = 'http://127.0.0.1:51601';
 
@@ -7,7 +9,12 @@ axios.interceptors.request.use(function (config) {
     // 在发送请求之前做些什么
     // console.log(config);
     // config.headers.Authorization
-    console.log(config);
+    var token = localStorage.getItem(TokenConstants.ACCESSTOKEN_KEY);
+
+    if (token) {
+        config.headers['Authorization'] = 'Bearer ' + token;
+    }
+
     return config;
 }, function (error) {
     // 对请求错误做些什么
