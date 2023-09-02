@@ -55,4 +55,29 @@ public interface OAuth2GrantService {
      */
     OAuth2AccessTokenDO grantImplicit(Long userId, Integer userType,
                                       String clientId, List<String> scopes);
+
+    /**
+     * 密码模式
+     *
+     * 对应 Spring Security OAuth2 的 ResourceOwnerPasswordTokenGranter 功能
+     *
+     * @param username 账号
+     * @param password 密码
+     * @param clientId 客户端编号
+     * @param scopes 授权范围
+     * @return 访问令牌
+     */
+    OAuth2AccessTokenDO grantPassword(String username, String password,
+                                      String clientId, List<String> scopes);
+
+    /**
+     * 刷新模式
+     *
+     * 对应 Spring Security OAuth2 的 ResourceOwnerPasswordTokenGranter 功能
+     *
+     * @param refreshToken 刷新令牌
+     * @param clientId 客户端编号
+     * @return 访问令牌
+     */
+    OAuth2AccessTokenDO grantRefreshToken(String refreshToken, String clientId);
 }

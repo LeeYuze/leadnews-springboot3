@@ -123,15 +123,15 @@ public class OAuth2OpenController {
             case AUTHORIZATION_CODE:
                 accessTokenDO = oAuth2GrantService.grantAuthorizationCodeForAccessToken(client.getClientId(), code, redirectUri, state);
                 break;
-//            case PASSWORD:
-//                accessTokenDO = oAuth2GrantService.grantPassword(username, password, client.getClientId(), scopes);
-//                break;
+            case PASSWORD:
+                accessTokenDO = oAuth2GrantService.grantPassword(username, password, client.getClientId(), scopes);
+                break;
 //            case CLIENT_CREDENTIALS:
 //                accessTokenDO = oAuth2GrantService.grantClientCredentials(client.getClientId(), scopes);
 //                break;
-//            case REFRESH_TOKEN:
-//                accessTokenDO = oAuth2GrantService.grantRefreshToken(refreshToken, client.getClientId());
-//                break;
+            case REFRESH_TOKEN:
+                accessTokenDO = oAuth2GrantService.grantRefreshToken(refreshToken, client.getClientId());
+                break;
             default:
                 throw new IllegalArgumentException("未知授权类型：" + grantType);
         }
