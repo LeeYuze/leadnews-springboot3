@@ -140,6 +140,21 @@ public class OAuth2OpenController {
         return ResponseResult.okResult(OAuth2OpenConvert.INSTANCE.convert(accessTokenDO));
     }
 
+    @DeleteMapping("/token")
+    @PermitAll
+    @Operation(summary = "删除访问令牌")
+    @Parameter(name = "token", required = true, description = "访问令牌", example = "biu")
+    public ResponseResult<Boolean> revokeToken(HttpServletRequest request,
+                                             @RequestParam("token") String token) {
+        // 校验客户端
+        String[] clientIdAndSecret = obtainBasicAuthorization(request);
+        OAuth2ClientDO client = oAuth2ClientService.validOAuthClientFromCache(clientIdAndSecret[0], clientIdAndSecret[1],
+                null, null, null);
+
+        // 删除访问令牌
+        return ResponseResult.okResult(oAuth2GrantService.revokeToken(client.getClientId(), token));
+    }
+
 
     @PostMapping("/authorize")
     @Operation(summary = "申请授权", description = "适合 code 授权码模式，或者 implicit 简化模式；在 sso.vue 单点登录界面被【提交】调用")

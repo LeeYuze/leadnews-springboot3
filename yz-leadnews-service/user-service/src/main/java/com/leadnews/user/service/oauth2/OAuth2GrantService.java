@@ -80,4 +80,15 @@ public interface OAuth2GrantService {
      * @return 访问令牌
      */
     OAuth2AccessTokenDO grantRefreshToken(String refreshToken, String clientId);
+
+    /**
+     * 移除访问令牌
+     *
+     * 对应 Spring Security OAuth2 的 ConsumerTokenServices 的 revokeToken 方法
+     *
+     * @param accessToken 访问令牌
+     * @param clientId 客户端编号
+     * @return 是否移除到
+     */
+    boolean revokeToken(String clientId, String accessToken);
 }

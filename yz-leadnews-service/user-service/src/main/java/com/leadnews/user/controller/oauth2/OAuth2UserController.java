@@ -3,12 +3,14 @@ package com.leadnews.user.controller.oauth2;
 import cn.hutool.core.collection.CollUtil;
 import com.leadnews.model.common.dtos.ResponseResult;
 import com.leadnews.user.controller.oauth2.vo.user.OAuth2UserInfoRespVO;
+import com.leadnews.user.controller.oauth2.vo.user.OAuth2UserUpdateReqVO;
 import com.leadnews.user.convert.OAuth2UserConvert;
 import com.leadnews.user.dal.dataobject.user.AdminUserDO;
 import com.leadnews.user.service.auth.AdminAuthService;
 import com.leadnews.user.service.user.AdminUserService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -39,6 +41,7 @@ public class OAuth2UserController {
 
     @GetMapping("/get")
     @Operation(summary = "获得用户基本信息")
+    //    @PreAuthorize("@ss.hasScope('user.read')")
     public ResponseResult<OAuth2UserInfoRespVO> getUserInfo() {
         // 获得用户基本信息
         AdminUserDO user = userService.getUser(getLoginUserId());
@@ -47,14 +50,14 @@ public class OAuth2UserController {
         return ResponseResult.okResult(resp);
     }
 
-//    @PutMapping("/update")
-//    @Operation(summary = "更新用户基本信息")
+    @PutMapping("/update")
+    @Operation(summary = "更新用户基本信息")
 //    @PreAuthorize("@ss.hasScope('user.write')")
-//    public CommonResult<Boolean> updateUserInfo(@Valid @RequestBody OAuth2UserUpdateReqVO reqVO) {
-//        // 这里将 UserProfileUpdateReqVO =》UserProfileUpdateReqVO 对象，实现接口的复用。
-//        // 主要是，AdminUserService 没有自己的 BO 对象，所以复用只能这么做
-//        userService.updateUserProfile(getLoginUserId(), OAuth2UserConvert.INSTANCE.convert(reqVO));
-//        return success(true);
-//    }
+    public ResponseResult<Boolean> updateUserInfo(@Valid @RequestBody OAuth2UserUpdateReqVO reqVO) {
+        // 这里将 UserProfileUpdateReqVO =》UserProfileUpdateReqVO 对象，实现接口的复用。
+        // 主要是，AdminUserService 没有自己的 BO 对象，所以复用只能这么做
+        userService.updateUserProfile(getLoginUserId(), OAuth2UserConvert.INSTANCE.convert(reqVO));
+        return ResponseResult.okResult(true);
+    }
 
 }

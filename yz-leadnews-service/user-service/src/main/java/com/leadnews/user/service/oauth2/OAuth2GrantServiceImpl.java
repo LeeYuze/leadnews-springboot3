@@ -82,4 +82,15 @@ public class OAuth2GrantServiceImpl implements OAuth2GrantService{
     public OAuth2AccessTokenDO grantRefreshToken(String refreshToken, String clientId) {
         return oAuth2TokenService.refreshAccessToken(refreshToken, clientId);
     }
+
+    @Override
+    public boolean revokeToken(String clientId, String accessToken) {
+        // 先查询，保证 clientId 时匹配的
+        OAuth2AccessTokenDO accessTokenDO = oAuth2TokenService.getAccessToken(accessToken);
+        if (accessTokenDO == null || ObjectUtil.notEqual(clientId, accessTokenDO.getClientId())) {
+            return false;
+        }
+        // 再删除
+        return oAuth2TokenService.removeAccessToken(accessToken) != null;
+    }
 }

@@ -1,6 +1,8 @@
 package com.leadnews.user.service.user;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.leadnews.user.controller.oauth2.vo.user.UserProfileUpdateReqVO;
+import com.leadnews.user.convert.UserConvert;
 import com.leadnews.user.dal.dataobject.user.AdminUserDO;
 import com.leadnews.user.mapper.user.AdminUserMapper;
 import lombok.RequiredArgsConstructor;
@@ -22,6 +24,16 @@ public class AdminUserServiceImpl extends ServiceImpl<AdminUserMapper, AdminUser
     private final AdminUserMapper userMapper;
 
     private final PasswordEncoder passwordEncoder;
+
+    @Override
+    public void updateUserProfile(Long id, UserProfileUpdateReqVO reqVO) {
+        // TODO yz 校验正确性
+//        validateUserExists(id);
+//        validateEmailUnique(id, reqVO.getEmail());
+//        validateMobileUnique(id, reqVO.getMobile());
+        // 执行更新
+        userMapper.updateById(UserConvert.INSTANCE.convert(reqVO).setId(id));
+    }
 
     @Override
     public AdminUserDO getUserByUsername(String username) {
