@@ -29,6 +29,11 @@
     <dependencies>
 
         <dependency>
+            <groupId>net.logstash.logback</groupId>
+            <artifactId>logstash-logback-encoder</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>com.leadnews</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
             <version>0.0.1-SNAPSHOT</version>
