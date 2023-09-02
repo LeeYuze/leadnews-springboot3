@@ -41,7 +41,7 @@ public class OAuth2UserController {
 
     @GetMapping("/get")
     @Operation(summary = "获得用户基本信息")
-    //    @PreAuthorize("@ss.hasScope('user.read')")
+        @PreAuthorize("@ss.hasScope('user.read')")
     public ResponseResult<OAuth2UserInfoRespVO> getUserInfo() {
         // 获得用户基本信息
         AdminUserDO user = userService.getUser(getLoginUserId());
@@ -52,7 +52,7 @@ public class OAuth2UserController {
 
     @PutMapping("/update")
     @Operation(summary = "更新用户基本信息")
-//    @PreAuthorize("@ss.hasScope('user.write')")
+    @PreAuthorize("@ss.hasScope('user.write')")
     public ResponseResult<Boolean> updateUserInfo(@Valid @RequestBody OAuth2UserUpdateReqVO reqVO) {
         // 这里将 UserProfileUpdateReqVO =》UserProfileUpdateReqVO 对象，实现接口的复用。
         // 主要是，AdminUserService 没有自己的 BO 对象，所以复用只能这么做

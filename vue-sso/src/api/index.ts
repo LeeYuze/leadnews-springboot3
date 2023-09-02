@@ -48,6 +48,7 @@ export function authorize(responseType, clientId, redirectUri, state,
     for (const scope of uncheckedScopes) {
         scopes[scope] = false
     }
+    console.log(scopes)
     // 发起请求
     return http({
         url: '/user/system/oauth2/authorize',

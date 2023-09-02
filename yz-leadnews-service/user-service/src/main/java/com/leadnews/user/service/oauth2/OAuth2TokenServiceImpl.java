@@ -85,7 +85,7 @@ public class OAuth2TokenServiceImpl implements OAuth2TokenService {
         // 查询访问令牌
         OAuth2RefreshTokenDO refreshTokenDO = oauth2RefreshTokenMapper.selectByRefreshToken(refreshToken);
         if (refreshTokenDO == null) {
-            throw new CustomException(AppHttpCodeEnum.PARAM_INVALID, "无效的刷新令牌");
+            throw new CustomException(AppHttpCodeEnum.REFRESH_TOKEN_INVALID);
         }
 
         OAuth2ClientDO clientDO = oauth2ClientService.validOAuthClientFromCache(clientId);

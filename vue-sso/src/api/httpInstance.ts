@@ -41,12 +41,16 @@ service.interceptors.response.use(function (response) {
     const {data} = response;
     const {code} = data;
 
-
     if (code === 401) {
         // 刷新token, 不行就登录
         const res = await API.refreshToken()
-        const {data} = res;
-
+        const {data,code} = res;
+        if(code === 6) {
+            localStorage.removeItem(TokenConstants.ACCESSTOKEN_KEY);
+            localStorage.removeItem(TokenConstants.REFRESHTOKEN_KEY);
+            location.reload()
+            return
+        }
         localStorage.setItem(TokenConstants.ACCESSTOKEN_KEY, data.accessToken)
 
         return service(response.config)

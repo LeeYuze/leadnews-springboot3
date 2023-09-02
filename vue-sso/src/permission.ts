@@ -6,7 +6,7 @@ import {getUserInfo} from '@/api'
 
 const whiteList = ['/login', '/social-login', '/auth-redirect', '/bind', '/register', '/oauthLogin/gitee']
 
-router.beforeEach((to, from, next) => {
+router.beforeEach(async (to, from, next) => {
     var accessToken = localStorage.getItem(TokenConstants.ACCESSTOKEN_KEY);
     if (accessToken) {
         if (to.path === '/login') {
@@ -15,12 +15,11 @@ router.beforeEach((to, from, next) => {
             var user = localStorage.getItem("user");
             if (!user) {
                 // 获取用户信息
-                getUserInfo().then(res => {
-                    if (res.code === 0) {
-                        localStorage.setItem("user", JSON.stringify(res.data))
-                        next({...to, replace: true}) // hack方法 确保addRoutes已完成
-                    }
-                })
+                const res = await getUserInfo();
+                if (res.code === 0) {
+                    localStorage.setItem("user", JSON.stringify(res.data))
+                    next({...to, replace: true}) // hack方法 确保addRoutes已完成
+                }
             } else {
                 next()
             }

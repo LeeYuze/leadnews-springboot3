@@ -4,6 +4,8 @@ import com.leadnews.apis.oauth2.OAuth2TokenApi;
 import com.leadnews.security.core.filter.TokenAuthenticationFilter;
 import com.leadnews.security.core.handler.AccessDeniedHandlerImpl;
 import com.leadnews.security.core.handler.AuthenticationEntryPointImpl;
+import com.leadnews.security.core.service.SecurityFrameworkService;
+import com.leadnews.security.core.service.SecurityFrameworkServiceImpl;
 import jakarta.annotation.Resource;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -48,6 +50,11 @@ public class SecurityAutoConfiguration {
     @Bean
     public TokenAuthenticationFilter authenticationTokenFilter(OAuth2TokenApi oauth2TokenApi) {
         return new TokenAuthenticationFilter(oauth2TokenApi);
+    }
+
+    @Bean("ss") // 使用 Spring Security 的缩写，方便使用
+    public SecurityFrameworkService securityFrameworkService() {
+        return new SecurityFrameworkServiceImpl();
     }
 
 }

@@ -16,7 +16,7 @@ const state = reactive({
 })
 
 const login = () => {
-  console.log(state)
+  // console.log(state)
   API.login(state).then(res => {
     const {code, data} = res;
     if (code === 0) {
@@ -25,8 +25,8 @@ const login = () => {
       localStorage.setItem(TokenConstants.ACCESSTOKEN_KEY, accessToken)
       // storage refreshToken
       localStorage.setItem(TokenConstants.REFRESHTOKEN_KEY, refreshToken)
-
-      $router.push({path: redirect.value || "/"})
+      // $router.push({path: redirect.value || "/"})
+      location.href = redirect.value
     }
   })
 }

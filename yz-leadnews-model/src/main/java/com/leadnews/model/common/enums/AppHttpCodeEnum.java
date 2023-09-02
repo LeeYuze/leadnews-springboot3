@@ -14,6 +14,8 @@ public enum AppHttpCodeEnum {
 
     OAUTH2_CLIENT_NOT_EXISTS(5, "OAuth2 客户端不存在"),
 
+    REFRESH_TOKEN_INVALID(6,"无效的刷新令牌"),
+
     // TOKEN50~100
     TOKEN_INVALID(50, "无效的TOKEN"),
     TOKEN_EXPIRE(51, "TOKEN已过期"),
